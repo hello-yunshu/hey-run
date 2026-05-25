@@ -1,7 +1,7 @@
 +++
 title = "XRay进阶玩法 - 搭建后端服务器负载均衡"
 date = 2021-04-07T22:56:00+08:00
-draft = true
+draft = false
 description = "很久没有更新文章了，最近很多文章受到压力而404了😭。今天给大家带来一个XRay的进阶玩法，服务器的负载均衡。 功能简介 负载均衡对于使用软路由的小伙伴应该不陌生，其中HAProxy应用甚广。对于单个VPS用户，HAProxy搭配Cloudflare的多IP同时访问，能够有效防止访问阻塞。但是，此"
 slug = "xrayjin-jie-wan-fa---da-jian-hou-duan-fu-wu-qi-fu-zai-jun-heng"
 featureimage = "https://cdn.idleleo.com/wp-content/uploads/2021/04/202104071017-1024x619.jpg"
