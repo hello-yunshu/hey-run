@@ -1,7 +1,7 @@
 +++
 title = "Xray进阶玩法 - 使用gRPC协议"
 date = 2021-05-09T23:25:07+08:00
-draft = true
+draft = false
 description = "在Xray 1.4.0版本中，gRPC作为新的一种传输协议被引进，并在之后的版本中逐渐得到完善。现今，随着脚本Xray_bash_onekey引进了gRPC协议，那么是时候说一说这个协议了。 什么是gRPC gRPC是一个高性能、开源和通用的RPC框架，面向移动和HTTP/2设计。gRPC基于HTT"
 slug = "xrayjin-jie-wan-fa---shi-yong-grpcxie-yi"
 featureimage = "https://cdn.idleleo.com/wp-content/uploads/2021/05/20210508154552-1024x536.jpg"
