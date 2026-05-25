@@ -1,0 +1,23 @@
+disabled = false
+locale = "zh-cn"
+label = "简体中文"
+weight = 1
+title = "云云舒"
+
+[params]
+  displayName = "ZH"
+  isoCode = "zh-cn"
+  rtl = false
+  dateFormat = "2006年1月2日"
+  description = "代码与生活的交汇点"
+  logo = "img/logo.svg"
+
+[params.author]
+  name = "yunshu"
+  image = "img/logo.png"
+  headline = "代码与生活的交汇点"
+  bio = "热爱技术，热爱生活"
+  links = [
+    { github = "https://github.com/hello-yunshu" },
+    { x-twitter = "https://x.com/yunyunyshu" },
+  ]
