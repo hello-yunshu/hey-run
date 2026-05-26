@@ -212,6 +212,44 @@ jobs:
           git commit -m "${{ steps.changes.outputs.message }}"
           git push
 
+      - name: Trigger Cloudflare Pages rebuild
+        if: steps.check-running.outputs.result == 'run' && steps.build.outcome == 'success' && steps.cf-hugo.outputs.needs_update == 'true' && steps.changes.outputs.has_changes != 'true'
+        uses: actions/github-script@v7
+        env:
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+        with:
+          script: |
+            const accountId = process.env.CF_ACCOUNT_ID;
+            const token = process.env.CF_API_TOKEN;
+            const projectName = process.env.CF_PAGES_PROJECT_NAME;
+
+            async function cf(path, options = {}) {
+              const response = await fetch(`https://api.cloudflare.com/client/v4${path}`, {
+                ...options,
+                headers: {
+                  Authorization: `Bearer ${token}`,
+                  'Content-Type': 'application/json',
+                  ...(options.headers || {})
+                }
+              });
+              const body = await response.json();
+              if (!response.ok || !body.success) {
+                throw new Error(`${response.status} ${response.statusText}: ${JSON.stringify(body.errors || body)}`);
+              }
+              return body.result;
+            }
+
+            const deployments = await cf(`/accounts/${accountId}/pages/projects/${projectName}/deployments?env=production&per_page=1`);
+            if (!deployments.length) {
+              throw new Error('No production deployment found to retry.');
+            }
+
+            const deployment = await cf(`/accounts/${accountId}/pages/projects/${projectName}/deployments/${deployments[0].id}/retry`, {
+              method: 'POST'
+            });
+            core.notice(`Retried Cloudflare Pages production deployment ${deployment.id || deployment.short_id || deployments[0].id}.`);
+
       - name: Create issue on build failure
         if: steps.check-running.outputs.result == 'run' && steps.build.outcome == 'failure'
         uses: actions/github-script@v7
