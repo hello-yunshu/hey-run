@@ -1,0 +1,154 @@
+name: Auto Update Hugo and Theme
+
+on:
+  schedule:
+    - cron: '0 22 * * *'
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  contents: write
+  issues: write
+
+concurrency:
+  group: "auto-update"
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  auto-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check for running workflows
+        id: check-running
+        uses: actions/github-script@v7
+        with:
+          result-encoding: string
+          script: |
+            const { data: runs } = await github.rest.actions.listWorkflowRunsForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              status: 'in_progress',
+              per_page: 100
+            });
+            const other = runs.workflow_runs.filter(r => r.id !== context.runId);
+            if (other.length > 0) {
+              const names = other.map(r => `${r.name} (#${r.run_number})`).join(', ');
+              core.notice(`Skipping: ${other.length} workflow(s) in progress: ${names}`);
+              return 'skip';
+            }
+            return 'run';
+
+      - name: Checkout
+        if: steps.check-running.outputs.result == 'run'
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Get current versions
+        if: steps.check-running.outputs.result == 'run'
+        id: current
+        run: |
+          CURRENT_HUGO=$(grep 'HUGO_VERSION:' .github/workflows/hugo.yml | sed 's/.*: *//')
+          CURRENT_THEME=$(cd themes/blowfish && git rev-parse HEAD)
+          echo "hugo=${CURRENT_HUGO}" >> "$GITHUB_OUTPUT"
+          echo "theme=${CURRENT_THEME}" >> "$GITHUB_OUTPUT"
+
+      - name: Get latest Hugo version
+        if: steps.check-running.outputs.result == 'run'
+        id: latest-hugo
+        run: |
+          LATEST_HUGO=$(curl -sL https://api.github.com/repos/gohugoio/hugo/releases/latest | grep '"tag_name":' | sed -E 's/.*"v([^"]+)".*/\1/')
+          if [[ -z "$LATEST_HUGO" ]]; then
+            echo "::error::Failed to get latest Hugo version from GitHub API"
+            exit 1
+          fi
+          echo "version=${LATEST_HUGO}" >> "$GITHUB_OUTPUT"
+
+      - name: Update theme submodule
+        if: steps.check-running.outputs.result == 'run'
+        run: |
+          git submodule update --remote themes/blowfish
+
+      - name: Update Hugo version in hugo.yml
+        if: steps.check-running.outputs.result == 'run'
+        run: |
+          sed -i "s/HUGO_VERSION: .*/HUGO_VERSION: ${{ steps.latest-hugo.outputs.version }}/" .github/workflows/hugo.yml
+
+      - name: Install Hugo CLI
+        if: steps.check-running.outputs.result == 'run'
+        run: |
+          HUGO_VERSION=${{ steps.latest-hugo.outputs.version }}
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
+          sudo dpkg -i ${{ runner.temp }}/hugo.deb
+
+      - name: Build with Hugo
+        if: steps.check-running.outputs.result == 'run'
+        id: build
+        continue-on-error: true
+        env:
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
+          HUGO_ENVIRONMENT: production
+          TZ: Asia/Shanghai
+        run: hugo --minify
+
+      - name: Check for changes
+        if: steps.check-running.outputs.result == 'run' && steps.build.outcome == 'success'
+        id: changes
+        run: |
+          NEW_THEME=$(cd themes/blowfish && git rev-parse HEAD)
+          HUGO_CHANGED="false"
+          THEME_CHANGED="false"
+
+          if [[ "${{ steps.current.outputs.hugo }}" != "${{ steps.latest-hugo.outputs.version }}" ]]; then
+            HUGO_CHANGED="true"
+          fi
+          if [[ "${{ steps.current.outputs.theme }}" != "${NEW_THEME}" ]]; then
+            THEME_CHANGED="true"
+          fi
+
+          echo "hugo_changed=${HUGO_CHANGED}" >> "$GITHUB_OUTPUT"
+          echo "theme_changed=${THEME_CHANGED}" >> "$GITHUB_OUTPUT"
+
+          if [[ "$HUGO_CHANGED" == "false" && "$THEME_CHANGED" == "false" ]]; then
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+            echo "message=" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+            MSG="chore: auto update"
+            [[ "$HUGO_CHANGED" == "true" ]] && MSG="${MSG} Hugo to v${{ steps.latest-hugo.outputs.version }}"
+            [[ "$THEME_CHANGED" == "true" ]] && MSG="${MSG}, theme blowfish to ${NEW_THEME:0:7}"
+            echo "message=${MSG}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit and push
+        if: steps.check-running.outputs.result == 'run' && steps.build.outcome == 'success' && steps.changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .github/workflows/hugo.yml themes/blowfish
+          git commit -m "${{ steps.changes.outputs.message }}"
+          git push
+
+      - name: Create issue on build failure
+        if: steps.check-running.outputs.result == 'run' && steps.build.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `🚨 Auto-update build failed (Hugo v${{ steps.latest-hugo.outputs.version }})`,
+              body: `The daily auto-update workflow failed.\n\n- **Hugo version**: v${{ steps.current.outputs.hugo }} → v${{ steps.latest-hugo.outputs.version }}\n- **Build error**: Check the [workflow run](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}) for details.\n\nAll changes have been rolled back automatically (nothing was pushed).`
+            })
+
+      - name: Fail workflow on build error
+        if: steps.check-running.outputs.result == 'run' && steps.build.outcome == 'failure'
+        run: |
+          echo "::error::Build failed after updating Hugo to v${{ steps.latest-hugo.outputs.version }}. Changes were not pushed."
+          exit 1
