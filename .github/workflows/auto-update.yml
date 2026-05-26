@@ -163,6 +163,92 @@ jobs:
             echo "message=${MSG}" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Check override drift
+        if: steps.check-running.outputs.result == 'run' && steps.build.outcome == 'success' && steps.changes.outputs.theme_changed == 'true'
+        id: drift
+        run: |
+          OVERRIDE_FILES=(
+            "layouts/partials/article-link/card-related.html"
+            "layouts/partials/article-link/card.html"
+            "layouts/partials/article-link/simple.html"
+            "layouts/partials/article-link/_shortcode.html"
+            "layouts/_default/_markup/render-image.html"
+          )
+          DRIFT_FILES=""
+          for f in "${OVERRIDE_FILES[@]}"; do
+            THEME_FILE="themes/blowfish/$f"
+            if [[ -f "$THEME_FILE" ]] && ! diff -q "$f" "$THEME_FILE" > /dev/null 2>&1; then
+              DRIFT_FILES="$DRIFT_FILES"$'\n- `'"$f"'`'
+            fi
+          done
+          if [[ -n "$DRIFT_FILES" ]]; then
+            echo "drift_found=true" >> "$GITHUB_OUTPUT"
+            {
+              echo "DRIFT_FILES<<EOF"
+              echo "$DRIFT_FILES"
+              echo "EOF"
+            } >> "$GITHUB_OUTPUT"
+            NEW_THEME=$(cd themes/blowfish && git rev-parse HEAD)
+            echo "new_theme=${NEW_THEME}" >> "$GITHUB_OUTPUT"
+            echo "::warning::Override files have drifted from theme originals. Check workflow log for details."
+          else
+            echo "drift_found=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create issue on override drift
+        if: steps.check-running.outputs.result == 'run' && steps.build.outcome == 'success' && steps.drift.outputs.drift_found == 'true'
+        continue-on-error: true
+        uses: actions/github-script@v7
+        env:
+          DRIFT_FILES: ${{ steps.drift.outputs.DRIFT_FILES }}
+          OLD_THEME: ${{ steps.current.outputs.theme }}
+          NEW_THEME: ${{ steps.drift.outputs.new_theme }}
+        with:
+          script: |
+            const title = 'Override files have drifted from theme originals';
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              per_page: 100
+            });
+            const existing = issues.find(issue => issue.title === title);
+            const driftFiles = process.env.DRIFT_FILES;
+            const oldTheme = process.env.OLD_THEME;
+            const newTheme = process.env.NEW_THEME;
+            const body = [
+              'The Blowfish theme was updated and the following override files have diverged from the theme originals:',
+              '',
+              driftFiles,
+              '',
+              'This means the theme has changes in these files that your overrides are not receiving. Review the diff and merge any important changes (bug fixes, security patches, new features) into your override files.',
+              '',
+              '```bash',
+              '# Example: review diff for a specific file',
+              'diff layouts/partials/article-link/card.html themes/blowfish/layouts/partials/article-link/card.html',
+              '```',
+              '',
+              `- **Theme version**: \`${oldTheme.slice(0, 7)}\` → \`${newTheme.slice(0, 7)}\``,
+              `- **Workflow run**: [View logs](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId})`
+            ].join('\n');
+            if (existing) {
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                body: body
+              });
+              core.notice(`Updated existing issue: ${existing.html_url}`);
+            } else {
+              const { data: issue } = await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body
+              });
+              core.notice(`Created issue: ${issue.html_url}`);
+            }
+
       - name: Update Cloudflare Pages build command
         if: steps.check-running.outputs.result == 'run' && steps.build.outcome == 'success' && steps.cf-hugo.outputs.needs_update == 'true'
         uses: actions/github-script@v7

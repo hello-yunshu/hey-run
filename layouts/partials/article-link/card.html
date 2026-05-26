@@ -49,7 +49,7 @@
       {{ with $featured }}
         {{ $featuredURL = .RelPermalink }}
         {{ if not (or $disableImageOptimization (eq .MediaType.SubType "svg")) }}
-          {{ $featuredURL = partial "optimized-image-url.html" (dict "image" . "spec" (printf "600x webp q%d" (site.Params.imageQuality | default 72))) }}
+          {{ $featuredURL = partial "optimized-image-url.html" (dict "image" . "spec" (printf "600x avif q%d" (site.Params.imageQuality | default 72))) }}
         {{ else if eq .MediaType.SubType "svg" }}
           {{ $featuredURL = partial "optimized-image-url.html" (dict "image" .) }}
         {{ end }}

@@ -22,10 +22,10 @@
   {{- $quality := site.Params.imageQuality | default 72 -}}
 
   {{- $img800Width := cond (gt $originalWidth 800) 800 $originalWidth -}}
-  {{- $img800 := $imgObj.Resize (printf "%dx webp q%d" $img800Width $quality) -}}
+  {{- $img800 := $imgObj.Resize (printf "%dx avif q%d" $img800Width $quality) -}}
   {{- $img1280 := $img800 -}}
   {{- if gt $originalWidth 1280 -}}
-    {{- $img1280 = $imgObj.Resize (printf "1280x webp q%d" $quality) -}}
+    {{- $img1280 = $imgObj.Resize (printf "1280x avif q%d" $quality) -}}
   {{- end -}}
 
   {{- $srcset := printf "%s %dw, %s %dw" $img800.RelPermalink $img800.Width $img1280.RelPermalink $img1280.Width -}}
