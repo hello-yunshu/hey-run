@@ -1,117 +1,131 @@
 +++
-title = "2023 搭建 Xray 服务器最新教程"
-date = 2020-12-11T21:34:00+08:00
-draft = true
-description = "最近V2Ray更新不断，记忆中，项目默认说明变成了繁体中文，项目名又从V2Ray变成了v2fly，又多了VLESS、XTLS、fallback等功能，可谓飞速。现在又出现了Xray的项目，笔者觉得脚本再不更新一下有点说不过去了哈哈，这不新的功能它来了。 XRay_bash_onekey GitHub"
+title = "搭建 Xray 服务器最新教程"
+date = 2026-05-26T03:28:00+08:00
+draft = false
+description = "这篇按当前 Xray_bash_onekey 重新整理安装教程。脚本现在支持 Reality、Nginx+TLS、ws/gRPC/xHTTP ONLY、XTLS ONLY、Docker、Fail2ban、流量阻断、GeoData 更新和 AI Skill 自动部署。旧的 paniy 仓库、idleleo.com 安装链接和 2020/2021 模式说明都已经不再适合作为主教程。"
 slug = "2023-da-jian-xray-fu-wu-qi-zui-xin-jiao-cheng"
-featureimage = "https://img.shields.io/github/issues/paniy/Xray_bash_onekey"
+featureimage = "images/xray-install-overview.png"
+categories = ["网络技术"]
+tags = ["Xray", "服务器搭建", "Reality", "代理"]
 +++
 
-最近V2Ray更新不断，记忆中，项目默认说明变成了繁体中文，项目名又从V2Ray变成了v2fly，又多了VLESS、XTLS、fallback等功能，可谓飞速。现在又出现了Xray的项目，笔者觉得脚本再不更新一下有点说不过去了哈哈，这不新的功能它来了。
+这篇本来是草稿，仓库地址、安装命令、模式名称全停在 2021 年。现在按当前 [**Xray_bash_onekey**](https://github.com/hello-yunshu/Xray_bash_onekey) 重新整理一版。
 
-## XRay_bash_onekey
+如果你只是想快速搭一个能用的 Xray，全程回车就行，默认值够用了。别一上来就每个选项都自己改——翻车的多半不是脚本难，是手太痒。
 
-GitHub地址：
+![](/images/xray-install-overview.png)
 
-[Xray_bash_onekey](<https://github.com/paniy/Xray_bash_onekey>)
+## 准备工作
 
-{{CODEshieldsio}} 
+你需要：
 
-[![GitHub issues](https://img.shields.io/github/issues/paniy/Xray_bash_onekey)](<https://github.com/paniy/Xray_bash_onekey/issues>)  [![GitHub forks](https://img.shields.io/github/forks/paniy/Xray_bash_onekey?color=%230885ce)](<https://github.com/paniy/Xray_bash_onekey/network>)  [![GitHub stars](https://img.shields.io/github/stars/paniy/Xray_bash_onekey?color=%230885ce)](<https://github.com/paniy/Xray_bash_onekey/stargazers>)  [![GitHub license](https://img.shields.io/github/license/paniy/Xray_bash_onekey)](<https://github.com/paniy/Xray_bash_onekey/blob/main/LICENSE>)
+  1. 一台境外 VPS，具备公网 IP。
+  2. 服务器系统建议使用 Debian 12+ 或 Ubuntu 24.04+。
+  3. 如果安装 TLS 模式，需要准备一个解析到服务器 IP 的域名。
+  4. 如果安装 Reality 模式，需要准备符合 Xray 要求的 Target 域名。
+  5. 服务器里要有 `curl`。
 
-### 三种安装模式
+安装 `curl`：
 
-模式一：Nginx+ws/gRPC+tls模式。利用Nginx进行分流，通讯协议为Websocket/gRPC，通讯加密协议为TLS。相对传统，**可以与CDN兼容** ，Nginx的存在方便建站的朋友。简单说是Nginx在前，Xray在后，Xray不直接开放给外部。对于主要需要Xray服务的朋友，此模式下流量需要经过Nginx转发，一定程度牺牲性能，若再套用CDN，那么性能损失更大，与之带来的是安全性的提升。在脚本版本>1.5.0.0后，已支持负载均衡搭建，详细可见模式三。
+```bash
+apt install -y curl
+```
 
-模式二：Xray+Nginx+ws/gRPC模式。利用Xray的fallback功能，使流量在Xray端分流，Xray无法处理的流量将转交给Nginx处理，通讯协议为TCP，通讯加密协议为XTLS。Xray+Nginx模式利用了新协议，**不可以与CDN兼容** ，Nginx的存在主要为了防止探测，可以建站但不推荐。简单说是Xray在前，Nginx在后，Xray直接开放给外部。对于主要需要Xray服务的朋友，此模式下流量直接交由Xray处理，因此效率很高，再加上使用了最新的XTLS协议，性能更强，[但就如Trojan一般](<https://www.idleleo.com/02/4064.html>)，此模式无法套用CDN，强行套用后将失去Xray的功能。对于需要建站的朋友，由于流量由Xray分析与转发，性能有所损失，因此不推荐Nginx建站。在脚本版本>1.5.0.0后，内置了纯ws/gRPC协议的追加，方便组建后端服务器的负载均衡。
+CentOS Stream 用户可以用：
 
-模式三：ws/gRPC ONLY模式。此模式搭建的为纯Websocket/gRPC通讯协议。此模式仅有ws/gRPC协议，没有加密，不包含Nginx，Xray直接对外通信。**此模式推荐仅作为后端服务器组建负载均衡使用** ，若直接使用不安全且非常容易导致IP被封锁。此模式配合模式一效果甚好。具体可见配置教程：[XRay进阶玩法 – 搭建后端服务器负载均衡](<https://www.idleleo.com/04/5136.html>)。
+```bash
+yum install -y curl
+```
 
-![](/images/wp-content/uploads/2021/04/20210408210029.jpg)
+新手不建议使用太旧的系统模板，也不建议在装了一堆面板和环境的机器上硬装。纯净环境少很多麻烦。
 
-### 安装方式
+## 安装命令
 
-需要一个属于你自己的域名，并且解析到你所购买的VPS的公网IP上。（在域名服务商添加A地址即可）。之后登录至VPS，运行脚本，按照提示运行即可。
-[code] 
-    bash <(curl -Ss https://www.idleleo.com/install.sh)
-[/code]
+当前安装命令是：
 
-若提示不存在`curl`命令，请先安装`curl`。Centos用户运行：`yum install -y curl`；Debian/Ubuntu用户运行：`apt install -y curl`。
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/hello-yunshu/Xray_bash_onekey/main/install.sh)
+```
 
-更新说明（2021年9月23日）
+安装完成后，可以直接输入：
 
-  * 可以直接输入命令：`idleleo` 管理脚本。
-  * 访问域名 302 跳转至 [https://www.bing.com](<https://www.idleleo.com/helloworld>) （了解配置过程可自行修改）。
-  * 阻止 HTTP 接访问服务器 IP 。
-  * 使用来自 [@DuckSoft](<https://www.idleleo.com/go?url=https://github.com/DuckSoft>) 的分享链接[提案](<https://www.idleleo.com/go?url=https://github.com/XTLS/Xray-core/issues/91>) (beta)，支持 Qv2ray、V2rayN、V2rayNG。
-  * 使用来自 [XTLS](<https://www.idleleo.com/go?url=https://github.com/XTLS/Xray-core/issues/158>) 项目的提案，遵循 [UUIDv5](<https://www.idleleo.com/go?url=https://tools.ietf.org/html/rfc4122#section-4.3>) 标准，可以将自定义字符串映射至 VLESS UUID 。
-  * 添加负载均衡配置，教程：[XRay进阶玩法 – 搭建后端服务器负载均衡](<https://www.idleleo.com/04/5136.html>)。
-  * 添加 gRPC 协议的支持，具体可见：[Xray进阶玩法 – 使用gRPC协议](<https://www.idleleo.com/05/5225.html>)。
-  * 兼容了宝塔面板
+```bash
+idleleo
+```
 
-### 注意事项
+进入管理菜单。
 
-  * 如果你不了解脚本中各项设置的具体含义，除域名外，请使用脚本提供的默认值（全程回车到底）。
-  * Cloudflare 用户请安装完毕后再开启CDN功能。
-  * 使用本脚本需要你拥有 Linux 基础及使用经验，了解计算机网络部分知识，计算机基础操作。
-  * 目前支持 Debian 9+ / Ubuntu 18.04+ / Centos7+ ，部分 Centos 模板可能存在难以处理的编译问题，建议遇到编译问题时，请更换至其他系统模板。
-  * 网站交流群：<https://t.me/idleleo_chat>（群主仅提供有限的支持，如有问题可以询问群友）。
-  * 每周日的凌晨3点，Nginx 会自动重启以配合证书的签发定时任务进行，在此期间，节点无法正常连接，预计持续时间为若干秒至两分钟。
-  * 分享链接为实验版本，不排除未来变动的可能，请自行确认客户端是否支持。
-  * 自定义字符串映射至 UUIDv5 需要客户端支持。
+## 安装模式怎么选
 
-**一些问题的说明：**
+当前主要模式：
 
-Q：为什么安装完后访问域名会跳转至bing搜索？
+  1. Reality + Nginx：推荐模式，可按需附加 ws/gRPC/xHTTP 简单协议用于负载均衡。
+  2. Nginx + TLS：支持 ws、gRPC、xHTTP，适合域名和证书都准备好的场景。
+  3. ws/gRPC/xHTTP ONLY：无 TLS 的独立入站，主要用于后端服务器或负载均衡。
+  4. XTLS ONLY：仅用于特定中转或自定义场景。
+  5. Docker：镜像内预装 Xray、Nginx 与主脚本。
 
-A：已经在上文中说明这种情况，至于为什么这么改可以看评论[30楼](<https://www.idleleo.com/09/2148.html#anchor-comment-583>)，已经较为详细的说明了原因，总之为了提高安全性，减少审查。**有能力的小伙伴，推荐自己建站。**
+如果你不知道怎么选，优先 Reality + Nginx 或 Nginx + TLS。ONLY 模式不要直接暴露给公网当主节点用，它更像后端工具。
 
-Q：生成证书失败是为什么?
+## ws、gRPC、xHTTP 怎么选
 
-A：情况很简单，无法通过域名经过80端口连接服务器。为什么会导致这种情况就不好说了，可能是服务器的80端口的原因，可能是域名没有解析到服务器IP的原因，可能是搭建前就开启CDN的原因等等。
+安装 ws/gRPC/xHTTP 相关模式时，会看到：
 
-PS：如果遇到问题，先别着急，**仔细翻翻评论** ，说不定有意想不到的收获。
+```text
+1: ws
+2: gRPC
+3: xHTTP
+4: ws+gRPC+xHTTP
+```
 
-### 实际测试
+简单建议：
 
-以下为模式二的测试，服务器端为谷歌云的香港节点，客户端网速为100M：
+  1. 想稳妥，先选 ws。
+  2. 想走 HTTP/2 风格传输，可以试 gRPC。
+  3. 想测试新传输，可以试 xHTTP，但注意 Clash 目前不支持 xHTTP。
+  4. 想一个服务器多准备几条路，可以选 `ws+gRPC+xHTTP`。
 
-![](/images/wp-content/uploads/2020/12/20201211210524-1024x549.jpg)
+路径也要注意：ws 和 xHTTP 的 path 客户端里要带 `/`，gRPC 的 serviceName 不要带 `/`。
 
-## Xray简介
+## 常用命令
 
-Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support. Fully compatible configuration.
+```bash
+idleleo --show              # 查看安装信息
+idleleo --update            # 更新脚本
+idleleo --xray-update       # 更新 Xray
+idleleo --nginx-update      # 更新 Nginx
+idleleo --set-fail2ban      # 设置 Fail2ban
+idleleo --traffic-blocker   # 设置 Xray 流量阻断
+idleleo --port-traffic      # 查看端口实时流量
+```
 
-GitHub地址：[链接](<https://github.com/XTLS/>)
+如果不知道命令，运行：
 
-根据官网介绍，Xray完美兼容V2Ray，而且Xray比V2Ray性能更好，在XTLS协议上性能是V2Ray几倍。
+```bash
+idleleo --help
+```
 
-## XTLS协议简介
+## 安全建议
 
-VLESS XTLS Direct Mode 引入了 ReadV 增强，减少一层内存 Copy，性能已与 VLESS 无加密裸奔持平（接近于纯流量转发），为传统 VMess WS TLS 方案的五倍、VLESS TCP TLS 的三倍（且测试机器 CPU 均有 AES 指令集，否则差距更大，如硬路由器上），强烈建议测试体验。这或许是当前性能最强的安全代理方式，但并不是上限。
+安装完不是结束，至少做几件事：
 
-具体测试方式和测试结果见 [这里](<https://github.com/badO1a5A90/v2ray-doc>)
+  1. SSH 不要用弱密码，能用密钥就用密钥。
+  2. 建议安装 Fail2ban。
+  3. Reality 模式建议搭配 Nginx 前置。
+  4. 有滥用风险时开启流量阻断。
+  5. Cloudflare 用户请先确认脚本安装成功，再开启 CDN 代理。
+  6. 定期更新脚本、Xray、Nginx、证书和 GeoData。
 
-### 它是什么
+脚本能帮你省不少事，但它不是管家。该懂的网络常识还是要懂一点，别指望脚本替你思考。
 
-  1. 简单概括：特殊处理 TLS 流量，不重复加密，提升数倍性能、更省资源。各种移动设备可以省电，路由器的加解密性能也不再是瓶颈。[rprx/v2ray-vless/releases](<https://github.com/rprx/v2ray-vless/releases>) 有关于 [XTLS Project](<https://github.com/XTLS/Go>) 原理的一些介绍。
-  2. 原理：XTLS 无缝拼接了内外两条货真价实的 TLS，此时代理本身几乎无需再对数据加解密。VLESS + XTLS 可以理解为是增强版 ECH，即多支持身份认证、代理转发、明文加密、UDP over TCP 等。
-  3. XTLS 本身需要是 TLSv1.3（正常情况下的协商结果），内层 TLS 可以为 1.3 或 1.2（上网时的绝大多数流量），此时特殊功能就会生效（填写 flow 是开启/指定特殊功能，生效是另一码事）。
+## 延伸阅读
 
-### 注意事项
+Reality 安装：[**搭建 Xray Reality 协议服务器**](https://hey.run/posts/da-jian-xray-reality-xie-yi-fu-wu-qi)
 
-  1. 为了防止上层应用使用 QUIC，启用 XTLS 时客户端 VLESS 会自动拦截 UDP/443 的请求。若不需拦截，请在客户端填写流控： `xtls-rprx-direct-udp443`，服务端不变。Linux系统推荐设置为：`xtls-rprx-splice-udp443`。
-  2. 可设置环境变量 `V2RAY_VLESS_XTLS_SHOW = true` 以显示 XTLS 的输出，适用于服务端与客户端（仅用于确信 XTLS 生效了，千万别设成永久性的，不然会很卡）。
-  3. 不能开启 Mux。XTLS 需要获得原始的数据流，所以原理上也不会支持 WebSocket、不适用于 VMess。此外，UDP over TCP 时，VLESS 不会开启 XTLS 的特殊功能。
+Reality 风险：[**Xray Reality 协议的风险**](https://hey.run/posts/reality-xie-yi-de-feng-xian)
 
-## 相关阅读
+gRPC 协议：[**Xray进阶玩法 - 使用 gRPC 协议**](https://hey.run/posts/xrayjin-jie-wan-fa---shi-yong-grpcxie-yi)
 
-V2Ray、Trojan等主流工具安全吗：[V2Ray、Trojan等主流工具安全吗？](<https://www.idleleo.com/10/4766.html>)
+xHTTP 协议：[**Xray进阶玩法 - 使用 xHTTP 协议**](https://hey.run/posts/xray-xhttp-mode)
 
-使用BBR等加速TCP：[加速网络 一键部署BBR+BBR魔改+Lotsever(锐速)](<https://www.idleleo.com/05/2125.html>)
-
-V2Ray与Trojan对比：[V2Ray / Trojan 传输方式哪个好？(原理对比)](<https://www.idleleo.com/02/4064.html>)
-
-Xray搭建负载均衡：[XRay进阶玩法 – 搭建后端服务器负载均衡](<https://www.idleleo.com/04/5136.html>)
-
-gRPC协议：[Xray进阶玩法 – 使用gRPC协议](<https://www.idleleo.com/05/5225.html>)
+后端负载均衡：[**XRay进阶玩法 - 搭建后端服务器负载均衡**](https://hey.run/posts/xrayjin-jie-wan-fa---da-jian-hou-duan-fu-wu-qi-fu-zai-jun-heng)

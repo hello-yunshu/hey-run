@@ -1,54 +1,84 @@
 +++
-title = "Xray进阶玩法 - 使用gRPC协议"
-date = 2021-05-09T23:25:07+08:00
+title = "Xray进阶玩法 - 使用 gRPC 协议"
+date = 2026-05-26T03:10:00+08:00
 draft = false
-description = "在Xray 1.4.0版本中，gRPC作为新的一种传输协议被引进，并在之后的版本中逐渐得到完善。现今，随着脚本Xray_bash_onekey引进了gRPC协议，那么是时候说一说这个协议了。 什么是gRPC gRPC是一个高性能、开源和通用的RPC框架，面向移动和HTTP/2设计。gRPC基于HTT"
+description = "gRPC 早就不是 Xray_bash_onekey 里的新鲜玩意了，现在它已经和 ws、xHTTP 一起进入同一套安装、分享链接、用户管理和负载均衡流程。本文按当前脚本重新说明 gRPC 的使用方式、serviceName 注意点、CDN 设置以及和 xHTTP 的取舍。"
 slug = "xrayjin-jie-wan-fa---shi-yong-grpcxie-yi"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2021/05/20210508154552-1024x536.jpg"
+featureimage = "images/xray-grpc-feature.png"
+categories = ["网络技术"]
+tags = ["Xray", "gRPC", "代理", "CDN"]
 +++
 
-在Xray 1.4.0版本中，gRPC作为新的一种传输协议被引进，并在之后的版本中逐渐得到完善。现今，随着脚本[Xray_bash_onekey](<https://www.idleleo.com/12/4876.html>)引进了gRPC协议，那么是时候说一说这个协议了。
+gRPC 刚进 Xray 那会儿确实像个「新玩具」，人人都想上去摸两把。现在回头一看，它已经是 [**Xray_bash_onekey**](https://github.com/hello-yunshu/Xray_bash_onekey) 里的老面孔了嘛——单独选也行，和 ws、xHTTP 一起开也行，低调地住在菜单第 2 号位。
 
-## 什么是gRPC
+所以这篇不搞 2021 年那种「快来尝鲜」的口吻了。现在该问的是：在当前脚本里，gRPC 怎么选，跟 ws/xHTTP 到底啥区别，以及——哪些地方最容易手滑填错。
 
-gRPC是一个高性能、开源和通用的RPC框架，面向移动和HTTP/2设计。gRPC基于HTTP/2标准设计，带来诸如双向流、流控、头部压缩、单TCP连接上的多复用请求等特。这些特性使得其在移动设备上表现更好，更省电和节省空间占用。
+![](/images/xray-grpc-feature.png)
 
-![](/images/wp-content/uploads/2021/05/20210508154552-1024x536.jpg)
+## gRPC 是什么
 
-简单来说，可以认为gRPC是HTTP/2的高级版。HTTP/2有的特性gRPC也有，与此同时gRPC还解决了HTTP/2一些传输过程中的痛点，比如效率低、延迟高等。本来，笔者是不希望支持这个协议的，因为HTTP/2传输效果一般，比起已有的WebSocket协议来说，HTTP/2不适合用作某些特殊用途，但考虑到延迟低的特性，决定还是尝试一下。至于效果如何，先卖个关子。哈哈
+基于 HTTP/2，多路复用、头部压缩、双向流——这些都是 HTTP/2 系的能力。放到 Xray 里，可以先粗暴理解为「另一种走 HTTP/2 风格的传输方式」。不玄乎。
 
-## 如何搭建
+它不一定比 ws 快，也不一定比 xHTTP 好。快不快最终看你那条线路给不给面子——客户端、CDN、运营商、服务器位置，哪个不是变量呢？**别把协议当玄学神器，能稳定跑的才是好协议。**
 
-[一键脚本](<https://www.idleleo.com/12/4876.html>)已经比较好的支持了gRPC协议，搭建方式与ws协议别无二致，具体步骤完全可以按照脚本说明一步一步安装。这里需要说明的是以下几点：
+## 怎么装
 
-### serviceName参数
+现在脚本入口统一，装就完事：
 
-此参数类似于ws协议的path（路径），但并不完全相同。在ws协议中，path是需要加上“/”的，其实它的意思就是域名后面跟着的路径，如[www.idleleo.com/helloworld](<http://www.idleleo.com/helloworld>)这段域名中的“/helloworld”的意思。而gRPC略有差别，**在客户端配置中，serviceName这一栏中是不需要填写“/”这个符号的。**
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/hello-yunshu/Xray_bash_onekey/main/install.sh)
+```
 
-![](/images/wp-content/uploads/2021/05/20210508163732.jpg)
+装 TLS、Reality 附加协议、或者 ws/gRPC/xHTTP ONLY 后端的时候，都会看到这个选择：
 
-实际上。在Nginx做路径分流时，gRPC的配置方式与ws也几乎完全一致，两者区别不是很大。既然如此，gRPC的serviceName为什么要与ws的path搞出区分别来实在有些难以理解，兴许之后的Xray版本会统一两者在加不加“/”上的问题。
+```text
+1: ws
+2: gRPC
+3: xHTTP
+4: ws+gRPC+xHTTP
+```
 
-### 负载均衡
+单走 gRPC 就 `2`。想给客户端多备几条路就 `4`——脚本会同时生成 ws、gRPC、xHTTP 的端口、路径、分享链接和二维码，一次给你配齐。
 
-如同ws协议一般，gRPC是可以使用负载均衡的。启用方法，也和ws协议一模一样，可以参考这篇文章：[XRay进阶玩法 – 搭建后端服务器负载均衡](<https://www.idleleo.com/04/5136.html>)，注意在选择协议时选择gRPC即可。
+## serviceName 别画蛇添足
 
-![](/images/wp-content/uploads/2021/05/20210508154551.jpg)
+gRPC 最容易翻车的地方：`serviceName`。
 
-### 启用CloudFlare
+ws 和 xHTTP 像正常 URL 路径，要带 `/`。但 gRPC 的 `serviceName` **不要 `/`**！脚本输出是 `grpcdemo`，客户端就填 `grpcdemo`。你自作主张加个 `/grpcdemo`？恭喜，连不上。
 
-对，没错！如同WebSocket、HTTP/2一般，gRPC也可以套用CDN。
+![](/images/xray-grpc-servicename.png)
 
-这里稍微说一下脚本设计的想法，模式一主要是用于放在CDN后的，也推荐大家这么做，这么做是迄今为止最安全的传输方式之一，只是性能一般；模式二主要用于直连，性能强劲，但安全性一般；那么模式三，也就是组件负载均衡则是集两者优势为一体，若再使用CF的优选IP（[PassWall进阶玩法 – 自动替换优选IP](<https://www.idleleo.com/04/5199.html>)），那效果是真·芜湖起飞！
+这个小细节，错了就真的不通。每次有人说「我配置完全一样就是不通」，我心里都先默念：你是不是多打了一个 `/`？
 
-当然，在套用CF时需要注意，**在CF的控制面板->网络中启用gRPC** 。否则，将无法使用gRPC协议。
+## 负载均衡
 
-![](/images/wp-content/uploads/2021/05/20210508155436-1024x276.jpg)
+现在 Nginx 负载均衡支持 ws、gRPC、xHTTP 三种协议。在主服务器上：
 
-## 实际体验
+```bash
+idleleo --add-upstream
+```
 
-传输速度与ws没有太大的差别，速度上硬要说有区别的话，ws比gRPC性能更好。。毕竟gRPC是以HTTP/2设计的，还是有它的瓶颈所在，但是，这并不代表gRPC没有了价值，其最大的特点在于它的延迟。gRPC比ws延迟低了200ms左右，效果还是很明显。实际测试下来（套用CF），效果更加明显：
+然后选 gRPC。它对应的后端文件是 `.grpcServers`，后端服务器需要相同 UUID、相同 serviceName、开放对应的 gRPC 端口。详细看：[**XRay进阶玩法 - 搭建后端服务器负载均衡**](https://hey.run/posts/xrayjin-jie-wan-fa---da-jian-hou-duan-fu-wu-qi-fu-zai-jun-heng)。
 
-![](/images/wp-content/uploads/2021/05/202105081620010.jpg)
+![](/images/xray-backend-load-balancing-inline.png)
 
-如果之前用的是[一键脚本](<https://www.idleleo.com/12/4876.html>)搭建的服务器，更新脚本后是可以无缝添加gRPC协议的（注意之前的配置）。gRPC协议可能会根据不同的网络环境有不同的延迟情况，不管怎么样。大家赶紧试试吧~
+## CDN 别忘开开关
+
+gRPC 能套 Cloudflare——但你去 CF 控制面板把 gRPC 打开了吗？没开的话，服务端怎么配都是白搭，CDN 那边一句「不认识」就给你拦了。
+
+![](/images/xray-grpc-cdn-latency.png)
+
+另外，CDN 不是万能加速器。想藏源站就开，想极限速度就直连。性能、安全、稳定，三样全都要？醒醒，不存在那种好事。
+
+## gRPC vs xHTTP 怎么选
+
+现在脚本有 xHTTP 了，gRPC 不是你唯一的选择。
+
+简单粗暴的建议：
+
+  1. 客户端支持 gRPC + 你要走 CDN → 试 gRPC。
+  2. 想要最大兼容性 → ws 永远是最稳的。
+  3. 想尝鲜 → xHTTP，但 Clash 目前不支持，注意避坑。
+  4. 做负载均衡 → 主服务器和后端协议必须一致，别 gRPC 对 xHTTP 乱搭。
+
+最后一句真心话：**协议好不好，跑一下就知道。** 选项全在同一个菜单里摆着呢，实测十分钟比你脑子里纠结一晚上靠谱一百倍。

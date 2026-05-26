@@ -31,7 +31,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2021/06/202106160037-
 
 提到这个灰色地带，应该说现在政府的管理较之之前是松多了，这也是我们国家发展的一个缩影。回到主题，由于我搭网站的经验，让我有了一定的网络基础。在而后出现的*2ray包括现在Xray等，我很快就能搞清如何利用并且实现它的功能。随着我对其的研究深入，自然也积累了一些心得，这就为我在之后制作一键脚本增加了很多的经验。
 
-说到这里，就不得不提我的第一个发布的脚本，也许无主界的老朋友还能记得，无主界最开始发布的脚本并不是[Xray_bash_onekey](<https://www.idleleo.com/12/4876.html>)而是~~[V2Ray_ws-tls_bash_onekey](<https://www.idleleo.com/go?url=https://github.com/paniy/V2Ray_ws-tls_bash_onekey>)~~ 。这个脚本是fork自wulabing的，当时我对这位作者脚本的一些内容有一定的自己的想法，因此在他原有脚本的基础上进行了改进。在最开始，脚本只是为我自己而写（其实到现在的[Xray_bash_onekey](<https://www.idleleo.com/12/4876.html>)脚本初衷也未曾改变），但由于当时网站苦于没有内容，因此把这些脚本拉上来充充门面。
+说到这里，就不得不提我的第一个发布的脚本，也许无主界的老朋友还能记得，无主界最开始发布的脚本并不是[Xray_bash_onekey](<https://hey.run/posts/2023-da-jian-xray-fu-wu-qi-zui-xin-jiao-cheng>)而是~~[V2Ray_ws-tls_bash_onekey](<https://www.idleleo.com/go?url=https://github.com/paniy/V2Ray_ws-tls_bash_onekey>)~~ 。这个脚本是fork自wulabing的，当时我对这位作者脚本的一些内容有一定的自己的想法，因此在他原有脚本的基础上进行了改进。在最开始，脚本只是为我自己而写（其实到现在的[Xray_bash_onekey](<https://hey.run/posts/2023-da-jian-xray-fu-wu-qi-zui-xin-jiao-cheng>)脚本初衷也未曾改变），但由于当时网站苦于没有内容，因此把这些脚本拉上来充充门面。
 
 ![](/images/wp-content/uploads/2021/06/202106160038-1024x382.jpg)
 

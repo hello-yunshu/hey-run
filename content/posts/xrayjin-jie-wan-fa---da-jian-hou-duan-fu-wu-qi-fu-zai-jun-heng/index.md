@@ -1,87 +1,115 @@
 +++
 title = "XRay进阶玩法 - 搭建后端服务器负载均衡"
-date = 2021-04-07T22:56:00+08:00
+date = 2026-05-26T03:18:00+08:00
 draft = false
-description = "很久没有更新文章了，最近很多文章受到压力而404了😭。今天给大家带来一个XRay的进阶玩法，服务器的负载均衡。 功能简介 负载均衡对于使用软路由的小伙伴应该不陌生，其中HAProxy应用甚广。对于单个VPS用户，HAProxy搭配Cloudflare的多IP同时访问，能够有效防止访问阻塞。但是，此"
+description = "Xray_bash_onekey 的后端负载均衡已经不再只围绕 ws/gRPC，现在 ws、gRPC、xHTTP 都可以进入 Nginx upstream 管理。本文按当前脚本重新整理主服务器、后端服务器、协议选择、权重和注意事项。"
 slug = "xrayjin-jie-wan-fa---da-jian-hou-duan-fu-wu-qi-fu-zai-jun-heng"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2021/04/202104071017-1024x619.jpg"
+featureimage = "images/xray-backend-load-balancing-feature.png"
+categories = ["网络技术"]
+tags = ["Xray", "负载均衡", "Nginx", "代理"]
 +++
 
-很久没有更新文章了，最近很多文章受到压力而404了😭。今天给大家带来一个XRay的进阶玩法，服务器的负载均衡。 
+后端负载均衡这个功能在脚本里活了很久了，但 [**Xray_bash_onekey**](https://github.com/hello-yunshu/Xray_bash_onekey) 已经不是当年那个只会说「ws ONLY」的小可爱了。ws、gRPC、xHTTP —— 三种协议现在都能进 Nginx upstream 管理，旧教程里那套说法早就该扔进垃圾桶啦。
 
-## 功能简介
+先泼一盆水让你冷静一下：**负载均衡不是叠加带宽，也不是一个下载任务变多线下载。** 它更像一个聪明的前台小姐姐，有客人来了就看看后面哪台机器比较闲，把你领过去。多人同时用的时候效果明显，一个人用？那就省省吧～一台就够了。
 
-负载均衡对于使用软路由的小伙伴应该不陌生，其中HAProxy应用甚广。对于单个VPS用户，HAProxy搭配Cloudflare的多IP同时访问，能够有效防止访问阻塞。但是，此办法毕竟后端仅依托于单个VPS，再怎么加速依然不能超过单个VPS的上限。
+![](/images/xray-backend-load-balancing-feature.png)
 
-那能不能将利用Nginx搭建Xray的负载均衡，实现多个VPS同时作为负载呢？答案当然是可以的，只是有些需要注意的地方。
+## 现在支持哪些协议
 
-![](/images/wp-content/uploads/2021/04/202104071017-1024x619.jpg)
+当前脚本的 Nginx upstream 管理四分类：
 
-## 配置过程
+  1. ws → `.wsServers`
+  2. gRPC → `.grpcServers`
+  3. xHTTP → `.xhttpServers`
+  4. Reality 负载均衡 → `.realityServers`
 
-笔者更新了[一键脚本](<https://www.idleleo.com/12/4876.html>)（版本>1.5.0.0）后，脚本已经自带了组建负载均衡的基础功能了。以下就结合脚本的操作来详细描述一下搭建过程。
+这篇说的是普通后端的玩法——ws/gRPC/xHTTP 被 Nginx 转发到后端服务器那种。Reality 负载均衡是另一个话题，想看那边去：[**如何部署 Reality协议 服务端负载均衡**](https://hey.run/posts/bushu-reality-balance)。
 
-### 准备工作
+## 准备工作
 
-  1. 准备好多个VPS，选择一个作为主要的VPS（以下简称：主VPS），其他作为后端服务器（以下简称：后端VPS）。
-  2. 安装好`curl`。Centos用户运行：`yum install -y curl`；Debian/Ubuntu用户运行：`apt install -y curl`。
-  3. 准备一个解析好的域名，请解析至主VPS的公网IP。
-  4. 准备好一键安装脚本：[2021 搭建 Xray 服务器最新教程](<https://www.idleleo.com/12/4876.html>)
+最少两台 VPS，再多也不嫌多嘛（只要钱包不哭）：
 
-### 主VPS搭建步骤
+  1. 主 VPS：负责接客、TLS/Nginx、upstream 转发。这是门面，别拿 1 核小鸡糊弄。
+  2. 后端 VPS：只跑 ws/gRPC/xHTTP ONLY 或者 Reality 附加的简单协议，低调地在后面扛活。
 
-连接到主VPS，运行[一键脚本](<https://www.idleleo.com/12/4876.html>)。
+**强烈建议同一区域、同一内网。** 跨地区的后端看起来很帅是吧？实际你会发现：客户端连过来，每个后端响应时间都不一样，快的等慢的，体验反而不如一台高性能单机。
 
-![](/images/wp-content/uploads/2021/04/20210408210030.jpg)
+如果云厂商给了内网，用内网 IP 通信。后端端口不要暴露给全世界——那是给自己找麻烦喔。
 
-选择安装 Xray (Nginx+ws+tls)，期间会跳出多个可自定义选项，根据实际需求选择是否需要修改。一切顺利的话，会弹出配置信息。
+## 主服务器怎么搭
 
-![](/images/wp-content/uploads/2021/04/20210407222204.jpg)
+在主服务器上运行脚本：
 
-请记下几个重要的参数，**用户id (UUID)、伪装路径 (path)** ，准备后续使用。
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/hello-yunshu/Xray_bash_onekey/main/install.sh)
+```
 
-到此，主VPS的安装就结束了。其实主VPS的安装很简单，过程就是简单的搭建使用ws协议的Xray而已。其中最大的难点在于域名解析上，需要确保域名解析与VPS的公网IP一致。其他步骤即便全程无脑回车键，也能正常搭建完成。
+TLS 前置的话选：
 
-### 后端VPS搭建步骤
+```text
+安装 Xray (Nginx+ws/gRPC/xHTTP+TLS)
+```
 
-首先要说的是后端VPS的选择问题。笔者建议大家选择后端VPS与主VPS在同一个私网下，这样能很好的解决一定的安全问题，并且能够让访问延迟更低。同时考虑到成本问题，选用配置较低的VPS即可。
+传输协议选 ws、gRPC、xHTTP 或者 `ws+gRPC+xHTTP` 全都要。装完记得记下这些——**别跳过，后面后端要一模一样**：
 
-之后的操作步骤较主VPS的搭建更为简单。运行[一键脚本](<https://www.idleleo.com/12/4876.html>)，选择安装 Xray (ws ONLY)模式。
+  1. UUID 或 UUID 映射字符串
+  2. ws path / gRPC serviceName / xHTTP path
+  3. 对应协议的端口
+  4. 域名和证书状态
 
-![](/images/wp-content/uploads/2021/04/20210408210031.jpg)
+主服务器一个 path，后端另一个 path，然后怪 Nginx 不干活——这种事我见太多了，别当主角嘛。
 
-根据提示输入之前记下的主VPS的用户id (UUID)与伪装路径 (path)。之后输入自定义端口 (port)，此端口 (port)需要记下，之后要使用，建议端口选择为高位端口 (>10000)。
+## 后端服务器怎么搭
 
-![](/images/wp-content/uploads/2021/04/20210407222207.jpg)
+后端选这个：
 
-完成后记下此后端VPS的私网IP地址或者公网IP地址 (host)、端口 (port)即可。
+```text
+安装 Xray (ws/gRPC/xHTTP ONLY)
+```
 
-后端VPS的搭建很简单。如果选择的是安装 Xray (ws ONLY)模式，搭建还非常快。但是需要注意的是，****用户id (UUID)、伪装路径 (path)** 必须与主VPS一致**。
+这个模式给你的是纯协议入站，没有 TLS，就是给主服务器当后端小兵用的。安装时协议要和主服务器一致：UUID 一样、path/serviceName 一样。端口建议用高位的，比如 `10000+`，然后防火墙只放行主服务器的内网 IP。
 
-当然，其实还有一个隐藏办法，可以选择安装 Xray (XTLS+Nginx)模式。此模式中包含了后端VPS的搭建，可以同时tcp+XTLS与ws共存。这里笔者就不再详细说明了，小伙伴可以自行尝试一下。
+如果你用 gRPC，后端 serviceName 和主服务器一致；xHTTP 的话 path 带 `/`；ws 也一样。
 
-### 配置Nginx负载均衡
+## 添加到主服务器
 
-这个功能也可以借助[一键脚本](<https://www.idleleo.com/12/4876.html>)，脚本集成了简单的Nginx负载均衡搭建。
+回到主服务器：
 
-当完成主VPS与后端VPS搭建的两个步骤后，登录**主VPS** ，运行[一键脚本](<https://www.idleleo.com/12/4876.html>)，选择追加 Nginx 负载均衡。
+```bash
+idleleo --add-upstream
+```
 
-![](/images/wp-content/uploads/2021/04/20210407222208.jpg)
+脚本会问你要管哪个协议的负载均衡——ws、gRPC 还是 xHTTP。
 
-根据提示输入后端VPS的私网IP/公网IP (host)、端口 (port)、权重 (weight)。注意，这里的端口 (port)是之前搭建后端VPS输入的自定义端口 (port)；这里的权重 (weight)需要输入数字，数字越大，使用的概率越大。主VPS的权重是50，可以根据后端VPS实际连接情况选择大于或者小于。
+![](/images/xray-backend-load-balancing-inline.png)
 
-到这里，一个后端的负载均衡就做好啦！如果你是土豪，有非常多的VPS，可以重复最后的两个操作，将更多的后端VPS加入进去！
+创建后端文件时填：
 
-## 实际测试
+  1. host：后端 IP，优先内网。
+  2. port：后端协议端口。
+  3. weight：权重，越大被翻牌概率越高。
 
-毫无疑问，加入后端负载均衡后连接速度大涨，尤其对于配置较低的VPS而言。
+主服务器自己默认权重 `50`。后端机器性能好的调大点，线路一般的调小点。1 核小鸡权重拉满，然后问「为什么忽快忽慢」——你说呢？
 
-YouTube实测：
+## 什么时候适合用
 
-![](/images/wp-content/uploads/2021/04/202104061725-1024x370.jpg)
+适合的场景：
 
-以上测试环境为两个1核/1G内存的VPS组成的负载均衡。实测还是很可以的，不差钱的小伙伴可以试试啦~
+  1. 多用户同时在用，一台机器的带宽或 CPU 扛不住。
+  2. 同一区域有好几台闲置 VPS。
+  3. 想隐藏后端 IP，只暴露主服务器给客户端。
 
-## 推荐阅读
+不太适合：
 
-搭建 Xray 服务器最新教程：[2021 搭建 Xray 服务器最新教程](<https://www.idleleo.com/12/4876.html>)
+  1. 就你一个人用。
+  2. 后端分布在不同国家地区，延迟参差不齐。
+  3. 你指望单连接带宽直接翻倍——别想啦，不是合体。
+
+**负载均衡是分摊请求，不是叠加强化。** 这句话值得你再读一遍。理解错了后面一定会踩坑，而且踩了还来找我哭。
+
+## 最后絮叨
+
+后端服务器一定配合防火墙，只让主服务器访问后端端口。主服务器可以装 Fail2ban、开流量阻断、设 GeoData 自动更新。
+
+现在脚本入口很统一，`idleleo` 一个命令进去啥都有。功能多了以后最重要的不是每个都开，是**知道自己开了什么**。乱开一堆然后忘了，三个月后排查问题，那场面，光是想想就刺激呢～

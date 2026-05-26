@@ -2,111 +2,109 @@
 title = "Xray Reality 协议的风险"
 date = 2026-05-26T01:14:52+08:00
 draft = false
-description = "在搭建 Xray Reality 协议服务器这篇文章中，特别提到了Target域名不建议使用套用CF的域名。不建议的原因如下 Reality 的风险 如果配置中的Target域名使用了CloudFlare CDN等特殊IP地址的网站，且鉴权失败（非合法Reality请求）的流量会被直接转发至目标域名"
+description = "在搭建 Xray Reality 协议服务器这篇文章中，特别提到了 Target 域名不建议使用套用 Cloudflare 的域名。简单说，如果设置不对，Reality 的回落特性可能会让你的服务器变成别人薅流量的入口。"
 slug = "reality-xie-yi-de-feng-xian"
-featureimage = "/images/image-lshd.png"
+featureimage = "images/image-lshd.png"
 categories = ["网络技术"]
 tags = ["Xray", "Reality", "安全", "代理"]
 +++
 
-
-
-在[搭建 Xray Reality 协议服务器](https://hey.run/archives/da-jian-xray-reality-xie-yi-fu-wu-qi)这篇文章中，特别提到了Target域名不建议使用套用CF的域名。不建议的原因如下：
+在[搭建 Xray Reality 协议服务器](https://hey.run/posts/da-jian-xray-reality-xie-yi-fu-wu-qi)里特别提过：Target 域名别用套 Cloudflare 的。为什么？这篇把坑挖开给你看。
 
 ## Reality 的风险
 
-如果配置中的Target域名使用了CloudFlare CDN等特殊IP地址的网站，且鉴权失败（非合法Reality请求）的流量会被直接转发至目标域名。这可能导致服务器充当了CloudFlare的端口转发，从而造成被扫描后偷跑流量的情况
+如果 Target 域名指向了 Cloudflare CDN 这类特殊 IP 的网站，那么非法的 Reality 请求——也就是鉴权失败的那些流量——会直接转发给目标域名。后果就是：你的服务器成了 Cloudflare 的免费端口转发工具，别人扫描到以后就能薅你的流量。
 
-简单说：就是由于Reality的特性，如果Target域名是套用CDN的域名，会让你的服务器变成这个CDN的边缘IP。其他人可以用你的服务器访问CDN，充当了CDN加速的功能。这会导致你的服务器被有心之人使用，进而导致了流量无辜消耗
+用人话说：Reality 这个特性让 Target 套 CDN 的服务器变成 CDN 的边缘 IP。谁路过都能用，账单你来付。免费给别人当加速节点，亏不亏？
 
-Xray的开发者并不是不知晓这个问题。对此，开发者的说法是，为了更好的伪装流量特性，这种情况是无法避免的
+Xray 开发者不是不知道这个。但他们说了，为了更好的伪装，这种情况没法避免。所以问题不在 Xray 有 bug，而是**你不设防就是在开门迎客**。
 
-### 实际情况
+### 实际遭遇
 
-我在没有配置任何防护，Target域名设置为套了CloudFlare的域名，在短短的几天内，就遇到了薅羊毛的：
-
-![](/images/image-lshd.png)
-
-比如上面👆这个IP每秒有几百次访问，而下面👇一共封锁的IP有几百个，也就是有几百人在薅你服务器的羊毛＼(º□ºl|l)/
-
-![](/images/错误的ip.png)
-
-所以，千万不要小看互联网小鬼的力量，设置不对的话，会导致不小的风险
-
-## 解决办法
-
-难道没有解决办法了嘛？？NONONO，机智的我给Reality套了一个Nginx，利用Nginx进行sni分流后，再把分流好的流量给Xray。这样的话，Nginx判定不是匹配的域名就无法通过Xray，从而有效避免被薅羊毛啦~
-
-什么？你说，直接不设置套用CloudFlare的域名不就可以了。机智如你，但是！为什么不可以利用Xray的这个特性呢，让Reality服务器成为自己的其他域名或者服务器的加速节点呢？关于这个想法，可以参考这篇文章：
-
-## 具体步骤
-
-使用脚本 [**Xray_bash_onekey**](https://github.com/hello-yunshu/Xray_bash_onekey)**** 正常安装，在安装到如下图👇时，会有这样的提示
-
-![](/images/image-yhkf.png)
-
-回车即可安装。因为新脚本可以跳过Nginx的编译过程，会直接下载编译好的安装非常快，尽管放心安装吧~
-
-### 设置 Fail2ban
-
-结束安装后，非常建议再安装Fail2ban对薅羊毛IP进行封锁。有些IP会不厌其烦的尝试连接你的服务器，这样会出现大量Nginx错误，这时候Fail2ban的封锁就很有用了。
-
-![](/images/image-zqbs.png)
-
-选择26. 设置 Fail2ban 防暴力破解即可，脚本会自动安装，封锁的规则我已经写好啦~不用谢~
-
-![](/images/image-tcwu.png)
-
-过段时间就可以看到被封锁的IP了，就如图二显示的样子，✌️
-
-"]},"target":{"position":0,"lines":["
-
-在[搭建 Xray Reality 协议服务器](https://hey.run/archives/da-jian-xray-reality-xie-yi-fu-wu-qi)这篇文章中，特别提到了Target域名不建议使用套用CF的域名。不建议的原因如下
-
-## Reality 的风险
-
-如果配置中的Target域名使用了CloudFlare CDN等特殊IP地址的网站，且鉴权失败（非合法Reality请求）的流量会被直接转发至目标域名。这可能导致服务器充当了CloudFlare的端口转发，从而造成被扫描后偷跑流量的情况
-
-简单说：就是由于Reality的特性，如果Target域名是套用CDN的域名，会让你的服务器变成这个CDN的边缘IP。其他人可以用你的服务器访问CDN，使服务器免费为CDN加速。这会导致你的服务器被有心之人使用，进而流量无辜消耗
-
-Xray的开发者并不是不知晓这个问题。对此，开发者的说法是，为了更好的伪装流量，这种情况是无法避免的
-
-### 实际情况
-
-我在没有配置任何防护，Target域名设置为套了CloudFlare的域名，在短短的几天内，就遇到了薅羊毛的
+我没有配置任何防护，Target 随手填了个套 Cloudflare 的域名。猜猜几天后发生了什么？
 
 ![](/images/image-lshd.png)
 
-比如上面👆这个IP每秒有几百次访问，而下面👇是一共封锁的IP，短短两三天有几百个，也就是有几百人在薅服务器的羊毛＼(º□ºl|l)/
+上面这个 IP，**每秒几百次请求**。下面这张图里是我封掉的 IP 总数——几百个，就短短几天。几百个人在薅我服务器的羊毛！！！＼(º□ºl|l)/
 
 ![](/images/错误的ip.png)
 
-所以，千万不要小看互联网小鬼的力量，设置不对的话，会导致不小的风险
+所以千万千万别小看互联网捣蛋鬼的力量。设不对就是这种下场。
 
-## 解决办法
+## 怎么防
 
-难道没有解决办法了嘛？？NONONO，机智的我给Reality套了一个Nginx，利用Nginx进行sni分流后，把分流好的流量给Xray。这样的话，Nginx判定不是匹配的域名就无法到达Xray，从而有效避免被薅羊毛啦~
+难道没救了吗？？NONONO～机智的我给 Reality 套了个 Nginx！用 Nginx 在前面做 SNI 分流，匹配的域名才放给 Xray，不匹配的直接掐。这样一来，不是自己人的域名根本过不去，薅羊毛的就只能干瞪眼啦~
 
-什么？你说，直接不设置套用CloudFlare的域名不就可以了。机智如你，但是！为什么不可以利用Xray的这个特性，让Reality服务器成为自己的其他域名或者服务器的加速节点呢？关于这个想法，可以参考这篇文章：[**利用 Reality 协议“漏洞”加速服务器**](https://hey.run/archives/li-yong-reality-xie-yi-lou-dong-jia-su-fu-wu-qi)
+你可能会说：那直接不用套 Cloudflare 的域名不就行了。机智如你！但是——为什么不好好利用 Xray 这个特性呢？把 Reality 服务器变成你自己的加速节点，不香吗？想法看这篇：[**利用 Reality 协议"漏洞"加速服务器**](https://hey.run/posts/use-reality)。
 
-## 具体步骤
+## 具体操作
 
-使用脚本 [**Xray_bash_onekey**](https://github.com/hello-yunshu/Xray_bash_onekey)**** 正常安装，在安装到如下图👇时，会有这样的提示
+用 [**Xray_bash_onekey**](https://github.com/hello-yunshu/Xray_bash_onekey) 安装：
+
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/hello-yunshu/Xray_bash_onekey/main/install.sh)
+```
+
+选：
+
+```text
+3. 安装 Xray (Reality+ws/gRPC/xHTTP+Nginx)
+```
+
+安装过程中会看到这个提示：
 
 ![](/images/image-yhkf.png)
 
-回车即可安装。新脚本可以跳过Nginx的编译过程，是直接下载编译好的，安装非常快，尽管放心安装吧~
+回车就行。现在 Nginx 有预编译好的包，安装飞快，别担心～
 
-### 设置 Fail2ban
+以后要调整 Nginx 允许通过的域名，在脚本里：
 
-结束安装后，非常建议再安装Fail2ban对薅羊毛IP进行封锁。有些IP会不厌其烦的尝试连接你的服务器，这会产生大量Nginx错误，这时候Fail2ban的封锁就很有用了
+```text
+12. 变更 Nginx serverNames 配置
+```
+
+或者：
+
+```bash
+idleleo --add-servernames
+```
+
+### Fail2ban 保安上岗
+
+装完后强烈建议再装 Fail2ban。有些 IP 会像苍蝇一样反复尝试连接你的服务器，在 Nginx 日志里刷一堆错误。Fail2ban 就是用来收拾这种人的。
 
 ![](/images/image-zqbs.png)
 
-选择：26. 设置 Fail2ban 防暴力破解即可，脚本会自动安装，封锁的规则我已经写好啦~不用谢~
+在菜单里：
+
+```text
+29. 设置 Fail2ban 防暴力破解
+```
+
+或者：
+
+```bash
+idleleo --set-fail2ban
+```
+
+规则我都写好啦，自动部署，不用谢～
 
 ![](/images/image-tcwu.png)
 
-过段时间就可以看到被封锁的IP了，就如图二显示的样子✌️
+过段时间就能看到被封掉的 IP 列表了。
 
+### 再加一道流量阻断
 
+如果你已经遇到奇怪的流量，或者想更狠一点，脚本里还有流量阻断：
+
+```text
+31. 设置 Xray 流量阻断
+```
+
+或者：
+
+```bash
+idleleo --traffic-blocker
+```
+
+能按国家/地区 IP、BT、广告域名、私有网络等规则做阻断。Fail2ban 像门口保安，流量阻断像里面的防盗门。门多不丢人，省流量才是正经事～
