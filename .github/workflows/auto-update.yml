@@ -21,6 +21,9 @@ defaults:
 jobs:
   auto-update:
     runs-on: ubuntu-latest
+    env:
+      CF_WORKER_NAME: hey-run
+      CF_PRODUCTION_BRANCH: main
     steps:
       - name: Check for running workflows
         id: check-running
@@ -50,13 +53,11 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Get current versions
+      - name: Get current theme version
         if: steps.check-running.outputs.result == 'run'
         id: current
         run: |
-          CURRENT_HUGO=$(grep 'HUGO_VERSION:' .github/workflows/hugo.yml | sed 's/.*: *//')
           CURRENT_THEME=$(cd themes/blowfish && git rev-parse HEAD)
-          echo "hugo=${CURRENT_HUGO}" >> "$GITHUB_OUTPUT"
           echo "theme=${CURRENT_THEME}" >> "$GITHUB_OUTPUT"
 
       - name: Get latest Hugo version
@@ -70,24 +71,95 @@ jobs:
           fi
           echo "version=${LATEST_HUGO}" >> "$GITHUB_OUTPUT"
 
+      - name: Get Cloudflare Workers Builds Hugo version
+        if: steps.check-running.outputs.result == 'run'
+        id: cf-hugo
+        uses: actions/github-script@v7
+        env:
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          LATEST_HUGO: ${{ steps.latest-hugo.outputs.version }}
+        with:
+          script: |
+            const accountId = process.env.CF_ACCOUNT_ID;
+            const token = process.env.CF_API_TOKEN;
+            const workerName = process.env.CF_WORKER_NAME;
+            const productionBranch = process.env.CF_PRODUCTION_BRANCH;
+            const latest = process.env.LATEST_HUGO;
+
+            if (!accountId || !token) {
+              core.setFailed('Missing CF_ACCOUNT_ID or CF_API_TOKEN repository secret.');
+              return;
+            }
+
+            async function cf(path, options = {}) {
+              const response = await fetch(`https://api.cloudflare.com/client/v4${path}`, {
+                ...options,
+                headers: {
+                  Authorization: `Bearer ${token}`,
+                  'Content-Type': 'application/json',
+                  ...(options.headers || {})
+                }
+              });
+              const body = await response.json();
+              if (!response.ok || !body.success) {
+                throw new Error(`${response.status} ${response.statusText}: ${JSON.stringify(body.errors || body)}`);
+              }
+              return body.result;
+            }
+
+            const scripts = await cf(`/accounts/${accountId}/workers/scripts`);
+            const worker = scripts.find(script => script.id === workerName);
+            if (!worker?.tag) {
+              throw new Error(`Could not find Worker script tag for ${workerName}.`);
+            }
+
+            const triggers = await cf(`/accounts/${accountId}/builds/workers/${worker.tag}/triggers`);
+            if (!triggers.length) {
+              throw new Error(`No Workers Builds triggers found for ${workerName}.`);
+            }
+
+            const triggerSummaries = [];
+            let needsUpdate = false;
+            let productionTrigger = triggers.find(trigger => {
+              const branches = trigger.branch_includes || [];
+              const name = (trigger.trigger_name || '').toLowerCase();
+              return branches.includes(productionBranch) || name.includes('production') || name.includes('prod');
+            }) || triggers[0];
+
+            for (const trigger of triggers) {
+              const variables = await cf(`/accounts/${accountId}/builds/triggers/${trigger.trigger_uuid}/environment_variables`);
+              const value = variables.HUGO_VERSION?.value || '';
+              if (value !== latest) {
+                needsUpdate = true;
+              }
+              triggerSummaries.push({
+                uuid: trigger.trigger_uuid,
+                name: trigger.trigger_name || '',
+                branches: trigger.branch_includes || [],
+                hugoVersion: value
+              });
+            }
+
+            core.setOutput('needs_update', needsUpdate ? 'true' : 'false');
+            core.setOutput('worker_tag', worker.tag);
+            core.setOutput('trigger_uuids', JSON.stringify(triggers.map(trigger => trigger.trigger_uuid)));
+            core.setOutput('production_trigger_uuid', productionTrigger.trigger_uuid);
+            core.notice(`Cloudflare Workers Builds HUGO_VERSION: ${JSON.stringify(triggerSummaries)}; latest=${latest}`);
+
       - name: Update theme submodule
         if: steps.check-running.outputs.result == 'run'
         run: |
           git submodule update --remote themes/blowfish
 
-      - name: Update Hugo version in hugo.yml
-        if: steps.check-running.outputs.result == 'run'
-        run: |
-          sed -i "s/HUGO_VERSION: .*/HUGO_VERSION: ${{ steps.latest-hugo.outputs.version }}/" .github/workflows/hugo.yml
-
-      - name: Install Hugo CLI
+      - name: Install latest Hugo CLI
         if: steps.check-running.outputs.result == 'run'
         run: |
           HUGO_VERSION=${{ steps.latest-hugo.outputs.version }}
           wget -O "${{ runner.temp }}/hugo.deb" "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb"
           sudo dpkg -i "${{ runner.temp }}/hugo.deb"
 
-      - name: Build with Hugo
+      - name: Build with latest Hugo
         if: steps.check-running.outputs.result == 'run'
         id: build
         continue-on-error: true
@@ -102,53 +174,140 @@ jobs:
         id: changes
         run: |
           NEW_THEME=$(cd themes/blowfish && git rev-parse HEAD)
-          HUGO_CHANGED="false"
           THEME_CHANGED="false"
 
-          if [[ "${{ steps.current.outputs.hugo }}" != "${{ steps.latest-hugo.outputs.version }}" ]]; then
-            HUGO_CHANGED="true"
-          fi
           if [[ "${{ steps.current.outputs.theme }}" != "${NEW_THEME}" ]]; then
             THEME_CHANGED="true"
           fi
 
-          echo "hugo_changed=${HUGO_CHANGED}" >> "$GITHUB_OUTPUT"
           echo "theme_changed=${THEME_CHANGED}" >> "$GITHUB_OUTPUT"
 
-          if [[ "$HUGO_CHANGED" == "false" && "$THEME_CHANGED" == "false" ]]; then
+          if [[ "$THEME_CHANGED" == "false" ]]; then
             echo "has_changes=false" >> "$GITHUB_OUTPUT"
             echo "message=" >> "$GITHUB_OUTPUT"
           else
             echo "has_changes=true" >> "$GITHUB_OUTPUT"
-            MSG="chore: auto update"
-            [[ "$HUGO_CHANGED" == "true" ]] && MSG="${MSG} Hugo to v${{ steps.latest-hugo.outputs.version }}"
-            [[ "$THEME_CHANGED" == "true" ]] && MSG="${MSG}, theme blowfish to ${NEW_THEME:0:7}"
+            MSG="chore: auto update theme blowfish to ${NEW_THEME:0:7}"
             echo "message=${MSG}" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Update Cloudflare Workers Builds Hugo version
+        if: steps.check-running.outputs.result == 'run' && steps.build.outcome == 'success' && steps.cf-hugo.outputs.needs_update == 'true'
+        uses: actions/github-script@v7
+        env:
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          LATEST_HUGO: ${{ steps.latest-hugo.outputs.version }}
+        with:
+          script: |
+            const accountId = process.env.CF_ACCOUNT_ID;
+            const token = process.env.CF_API_TOKEN;
+            const latest = process.env.LATEST_HUGO;
+            const triggerUuids = JSON.parse('${{ steps.cf-hugo.outputs.trigger_uuids }}');
+
+            async function cf(path, options = {}) {
+              const response = await fetch(`https://api.cloudflare.com/client/v4${path}`, {
+                ...options,
+                headers: {
+                  Authorization: `Bearer ${token}`,
+                  'Content-Type': 'application/json',
+                  ...(options.headers || {})
+                }
+              });
+              const body = await response.json();
+              if (!response.ok || !body.success) {
+                throw new Error(`${response.status} ${response.statusText}: ${JSON.stringify(body.errors || body)}`);
+              }
+              return body.result;
+            }
+
+            for (const triggerUuid of triggerUuids) {
+              await cf(`/accounts/${accountId}/builds/triggers/${triggerUuid}/environment_variables`, {
+                method: 'PATCH',
+                body: JSON.stringify({
+                  HUGO_VERSION: {
+                    value: latest,
+                    is_secret: false
+                  }
+                })
+              });
+              core.notice(`Updated HUGO_VERSION on Workers Builds trigger ${triggerUuid} to ${latest}.`);
+            }
+
+            core.notice(`Updated Cloudflare Workers Builds HUGO_VERSION to ${latest}.`);
 
       - name: Commit and push
         if: steps.check-running.outputs.result == 'run' && steps.build.outcome == 'success' && steps.changes.outputs.has_changes == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add .github/workflows/hugo.yml themes/blowfish
+          git add themes/blowfish
           git commit -m "${{ steps.changes.outputs.message }}"
           git push
+
+      - name: Trigger Cloudflare Workers rebuild
+        if: steps.check-running.outputs.result == 'run' && steps.build.outcome == 'success' && steps.cf-hugo.outputs.needs_update == 'true'
+        uses: actions/github-script@v7
+        env:
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+        with:
+          script: |
+            const accountId = process.env.CF_ACCOUNT_ID;
+            const token = process.env.CF_API_TOKEN;
+            const productionBranch = process.env.CF_PRODUCTION_BRANCH;
+            const productionTriggerUuid = '${{ steps.cf-hugo.outputs.production_trigger_uuid }}';
+
+            async function cf(path, options = {}) {
+              const response = await fetch(`https://api.cloudflare.com/client/v4${path}`, {
+                ...options,
+                headers: {
+                  Authorization: `Bearer ${token}`,
+                  'Content-Type': 'application/json',
+                  ...(options.headers || {})
+                }
+              });
+              const body = await response.json();
+              if (!response.ok || !body.success) {
+                throw new Error(`${response.status} ${response.statusText}: ${JSON.stringify(body.errors || body)}`);
+              }
+              return body.result;
+            }
+
+            const build = await cf(`/accounts/${accountId}/builds/triggers/${productionTriggerUuid}/builds`, {
+              method: 'POST',
+              body: JSON.stringify({
+                branch: productionBranch
+              })
+            });
+            core.notice(`Triggered Cloudflare Workers build ${build.build_uuid || '(unknown build id)'} for ${productionBranch}.`);
 
       - name: Create issue on build failure
         if: steps.check-running.outputs.result == 'run' && steps.build.outcome == 'failure'
         uses: actions/github-script@v7
         with:
           script: |
-            github.rest.issues.create({
+            const title = 'Auto-update build failed after theme update';
+            const { data: issues } = await github.rest.issues.listForRepo({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: `🚨 Auto-update build failed (Hugo v${{ steps.latest-hugo.outputs.version }})`,
-              body: `The daily auto-update workflow failed.\n\n- **Hugo version**: v${{ steps.current.outputs.hugo }} → v${{ steps.latest-hugo.outputs.version }}\n- **Build error**: Check the [workflow run](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}) for details.\n\nAll changes have been rolled back automatically (nothing was pushed).`
+              state: 'open',
+              per_page: 100
+            });
+            const existing = issues.find(issue => issue.title === title);
+            if (existing) {
+              core.notice(`Issue already exists: ${existing.html_url}`);
+              return;
+            }
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title,
+              body: `The daily auto-update workflow failed after updating the Blowfish theme submodule and/or testing Hugo v${{ steps.latest-hugo.outputs.version }}.\n\n- **Hugo version used for validation**: v${{ steps.latest-hugo.outputs.version }}\n- **Build error**: Check the [workflow run](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}) for details.\n\nNo changes were pushed and Cloudflare Workers Builds was not updated.`
             })
 
       - name: Fail workflow on build error
         if: steps.check-running.outputs.result == 'run' && steps.build.outcome == 'failure'
         run: |
-          echo "::error::Build failed after updating Hugo to v${{ steps.latest-hugo.outputs.version }}. Changes were not pushed."
+          echo "::error::Build failed after updating the Blowfish theme and/or testing latest Hugo. Changes were not pushed and Cloudflare Workers Builds was not updated."
           exit 1
