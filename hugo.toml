@@ -21,6 +21,7 @@ hasCJKLanguage = true
   [[module.mounts]]
     source = "static"
     target = "static"
+    files = ["! images/**"]
 
 [imaging]
   anchor = 'Center'

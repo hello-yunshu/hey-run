@@ -23,6 +23,7 @@ smartTOC = true
 smartTOCHideUnfocusedChildren = false
 
 fingerprintAlgorithm = "sha512"
+imageQuality = 72
 
 [seo]
 

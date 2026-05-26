@@ -15,6 +15,7 @@ title = "云云舒"
 [params.author]
   name = "yunshu"
   image = "img/avatar.png"
+  imagequality = 72
   headline = "代码与生活的交汇点"
   bio = "热爱技术，热爱生活"
   links = [
