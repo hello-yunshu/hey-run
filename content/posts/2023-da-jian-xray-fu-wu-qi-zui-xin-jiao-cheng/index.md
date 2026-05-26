@@ -4,7 +4,7 @@ date = 2026-05-26T03:28:00+08:00
 draft = false
 description = "这篇按当前 Xray_bash_onekey 重新整理安装教程。脚本现在支持 Reality、Nginx+TLS、ws/gRPC/xHTTP ONLY、XTLS ONLY、Docker、Fail2ban、流量阻断、GeoData 更新和 AI Skill 自动部署。旧的 paniy 仓库、idleleo.com 安装链接和 2020/2021 模式说明都已经不再适合作为主教程。"
 slug = "2023-da-jian-xray-fu-wu-qi-zui-xin-jiao-cheng"
-featureimage = "images/xray-install-overview.png"
+featureimage = "images/xray-install-real-cover.png"
 categories = ["网络技术"]
 tags = ["Xray", "服务器搭建", "Reality", "代理"]
 +++
@@ -12,8 +12,6 @@ tags = ["Xray", "服务器搭建", "Reality", "代理"]
 这篇本来是草稿，仓库地址、安装命令、模式名称全停在 2021 年。现在按当前 [**Xray_bash_onekey**](https://github.com/hello-yunshu/Xray_bash_onekey) 重新整理一版。
 
 如果你只是想快速搭一个能用的 Xray，全程回车就行，默认值够用了。别一上来就每个选项都自己改——翻车的多半不是脚本难，是手太痒。
-
-![](/images/xray-install-overview.png)
 
 ## 准备工作
 
@@ -54,6 +52,8 @@ idleleo
 ```
 
 进入管理菜单。
+
+![](/images/xray-install-overview.png)
 
 ## 安装模式怎么选
 

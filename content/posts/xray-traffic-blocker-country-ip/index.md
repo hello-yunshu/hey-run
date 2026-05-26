@@ -4,7 +4,7 @@ date = 2026-05-26T02:28:00+08:00
 draft = false
 description = "Xray_bash_onekey 新增了流量阻断功能，可以通过 GeoIP 和 GeoSite 阻断指定国家/地区的 IP 与域名流量，也可以顺手拦截 BT、广告域名和私有网络访问。它不是魔法防火墙，但足够处理很多让人头疼的偷跑和滥用场景。"
 slug = "xray-traffic-blocker-country-ip"
-featureimage = "images/xray-traffic-blocker-feature.png"
+featureimage = "images/xray-traffic-blocker-fauvist-cover.png"
 categories = ["网络技术"]
 tags = ["Xray", "GeoIP", "GeoSite", "流量阻断", "代理"]
 +++
@@ -12,8 +12,6 @@ tags = ["Xray", "GeoIP", "GeoSite", "流量阻断", "代理"]
 之前写 Reality 风险的时候唠叨过：配置不对，你的服务器会被别人拿去薅流量。那时候的套路是 Nginx 挡前面、SNI 分流、Fail2ban 封 IP——能用，但总有种「发现一个坏蛋打一个」的老实人气场，一点都不酷。
 
 现在 [**Xray_bash_onekey**](https://github.com/hello-yunshu/Xray_bash_onekey) 终于加了一个更狠的功能：**流量阻断**。直接按国家/地区拦 IP 和域名，顺手还能掐掉 BT、广告域名、私有网络访问。简单说：我家的代理，我说了算，不想让谁过谁就别想过～
-
-![](/images/xray-traffic-blocker-feature.png)
 
 ## 能拦什么
 
@@ -27,6 +25,8 @@ tags = ["Xray", "GeoIP", "GeoSite", "流量阻断", "代理"]
 重点说国家/地区阻断。比如你填个 `cn`，脚本会同时生成域名规则和 IP 规则，也就是 `geosite:cn` 和 `geoip:cn` 都会生效。双重拦截，不怕漏网之鱼～
 
 不是什么高深操作，想法超级朴素：**我的代理，有些方向的流量，就是不想让你从这走**。尤其是后端多、跳板多、Reality 附加协议多的机器，多一道规则真的比事后对着流量账单发呆强。
+
+![](/images/xray-traffic-blocker-feature.png)
 
 ## 怎么开
 

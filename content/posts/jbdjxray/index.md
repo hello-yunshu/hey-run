@@ -4,7 +4,7 @@ date = 2026-05-26T03:36:00+08:00
 draft = false
 description = "Xray_bash_onekey 现在已经支持 Reality、ws/gRPC/xHTTP、Fail2ban、流量阻断和 GeoData 更新，但安全问题并不会因为脚本功能变多就自动消失。这里按当前脚本重新整理 SSH、Reality Target、CDN、证书、后端端口和流量阻断这些容易忽略的地方。"
 slug = "jbdjxray"
-featureimage = "images/xray-security-checklist.png"
+featureimage = "images/xray-security-paper-collage-cover.png"
 categories = ["网络技术"]
 tags = ["Xray", "安全", "Fail2ban", "代理"]
 +++
@@ -12,8 +12,6 @@ tags = ["Xray", "安全", "Fail2ban", "代理"]
 [**Xray_bash_onekey**](https://github.com/hello-yunshu/Xray_bash_onekey) 越来越复杂了：Reality、ws、gRPC、xHTTP、Nginx、Fail2ban、流量阻断、GeoData 自动更新……菜单越来越长，但安全问题不会因为菜单好看就自己消失喔。
 
 有些坑不是脚本的 bug，是你装的时候没仔细看，服务器环境乱成一锅粥啦，或者把后端端口直接晒给全世界。这篇把几个最容易翻车的地方重新捋一遍——丑话说在前头我才能安心嘛。
-
-![](/images/xray-security-checklist.png)
 
 ## SSH 入口
 
@@ -25,6 +23,8 @@ tags = ["Xray", "安全", "Fail2ban", "代理"]
   2. 不用 root 密码登录就关掉。
   3. 装 Fail2ban：`idleleo --set-fail2ban`。
   4. 云厂商安全组里只开必要端口，别的全关上。
+
+![](/images/xray-security-checklist.png)
 
 Fail2ban 不是无敌的，但它能挡掉一大批低成本爆破。日志安静了，人也舒服了——至少不用半夜被报警吵醒嘛。
 

@@ -4,7 +4,7 @@ date = 2026-05-26T02:20:00+08:00
 draft = false
 description = "Xray_bash_onekey 现在已经支持 xHTTP 协议了。和 ws、gRPC 一样，xHTTP 可以在 TLS 模式、Reality 附加协议以及 ONLY 后端模式中使用，也可以和 ws、gRPC 一起启用。它不是万能钥匙，但在客户端支持到位的情况下，确实又多了一条可以尝试的路。"
 slug = "xray-xhttp-mode"
-featureimage = "images/xray-xhttp-feature.png"
+featureimage = "images/xray-xhttp-impressionist-cover.png"
 categories = ["网络技术"]
 tags = ["Xray", "xHTTP", "代理", "VLESS"]
 +++
@@ -13,13 +13,13 @@ Xray_bash_onekey 最近加入了 xHTTP 协议。是的，继 ws、gRPC 之后，
 
 不过话先说清楚，xHTTP 不是来掀桌子的，不是要把 ws 和 gRPC 踹出门外。它更像是给不同的网络环境多留一条路：能用就试试，合适就留着，不合适就退回去。代理这事儿吧，有时候道理没用，最终还是你那条线路说了算。
 
-![](/images/xray-xhttp-feature.png)
-
 ## xHTTP 是什么
 
 不扯名词了。xHTTP 就是 Xray 里一个新的 HTTP 系传输方式，和 ws、gRPC 一样，属于 VLESS 外面再包的一层。用途就是适配不同网络、不同前置、不同客户端。
 
 在脚本里，xHTTP 已经被妥妥收进了原来的 ws/gRPC 选择流程。装 TLS 可以选、装 Reality 附加协议可以选、甚至单独装个 xHTTP ONLY 当后端也可以。
+
+![](/images/xray-xhttp-feature.png)
 
 更懒的话，直接选 `ws+gRPC+xHTTP` 同时启用。脚本会分别生成对应端口、路径、分享链接和二维码。好处是一个服务器上多放几条路，客户端支持哪个用哪个；坏处嘛——配置看起来会很热闹，别把自己看晕就行。
 

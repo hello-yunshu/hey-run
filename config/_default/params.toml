@@ -24,6 +24,7 @@ smartTOCHideUnfocusedChildren = false
 
 fingerprintAlgorithm = "sha512"
 imageQuality = 72
+cacheVersion = "2026.05.27"
 
 [seo]
 

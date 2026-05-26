@@ -1,8 +1,9 @@
 {{- $image := .image -}}
 {{- $spec := .spec | default "800x webp q72" -}}
+{{- $v := partialCached "cache-version.html" . -}}
 {{- if $image -}}
   {{- if eq $image.MediaType.SubType "svg" -}}
-    {{- $image.RelPermalink -}}
+    {{- printf "%s%s" $image.RelPermalink $v -}}
   {{- else -}}
     {{- ($image.Resize $spec).RelPermalink -}}
   {{- end -}}
