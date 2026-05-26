@@ -39,7 +39,7 @@ imageQuality = 72
 
 [homepage]
   layout = "background"
-  homepageImage = "/img/background.svg"
+  homepageImage = "/img/fireflies-background.svg"
   showRecent = true
   showRecentItems = 12
   showMoreLink = true
