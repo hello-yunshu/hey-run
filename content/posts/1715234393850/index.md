@@ -4,7 +4,7 @@ date = 2024-05-09T14:36:00+08:00
 draft = false
 description = "下面主要说的是我很久之前写的一脚本👇 https://github.com/hello-yunshu/Xray_bash_onekey 这个脚本负载均衡功能已经存在很久了，但好像一直没说过的样子，这次来说一下~ 能不能叠加带宽 这是不存在的，负载均衡适用于高并发的场景，每次请求都会自动随机到一个可"
 slug = "1715234393850"
-featureimage = "/images/示意图2.jpg"
+featureimage = "images/示意图2.jpg"
 categories = ["网络技术"]
 tags = ["Xray", "负载均衡", "脚本", "代理"]
 +++

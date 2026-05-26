@@ -4,7 +4,7 @@ date = 2018-02-09T18:50:55+08:00
 draft = true
 description = "paniy的个人网站 活动时间：2月13日24:00-2月25日24:00 活动方式：通过₱Y币免费获得相关实物或虚拟物品奖励。 参与方式详见：新春活动！ 支付宝 集5福时间：2月6日0:00-2月15日22:00 集5福方式： ① AR扫福：活动期间使用支付宝AR扫任意“福”字、让朋友比个“五福到"
 slug = "2018chun-jie-qiang-hong-bao-gong-lue-da-quan-shi-shi-geng-xin-zhong"
-featureimage = "/img/ripples.svg"
+featureimage = "img/ripples.svg"
 +++
 
 #### paniy的个人网站

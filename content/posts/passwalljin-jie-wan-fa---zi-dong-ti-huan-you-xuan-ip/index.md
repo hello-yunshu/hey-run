@@ -2,103 +2,87 @@
 title = "PassWall进阶玩法 - 自动替换优选IP"
 date = 2021-04-27T15:49:25+08:00
 draft = true
-description = "如果你是使用Xray_bash_onekey搭建Nginx+ws+TLS的服务器，又套用了Cloudflare。那么也许你会发现，属于Cloudflare（以下简称CF）的IP非常多，但到底那个才是连接最快的却无从得知。 好在现在有一个GitHub项目可以查找适合自己当前网络环境的优选Cloudfl"
+description = "如果你是使用 Xray_bash_onekey 搭建 Nginx+ws/gRPC/xHTTP+TLS，并且套用了 Cloudflare，那么优选 IP 依然是一个绕不过去的小麻烦。本文按现在的脚本语境重新整理 PassWall 自动替换优选 IP 的思路。"
 slug = "passwalljin-jie-wan-fa---zi-dong-ti-huan-you-xuan-ip"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2021/04/20210427093333.jpg"
+featureimage = "images/xray-passwall-cf-feature.png"
 +++
 
-如果你是使用[Xray_bash_onekey](<https://www.idleleo.com/go?url=https://github.com/paniy/Xray_bash_onekey>)搭建Nginx+ws+TLS的服务器，又套用了Cloudflare。那么也许你会发现，属于Cloudflare（以下简称CF）的IP非常多，但到底那个才是连接最快的却无从得知。
+如果你用 [Xray_bash_onekey](https://github.com/hello-yunshu/Xray_bash_onekey) 搭了 Nginx+ws/gRPC/xHTTP+TLS，还套了 Cloudflare，那你大概已经发现了：Cloudflare（以下简称 CF）的 IP 多得像天上的星星，但哪个最快？靠眼睛是看不出来的。
 
-好在现在有一个[GitHub项目](<https://github.com/XIU2/CloudflareSpeedTest>)可以查找适合自己当前网络环境的优选Cloudflare Anycast IP，但这依然不够简单，毕竟每次优选只能选出一个，而且需要手动替换IP，还是挺麻烦的。为了一劳永逸的解决这类问题，这里教大家一个简单办法。
+好在有 [CloudflareSpeedTest](https://github.com/XIU2/CloudflareSpeedTest) 这个小可爱，能帮你在当前网络里挑出最快的 CF Anycast IP。可问题是——测完你还得手动去改节点地址，不觉得烦吗？反正我觉得烦。
 
-## 如何利用CF的IP
+所以这篇教你一个更懒的办法：定时测速，自动取优选 IP，静悄悄写回 PassWall 节点配置。「你只管用，我偷偷换」那种感觉，就问你香不香～
 
-为了防止有小伙伴不知所云，这里简单说一下使用CF的IP问题。使用CF的IP，首先你需要使用[Xray_bash_onekey](<https://www.idleleo.com/go?url=https://github.com/paniy/Xray_bash_onekey>)搭建Nginx+ws+TLS的服务器，这是必须的步骤，而且也只能是Nginx+ws+TLS的服务器，原因在[2021 搭建 Xray 服务器最新教程](<https://www.idleleo.com/12/4876.html>)这篇文章中略有提及。然后，你需要在CF页面的DNS解析中，将你使用的域名代理状态改为已代理（如图）。
+![](/images/xray-passwall-cf-feature.png)
 
-![](/images/wp-content/uploads/2021/04/20210427093333.jpg)
+## 为什么能这么玩
 
-接下来，在诸如PassWall中添加配置时，地址这栏中填上CF的IP，其他按照Xray安装后的值填写。**注意，需要在SNI（TLS选项后的域名），以及WebSocket Host中填上你解析的域名** ，这非常关键，否则将无法使用。
+先快速说清楚前提，免得有人一脸懵。你需要用 [Xray_bash_onekey](https://github.com/hello-yunshu/Xray_bash_onekey) 搭好 Nginx+ws/gRPC/xHTTP+TLS，总之就是能被 CF 代理的那种 TLS 入口。然后在 CF 页面把域名的 DNS 记录改成「已代理」——这个小云朵要亮起来喔。
 
-![](/images/wp-content/uploads/2021/04/20210427103824.jpg)
+接下来在 PassWall 里填配置的时候，**地址那栏填 CF 优选 IP**，其他信息按脚本装完后给的值填。但别傻了——SNI、Host 或者传输层域名，要填你自己的域名。地址可以是别人的 IP，但 TLS 握手和 Host 是你自己的事儿。
 
-按图填写完成后，你的Xray服务器就成功被CF代理了。直接ping域名是找不到你的服务器真实IP的。这也就能让你的服务器更加安全，也是脚本Nginx+ws+TLS这个选项的主要意义。
+![](/images/xray-passwall-cf-cron.png)
 
-## 自动替换优选IP
+这样做完以后，客户端走的是 CF 边缘 IP，回源还是你自己的域名。对 Xray_bash_onekey 来说，现在 ws、gRPC、xHTTP 都能走这条路，不过 xHTTP 要看客户端支不支持，别一股脑全上然后跑来问我为什么不通嘛～
 
-有了上述的基础，替换优选IP的操作就很明确了。需要替换的就是那个地址的IP，脚本笔者已经写好了，文章底下大家可以直接下载。但在这之前，如何使用是非常有必要说一下的。
+## 怎么自动换
 
-### 脚本如何使用
+有了上面的铺垫，思路就很清楚了：你要替换的，就那么一个地址 IP。脚本我已经写好啦，底下就能下载。不过在你直接拿去跑之前，怎么用还是得说一说——毕竟我这个脚本不是那种「回车就跑，跑完拜拜」的傻瓜式，得稍微动一下小手～
 
-首先确保系统安装了`tar`、`wget`程序，如果未安装，先运行命令：
-[code] 
-    opkg update
-    opkg install tar
-    opkg install wget
-[/code]
+### 改一下才能用
 
-其次，是脚本需要修改。在脚本需要修改的地方，笔者已经进行了标记。这里简单说明一下。
-[code] 
-    _##注意修改_ ！
-    /etc/init.d/haproxy stop
-    /etc/init.d/passwall stop
-[/code]
+先确认系统里有 `tar` 和 `wget`，没有的话：
 
-脚本中这两行目的在于关闭已有的服务，以防止测试CF的IP被代理，影响测试结果。如果你使用的不是PassWall，那么你需要做的是停止你运行的服务，以此可推，下面的代码中也有需要根据实际使用的服务修改。
-[code] 
-    _##注意修改_ ！
-    wait
-    uci commit passwall
-    wait
-    sed -i "s/$(uci get passwall.xxxxxxxxxx.address)/${first}/g" /etc/config/passwall
-    sed -i "s/$(uci get passwall.xxxxxxxxxx.address)/${second}/g" /etc/config/passwall
-    sed -i "s/$(uci get passwall.xxxxxxxxxx.address)/${third}/g" /etc/config/passwall
-    wait
-    uci commit passwall
-    wait
-    /etc/init.d/haproxy restart
-    wait
-    /etc/init.d/passwall restart
-    wait
-[/code]
+```bash
+opkg update
+opkg install tar wget
+```
 
-上述代码除去由于使用服务不同需要修改的地方外，主要需要修改的地方在于`passwall.xxxxxxxxxx.address`这几段。这几段主要来自于PassWall的配置文件。配置文件所在的地方即`/etc/config/passwall`。如果你创建过PassWall的文件，不难发现，它的节点配置格式如下：
+然后打开脚本，有几处要自己改。别怕，我都标好了～
+```bash
+# 注意按你的实际服务修改
+/etc/init.d/haproxy stop
+/etc/init.d/passwall stop
+```
 
-![](/images/wp-content/uploads/2021/04/20210427095914.jpg)
+这两行是干嘛的呢？测 CF IP 的时候，你得把代理服务先停下来，不然流量已经走代理了，测出来的速度就是骗人的！如果你用的不是 PassWall，就换成你自己那个服务的停止命令，以此类推。
 
-上述的`passwall.xxxxxxxxxx.address`中的一堆x，需要修改为你需要自动更新IP的那个配置，它所在的`config nodes`后面的单引号中的随机字符串。在脚本中设置了可以同时自动更新三个不同的配置，可以根据实际需要删改，也就是脚本中的三个`passwall.xxxxxxxxxx.address`。
+```bash
+# 注意按你的实际节点 ID 修改
+uci set passwall.xxxxxxxxxx.address="${first}"
+uci commit passwall
+/etc/init.d/haproxy restart
+/etc/init.d/passwall restart
+```
 
-搞定完所有要修改的地方后，建议试着运行一下。只需要把脚本复制到你想要的任何目录，再运行命令：
-[code] 
-    chmod +x cf-openwrt-auto.sh && bash cf-openwrt-auto.sh
-[/code]
+重点来了！上面那一大串 `xxxxxxxxxx`，要换成你自己的节点 ID。怎么找呢？打开 `/etc/config/passwall`，找到你的节点配置，里面会有类似 `config nodes 'xxxxxx'` 这样的东西——那串随机字符串就是 ID。想更新几个节点就写几行，别贪多喔～
 
-如果没有任何报错，就可进行下一步啦~
+改完以后，先试跑一下：
+```bash
+chmod +x cf-openwrt-auto.sh
+bash cf-openwrt-auto.sh
+```
 
-### 设置自动运行
+没报错？恭喜你，最难的部分已经过去了～剩下的就是让它偷偷自己跑。
 
-如果你设置的都没啥问题，那么就可以直接在OpenWrt后台设置个计划任务。非常简单，找到系统 -> 计划任务，在文本框中填写：
-[code] 
-    0 4 * * 2,4,6 bash /path/cf-openwrt-auto.sh > /dev/null
-[/code]
+### 定时跑
 
-如下图所示，填写完后点击保存就可以自动运行啦~当然你也可以直接修改`/etc/crontabs/root`文件，在文件最后追加以上的代码即可。
+在 OpenWrt 后台，「系统 -> 计划任务」，填上：
 
-![](/images/wp-content/uploads/2021/04/20210427100751.jpg)
+```cron
+0 4 * * 2,4,6 /path/cf-openwrt-auto.sh >/dev/null 2>&1
+```
 
-注意`/path/cf-openwrt-auto.sh`为实际你存放脚本的路径。`0 4 * * 2,4,6`的意思是在每周二、周四、周六的凌晨4点会自动运行一次。
+`/path/` 换成你实际放脚本的路径。`0 4 * * 2,4,6` 就是每周二、四、六凌晨 4 点偷偷跑一次。为什么半夜跑？因为那个时候网络安静，测出来的结果更准，而且你在睡觉，不会觉得卡。
 
-### 实际测试
+### 效果怎么样
 
-单个后台服务器，实际宽带100M，利用优选IP后的测试：
-
-![](/images/wp-content/uploads/2021/04/20210426200740.jpg)
-
-实际体验非常良好，毕竟IP是经过优选的。直接芜湖起飞！
+单台后端服务器，100M 带宽，优选 IP 带来的改善肉眼可见。但也别吹得太玄乎，它主要优化的是"你到 CF 边缘节点"这段。后面的回源线路、服务器带宽、客户端实现，该拉胯还是拉胯。优选 IP 是好东西，但它不是那种「一开就加倍」的魔法，更像是一个帮你挑好路的导航。
 
 ## 脚本下载
 
-GitHub项目：[paniy/use-cloudflare-ip](<https://github.com/paniy/use-cloudflare-ip>)
+GitHub 项目：[paniy/use-cloudflare-ip](https://github.com/paniy/use-cloudflare-ip)
 
-点击下载：[下载](<https://github.com/paniy/use-cloudflare-ip/raw/main/cf-openwrt-auto.sh>)
+点击下载：[cf-openwrt-auto.sh](https://github.com/paniy/use-cloudflare-ip/raw/main/cf-openwrt-auto.sh)
 
-此脚本可以自动替换IP，由于每天都在更换访问Xray服务器的IP，又因为IP经过优选，整体上是即能增加使用的速度又能提高安全性，实在是双赢之举。这就是为什么此教程比较复杂，需要根据实际情况修改的地方较多，但笔者依然觉得需要写出来的原因。 小伙伴们快来试试吧！
+每天自动换 IP，又因为都是优选过的，速度和安全性都能往上提一提，双赢。教程确实麻烦了点，要改的地方不少，但我还是觉得值——毕竟写都写了，对吧～ 快试试！

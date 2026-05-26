@@ -1,112 +1,74 @@
 +++
-title = "利用 Reality 协议“漏洞”加速服务器"
+title = "利用 Reality 协议「漏洞」加速服务器"
 date = 2026-05-26T01:14:52+08:00
 draft = false
-description = "说是“漏洞”有点过了，其实是协议的特性，只是这个特性会带来使用的风险。具体风险可见这篇文章：Xray Reality 协议的风险。还是先回顾下这个特性吧，毕竟你不是每次默写都全对是吧 Reality 协议风险回顾 如果Target域名是套用CDN的域名，会让你的服务器变成这个CDN的边缘IP。其他人"
+description = "说是「漏洞」有点过了，其实是 Reality 协议的特性，只是这个特性会带来使用风险。本文保留原来的玩法思路，按当前 Xray_bash_onekey 修正 serverNames 菜单和链接。"
 slug = "use-reality"
-featureimage = "/images/image-oirm.png"
+featureimage = "images/image-oirm.png"
 categories = ["网络技术"]
 tags = ["Xray", "Reality", "代理", "CDN"]
 +++
 
-
-
-说是“漏洞”有点过了，其实是协议的特性，只是这个特性会带来使用的风险。具体风险可见这篇文章：[**Xray Reality 协议的风险**](https://hey.run/archives/reality-xie-yi-de-feng-xian)。还是先回顾下这个特性吧，毕竟你不是每次默写都全对是吧
+说是"漏洞"有点过了，其实就是协议的一个特性——只不过这个特性玩不好的话会出事。具体风险看这篇：[**Xray Reality 协议的风险**](https://hey.run/posts/reality-xie-yi-de-feng-xian)。先回顾下这个特性吧，毕竟不是每次默写都能全对，对吧～
 
 ## Reality 协议风险回顾
 
-如果Target域名是套用CDN的域名，会让你的服务器变成这个CDN的边缘IP。其他人可以用你的服务器访问CDN，充当了CDN加速的功能。
+如果 Target 域名套了 CDN，你的服务器就变成这个 CDN 的边缘 IP。其他人可以用你的服务器访问 CDN——相当于免费给别人加速，而流量从你账单上走。这种好人，咱不当。
 
-为了解决这个问题，在这篇文章：[**Xray Reality 协议的风险**](https://hey.run/archives/reality-xie-yi-de-feng-xian)**** 中，用Nginx来识别不同域名的sni进行分流。也就是只有设置好匹配的域名才能通过Nginx并访问Xray。
+为了解决这个问题，[**Xray Reality 协议的风险**](https://hey.run/posts/reality-xie-yi-de-feng-xian) 里的方案是：给 Reality 前面套个 Nginx，用 SNI 分流。只有那些匹配了域名的请求才能通过 Nginx 到达 Xray，不匹配的直接挡掉。
 
-那么，问个问题测试下你的智商：如果我设置a域名可以通过Nginx，但Xray的Target却是套用Cloudflare的b域名，会发生什么呢？
+那么，问个问题测测你的智商：如果我设置 a 域名可以通过 Nginx，但 Xray 的 Target 却是套了 Cloudflare 的 b 域名，会发生什么？
 
-倒计时3...2...1...
+倒计时 3...2...1...
 
-## 利用“漏洞”加速服务器
+## 利用"漏洞"加速服务器
 
-答案是：会把a域名原封不动发给Cloudflare节点。如果你的a域名也套了Cloudflare，那么此时，你的Reality服务器完美充当了一次加速节点！
+答案是：**a 域名会被原封不动发给 Cloudflare 节点！** 如果你把 a 域名也套了 Cloudflare，那你的 Reality 服务器就完美充当了一个加速节点。是不是很妙😏
 
-所以，就有了如下图的例子：
+于是就有了下图：
 
 ![](/images/image-oirm.png)
 
-在这个例子中，运行在美国的Xray ws协议服务器（也就是脚本的ws/gRPC安装模式）套用了Cloudflare加速。你访问在香港的Reality服务器，利用Reality的特性，香港服务器跳转到了Cloudflare的节点，并利用Cloudflare连接美国的ws协议服务器，从而完成加速！
+美国的 Xray ws 服务器套了 Cloudflare，你访问香港的 Reality 服务器，利用 Reality 的转发特性，香港跳转到 Cloudflare 边缘，Cloudflare 再回源到美国的 ws 服务器——一条加速链路就形成了！
 
-是不是很好玩~~这可绝不仅能加速你的服务器，任何CDN，任何域名都可以，只要你想法💡多（反正我现在就只想到这个...）
-
-## 如何设置
-
-首先你要安装利用脚本 [**_Xray_bash_onekey_**](https://github.com/hello-yunshu/Xray_bash_onekey) 安装好了Reality，之后在安装时需要同时安装Nginx（具体可见：[**Xray Reality 协议的风险**](https://hey.run/archives/reality-xie-yi-de-feng-xian)）。然后选择脚本选项：10. 变更 Nginx serverNames 配置，如下👇
-
-![](/images/image-tzer.png)
-
-选择后，根据提示，选择：2 创建一个新的 serverNames 文件
-
-![](/images/image-cxju.png)
-
-输入你需要加速的域名就可以啦~是不是很简单😊
-
-## 如何使用
-
-最近Cloudflare不允许使用优选IP了，这不正好这利用Reality的特性加速下ws/gRPC服务器
-
-只需要在地址栏里填写Reality服务器IP，在Host栏里添加你在上面设置的要加速的域名👇就可以啦~
-
-![](/images/image-bmvn.png)
-
-是不是没听懂，没关系，这有点理解难度。但解释起来好麻烦的，所以。。。我懒得解释啦！！！
-
-但这不影响你喊🐂🍺，对吧，✌️
-
-"]},"target":{"position":0,"lines":["
-
-说是“漏洞”有点过了，其实是协议的特性，只是这个特性会带来使用的风险。具体风险可见这篇文章：[**Xray Reality 协议的风险**](https://hey.run/archives/reality-xie-yi-de-feng-xian)。还是先回顾下这个特性吧，毕竟你不是每次默写都全对是吧
-
-## Reality 协议风险回顾
-
-如果Target域名是套用CDN的域名，会让你的服务器变成这个CDN的边缘IP。其他人可以用你的服务器访问CDN，充当了CDN加速的功能
-
-为了解决这个问题，在这篇文章：[**Xray Reality 协议的风险**](https://hey.run/archives/reality-xie-yi-de-feng-xian)**** 中，用Nginx来识别不同域名的sni进行分流。也就是只有设置好匹配的域名才能通过Nginx并访问Xray
-
-那么，问个问题测试下你的智商：如果我设置a域名可以通过Nginx，但Xray的Target却是套用Cloudflare的b域名，会发生什么呢？
-
-倒计时3...2...1...
-
-## 利用“漏洞”加速服务器
-
-答案是：会把a域名原封不动发给Cloudflare节点。如果你的a域名也套了Cloudflare，那么此时，你的Reality服务器完美充当了一次加速节点！
-
-所以，就有了如下图的例子：
-
-![](/images/1000001405.png)
-
-在这个例子中，运行在美国的Xray ws协议服务器（也就是脚本的ws/gRPC安装模式）套用了Cloudflare加速。你访问在香港的Reality服务器，利用Reality的特性，香港服务器跳转到了Cloudflare的节点，并利用Cloudflare连接美国的ws协议服务器，从而完成加速！
-
-是不是很好玩~~这可绝不仅能加速你的服务器，任何CDN，任何域名都可以，只要你想法💡多（反正我现在就只想到这个...）
+是不是很好玩～这可不只能加速你自己的服务器，什么 CDN、什么域名都行，只要你脑洞够大（好吧我现在就只想到这一个……）
 
 ## 如何设置
 
-利用脚本 [**Xray_bash_onekey**](https://github.com/hello-yunshu/Xray_bash_onekey) 安装Reality，在安装时需要同时安装Nginx（具体可见：[**Xray Reality 协议的风险**](https://hey.run/archives/reality-xie-yi-de-feng-xian)）。然后选择脚本选项：10. 变更 Nginx serverNames 配置，如下👇
+先用 [**Xray_bash_onekey**](https://github.com/hello-yunshu/Xray_bash_onekey) 装好 Reality，注意安装时要同时装 Nginx（搭配 Nginx 是必须的，原因上面说了）。然后在脚本里：
+
+```text
+12. 变更 Nginx serverNames 配置
+```
+
+或者直接：
+
+```bash
+idleleo --add-servernames
+```
+
+就这：
 
 ![](/images/image-tzer.png)
 
-选择后，根据提示，选择：2 创建一个新的 serverNames 文件
+创建新的 serverNames 文件：
 
 ![](/images/image-cxju.png)
 
-输入你需要加速的域名就可以啦~是不是很简单😊
+输入你要加速的域名就好啦～是不是超简单。
 
-## 如何使用
+## 怎么用
 
-最近Cloudflare不允许使用优选IP了，这不正好这利用Reality的特性加速下ws/gRPC服务器
+以前大家说优选 IP，但优选 IP 这东西吧，不是时时都好使。这不正好，用 Reality 的特性给自己的 ws/gRPC/xHTTP 服务器加个速。
 
-只需要在地址栏里填写Reality服务器IP，在Host栏里添加你在上面设置的要加速的域名👇就可以啦~
+地址栏填 Reality 服务器 IP，Host 栏填你上面设置的加速域名：
 
 ![](/images/image-bmvn.png)
 
-是不是没听懂，没关系，这有点理解难度。但解释起来好麻烦的，所以。。。我懒得解释啦！！！
+是不是没听懂？没关系，这个确实有点绕。但解释起来好麻烦的……所以我懒得解释啦！！！
 
-但这不影响你喊🐂🍺，对吧，✌️
+反正知道好用就行，对吧～
 
+## 还是要提醒一句
 
+玩法有趣归有趣，别忘了这本质上是在利用 Reality 的回落/转发特性。玩可以，防护一定要上：Nginx serverNames 分流、Fail2ban、流量阻断，该配的全配上。不然一边加速，一边被别人薅——从"玩法"变"赔法"，那可太惨了。

@@ -3,7 +3,7 @@ title = "2020新冠实时疫情图"
 date = 2020-04-06T14:48:02+08:00
 draft = true
 slug = "2020xin-guan-shi-shi-yi-qing-tu"
-featureimage = "/img/ripples.svg"
+featureimage = "img/ripples.svg"
 +++
 
 ## 中国

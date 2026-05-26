@@ -4,7 +4,7 @@ date = 2021-02-12T00:00:00+08:00
 draft = true
 description = "新 年 快 乐"
 slug = "2021nian-niu-nian-xin-nian-kuai-le"
-featureimage = "/img/waves.svg"
+featureimage = "img/waves.svg"
 +++
 
 新 年

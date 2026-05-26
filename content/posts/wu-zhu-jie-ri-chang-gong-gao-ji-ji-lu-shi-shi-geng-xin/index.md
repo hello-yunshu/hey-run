@@ -4,7 +4,7 @@ date = 2018-12-01T10:00:00+08:00
 draft = true
 description = "服务器配置又升级啦！ 现在访问更加安全稳定了~ 特别公告！本站开放注册登录！ 活动"
 slug = "wu-zhu-jie-ri-chang-gong-gao-ji-ji-lu-shi-shi-geng-xin"
-featureimage = "/img/traffic.svg"
+featureimage = "img/traffic.svg"
 +++
 
 服务器配置又升级啦！

@@ -55,9 +55,9 @@ IMDb链接: [tt6966692](<http://www.imdb.com/title/tt6966692>)
 
 ### 资源下载
 
-[绿皮书.Green.Book.2018.1080p.Webrip.中英双语.弯弯字幕组.mp4](<ed2k://|file|%E7%BB%BF%E7%9A%AE%E4%B9%A6.Green.Book.2018.1080p.Webrip.%E4%B8%AD%E8%8B%B1%E5%8F%8C%E8%AF%AD.%E5%BC%AF%E5%BC%AF%E5%AD%97%E5%B9%95%E7%BB%84.mp4|2049827344|4cadb941582d7753c88b42309ba94b76|h=jj3mpoocsaxtitidkhsidqleizf2354w|/>)（1.91G）
+绿皮书.Green.Book.2018.1080p.Webrip.中英双语.弯弯字幕组.mp4（1.91G）
 
-[绿皮书.Green.Book.2018.中英字幕.WEBrip.720P-人人影视.mp4](<ed2k://|file|%E7%BB%BF%E7%9A%AE%E4%B9%A6.Green.Book.2018.%E4%B8%AD%E8%8B%B1%E5%AD%97%E5%B9%95.WEBrip.720P-%E4%BA%BA%E4%BA%BA%E5%BD%B1%E8%A7%86.mp4|1550392466|2edf96fe324c6101b3f7a80e3aebe438|h=z265k4mr2x6kqsyvztubfbc2iv2b4hwv|/>)（1.44G）
+绿皮书.Green.Book.2018.中英字幕.WEBrip.720P-人人影视.mp4（1.44G）
 
 [绿皮书.Green.Book.2019.中英字幕.WEBrip.AAC.1080p.x264-远鉴字幕组v2.mp4](<magnet:?xt=urn:btih:b203dce62ff4a56a36b1e2517448b266d10184d4>)（3.68G）  
 
