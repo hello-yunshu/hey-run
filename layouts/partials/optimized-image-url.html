@@ -1,0 +1,9 @@
+{{- $image := .image -}}
+{{- $spec := .spec | default "800x webp q72" -}}
+{{- if $image -}}
+  {{- if eq $image.MediaType.SubType "svg" -}}
+    {{- $image.RelPermalink -}}
+  {{- else -}}
+    {{- ($image.Resize $spec).RelPermalink -}}
+  {{- end -}}
+{{- end -}}
