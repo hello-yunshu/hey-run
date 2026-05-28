@@ -4,7 +4,7 @@ date = 2020-04-04T00:00:00+08:00
 draft = true
 description = "为表达全国各族人民对抗击新冠肺炎疫情斗争牺牲烈士和逝世同胞的深切哀悼，国务院今天发布公告，决定2020年4月4日举行全国性哀悼活动。在此期间，全国和驻外使领馆下半旗志哀，全国停止公共娱乐活动。4月4日10时起，全国人民默哀3分钟，汽车、火车、舰船鸣笛，防空警报鸣响。 无主界现响应国务院公告，于4月4"
 slug = "4yue-4ri-quan-guo-ai-dao"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/04/44quanguoaidao-1024x315.jpg"
+featureimage = "/images/posts/4yue-4ri-quan-guo-ai-dao/cover.avif"
 +++
 
 为表达全国各族人民对抗击新冠肺炎疫情斗争牺牲烈士和逝世同胞的深切哀悼，国务院今天发布公告，决定2020年4月4日举行全国性哀悼活动。在此期间，全国和驻外使领馆下半旗志哀，全国停止公共娱乐活动。4月4日10时起，全国人民默哀3分钟，汽车、火车、舰船鸣笛，防空警报鸣响。
@@ -15,4 +15,4 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/04/44quanguoaida
 
   
 
-![](/images/wp-content/uploads/2020/04/44quanguoaidao-1024x315.jpg)
+![](/images/posts/4yue-4ri-quan-guo-ai-dao/cover.avif)

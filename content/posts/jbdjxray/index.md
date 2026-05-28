@@ -4,7 +4,7 @@ date = 2026-05-26T03:36:00+08:00
 draft = false
 description = "Xray_bash_onekey 现在已经支持 Reality、ws/gRPC/xHTTP、Fail2ban、流量阻断和 GeoData 更新，但安全问题并不会因为脚本功能变多就自动消失。这里按当前脚本重新整理 SSH、Reality Target、CDN、证书、后端端口和流量阻断这些容易忽略的地方。"
 slug = "jbdjxray"
-featureimage = "images/xray-security-paper-collage-cover.png"
+featureimage = "/images/posts/jbdjxray/cover.avif"
 categories = ["网络技术"]
 tags = ["Xray", "安全", "Fail2ban", "代理"]
 +++
@@ -24,7 +24,7 @@ tags = ["Xray", "安全", "Fail2ban", "代理"]
   3. 装 Fail2ban：`idleleo --set-fail2ban`。
   4. 云厂商安全组里只开必要端口，别的全关上。
 
-![](/images/xray-security-checklist.png)
+![](/images/posts/jbdjxray/01.avif)
 
 Fail2ban 不是无敌的，但它能挡掉一大批低成本爆破。日志安静了，人也舒服了——至少不用半夜被报警吵醒嘛。
 

@@ -4,14 +4,14 @@ date = 2017-10-16T14:19:08+08:00
 draft = true
 description = "前几天在我把网址从http升级到https时，遇到了个棘手的问题。 首先是我的服务器，我的服务器是windows系统下的利用phpStudy搭建的。然后是ssl证书，我其实比较建议大家申请Let's Encrypt的ssl证书，大家也都知道沃通等颁发的证书多少让人不放心，而Let's Encrypt"
 slug = "guan-yu-qi-yong-include-conf-extra-httpd-ssl.confchu-cuo"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2017/11/20171016220651-1024x284.jpg"
+featureimage = "/images/posts/guan-yu-qi-yong-include-conf-extra-httpd-ssl.confchu-cuo/cover.avif"
 +++
 
 前几天在我把网址从http升级到https时，遇到了个棘手的问题。
 
 首先是我的服务器，我的服务器是windows系统下的利用phpStudy搭建的。然后是ssl证书，我其实比较建议大家申请Let's Encrypt的ssl证书，大家也都知道沃通等颁发的证书多少让人不放心，而Let's Encrypt本身为了普及https加之免费，推荐。但是，虽然Let's Encrypt的证书极容易申请，可是适配出了大问题，Let's Encrypt似乎更加适合Linux系统下的服务器，虽然最后我放弃使用了，但感兴趣的小伙伴不妨一试。
 
-这里我要说的是在阿里云上申请了ssl证书。阿里云申请证书相当简单，[具体教程](<https://www.idleleo.com/2017/10/16/利用阿里云部署ssl证书/>)可以查看我的博客。阿里云颁发的是赛门铁克签发的证书，颁发很简答，安装证书时，根据阿里云的要求：
+这里我要说的是在阿里云上申请了ssl证书。阿里云申请证书相当简单，[具体教程](https://www.idleleo.com/2017/10/16/利用阿里云部署ssl证书/)可以查看我的博客。阿里云颁发的是赛门铁克签发的证书，颁发很简答，安装证书时，根据阿里云的要求：
 
 > ##### ( 1 ) 在Apache的安装目录下创建cert目录，并且将下载的全部文件拷贝到cert目录中。如果申请证书时是自己创建的CSR文件，请将对应的私钥文件放到cert目录下并且命名为******.key；
 > 
@@ -52,10 +52,10 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2017/11/2017101622065
 
 其实不用我说你也可以发现了，它默认开启的代码明显是有很大的问题的，就比如Apache24目录，我的目录下根本不存在Apache24目录，还有www.example.com等等。。毫无疑问，若按阿里云建议修改httpd-ssl.conf：
 
-![](/images/wp-content/uploads/2017/11/20171016220651-1024x284.jpg)
+![](/images/posts/guan-yu-qi-yong-include-conf-extra-httpd-ssl.confchu-cuo/cover.avif)
 
 很容易产生误解。如果你直接复制黏贴进httpd-ssl.conf，Apache怎么可能不出问题。
 
 故，解决方法其中之一，很简单，你把所有代码全部修改好，并将相关证书放在指定的目录下即可。
 
-当然解决方法还有简单的，请参见：[Include conf/extra/httpd-ssl.conf出错简单解决方法](<https://www.idleleo.com/10/167.html>)。
+当然解决方法还有简单的，请参见：[Include conf/extra/httpd-ssl.conf出错简单解决方法](https://www.idleleo.com/10/167.html)。

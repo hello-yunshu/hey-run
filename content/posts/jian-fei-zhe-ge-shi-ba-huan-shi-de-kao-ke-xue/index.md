@@ -4,18 +4,18 @@ date = 2019-03-15T23:04:23+08:00
 draft = true
 description = "谈到减肥，大家的第一反应可能是降低体重，稍微专业点的朋友可能知道真正的减肥是消耗脂肪，但你当真知道脂肪是啥？它打哪儿来，到哪儿去吗？ 如果不从根本上认识脂肪，大概你也没办法明明白白地把它送走。此文旨在让好奇的读者们了解脂肪代谢背后的科学，希望有所帮助。"
 slug = "jian-fei-zhe-ge-shi-ba-huan-shi-de-kao-ke-xue"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/03/2019031511041.jpeg"
+featureimage = "/images/posts/jian-fei-zhe-ge-shi-ba-huan-shi-de-kao-ke-xue/cover.avif"
 +++
 
 谈到减肥，大家的第一反应可能是降低体重，稍微专业点的朋友可能知道真正的减肥是消耗脂肪，但你当真知道脂肪是啥？它打哪儿来，到哪儿去吗？
 
-![](/images/wp-content/uploads/2019/03/2019031511041.jpeg)
+![](/images/posts/jian-fei-zhe-ge-shi-ba-huan-shi-de-kao-ke-xue/cover.avif)
 
 如果不从根本上认识脂肪，大概你也没办法明明白白地把它送走。此文旨在让好奇的读者们了解脂肪代谢背后的科学，希望有所帮助。
 
 先说一些基础结论：
 
-![](/images/wp-content/uploads/2019/03/2019031511051.jpeg)
+![](/images/posts/jian-fei-zhe-ge-shi-ba-huan-shi-de-kao-ke-xue/01.avif)
 
 ## **开玩笑啦，理论看这里：**
 
@@ -29,7 +29,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/03/2019031511041
 
 5. 此外，只要蛋白质摄入足够高，你的身体就不会燃烧大量的肌肉蛋白质（即你不会失去肌肉质量，同时会减掉体内脂肪）。
 
-![](/images/wp-content/uploads/2019/03/2019031511052.jpeg)
+![](/images/posts/jian-fei-zhe-ge-shi-ba-huan-shi-de-kao-ke-xue/02.avif)
 
 ## **什么是脂肪？**
 
@@ -37,11 +37,11 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/03/2019031511041
 
 下图来自维基百科，能让我们对脂肪组织和细胞有个粗浅的认识：
 
-![](/images/wp-content/uploads/2019/03/2019031511053.jpeg)
+![](/images/posts/jian-fei-zhe-ge-shi-ba-huan-shi-de-kao-ke-xue/03.avif)
 
 白色脂肪细胞中的那些大的白色斑点（称为“脂滴”）就是令人深恶痛绝的甘油三酸酯（TAG）。脂滴随着TAG的进出生长/收缩。从化学上讲，TAG有不同的变种，但总是由甘油分子和三个脂肪分子组成，结果看起来基本上是这样的：
 
-![](/images/wp-content/uploads/2019/03/2019031511057.jpeg)
+![](/images/posts/jian-fei-zhe-ge-shi-ba-huan-shi-de-kao-ke-xue/04.avif)
 
 ## **脂肪细胞是如何生长的？**
 
@@ -53,7 +53,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/03/2019031511041
 
 如果你吃多了热量没地儿处理就会转换成甘油三酯（TAG），TAG如果太多了没地儿放，就会多一个脂肪细胞来安置它。而且令人悲伤的是，这个脂肪细胞可以来多少放多少，脂肪细胞一旦增加就再也消失不了。
 
-![](/images/wp-content/uploads/2019/03/2019031511058.jpeg)
+![](/images/posts/jian-fei-zhe-ge-shi-ba-huan-shi-de-kao-ke-xue/05.avif)
 
 所以，我们日常说的减肥，只是缩小脂肪细胞的体积——即只能做到消耗TAG，从而使脂肪细胞不要那么丰满，并不能减掉脂肪细胞的数量。
 
@@ -61,7 +61,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/03/2019031511041
 
 对于减肥而言，合理膳食和科学运动是最健康安全的减肥方式。然而很多人会把减肥、运动出汗和消耗脂肪划上等号，这是错误的。让我们先来看下脂肪的氧化代谢方程：
 
-![](/images/wp-content/uploads/2019/03/2019031511059.jpeg)
+![](/images/posts/jian-fei-zhe-ge-shi-ba-huan-shi-de-kao-ke-xue/06.avif)
 
 每消耗10kg的脂肪，我们需要吸入29kg的氧气，产生28kg的二氧化碳和11kg的水。而84%的脂肪是由呼吸排出的二氧化碳消耗的，出汗和上厕所流走的脂肪不到两成。并且，脂肪氧化需要水解，所以多多喝水并没有坏处。从而，有些类似“穿保鲜膜/发汗衣运动脱水”的减肥理论是非常不科学的，随着运动中水分的流失而带走的电解质甚至会让你抽筋/痉挛。
 
@@ -73,7 +73,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/03/2019031511041
 
 而这种运动最基础的就是慢跑了，具体时长以不低于30 min不高于70 min为宜。
 
-![](/images/wp-content/uploads/2019/03/2019031511061.jpeg)
+![](/images/posts/jian-fei-zhe-ge-shi-ba-huan-shi-de-kao-ke-xue/07.avif)
 
 不过身体是有适应性的，同一项运动若只是单一延长运动时间的话，身体适应了你的运动套路，会越难以消耗热量（越难达到燃脂心率）。因此，需要多多尝试各种运动套路，HIIT（高强度间歇性训练）是不错的选择。
 
@@ -83,4 +83,4 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/03/2019031511041
 
 没信念的事，总会想着去找最简单最有效，之后只会期待更简单、更有效。
 
-![](/images/wp-content/uploads/2019/03/2019031511062.jpeg)
+![](/images/posts/jian-fei-zhe-ge-shi-ba-huan-shi-de-kao-ke-xue/08.avif)

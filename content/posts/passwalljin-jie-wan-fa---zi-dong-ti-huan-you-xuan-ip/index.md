@@ -4,7 +4,7 @@ date = 2021-04-27T15:49:25+08:00
 draft = true
 description = "如果你是使用 Xray_bash_onekey 搭建 Nginx+ws/gRPC/xHTTP+TLS，并且套用了 Cloudflare，那么优选 IP 依然是一个绕不过去的小麻烦。本文按现在的脚本语境重新整理 PassWall 自动替换优选 IP 的思路。"
 slug = "passwalljin-jie-wan-fa---zi-dong-ti-huan-you-xuan-ip"
-featureimage = "images/xray-passwall-cf-feature.png"
+featureimage = "/images/posts/passwalljin-jie-wan-fa---zi-dong-ti-huan-you-xuan-ip/cover.avif"
 +++
 
 如果你用 [Xray_bash_onekey](https://github.com/hello-yunshu/Xray_bash_onekey) 搭了 Nginx+ws/gRPC/xHTTP+TLS，还套了 Cloudflare，那你大概已经发现了：Cloudflare（以下简称 CF）的 IP 多得像天上的星星，但哪个最快？靠眼睛是看不出来的。
@@ -13,7 +13,7 @@ featureimage = "images/xray-passwall-cf-feature.png"
 
 所以这篇教你一个更懒的办法：定时测速，自动取优选 IP，静悄悄写回 PassWall 节点配置。「你只管用，我偷偷换」那种感觉，就问你香不香～
 
-![](/images/xray-passwall-cf-feature.png)
+![](/images/posts/passwalljin-jie-wan-fa---zi-dong-ti-huan-you-xuan-ip/cover.avif)
 
 ## 为什么能这么玩
 
@@ -21,7 +21,7 @@ featureimage = "images/xray-passwall-cf-feature.png"
 
 接下来在 PassWall 里填配置的时候，**地址那栏填 CF 优选 IP**，其他信息按脚本装完后给的值填。但别傻了——SNI、Host 或者传输层域名，要填你自己的域名。地址可以是别人的 IP，但 TLS 握手和 Host 是你自己的事儿。
 
-![](/images/xray-passwall-cf-cron.png)
+![](/images/posts/passwalljin-jie-wan-fa---zi-dong-ti-huan-you-xuan-ip/01.avif)
 
 这样做完以后，客户端走的是 CF 边缘 IP，回源还是你自己的域名。对 Xray_bash_onekey 来说，现在 ws、gRPC、xHTTP 都能走这条路，不过 xHTTP 要看客户端支不支持，别一股脑全上然后跑来问我为什么不通嘛～
 

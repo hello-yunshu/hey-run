@@ -4,16 +4,16 @@ date = 2019-09-28T17:28:21+08:00
 draft = true
 description = "是的，这个系类今年又又又又出了新的作品——《光头的游戏 8.5》（又名：速度与激情：特别行动）。记得当年笔者身边很多朋友因为情怀而去抢《速度与激情 7》的首映电影票，但这部电影上映前，笔者就再也没见到当年那种情怀泛滥的“盛况”了。笔者觉得也许是他们没曾想居然又出了新作；又也许是审美疲劳，情怀和理智还"
 slug = "dian-ying-su-du-yu-ji-qing-te-bie-xing-dong-hd-xia-zai"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/09/20190928171500-1024x428.jpg"
+featureimage = "/images/posts/dian-ying-su-du-yu-ji-qing-te-bie-xing-dong-hd-xia-zai/cover.avif"
 +++
 
 是的，这个系类今年又又又又出了新的作品——《光头的游戏 8.5》（又名：速度与激情：特别行动）。记得当年笔者身边很多朋友因为情怀而去抢《速度与激情 7》的首映电影票，但这部电影上映前，笔者就再也没见到当年那种情怀泛滥的“盛况”了。笔者觉得也许是他们没曾想居然又出了新作；又也许是审美疲劳，情怀和理智还是后者重要吧。
 
-![](/images/wp-content/uploads/2019/09/20190928171500-1024x428.jpg)
+![](/images/posts/dian-ying-su-du-yu-ji-qing-te-bie-xing-dong-hd-xia-zai/cover.avif)
 
 这部片子和之前的速度与激情系类并不相似，其中没有太多的飙车戏码，较之之前的前作也少了一个光头。这些变化让这部影片的一些铁粉失望了。但是在少了这些飙车戏码的同时，影片更加注重塑造了形象，人物更加平民，更加接近于现实小人物。不知道这些变化是不是因为社会大环境改变而随之做了调整。当然整部电影给人感觉有些许“赶工”的嫌疑，许多剧情经不起推敲，很多细节诸如特效等做的相对一般。但毕竟这是一部动作片，倒也不必太过于注重细节，爽就完事了嘛。
 
-![](/images/wp-content/uploads/2019/09/201909281717-1024x576.jpg)
+![](/images/posts/dian-ying-su-du-yu-ji-qing-te-bie-xing-dong-hd-xia-zai/01.avif)
 
 导演: 大卫·雷奇
 
@@ -33,7 +33,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/09/2019092817150
 
 又名: 霍布斯与肖 / 速度与激情外传 / 玩命关头：特别行动(台) / 狂野时速：双雄联盟(港) / 速度与激情衍生片 / 速度与基情(豆友译名) / Hobbs and Shaw / The Fast and the Furious Spinoff
 
-IMDb链接: [tt6806448](<http://www.imdb.com/title/tt6806448>)
+IMDb链接: [tt6806448](http://www.imdb.com/title/tt6806448)
 
 > 简介：一个是美国外交安全局的忠诚特工、身材魁梧的执法者霍布斯（强森饰），一个是前英国军事特工精英、无法无天的恶棍肖（斯坦森饰）。在2015年的《速度与激情7》中首次对峙之后，两人不论言语还是肢体都冲突不断，一直试图打倒对方。
 > 
@@ -45,6 +45,6 @@ IMDb链接: [tt6806448](<http://www.imdb.com/title/tt6806448>)
 
 ## 资源下载
 
-磁力链接：[点击下载](<magnet:?xt=urn:btih:a59b8ef26f51f07cc35c6dc3742723ef3a69526b>)
+磁力链接：[点击下载](magnet:?xt=urn:btih:a59b8ef26f51f07cc35c6dc3742723ef3a69526b)
 
-无法下载？使用这个工具吧：[Motrix – 无广告开源的全能下载器](<https://www.idleleo.com/06/2314.html>)
+无法下载？使用这个工具吧：[Motrix – 无广告开源的全能下载器](https://www.idleleo.com/06/2314.html)

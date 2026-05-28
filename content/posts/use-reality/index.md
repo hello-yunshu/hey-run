@@ -4,7 +4,7 @@ date = 2026-05-26T01:14:52+08:00
 draft = false
 description = "说是「漏洞」有点过了，其实是 Reality 协议的特性，只是这个特性会带来使用风险。本文保留原来的玩法思路，按当前 Xray_bash_onekey 修正 serverNames 菜单和链接。"
 slug = "use-reality"
-featureimage = "images/image-oirm.png"
+featureimage = "/images/posts/use-reality/cover.avif"
 categories = ["网络技术"]
 tags = ["Xray", "Reality", "代理", "CDN"]
 +++
@@ -27,7 +27,7 @@ tags = ["Xray", "Reality", "代理", "CDN"]
 
 于是就有了下图：
 
-![](/images/image-oirm.png)
+![](/images/posts/use-reality/cover.avif)
 
 美国的 Xray ws 服务器套了 Cloudflare，你访问香港的 Reality 服务器，利用 Reality 的转发特性，香港跳转到 Cloudflare 边缘，Cloudflare 再回源到美国的 ws 服务器——一条加速链路就形成了！
 
@@ -49,11 +49,11 @@ idleleo --add-servernames
 
 就这：
 
-![](/images/image-tzer.png)
+![](/images/posts/use-reality/02.avif)
 
 创建新的 serverNames 文件：
 
-![](/images/image-cxju.png)
+![](/images/posts/use-reality/03.avif)
 
 输入你要加速的域名就好啦～是不是超简单。
 
@@ -63,7 +63,7 @@ idleleo --add-servernames
 
 地址栏填 Reality 服务器 IP，Host 栏填你上面设置的加速域名：
 
-![](/images/image-bmvn.png)
+![](/images/posts/use-reality/04.avif)
 
 是不是没听懂？没关系，这个确实有点绕。但解释起来好麻烦的……所以我懒得解释啦！！！
 

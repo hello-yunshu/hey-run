@@ -4,7 +4,7 @@ date = 2026-05-26T01:14:52+08:00
 draft = false
 description = "在搭建 Xray Reality 协议服务器这篇文章中，特别提到了 Target 域名不建议使用套用 Cloudflare 的域名。简单说，如果设置不对，Reality 的回落特性可能会让你的服务器变成别人薅流量的入口。"
 slug = "reality-xie-yi-de-feng-xian"
-featureimage = "images/image-lshd.png"
+featureimage = "/images/posts/reality-xie-yi-de-feng-xian/cover.avif"
 categories = ["网络技术"]
 tags = ["Xray", "Reality", "安全", "代理"]
 +++
@@ -23,11 +23,11 @@ Xray 开发者不是不知道这个。但他们说了，为了更好的伪装，
 
 我没有配置任何防护，Target 随手填了个套 Cloudflare 的域名。猜猜几天后发生了什么？
 
-![](/images/image-lshd.png)
+![](/images/posts/reality-xie-yi-de-feng-xian/cover.avif)
 
 上面这个 IP，**每秒几百次请求**。下面这张图里是我封掉的 IP 总数——几百个，就短短几天。几百个人在薅我服务器的羊毛！！！＼(º□ºl|l)/
 
-![](/images/错误的ip.png)
+![](/images/posts/reality-xie-yi-de-feng-xian/05.avif)
 
 所以千万千万别小看互联网捣蛋鬼的力量。设不对就是这种下场。
 
@@ -53,7 +53,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/hello-yunshu/Xray_bash_oneke
 
 安装过程中会看到这个提示：
 
-![](/images/image-yhkf.png)
+![](/images/posts/reality-xie-yi-de-feng-xian/02.avif)
 
 回车就行。现在 Nginx 有预编译好的包，安装飞快，别担心～
 
@@ -73,7 +73,7 @@ idleleo --add-servernames
 
 装完后强烈建议再装 Fail2ban。有些 IP 会像苍蝇一样反复尝试连接你的服务器，在 Nginx 日志里刷一堆错误。Fail2ban 就是用来收拾这种人的。
 
-![](/images/image-zqbs.png)
+![](/images/posts/reality-xie-yi-de-feng-xian/03.avif)
 
 在菜单里：
 
@@ -89,7 +89,7 @@ idleleo --set-fail2ban
 
 规则我都写好啦，自动部署，不用谢～
 
-![](/images/image-tcwu.png)
+![](/images/posts/reality-xie-yi-de-feng-xian/04.avif)
 
 过段时间就能看到被封掉的 IP 列表了。
 

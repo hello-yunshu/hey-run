@@ -4,30 +4,30 @@ date = 2019-10-21T19:39:58+08:00
 draft = true
 description = "说实话，笔者是在接触了这部电影才知道之前TV版的。笔者在前段时间补完了8年前的“新番”——罗小黑战记。笔者一开始以为这部动画是战斗番，万万没想到，这部作品居然是治愈番。在TV版中，作者毫不避讳的向宫崎骏致敬，诚然，对于TV版而言，各个方面确实很“宫崎骏”。整个动画有点类似于宫崎骏版的中国故事。 对于"
 slug = "dian-ying-luo-xiao-hei-zhan-ji-hd-xia-zai"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/10/2019102211920.jpg"
+featureimage = "/images/posts/dian-ying-luo-xiao-hei-zhan-ji-hd-xia-zai/cover.avif"
 +++
 
 说实话，笔者是在接触了这部电影才知道之前TV版的。笔者在前段时间补完了8年前的“新番”——罗小黑战记。笔者一开始以为这部动画是战斗番，万万没想到，这部作品居然是治愈番。在TV版中，作者毫不避讳的向宫崎骏致敬，诚然，对于TV版而言，各个方面确实很“宫崎骏”。整个动画有点类似于宫崎骏版的中国故事。
 
 对于一定的模仿宫崎骏，笔者是完全可以接受的。毕竟笔者是一个绝对的宫崎骏粉丝（笔者曾经把《千与千寻》这部作品看了不下10遍。。）。在8年前，有如此高水平的TV动画，相信当时很多看了此番的国人算是看到了国漫的希望。
 
-![](/images/wp-content/uploads/2019/10/2019102211920.jpg)
+![](/images/posts/dian-ying-luo-xiao-hei-zhan-ji-hd-xia-zai/cover.avif)
 
 回到这部《罗小黑战记》电影，笔者本想去电影院贡献自己的一张票，可惜，笔者最终还是没能下决心去看一看。原因有很多，一方面，在它之前正好有票房大卖的《哪吒之魔童降世》，另一方面，口碑并没有爆发让笔者有些犹豫。无论如何，现在终于可以看完了这部作品。笔者就来谈一谈自己的感受。
 
 笔者认为，这部作品可以说是一部姗姗来迟的作品。不能否认，整部作品的完成度已经达到了很高的水平。个人认为从整体画面的技术角度看已经完全可以与动漫产业发达的日本一战高下。但是很可惜，成也萧何，败也萧何，这部作品最大的缺点恰恰是对宫崎骏的模仿。这部作品在正片开始的第一声音乐响起时，笔者差点以为又开始看《千与千寻》。说真的，实在是太像了。在之后整部作品的配乐中，均有宫崎骏作品的影子。在角色形象设计上，也不得不吐槽，还是太“宫崎骏”，片中的主角之一“无限”让笔者无限想到白龙。。
 
-![](/images/wp-content/uploads/2019/10/2019102211919-1024x553.jpg)
+![](/images/posts/dian-ying-luo-xiao-hei-zhan-ji-hd-xia-zai/01.avif)
 
 同样还是在角色设计上，笔者不得不再吐槽，这部作品里面的角色与角色之间也很像，不同角色外形虽是各有差异，但性格、说话方式等均有种Ctrl C，Ctrl V的感觉。笔者觉得这可能是导演对生活的积累不够，或者为了维系整体动画风格反而弄巧成拙。
 
-![](/images/wp-content/uploads/2019/10/2019102211921-1024x400.jpg)
+![](/images/posts/dian-ying-luo-xiao-hei-zhan-ji-hd-xia-zai/02.avif)
 
 在《罗小黑战记》出世之前，有《大圣归来》、《白蛇：缘起》、以及《哪吒之魔童降世》等相当高水平的国产动画作品。这些作品的特点是均为3D动画作品。这些作品为何不是2D动画呢？原因很简单，2D动画水平最高的是日本，中国在2D动画的竞争力早在90年代后就失去了。因此中国近年来在3D动画上奋起直追，最终在近两年开花结果。而2D动画却一直是国人心中的痛。
 
 也正是这原因，对于现在3D动画而言，除了追求更精致、真实的画面，更多开始追求更加完善的体验。比如就在《罗小黑战记》上映前的《哪吒之魔童降世》，其完成度之高另笔者觉得简直不可思议。当然《罗小黑战记》虽然有着笔者上述的缺点，但相信读者你看完后也一定能感受到满屏幕国产2D动画的希望。总有一天，国产动画会找到它自己在国际舞台的地位，而这一天会随着国内越来越多年轻优秀导演的出现变得越来越近。
 
-![](/images/wp-content/uploads/2019/10/2019102211922-1024x429.jpg)
+![](/images/posts/dian-ying-luo-xiao-hei-zhan-ji-hd-xia-zai/03.avif)
 
 导演/编剧 : 木头
 
@@ -45,12 +45,12 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/10/2019102211920
 
 又名: 罗小黑战记大电影 / The Legend of Hei
 
-IMDb链接: [tt10734928](<https://www.imdb.com/title/tt10734928>)
+IMDb链接: [tt10734928](https://www.imdb.com/title/tt10734928)
 
 > 简介：在熙攘的人类世界里，很多妖精隐匿其中，他们与人类相安无事地生活着。猫妖罗小黑因为家园被破坏，开始了它的流浪之旅。这场旅途中惺惺相惜的妖精同类与和谐包容的人类伙伴相继出现，让小黑陷入了两难抉择，究竟何处才是真正的归属？
 
 ## 资源下载
 
-磁力链接：[点击下载](<magnet:?xt=urn:btih:095c689e3a70567d2f508d8ceeb98f0ddae7e583&dn=%e9%98%b3%e5%85%89%e7%94%b5%e5%bd%b1www.ygdy8.com.%e7%bd%97%e5%b0%8f%e9%bb%91%e6%88%98%e8%ae%b0.HD.1080p.%e5%9b%bd%e8%af%ad%e4%b8%ad%e5%ad%97.mp4&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&tr=udp%3a%2f%2fexplodie.org%3a6969%2fannounce&tr=udp%3a%2f%2fexodus.desync.com%3a6969%2fannounce>)
+磁力链接：[点击下载](magnet:?xt=urn:btih:095c689e3a70567d2f508d8ceeb98f0ddae7e583&dn=%e9%98%b3%e5%85%89%e7%94%b5%e5%bd%b1www.ygdy8.com.%e7%bd%97%e5%b0%8f%e9%bb%91%e6%88%98%e8%ae%b0.HD.1080p.%e5%9b%bd%e8%af%ad%e4%b8%ad%e5%ad%97.mp4&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&tr=udp%3a%2f%2fexplodie.org%3a6969%2fannounce&tr=udp%3a%2f%2fexodus.desync.com%3a6969%2fannounce)
 
-无法下载？使用这个工具吧：[Motrix – 无广告开源的全能下载器](<https://www.idleleo.com/06/2314.html>)
+无法下载？使用这个工具吧：[Motrix – 无广告开源的全能下载器](https://www.idleleo.com/06/2314.html)

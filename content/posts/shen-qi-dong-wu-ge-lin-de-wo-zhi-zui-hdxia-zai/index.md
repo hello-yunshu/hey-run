@@ -4,10 +4,10 @@ date = 2018-12-31T17:07:24+08:00
 draft = true
 description = "译　名：神奇动物：格林德沃之罪 / Fantastic Beasts： The Crimes of Grindelwald / 怪兽与葛林戴华德之罪(港) / 怪兽与葛林戴华德的罪行(台) / 神奇动物2 / 神奇动物在哪里2 / 神奇动物在哪里2：格林德沃之罪"
 slug = "shen-qi-dong-wu-ge-lin-de-wo-zhi-zui-hdxia-zai"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2018/12/20181231170433-691x1024.jpg"
+featureimage = "/images/posts/shen-qi-dong-wu-ge-lin-de-wo-zhi-zui-hdxia-zai/cover.avif"
 +++
 
-![](/images/wp-content/uploads/2018/12/20181231170433-691x1024.jpg)
+![](/images/posts/shen-qi-dong-wu-ge-lin-de-wo-zhi-zui-hdxia-zai/cover.avif)
 
 译 名：神奇动物：格林德沃之罪 / Fantastic Beasts： The Crimes of Grindelwald / 怪兽与葛林戴华德之罪(港) / 怪兽与葛林戴华德的罪行(台) / 神奇动物2 / 神奇动物在哪里2 / 神奇动物在哪里2：格林德沃之罪
 

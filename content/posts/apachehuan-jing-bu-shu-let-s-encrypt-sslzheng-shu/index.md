@@ -4,7 +4,7 @@ date = 2017-11-23T22:32:27+08:00
 draft = true
 description = "在关于：启用Include conf/extra/httpd-ssl.conf出错的文章中，我提到了关于Let's Encrypt证书的部署问题。Let's Encrypt是不错的证书，把它用于http升级为https是不错的选择。 经过我的研究发现，Let's Encrypt的证书更加适合Linu"
 slug = "apachehuan-jing-bu-shu-let-s-encrypt-sslzheng-shu"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2017/11/20171022223703.jpg"
+featureimage = "/images/posts/apachehuan-jing-bu-shu-let-s-encrypt-sslzheng-shu/cover.avif"
 +++
 
 在关于：启用Include conf/extra/httpd-ssl.conf出错的文章中，我提到了关于Let's Encrypt证书的部署问题。Let's Encrypt是不错的证书，把它用于http升级为https是不错的选择。
@@ -19,7 +19,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2017/11/2017102222370
 
 之后，如同我：关于：启用Include conf/extra/httpd-ssl.conf出错的简单解决方法 这篇文章一般，做好前期的准备工作，及创造一个vhostssl.conf文件，并且将其连接到httpd.conf 文件中。
 
-![](/images/wp-content/uploads/2017/11/20171022223703.jpg)
+![](/images/posts/apachehuan-jing-bu-shu-let-s-encrypt-sslzheng-shu/cover.avif)
 
 其他操作完全类似此篇文章，只是vhostssl.conf中的代码改成如下：
 [code] 
@@ -50,6 +50,6 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2017/11/2017102222370
     SSLCertificateChainFile "C:********.pem"
 [/code]
 
-上述代码很明显，[www.idleleo.com](<http://www.idleleo.com>)需要修改，以及证书的地址需要修改。上述代码考虑到安全问题只允许使用TLS1.2与TLS1.3。以上方法肯定是行得通的，如果有问题，请仔细检查各个环节。
+上述代码很明显，[www.idleleo.com](http://www.idleleo.com)需要修改，以及证书的地址需要修改。上述代码考虑到安全问题只允许使用TLS1.2与TLS1.3。以上方法肯定是行得通的，如果有问题，请仔细检查各个环节。
 
 实际上，上述代码不仅仅是适用于Let's Encrypt证书，现在你能得到的各个证书应该均支持，欢迎尝试。

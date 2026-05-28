@@ -4,12 +4,12 @@ date = 2020-04-13T15:37:07+08:00
 draft = true
 description = "最近笔者在折腾MySQL的时候出现些问题，在备份结构与数据时，导出简单轻松没什么问题，但将导出的数据再导入时，会出现如下表无法创建的情况。 问题复现"
 slug = "mysqldao-ru-shu-ju-chu-cuo-de-jie-jue-ban-fa"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/04/20200413131038.jpg"
+featureimage = "/images/posts/mysqldao-ru-shu-ju-chu-cuo-de-jie-jue-ban-fa/cover.avif"
 +++
 
 最近笔者在折腾MySQL的时候出现些问题，在备份结构与数据时，导出简单轻松没什么问题，但将导出的数据再导入时，会出现如下表无法创建的情况。
 
-![](/images/wp-content/uploads/2020/04/20200413131038.jpg)
+![](/images/posts/mysqldao-ru-shu-ju-chu-cuo-de-jie-jue-ban-fa/cover.avif)
 
 ## 问题复现
 
@@ -19,7 +19,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/04/2020041313103
 
 不过好在笔者发现之前在导出数据时均是选择的是数据+结构，而笔者在仅备份数据时却没有遇到这样的问题。于是，笔者就懂了，笔者打开了导出的数据，仔细研究了一下出错的表的的特征，笔者发现了下面一些不正常的数据：
 
-![](/images/wp-content/uploads/2020/04/20200413130729.jpg)
+![](/images/posts/mysqldao-ru-shu-ju-chu-cuo-de-jie-jue-ban-fa/01.avif)
 
 如果对MySQL有一定研究的小伙伴一定会想到原因，没错sql_mode的严格模式。是这么回事，如果设置了严格模式，MySQL就无法插入0值的日期和时间，也就是NO_ZERO_IN_DATE、NO_ZERO_DATE产生的效果，由于导出的数据含有值为0的日期和时间，所以自然也就没法成功导入了。
 

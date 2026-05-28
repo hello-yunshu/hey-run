@@ -27,7 +27,7 @@ featureimage = "https://i.loli.net/2021/01/19/HLtAIpfoubZxGNR.gif"
 
 由于笔者从小接触的都是国外的纪录片，因此被国外大海的壮阔美丽深深打动。但是！这一次，由于《蔚蓝之境》纪录片的横空出世，让笔者第一次感受到祖国大海的魅力。是的，那些你我魂牵梦绕的美景就发生在身边，就发生在我们脚下的这片土地上。
 
-![](/images/wp-content/uploads/2020/04/202004022046.jpg)
+![](/images/posts/guo-chan-gao-fen-ji-lu-pian-tui-jian---wei-lan-zhi-jing-hd-xia-zai-guan-kan/01.avif)
 
 导演: 李勇 / 唐欣荣 / 姜蕾 / 谢宇斌 / 刘佳 / 陈红 / 张晗
 

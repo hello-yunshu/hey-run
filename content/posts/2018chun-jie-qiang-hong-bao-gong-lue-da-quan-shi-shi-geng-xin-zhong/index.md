@@ -9,7 +9,7 @@ featureimage = "img/ripples.svg"
 
 #### paniy的个人网站
 
-**活动时间：2月13日24:00-2月25日24:00** **活动方式：通过₱Y币免费获得相关实物或虚拟物品奖励。** **参与方式详见：**[新春活动！](<https://www.idleleo.com/02/651.html>)  
+**活动时间：2月13日24:00-2月25日24:00** **活动方式：通过₱Y币免费获得相关实物或虚拟物品奖励。** **参与方式详见：**[新春活动！](https://www.idleleo.com/02/651.html)  
 
 #### 支付宝
 
@@ -23,7 +23,7 @@ featureimage = "img/ripples.svg"
 
 ### 京东App
 
-活动时间：2月11日-2月15日每日 活动内容：京东新年福卡活动，点福卡抢2018元现金红包，另外有机会获得支付红包、免邮券等！ 活动入口：[点此直达](<https://union-click.jd.com/jdc?d=qsoyJH>)  
+活动时间：2月11日-2月15日每日 活动内容：京东新年福卡活动，点福卡抢2018元现金红包，另外有机会获得支付红包、免邮券等！ 活动入口：[点此直达](https://union-click.jd.com/jdc?d=qsoyJH)  
 
 ### 京东微信端
 
@@ -39,7 +39,7 @@ featureimage = "img/ripples.svg"
 
 #### 中国银联App
 
-活动时间：即日起-3月2日的每天 活动内容：银联云闪付APP新年送开门红包，每天可领最高2018元现金红包，所领红包可累计叠加使用，每天可参与。 活动入口：[点此直达](<https://wallet.95516.com/s/wl/webV2/activity/springFestival/invite/html/shareIndex.html?r=MTg2MDUzMjU1NTc%3D&code=newYearActivity&channel=3>)  
+活动时间：即日起-3月2日的每天 活动内容：银联云闪付APP新年送开门红包，每天可领最高2018元现金红包，所领红包可累计叠加使用，每天可参与。 活动入口：[点此直达](https://wallet.95516.com/s/wl/webV2/activity/springFestival/invite/html/shareIndex.html?r=MTg2MDUzMjU1NTc%3D&code=newYearActivity&channel=3)  
 
 #### 手机QQ —“走运红包”
 

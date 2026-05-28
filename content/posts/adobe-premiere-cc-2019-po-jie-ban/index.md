@@ -4,14 +4,14 @@ date = 2018-12-07T14:08:49+08:00
 draft = true
 description = "Adobe Premiere是一款常用的视频编辑软件，由Adobe公司推出。 Premiere Pro CC 2019下载与安装 百度云下载地址及密钥登陆即可获得。 [login] 链接：https://pan.baidu.com/s/1IBGLqFYJAYXKeS0h_vQ8XQ 提取码：dkam"
 slug = "adobe-premiere-cc-2019-po-jie-ban"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2018/12/pr-cover-300x240.jpg"
+featureimage = "/images/posts/adobe-premiere-cc-2019-po-jie-ban/cover.avif"
 +++
 
-[![](/images/wp-content/uploads/2018/12/pr-cover-300x240.jpg)](</images/wp-content/uploads/2018/12/pr-cover.jpg>) Adobe Premiere是一款常用的视频编辑软件，由Adobe公司推出。 
+[![](/images/posts/adobe-premiere-cc-2019-po-jie-ban/cover.avif)](/images/posts/adobe-premiere-cc-2019-po-jie-ban/03.avif) Adobe Premiere是一款常用的视频编辑软件，由Adobe公司推出。 
 
 ## **Premiere Pro CC 2019下载与安装**
 
-百度云下载地址及密钥登陆即可获得。 [login] 链接：https://pan.baidu.com/s/1IBGLqFYJAYXKeS0h_vQ8XQ 提取码：dkam [/login] 解压安装包，找到Set-up.exe安装软件。**断网安装！断网安装！断网安装！** 软件初步安装完成之后，将安装包文件夹中的 Registration.dll 文件复制到Pr CC 2019软件安装文件夹，并选择替换文件。 [![](/images/wp-content/uploads/2018/12/pr-set2-300x107.png)](</images/wp-content/uploads/2018/12/pr-set2.png>) 打开软件，即可正常使用。 Premiere CC 2019打开后显示的正常界面就是黑屏，之后创建项目，就会进入到工作界面啦。 [![](/images/wp-content/uploads/2018/12/pr-set3-1-300x200.jpg)](</images/wp-content/uploads/2018/12/pr-set3-1.jpg>)
+百度云下载地址及密钥登陆即可获得。 [login] 链接：https://pan.baidu.com/s/1IBGLqFYJAYXKeS0h_vQ8XQ 提取码：dkam [/login] 解压安装包，找到Set-up.exe安装软件。**断网安装！断网安装！断网安装！** 软件初步安装完成之后，将安装包文件夹中的 Registration.dll 文件复制到Pr CC 2019软件安装文件夹，并选择替换文件。 [![](/images/posts/adobe-premiere-cc-2019-po-jie-ban/01.avif)](/images/posts/adobe-premiere-cc-2019-po-jie-ban/04.png) 打开软件，即可正常使用。 Premiere CC 2019打开后显示的正常界面就是黑屏，之后创建项目，就会进入到工作界面啦。 [![](/images/posts/adobe-premiere-cc-2019-po-jie-ban/02.avif)](/images/posts/adobe-premiere-cc-2019-po-jie-ban/02.avif)
 
 ## **Premiere CC 2019的全新功能**
 

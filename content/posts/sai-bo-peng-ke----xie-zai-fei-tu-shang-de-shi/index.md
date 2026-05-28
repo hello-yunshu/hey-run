@@ -4,7 +4,7 @@ date = 2019-04-14T02:53:04+08:00
 draft = true
 description = "公元2019年，人类站在人工智能与人类智慧的平衡点上面临抉择。 三月份上映的「爱，死亡，和机器人」（Love，Death，and Robot），18集动画小短片。 凭借诗选剧的形式，夺人眼球的画面和反转的结尾，不出意料受到了全网吹捧，也再一次将赛博朋克文化推向大众面前。"
 slug = "sai-bo-peng-ke----xie-zai-fei-tu-shang-de-shi"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/04/20190413014258-1024x511.jpg"
+featureimage = "/images/posts/sai-bo-peng-ke----xie-zai-fei-tu-shang-de-shi/cover.avif"
 +++
 
 公元2019年，人类站在人工智能与人类智慧的平衡点上面临抉择。
@@ -12,7 +12,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/04/2019041301425
 三月份上映的「爱，死亡，和机器人」（Love，Death，and Robot），18集动画小短片。  
 凭借诗选剧的形式，夺人眼球的画面和反转的结尾，不出意料受到了全网吹捧，也再一次将赛博朋克文化推向大众面前。
 
-![](/images/wp-content/uploads/2019/04/20190413014258-1024x511.jpg) 03集 无间证 
+![](/images/posts/sai-bo-peng-ke----xie-zai-fei-tu-shang-de-shi/cover.avif) 03集 无间证 
 
 确认过眼神，是我喜欢的风格。
 
@@ -41,14 +41,14 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/04/2019041301425
 观众后知后觉给予了影片应有的肯定。  
 漫天飞行的宇宙飞船，光怪陆离的电子屏幕，视野在夜色中扑朔迷离，声音淹没在雨声之中。拉进镜头是冰冷的钢铁水泥，构筑起孤独的堡垒，缺乏人烟的冷漠。
 
-![](/images/wp-content/uploads/2019/04/20190413014019-1024x576.jpg) 似乎闻得到铁锈 
+![](/images/posts/sai-bo-peng-ke----xie-zai-fei-tu-shang-de-shi/01.avif) 似乎闻得到铁锈 
 
 影片中，人类创造了复制人，银翼杀手则是追杀需要回收的复制人。作为银翼杀手的瑞克（Rick）爱上了复制人瑞秋（Racheal）。  
 那么，当复制人拥有人类的情感时，我们应该怎么办呢。  
 说来奇怪，人类以自己为模板，力图创造与自己无所差别的仿生人，却又不肯失去自己作为人类的权威。  
 就像女娲补天，上帝的伊甸园一般，造物者是不尽荣光的。  
 
-![](/images/wp-content/uploads/2019/04/20190413011300-1-1024x652.jpg)美丽的复制人瑞秋（Rachael） 
+![](/images/posts/sai-bo-peng-ke----xie-zai-fei-tu-shang-de-shi/02.avif)美丽的复制人瑞秋（Rachael） 
 
 文艺科幻片合胃口的话，续作「银翼杀手2049」也值得一看。  
 虽然从科幻的角度失去了新意，可能近二十年世界发展太快，有点限制住了，不过文艺腔更足，立意上也未止步不前。  
@@ -69,7 +69,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/04/2019041301425
 「黑客帝国」三部曲，即便放在20年后的今天，依然脍炙人口，科幻理念对今天仍然有所启迪。  
 除去对计算机语言的精妙诠释，蕴含东方禅学、宗教、哲学，口感丰富，妙不可言。
 
-![](/images/wp-content/uploads/2019/04/20190413040359.jpg) 尼奥（NEO）你怎么这么好看 
+![](/images/posts/sai-bo-peng-ke----xie-zai-fei-tu-shang-de-shi/03.avif) 尼奥（NEO）你怎么这么好看 
 
 「黑客帝国」致敬1984年的赛博朋克小说「神经漫游者」，故事支撑点在于人脑与计算机虚拟世界的无缝对接。  
 （这本小说中文版是江苏文艺出版社，翻译没有味道，有能力者建议直接读原版的了）
@@ -100,7 +100,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/04/2019041301425
 英剧「黑镜」，大家不陌生了。  
 前三季也有许多赛博朋克的元素，一度封神。
 
-![](/images/wp-content/uploads/2019/04/20190414004158-1024x683.jpg) S1E2 一千五百万的价值 
+![](/images/posts/sai-bo-peng-ke----xie-zai-fei-tu-shang-de-shi/04.avif) S1E2 一千五百万的价值 
 
 当然第四季开始就走远了。  
 乍看黑科技拍案称绝，多看也像是无病呻吟。  

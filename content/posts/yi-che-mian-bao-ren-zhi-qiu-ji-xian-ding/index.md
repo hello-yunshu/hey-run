@@ -4,10 +4,10 @@ date = 2018-11-25T23:15:46+08:00
 draft = true
 description = "/// 银"
 slug = "yi-che-mian-bao-ren-zhi-qiu-ji-xian-ding"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2018/11/640-1024x768.jpg"
+featureimage = "/images/posts/yi-che-mian-bao-ren-zhi-qiu-ji-xian-ding/cover.avif"
 +++
 
-[![](/images/wp-content/uploads/2018/11/640-1024x768.jpg)](</images/wp-content/uploads/2018/11/640.jpg>)
+[![](/images/posts/yi-che-mian-bao-ren-zhi-qiu-ji-xian-ding/cover.avif)](/images/posts/yi-che-mian-bao-ren-zhi-qiu-ji-xian-ding/03.avif)
 
 ///
 
@@ -57,7 +57,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2018/11/640-1024x768.
 
 * * *
 
-  [![](/images/wp-content/uploads/2018/11/微信图片_20181125233921-300x211.jpg)](</images/wp-content/uploads/2018/11/微信图片_20181125233921.jpg>)  
+  [![](/images/posts/yi-che-mian-bao-ren-zhi-qiu-ji-xian-ding/01.avif)](/images/posts/yi-che-mian-bao-ren-zhi-qiu-ji-xian-ding/01.avif)  
 
 > 生如夏花之绚烂，死若秋叶之静美。
 > 
@@ -83,4 +83,4 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2018/11/640-1024x768.
 
 「为赋新词强说愁」，也算是幸福了。
 
-    来自 公众号：Renart俱乐部   [![](/images/wp-content/uploads/2018/11/wenmo222-300x143.jpg)](</images/wp-content/uploads/2018/11/wenmo222.jpg>)
+    来自 公众号：Renart俱乐部   [![](/images/posts/yi-che-mian-bao-ren-zhi-qiu-ji-xian-ding/02.avif)](/images/posts/yi-che-mian-bao-ren-zhi-qiu-ji-xian-ding/02.avif)

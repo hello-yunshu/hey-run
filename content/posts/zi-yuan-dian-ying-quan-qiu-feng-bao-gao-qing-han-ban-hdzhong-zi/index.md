@@ -4,12 +4,12 @@ date = 2017-11-22T16:53:38+08:00
 draft = true
 description = "电影介绍 《全球风暴》是由美国华纳兄弟影片公司出品的科幻灾难片，由迪安·德夫林执导，杰拉德·巴特勒、吉姆·斯特吉斯、艾比·考尼什、吴彦祖、艾德·哈里斯联合主演。该片讲述了发生在未来的全球性气象灾难。人类开发气象卫星网络以控制灾害天气，但被电脑病毒控制的卫星却成为杀伤力巨大的攻击者，一场空前浩劫席卷世"
 slug = "zi-yuan-dian-ying-quan-qiu-feng-bao-gao-qing-han-ban-hdzhong-zi"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2017/11/7efa749fly1flqojoj5skj20u01921kz-200x300.jpg"
+featureimage = "/images/posts/zi-yuan-dian-ying-quan-qiu-feng-bao-gao-qing-han-ban-hdzhong-zi/cover.avif"
 +++
 
 ### 电影介绍
 
-《全球风暴》是由美国华纳兄弟影片公司出品的科幻灾难片，由迪安·德夫林执导，杰拉德·巴特勒、吉姆·斯特吉斯、艾比·考尼什、吴彦祖、艾德·哈里斯联合主演。该片讲述了发生在未来的全球性气象灾难。人类开发气象卫星网络以控制灾害天气，但被电脑病毒控制的卫星却成为杀伤力巨大的攻击者，一场空前浩劫席卷世界。 电影海报： ![](/images/wp-content/uploads/2017/11/7efa749fly1flqojoj5skj20u01921kz-200x300.jpg)  
+《全球风暴》是由美国华纳兄弟影片公司出品的科幻灾难片，由迪安·德夫林执导，杰拉德·巴特勒、吉姆·斯特吉斯、艾比·考尼什、吴彦祖、艾德·哈里斯联合主演。该片讲述了发生在未来的全球性气象灾难。人类开发气象卫星网络以控制灾害天气，但被电脑病毒控制的卫星却成为杀伤力巨大的攻击者，一场空前浩劫席卷世界。 电影海报： ![](/images/posts/zi-yuan-dian-ying-quan-qiu-feng-bao-gao-qing-han-ban-hdzhong-zi/cover.avif)  
 
 ### 电影评价
 

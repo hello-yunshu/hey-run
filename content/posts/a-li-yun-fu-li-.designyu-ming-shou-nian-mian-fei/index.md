@@ -4,7 +4,7 @@ date = 2019-02-15T22:24:53+08:00
 draft = true
 description = "近期阿里云结合design注册局一起举办了这么一个活动。 域名是首年免费，此域名首次注册价格为75元。这次免费注册还是很良心的。但是续费价格达到了108元。较之其他域名，续费价格略贵。但是短期需要的童鞋还是可以尝试一下的。 时间有限，此次活动时间其实被延长了。总之不会吃亏上当，赶紧去注册吧~"
 slug = "a-li-yun-fu-li-.designyu-ming-shou-nian-mian-fei"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/02/20190215221442-1024x443.jpg"
+featureimage = "/images/posts/a-li-yun-fu-li-.designyu-ming-shou-nian-mian-fei/cover.avif"
 +++
 
 近期阿里云结合design注册局一起举办了这么一个活动。
@@ -13,7 +13,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/02/2019021522144
 
 时间有限，此次活动时间其实被延长了。总之不会吃亏上当，赶紧去注册吧~
 
-![](/images/wp-content/uploads/2019/02/20190215221442-1024x443.jpg)
+![](/images/posts/a-li-yun-fu-li-.designyu-ming-shou-nian-mian-fei/cover.avif)
 
 ## 活动地址
 

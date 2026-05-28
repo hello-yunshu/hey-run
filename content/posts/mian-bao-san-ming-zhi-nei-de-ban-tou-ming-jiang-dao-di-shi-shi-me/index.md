@@ -4,21 +4,21 @@ date = 2019-04-07T19:18:54+08:00
 draft = true
 description = "这个问题，笔者我真的苦恼了好久好久。 记得在笔者曾经读书的时候，最喜欢吃的就是有这种半透明酱料的三明治。这种半透明的酱广泛应用在了很多的面包蛋糕，如肉松小贝、切片面包、蛋糕卷等等。它不像沙拉酱一样有腌黄瓜的特殊味道，又没有不会像果酱一样甜的发腻。看上去，其貌不扬，很便宜的样子。其实也是很便宜的样子。"
 slug = "mian-bao-san-ming-zhi-nei-de-ban-tou-ming-jiang-dao-di-shi-shi-me"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/04/20190407184718.jpg"
+featureimage = "/images/posts/mian-bao-san-ming-zhi-nei-de-ban-tou-ming-jiang-dao-di-shi-shi-me/cover.avif"
 +++
 
 这个问题，笔者我真的苦恼了好久好久。
 
 记得在笔者曾经读书的时候，最喜欢吃的就是有这种半透明酱料的三明治。这种半透明的酱广泛应用在了很多的面包蛋糕，如肉松小贝、切片面包、蛋糕卷等等。它不像沙拉酱一样有腌黄瓜的特殊味道，又没有不会像果酱一样甜的发腻。看上去，其貌不扬，很便宜的样子。其实也是很便宜的样子。但是，就是很好吃。
 
-![](/images/wp-content/uploads/2019/04/20190407184718.jpg)
+![](/images/posts/mian-bao-san-ming-zhi-nei-de-ban-tou-ming-jiang-dao-di-shi-shi-me/cover.avif)
 
 反正就是很好吃，笔者我找了好久这究竟是什么酱。找了半天，终于看到了一个很有可能是正确的答案——蛋白酱。
 
-![](/images/wp-content/uploads/2019/04/huizhuanderousongxiaobei.gif)
+![](/images/posts/mian-bao-san-ming-zhi-nei-de-ban-tou-ming-jiang-dao-di-shi-shi-me/01.gif)
 
 那究竟蛋白酱是什么？这就是个神奇的问题了。如果你在某宝等购物网站搜索这个蛋白酱，你会发现你压根找不到这样的酱料。为什么呢？因为这个酱做起来实在简单，简单到一般的烘焙店都是自制的。
 
 既然制作简单，那能不能自己做呢？当然可以啦！以下便是笔者在网上找到的教程。有空笔者自己也试试。
 
-![](/images/wp-content/uploads/2019/04/201904071823.jpg)
+![](/images/posts/mian-bao-san-ming-zhi-nei-de-ban-tou-ming-jiang-dao-di-shi-shi-me/02.avif)

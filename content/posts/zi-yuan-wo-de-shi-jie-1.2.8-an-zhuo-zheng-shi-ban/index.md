@@ -4,10 +4,10 @@ date = 2018-01-01T17:03:11+08:00
 draft = true
 description = "更新日志 bug修复： 崩溃/性能 修复一个UI /游戏内存储与服务器上的不兼容问题 服务器更新日志 v0.4 版本更新： -版本升级为1.2.8 内容更新 -站长我正在启用新的方块如：末地棒等。 资源取自互联网，由idleleo.com整理 资源下载 注：站"
 slug = "zi-yuan-wo-de-shi-jie-1.2.8-an-zhuo-zheng-shi-ban"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2018/01/20180101165941-1024x576.jpg"
+featureimage = "/images/posts/zi-yuan-wo-de-shi-jie-1.2.8-an-zhuo-zheng-shi-ban/cover.avif"
 +++
 
-[![](/images/wp-content/uploads/2018/01/20180101165941-1024x576.jpg)](</images/wp-content/uploads/2018/01/20180101165941.jpg>)  
+[![](/images/posts/zi-yuan-wo-de-shi-jie-1.2.8-an-zhuo-zheng-shi-ban/cover.avif)](/images/posts/zi-yuan-wo-de-shi-jie-1.2.8-an-zhuo-zheng-shi-ban/cover.avif)  
 
 ### 更新日志
 

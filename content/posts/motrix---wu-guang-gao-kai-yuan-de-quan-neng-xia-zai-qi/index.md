@@ -4,28 +4,28 @@ date = 2019-06-10T00:43:26+08:00
 draft = true
 description = "之前笔者介绍了一款老牌下载神器： Internet Download Manager (IDM) 破解版下载。现在笔者来介绍另一款适用于HTTP、FTP、BT、磁力链接以及下载百度网盘等资源的下载工具——Motrix。"
 slug = "motrix---wu-guang-gao-kai-yuan-de-quan-neng-xia-zai-qi"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/06/Motrix-1.png"
+featureimage = "/images/posts/motrix---wu-guang-gao-kai-yuan-de-quan-neng-xia-zai-qi/cover.avif"
 +++
 
-![](/images/wp-content/uploads/2019/06/Motrix-1.png)
+![](/images/posts/motrix---wu-guang-gao-kai-yuan-de-quan-neng-xia-zai-qi/cover.avif)
 
-之前笔者介绍了一款老牌下载神器： [Internet Download Manager (IDM) 破解版下载](<https://www.idleleo.com/05/2060.html>)。现在笔者来介绍另一款适用于HTTP、FTP、BT、磁力链接以及下载百度网盘等资源的下载工具——Motrix。
+之前笔者介绍了一款老牌下载神器： [Internet Download Manager (IDM) 破解版下载](https://www.idleleo.com/05/2060.html)。现在笔者来介绍另一款适用于HTTP、FTP、BT、磁力链接以及下载百度网盘等资源的下载工具——Motrix。
 
 ## Motrix介绍
 
 Motrix界面设计的十分简约，对于追求简单，方便的用户是不可多得的软件。同时，Motrix支持多平台，Windows、macOS、Linux均支持。下载速度方面，经过笔者实测，以磁力链接为例，由于使用新技术，Motrix同比比特彗星、μTorrent等下载速度明显更快。尤其对于冷门资源，Motrix的下载速度甚至快于百度网盘的离线速度。
 
-![](/images/wp-content/uploads/2019/06/20190609213838.jpg)
+![](/images/posts/motrix---wu-guang-gao-kai-yuan-de-quan-neng-xia-zai-qi/01.avif)
 
-Motrix同时也支持下载百度网盘文件。下载方式通过安装Chrome插件实现。笔者在之前的文章：[百度网盘 不限速下载工具 (多)](<https://www.idleleo.com/03/1545.html>)中提过破解百度网盘限速的方式。现在可以通过Motrix达到下载的目的。
+Motrix同时也支持下载百度网盘文件。下载方式通过安装Chrome插件实现。笔者在之前的文章：[百度网盘 不限速下载工具 (多)](https://www.idleleo.com/03/1545.html)中提过破解百度网盘限速的方式。现在可以通过Motrix达到下载的目的。
 
 Motrix也支持暗黑模式，对于熬夜党来说是个不错的功能。
 
-![](/images/wp-content/uploads/2019/06/20190609213903.jpg)
+![](/images/posts/motrix---wu-guang-gao-kai-yuan-de-quan-neng-xia-zai-qi/02.avif)
 
 ## 百度网盘插件
 
-插件安装： [BaiduExporter.zip](<https://motrix.app/release/BaiduExporter.zip>)
+插件安装： [BaiduExporter.zip](https://motrix.app/release/BaiduExporter.zip)
 
 下载 BaiduExporter.zip 之后，请解压到你喜欢的目录位置（以 ~/Documents 为例），解压到 ~/Documents/BaiduExporter 备用。
 

@@ -4,18 +4,18 @@ date = 2020-02-22T16:11:57+08:00
 draft = true
 description = "去年5月份，英特尔处理器又双叒叕曝出了漏洞，僵尸负载漏洞（ZombieLoad）。利用该漏洞，恶意软件能直接从CPU窃取敏感信息。近期，僵尸负载漏洞又出现了变种升级版本，Zombieloadv2。"
 slug = "yao-xing-neng-bu-yao-an-quan-yi-zhao-ti-sheng-19-de-cpuxing-neng"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/02/202002221556.jpg"
+featureimage = "/images/posts/yao-xing-neng-bu-yao-an-quan-yi-zhao-ti-sheng-19-de-cpuxing-neng/cover.avif"
 +++
 
 去年5月份，英特尔处理器又双叒叕曝出了漏洞，僵尸负载漏洞（ZombieLoad）。利用该漏洞，恶意软件能直接从CPU窃取敏感信息。近期，僵尸负载漏洞又出现了变种升级版本，Zombieloadv2。
 
-![](/images/wp-content/uploads/2020/02/202002221556.jpg)
+![](/images/posts/yao-xing-neng-bu-yao-an-quan-yi-zhao-ti-sheng-19-de-cpuxing-neng/cover.avif)
 
 对此，英特尔已经发布了微码更新，来缓解漏洞，而微软在2019年11月份系统更新中，将与漏洞相关的英特尔事务扩展技术（TSX）进行了禁用，虽然禁用了英特尔事务扩展技术（TSX）能够提高安全性，但是却会影响英特尔CPU的性能。对此，英特尔表示，修复了这个漏洞，只会导致CPU效能下滑19%，但是苹果在进行多线程负载测试和公共基准测试中，却发现性能降低高达40%。
 
 这就有点坑爹了，2018年熔断和幽灵漏洞曝光的时候，修补也损失了些许性能，没想到一年过后相同的剧情又出现了。也许大家觉得系统越用越卡的原因就是在修补这些漏洞导致的性能下降。
 
-![](/images/wp-content/uploads/2020/02/202002221559-1024x683.jpg)
+![](/images/posts/yao-xing-neng-bu-yao-an-quan-yi-zhao-ti-sheng-19-de-cpuxing-neng/01.avif)
 
 那些CPU型号会受到影响呢？Haswell架构以前的处理器、低于45XX的处理器、R系列和K系列的处理器是**不受影响** 的，这些大概是2011年前的CPU，也就是说近几年市面上搭载英特尔处理器的电脑都会被降低性能。是不是很坑？对没错，就是很坑。
 

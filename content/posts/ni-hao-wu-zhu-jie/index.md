@@ -4,7 +4,7 @@ date = 2018-09-01T23:34:14+08:00
 draft = true
 description = "原子是什么形状 四维是什么状态 我们是星际尘埃 或是宇宙之王 背叛"
 slug = "ni-hao-wu-zhu-jie"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2018/09/logo-idleleo.jpg"
+featureimage = "/images/posts/ni-hao-wu-zhu-jie/cover.avif"
 +++
 
 **原子是什么形状** **四维是什么状态** **我们是 星际尘埃** **或是 宇宙之王**
@@ -15,7 +15,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2018/09/logo-idleleo.
 
  
 
-[![](/images/wp-content/uploads/2018/09/logo-idleleo.jpg)](</images/wp-content/uploads/2018/09/logo-idleleo.jpg>)
+[![](/images/posts/ni-hao-wu-zhu-jie/cover.avif)](/images/posts/ni-hao-wu-zhu-jie/cover.avif)
 
 **「无 主界」**
 
@@ -33,4 +33,4 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2018/09/logo-idleleo.
 
  
 
-[![](/images/wp-content/uploads/2018/09/welcome2-1024x432.jpg)](</images/wp-content/uploads/2018/09/welcome2.jpg>)
+[![](/images/posts/ni-hao-wu-zhu-jie/01.avif)](/images/posts/ni-hao-wu-zhu-jie/01.avif)

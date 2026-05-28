@@ -4,18 +4,18 @@ date = 2020-01-07T00:48:34+08:00
 draft = true
 description = "冰雪奇缘2来啦~这部作品是2019年动画电影票房最高的作品喔~至于票房为什么这么高，笔者就搞不懂了。可能是我们国家的软实力不强，对于好作品的宣传力度不大吧。 笔者看完了整部电影，感觉槽点满满。如果理性思考整部作品，实在是经不起推敲。剧情转换生硬且突兀（真的是票房最高应有的水平吗）。笔者觉得从讲故事的"
 slug = "dian-ying-bing-xue-qi-yuan-2-frozen-ii-hd-xia-zai"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/01/20200107003343.jpg"
+featureimage = "/images/posts/dian-ying-bing-xue-qi-yuan-2-frozen-ii-hd-xia-zai/cover.avif"
 +++
 
 冰雪奇缘2来啦~这部作品是2019年动画电影票房最高的作品喔~至于票房为什么这么高，笔者就搞不懂了。可能是我们国家的软实力不强，对于好作品的宣传力度不大吧。
 
 笔者看完了整部电影，感觉槽点满满。如果理性思考整部作品，实在是经不起推敲。剧情转换生硬且突兀（真的是票房最高应有的水平吗）。笔者觉得从讲故事的角度看，这部作品是远不如哪吒的。还是那股味道，没错，盎格鲁撒克逊的味道。这么多年的熏陶下，笔者倒是没有什么认同，反而是越来越审美疲劳。
 
-![](/images/wp-content/uploads/2020/01/20200107003343.jpg)女王半夜嚎叫扰民现场
+![](/images/posts/dian-ying-bing-xue-qi-yuan-2-frozen-ii-hd-xia-zai/cover.avif)女王半夜嚎叫扰民现场
 
 整部作品剧情发展实在平淡，笔者甚至在看到一半的时候就已经猜出了完整剧情了。。全篇果不其然的充斥了宗教色彩的神秘主义，但对于神秘主义如何实现对现实的反思与升华却做的有心无力。整部作品大概就是神秘主义+新自由主义的混合物吧。
 
-![](/images/wp-content/uploads/2020/01/202001070035.jpg)
+![](/images/posts/dian-ying-bing-xue-qi-yuan-2-frozen-ii-hd-xia-zai/01.avif)
 
 导演: 克里斯·巴克 / 珍妮弗·李
 
@@ -35,7 +35,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/01/2020010700334
 
 又名: 魔雪奇缘2(港) / Frozen 2
 
-IMDb链接: [tt4520988](<https://www.imdb.com/title/tt4520988>)
+IMDb链接: [tt4520988](https://www.imdb.com/title/tt4520988)
 
 > 简介：在前作中，阿伦黛尔王国的公主艾莎因为拥有难以控制的强大魔力而选择封闭心扉，远离家园。在妹妹安娜等的帮助鼓舞下，艾莎终于鼓起勇气拥抱真我获得真正的力量。正当艾莎与安娜终于获得了曾经梦寐以求的生活，艾莎却听到了一个神秘声音的呼唤——这声音许诺将揭示她为何拥有冰雪魔法的真相，而这个神秘的真相也威胁着她的王国。
 > 
@@ -47,4 +47,4 @@ IMDb链接: [tt4520988](<https://www.imdb.com/title/tt4520988>)
 
 冰雪奇缘2DVD英语中英双字 
 
-[magnet:?xt=urn:btih:679CF28D0D29D8CE670072A66B271B2650E296DA](<magnet:?xt=urn:btih:679CF28D0D29D8CE670072A66B271B2650E296DA>)
+[magnet:?xt=urn:btih:679CF28D0D29D8CE670072A66B271B2650E296DA](magnet:?xt=urn:btih:679CF28D0D29D8CE670072A66B271B2650E296DA)

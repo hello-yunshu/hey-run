@@ -4,14 +4,14 @@ date = 2020-10-26T14:33:39+08:00
 draft = true
 description = "Yes，Adobe (CC) 2022来啦！这次除了改了改每个应用的启动画面外，Adobe公司还移除了CC的命名，所以现在更应该叫做Adobe 2022。 此次Adobe 2022直装独立破解版还是由vposy大神制作。此版Adobe 2022包含Adobe 2022系列几乎所有软件，支持自定义安装"
 slug = "adobe-cc-2022-quan-tao-zhi-zhuang-du-li-po-jie-ban"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2018/12/adobe-all1.jpg"
+featureimage = "/images/shared/adobe-all1.avif"
 +++
 
 Yes，Adobe (CC) 2022来啦！这次除了改了改每个应用的启动画面外，Adobe公司还移除了CC的命名，所以现在更应该叫做Adobe 2022。
 
 此次Adobe 2022直装独立破解版还是由vposy大神制作。此版Adobe 2022包含Adobe 2022系列几乎所有软件，支持自定义安装位置，一键安装无需激活即可使用。**仅支持单个安装** ，Adobe 2022系列软件仅供学习，切勿用于商业用途！点击下载
 
-![](/images/wp-content/uploads/2018/12/adobe-all1.jpg)
+![](/images/shared/adobe-all1.avif)
 
 #### Adobe 2022 独立版包含的版本
 
@@ -47,7 +47,7 @@ Adobe_Prelude_2022
 
 Adobe_Premiere_Pro_2022
 
-![](/images/wp-content/uploads/2018/12/adobe-all2.jpg)
+![](/images/shared/adobe-all2.avif)
 
 #### 系统需求
 
@@ -61,13 +61,13 @@ Adobe (CC) 2022 独立版直装破解版（转自互联网）
 
 [login]
 
-天翼：[网页链接](<http://t.cn/A6IgGNIS>) 访问码：3aud
+天翼：[网页链接](http://t.cn/A6IgGNIS) 访问码：3aud
 
-百度：[网页链接](<http://t.cn/A6IO5vPr>) 提取码：3jek
+百度：[网页链接](http://t.cn/A6IO5vPr) 提取码：3jek
 
 **解压密码：@vposy**
 
-若链接失效，欢迎移步 [无主界-社区 (idleleo.com)](<https://bbs.idleleo.com/>) 反馈喔~
+若链接失效，欢迎移步 [无主界-社区 (idleleo.com)](https://bbs.idleleo.com/) 反馈喔~
 
 [/login]
 
@@ -79,4 +79,4 @@ Adobe CC 2019 官方版 +大师版 9.9#4 2019.06.05（WIN + MAC版，SP版）+ A
 
 Windows版本可能在第一次**使用PS以及AI** 时，需要使用含有*****_Original.exe的程序运行登录一下，否则可能会直接闪退。如果存在这样的文件，请按照上述提示进行修复；如果不存在这样的文件，则不需要。**（最新版已经修复）**
 
-![](/images/wp-content/uploads/2019/11/20191104151306-1024x318.jpg)
+![](/images/posts/adobe-cc-2022-quan-tao-zhi-zhuang-du-li-po-jie-ban/01.avif)

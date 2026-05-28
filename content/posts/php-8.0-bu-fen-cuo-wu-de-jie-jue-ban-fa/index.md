@@ -4,12 +4,12 @@ date = 2021-01-12T04:04:22+08:00
 draft = true
 description = "前段时间，一直关注的PHP 8终于放出了正式版本，于是迫不及待的编译并测试了下，发现bug极多，尤其是新特性JIT更是在特定情况下直接无法使用。 好在大多bug已经在PHP的官网得到了提出，要做的就是等待修复了。不过在"
 slug = "php-8.0-bu-fen-cuo-wu-de-jie-jue-ban-fa"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2021/01/2021011203354-1024x444.jpg"
+featureimage = "/images/posts/php-8.0-bu-fen-cuo-wu-de-jie-jue-ban-fa/cover.avif"
 +++
 
 前段时间，一直关注的PHP 8终于放出了正式版本，于是迫不及待的编译并测试了下，发现bug极多，尤其是新特性JIT更是在特定情况下直接无法使用。
 
-![](/images/wp-content/uploads/2021/01/2021011203354-1024x444.jpg)
+![](/images/posts/php-8.0-bu-fen-cuo-wu-de-jie-jue-ban-fa/cover.avif)
 
 好在大多bug已经在PHP的官网得到了提出，要做的就是等待修复了。不过在遇到的众多bug中，有一些却并不是由于PHP本身造成的，比如接下来要说的两个较为隐蔽的错误。
 
@@ -17,7 +17,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2021/01/2021011203354
 
 Warning: Only the first byte will be assigned to the string offset in /path/wp-includes/class.wp-scripts.php on line 492
 
-![](/images/wp-content/uploads/2021/01/20210112035953-1024x491.jpg)
+![](/images/posts/php-8.0-bu-fen-cuo-wu-de-jie-jue-ban-fa/01.avif)
 
 其中一个错误如上所示，这个警告指向的是wp-includes/class.wp-scripts.php文件，这是WordPress的一个核心文件。一开始，我想很多小伙伴会和我一样认为是WordPress自己的错误，但是WordPress在5.6版本就已经宣布全面支持PHP 8了，所以这个问题不应该是WordPress核心文件有问题。
 
@@ -37,7 +37,7 @@ Warning: Only the first byte will be assigned to the string offset in /path/wp-i
 
 > $l10n (array) (Required) The data itself. The data can be either a single or multi-dimensional array.
 
-原来，问题在于参数`$l10n`在函数`wp_localize_script`中接受到的应该是一个数组，如果没有接受到数组，只是接受到了字符串等非数组的值时，由于[PHP 8的新特性](<https://www.php.net/manual/en/language.types.string.php#language.types.string.substr>)，会报出一个警告。
+原来，问题在于参数`$l10n`在函数`wp_localize_script`中接受到的应该是一个数组，如果没有接受到数组，只是接受到了字符串等非数组的值时，由于[PHP 8的新特性](https://www.php.net/manual/en/language.types.string.php#language.types.string.substr)，会报出一个警告。
 
 ### 解决办法
 
@@ -52,9 +52,9 @@ Warning: Only the first byte will be assigned to the string offset in /path/wp-i
 
 Deprecated: Required parameter $xxx follows optional parameter $yyy in…
 
-![](/images/wp-content/uploads/2021/01/20210112040349-1024x438.jpg)
+![](/images/posts/php-8.0-bu-fen-cuo-wu-de-jie-jue-ban-fa/02.avif)
 
-这类报错在升级PHP 8后也非常常见。这类错误多是来自一些主题或者是插件。其实这类的错误早就存在多年，但是一直未受到太多重视，最终在[PHP 8的时候变成了Deprecated](<https://www.php.net/manual/en/migration80.deprecated.php>)报错。
+这类报错在升级PHP 8后也非常常见。这类错误多是来自一些主题或者是插件。其实这类的错误早就存在多年，但是一直未受到太多重视，最终在[PHP 8的时候变成了Deprecated](https://www.php.net/manual/en/migration80.deprecated.php)报错。
 
 以下是出现错误代码：
 [code] 

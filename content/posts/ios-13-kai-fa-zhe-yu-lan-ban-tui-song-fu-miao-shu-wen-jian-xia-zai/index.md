@@ -4,12 +4,12 @@ date = 2019-06-18T18:38:16+08:00
 draft = true
 description = "iOS 13 近期已经开始推送，并且已经经历了一次版本升级。iOS 13 很多特性在安卓早就具备，倒是 iPadOS 更加吸引人更新。但是 iPad 本身应用生态不佳，因此感觉仍是有些鸡肋。 因此笔者觉得此次就是"
 slug = "ios-13-kai-fa-zhe-yu-lan-ban-tui-song-fu-miao-shu-wen-jian-xia-zai"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/06/20190618_012738_643.jpg"
+featureimage = "/images/posts/ios-13-kai-fa-zhe-yu-lan-ban-tui-song-fu-miao-shu-wen-jian-xia-zai/cover.avif"
 +++
 
 iOS 13 近期已经开始推送，并且已经经历了一次版本升级。iOS 13 很多特性在安卓早就具备，倒是 iPadOS 更加吸引人更新。但是 iPad 本身应用生态不佳，因此感觉仍是有些鸡肋。
 
-![](/images/wp-content/uploads/2019/06/20190618_012738_643.jpg)
+![](/images/posts/ios-13-kai-fa-zhe-yu-lan-ban-tui-song-fu-miao-shu-wen-jian-xia-zai/cover.avif)
 
 因此笔者觉得此次就是一次常规更新，加入了一些些的早该有的新功能。升级是值得升级的，但对于苹果这种过于保守的姿态，笔者嗤之以鼻。
 
@@ -17,7 +17,7 @@ iOS 13 近期已经开始推送，并且已经经历了一次版本升级。iOS 
 
 ### 1） 黑夜模式（Dark Mode）正式现身
 
-![](/images/wp-content/uploads/2019/06/2019061801271.jpg)
+![](/images/posts/ios-13-kai-fa-zhe-yu-lan-ban-tui-song-fu-miao-shu-wen-jian-xia-zai/01.avif)
 
 iOS 13 可说是近年较大型的iOS 更新，当中最特别的就是加入了不少用户等了超久的黑夜模式（Dark Mode），开启了此功能后，不但大部分APPS 都会转为黑底白字，键盘都转为灰黑色风格，就连墙纸都会转为较暗的风格。
 
@@ -31,7 +31,7 @@ iOS 13 可说是近年较大型的iOS 更新，当中最特别的就是加入了
 
 ### 3） 键盘支持swype 打字
 
-![](/images/wp-content/uploads/2019/06/201906181836-784x1024.jpg)
+![](/images/posts/ios-13-kai-fa-zhe-yu-lan-ban-tui-song-fu-miao-shu-wen-jian-xia-zai/02.avif)
 
 iOS 13 在键盘设计上也有改进，这次终于加入支持swype 功能，换言之使用指定语言输入文字（例如：英文），我们只需要在键盘上滑动手指，就可以连续输入文字，打字速度大大加快。
 
@@ -75,4 +75,4 @@ iPod touch (第七代)
 
 ## 描述文件下载
 
-使用手机 (iPad兼容) 自带的Safari打开：[点此链接](<https://d.idleleo.com/ios_13_ipados_beta_profile.mobileconfig>)
+使用手机 (iPad兼容) 自带的Safari打开：[点此链接](https://d.idleleo.com/ios_13_ipados_beta_profile.mobileconfig)

@@ -4,16 +4,16 @@ date = 2020-01-29T17:17:35+08:00
 draft = true
 description = "在笔者之前的文章《“热”究竟是什么？》中，对于“热”本身进行了一些探讨。笔者在文中指出，对于热在真空中的传播只能通过热辐射的方式进行。然而，知识更新的速度很快。前段时间，由华人团队在natural杂志刊登的一篇论文，文中描述的实验验证：“热传导”是可以在真空中传递，甚至声音也能在真空中传播。 真空也"
 slug = "gai-xie-jiao-ke-shu-zhen-kong-zhong-ke-yi-jin-xing-re-chuan-dao-chuan-bo-sheng-yin"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/01/202001291558-1024x598.jpg"
+featureimage = "/images/posts/gai-xie-jiao-ke-shu-zhen-kong-zhong-ke-yi-jin-xing-re-chuan-dao-chuan-bo-sheng-yin/cover.avif"
 +++
 
-在笔者之前的文章《[“热”究竟是什么？](<https://www.idleleo.com/10/3194.html>)》中，对于“热”本身进行了一些探讨。笔者在文中指出，对于热在真空中的传播只能通过热辐射的方式进行。然而，知识更新的速度很快。前段时间，由华人团队在natural杂志刊登的一篇论文，文中描述的实验验证：“热传导”是可以在真空中传递，甚至声音也能在真空中传播。
+在笔者之前的文章《[“热”究竟是什么？](https://www.idleleo.com/10/3194.html)》中，对于“热”本身进行了一些探讨。笔者在文中指出，对于热在真空中的传播只能通过热辐射的方式进行。然而，知识更新的速度很快。前段时间，由华人团队在natural杂志刊登的一篇论文，文中描述的实验验证：“热传导”是可以在真空中传递，甚至声音也能在真空中传播。
 
 ## 真空也会产生压力
 
 1948年，一位名叫**卡西米尔** 的荷兰物理学家预测，在真空中的两块中性的金属板会受到压力的作用而相互靠近。当金属板的距离缩小到10纳米，也就是大约100个原子直径时，真空施加的压力将会达到1个大气压。
 
-![](/images/wp-content/uploads/2020/01/202001291558-1024x598.jpg)
+![](/images/posts/gai-xie-jiao-ke-shu-zhen-kong-zhong-ke-yi-jin-xing-re-chuan-dao-chuan-bo-sheng-yin/cover.avif)
 
 十年后，他的预言得到了实验验证。
 
@@ -25,13 +25,13 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/01/202001291558-
 
 一般情况下，这些振动产生的效应是相互抵消的，但是，当两个非常平滑的金属板相互靠近时，金属板之间因量子涨落产生的电磁波会受到限制，只有一些特殊的波会存在，它们在金属板表面处的振幅必须为零。
 
-![](/images/wp-content/uploads/2020/01/202001291559.jpg)
+![](/images/posts/gai-xie-jiao-ke-shu-zhen-kong-zhong-ke-yi-jin-xing-re-chuan-dao-chuan-bo-sheng-yin/01.avif)
 
 在金属板外，电磁波不会受到这样的限制，因此外部存在的电磁波模式会多于内部。由于外面的电磁波更多，产生的压力也更大，所以会产生一个总体向内的压力。这一物理现象被称为**卡西米尔效应** ，真空产生的力也被叫做**卡西米尔力** 。
 
 现实生活中，壁虎的脚能粘到墙上，是卡西米尔力宏观体现的一个例子。 壁虎的脚上有数万根刚毛，每一根都极其细小，小到每根刚毛和墙壁间的距离都只有纳米级。
 
-![](/images/wp-content/uploads/2020/01/202001291563.png)
+![](/images/posts/gai-xie-jiao-ke-shu-zhen-kong-zhong-ke-yi-jin-xing-re-chuan-dao-chuan-bo-sheng-yin/02.avif)
 
 前面提到过，如果两个板的间距很小，那么卡西米尔效应可以施加非常可观的压力将两个板压在一起。所以，壁虎脚上的刚毛相当于产生了数万组卡西米尔效应，最终将它挂在墙上。通常，壁虎爬墙被解释为是由于刚毛和墙壁之间的范德华力。而范德华力是卡西米尔效应的微观角度描述，是分子尺度的卡西米尔效应，二者等价。 
 
@@ -39,11 +39,11 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/01/202001291558-
 
 ## 真空热传导
 
-《[“热”究竟是什么？](<https://www.idleleo.com/10/3194.html>)》的文章中我们提到过，热量，是物体内部原子振动，物理学家把这种原子的集体振动叫做**声子** 。声子不是真实的粒子，只是描述原子振动模式的一种“准粒子”。
+《[“热”究竟是什么？](https://www.idleleo.com/10/3194.html)》的文章中我们提到过，热量，是物体内部原子振动，物理学家把这种原子的集体振动叫做**声子** 。声子不是真实的粒子，只是描述原子振动模式的一种“准粒子”。
 
 在这些声子的作用下，物体的表面会随着时间而起伏。当两个物体相互靠近时，由于第一个物体表面的起伏，第二个物体因受到卡西米尔力的作用，也会同样起伏。于是乎，声子就这样穿过真空，传输到了第二个物体上。
 
-![](/images/wp-content/uploads/2020/01/202001291560.gif)
+![](/images/posts/gai-xie-jiao-ke-shu-zhen-kong-zhong-ke-yi-jin-xing-re-chuan-dao-chuan-bo-sheng-yin/03.avif)
 
 在声子传递的过程中，热量也随之进行了传递。当两者距离很小时，卡西米尔效应产生的热传导将超过热辐射，占据主导地位。
 
@@ -53,19 +53,19 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/01/202001291558-
 
 那么如何证明真空中能实现热传导呢？团队在真空环境里放了两片氮化硅膜，它们之间相距几百纳米。两片氮化硅膜的尺寸不一样，一片是330×330微米，另一片是280×280微米，但厚度都是0.1微米。
 
-![](/images/wp-content/uploads/2020/01/202001291561.jpg)
+![](/images/posts/gai-xie-jiao-ke-shu-zhen-kong-zhong-ke-yi-jin-xing-re-chuan-dao-chuan-bo-sheng-yin/04.avif)
 
 两片薄膜之所以面积不一样，是为了让二者在不同的温度下有相同的振动频率，让两片薄膜达到共振，更高效地交换能量。同时为了产生卡西米尔效应，科学家在每片氮化硅膜的两面都镀了金 (75纳米) ，在真空中反射电磁波。
 
 另外，两侧还要用激光干涉技术来测量膜表面的分子热运动。其目的是避免热光加热 (Thermo-Optical Heating) 产生的影响，最大程度保证温度的升高就是来自真空热传导。于是，团队用最低功率的激光，以20dB的信噪比解决了基本频率下的热机械噪音。
 
-![](/images/wp-content/uploads/2020/01/202001291562.jpg)
+![](/images/posts/gai-xie-jiao-ke-shu-zhen-kong-zhong-ke-yi-jin-xing-re-chuan-dao-chuan-bo-sheng-yin/05.avif)
 
 经过实验，研究人员发现，通过加热其中一片氮化硅膜，另一片氮化硅膜也被加热了，膜两侧出现了温度差。
 
 根据热传导定律，温度差与两个相互作用的膜之间的传热量成正比。研究人员测量了在不同距离真空间隙的条件下，膜之间传递的热量。他们发现测量结果准确地符合了卡西米尔效应传热的理论估计值。
 
-![](/images/wp-content/uploads/2020/01/202001291564.jpg)
+![](/images/posts/gai-xie-jiao-ke-shu-zhen-kong-zhong-ke-yi-jin-xing-re-chuan-dao-chuan-bo-sheng-yin/06.avif)
 
 至于温度是怎样测定的，团队依靠声子模式 (Phonon Modes) 的热布朗运动，来量化它们的温度变化。热布朗运动的测量，可以与膜表面的原子温度关联起来，所以也可以用作为衡量温度的工具。
 
@@ -91,6 +91,6 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/01/202001291558-
 
 ## 相关阅读
 
-[“热”究竟是什么？](<https://www.idleleo.com/10/3194.html>)
+[“热”究竟是什么？](https://www.idleleo.com/10/3194.html)
 
 论文原文：<https://www.nature.com/articles/s41586-019-1800-4>

@@ -4,7 +4,7 @@ date = 2020-02-06T18:44:39+08:00
 draft = true
 description = "现在疫情越来越严重，各类媒体都在教大家如何面对新型肺炎，笔者本不想再掺和其中，毕竟笔者不是专业人士。但是，看到医护人员的勇气，想到笔者在家里毫无建树的浪费资源，感觉还是应该借助无主界这个小小的平台传播一些有用的知识。 疫情的严重程度 疫情是否严重应该是大家最关心的，最近各类疫情数据一直在上扬，各种防"
 slug = "wu-han-jia-you-zhong-guo-jia-you-guan-yu-xin-xing-fei-yan-de-zhong-zhong-shi"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/02/202002061711.jpg"
+featureimage = "/images/posts/wu-han-jia-you-zhong-guo-jia-you-guan-yu-xin-xing-fei-yan-de-zhong-zhong-shi/cover.avif"
 +++
 
 现在疫情越来越严重，各类媒体都在教大家如何面对新型肺炎，笔者本不想再掺和其中，毕竟笔者不是专业人士。但是，看到医护人员的勇气，想到笔者在家里毫无建树的浪费资源，感觉还是应该借助无主界这个小小的平台传播一些有用的知识。
@@ -13,7 +13,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/02/202002061711.
 
 疫情是否严重应该是大家最关心的，最近各类疫情数据一直在上扬，各种防护措施也越来越严格，甚至有些外网长期黑中国的媒体已经开始抨击“人权”的问题。无论从任何角度，此次疫情看起来是严重的。笔者作为理工课出身的人，决定以数据来说话，大家先看一下曾经一度令人恐慌的非典的数据：
 
-![](/images/wp-content/uploads/2020/02/202002061711.jpg)
+![](/images/posts/wu-han-jia-you-zhong-guo-jia-you-guan-yu-xin-xing-fei-yan-de-zhong-zhong-shi/cover.avif)
 
 不难发现，非典直到消失为止在中国共感染了4000多人，而截至现在感染新型肺炎的人数已经达到了80000人，从感染的人数看，这次要比非典严重的多。但是，我们不能忽略死亡人数，我们简单的计算一下死亡率，全球非典的死亡率是11%左右，而新型肺炎截至目前的死亡率是2%左右。从死亡率看，这次新型肺炎的并不能说严重。
 
@@ -21,15 +21,15 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/02/202002061711.
 
 WHO曾经五次宣布全球卫生紧急事件（Public Health Emergency of International Concern，简称PHEIC），这五次PHEIC分别为（括弧内为宣布时间）：甲型H1N1流感（2009年4月）、脊髓灰质炎（2014年5月）、西非埃博拉疫情（2014年8月）、寨卡病毒病（2016年2月）、刚果埃博拉疫情（2019年7月）。1月31日此次的新型肺炎据WHO认定成新一次PHEIC。
 
-![](/images/wp-content/uploads/2020/02/202002061706.jpg)感染埃博拉病毒的男孩
+![](/images/posts/wu-han-jia-you-zhong-guo-jia-you-guan-yu-xin-xing-fei-yan-de-zhong-zhong-shi/01.avif)感染埃博拉病毒的男孩
 
 那么这五次的PHEIC的死亡率有多高呢？首先是甲型H1N1，这个病毒爆发于墨西哥后传至美国直至中国，根据统计数字显示，**甲型H1N1致死率为6.77%** 低于非典的致死率；脊髓灰质炎（小儿麻痹症），致死率不高，但会留下严重后遗症，寨卡病毒病笔者没有找到准确数据，但会使新生儿畸形；而最为严重的**埃博拉疫情致死率高达50%-90%** 。
 
-![](/images/wp-content/uploads/2020/02/202002061707.jpg)
+![](/images/posts/wu-han-jia-you-zhong-guo-jia-you-guan-yu-xin-xing-fei-yan-de-zhong-zhong-shi/02.avif)
 
 这五次的PHEIC都是大规模的卫生紧急事件，感染规模大、情况严重。我们不难发现，从现在公布的最新数据以及以下新型肺炎分析预测图片，这场疫情是远没有上述五次PHEIC来的严重的。
 
-![](/images/wp-content/uploads/2020/02/20200206233723.jpg)新型肺炎的分析预测
+![](/images/posts/wu-han-jia-you-zhong-guo-jia-you-guan-yu-xin-xing-fei-yan-de-zhong-zhong-shi/03.avif)新型肺炎的分析预测
 
 上图是最近纽约时报报道的关于新型肺炎的预测，图片给出了新型肺炎冠状病毒预测所在的区间。不难看出，根据主流分析，新型肺炎致死率低于3%，传播值稍高（所谓传播值及1个人感染n人，n为传播值）。较之季节流感这些传染病，新型肺炎是更加严重的；但是较之上述所说的五次PHEIC以及非典，新型肺炎冠状病毒要“温和”的多（注意纵坐标不成比例）。
 
@@ -37,7 +37,7 @@ WHO曾经五次宣布全球卫生紧急事件（Public Health Emergency of Inter
 
 对于病毒而言，或者对于所有生物而言，都有一个共识或者说目标，就是使种族传递下去。新型肺炎也不例外，有玩过《瘟疫公司》游戏的小伙伴应该知道，如果一开始一个病毒传染性极强、致死率极高，那么对于这个病毒种族的延续是非常不利的，也就是会出现“太强而杀了自己”这种情况。
 
-![](/images/wp-content/uploads/2020/02/202002061713.jpg)
+![](/images/posts/wu-han-jia-you-zhong-guo-jia-you-guan-yu-xin-xing-fei-yan-de-zhong-zhong-shi/04.avif)
 
 这并不是说病毒“聪明”深谙为人处事之道，而是自然淘汰、唯物主义的结果。一个能长期存在的病毒，要么容易传染但不易使宿主死亡比如普通感冒这类，要么不容易传染却有高的致死率比如艾滋病这类。（这也解释了为什么新型肺炎的分析预测图右上角没有传染病，大部分的传染病集中在了左下脚）虽然我们现在不知道新型肺炎未来何去何从，但是借助大自然的力量以及过去的经验，新型肺炎最终必定会被人类战胜，这从5000万年前就是如此。
 
@@ -45,7 +45,7 @@ WHO曾经五次宣布全球卫生紧急事件（Public Health Emergency of Inter
 
 那么这次面对疫情是有些反应过度呢？非也。笔者觉得，这些反应恰恰说明了现代文明对待病毒的新型“作战方式”。诚然，现代文明的城市化以及便利的交通一定程度加速了病毒的扩散。但是面对病情的防疫，也有了很多过去不曾有的高效处理方式。
 
-![](/images/wp-content/uploads/2020/02/202002061715.jpg)
+![](/images/posts/wu-han-jia-you-zhong-guo-jia-you-guan-yu-xin-xing-fei-yan-de-zhong-zhong-shi/05.avif)
 
 过去面对这样的疫情，通常的描述也就是“鼠疫”、“瘟疫”等等，既不了解得病的原因更不了解治愈的方法。而且古代的信息流通完全没有当今发达，很多时候都是在疫情得到控制后大家才开始得知疫情的可怕，而反观现在网络高效的沟通甚至能把疑似病患都找到，这是从古至今从未有过的，是现代文明的奇迹。当然，虽说这是奇迹可其也有一定的弊端，比如大量的疫情实时信息给公众带来了以往不曾体验过的恐慌。
 
@@ -53,7 +53,7 @@ WHO曾经五次宣布全球卫生紧急事件（Public Health Emergency of Inter
 
 #### 更多新型肺炎的真相
 
-![](/images/wp-content/uploads/2020/02/20200206233709-scaled.jpg)
+![](/images/posts/wu-han-jia-you-zhong-guo-jia-you-guan-yu-xin-xing-fei-yan-de-zhong-zhong-shi/06.avif)
 
 #### 如何做好个人防护
 
@@ -69,13 +69,13 @@ WHO曾经五次宣布全球卫生紧急事件（Public Health Emergency of Inter
 
 国家卫健委高级别专家组成员钟南山表示不一定非要带N95口罩，普通（外科）口罩也可阻挡飞沫传播。国家卫健委高级别专家组成员袁国勇表示我们一定要戴口罩，这是非常重要的。
 
-![](/images/wp-content/uploads/2020/02/202002061722.jpg)
+![](/images/posts/wu-han-jia-you-zhong-guo-jia-you-guan-yu-xin-xing-fei-yan-de-zhong-zhong-shi/07.avif)
 
 国家卫健委高级别专家组成员王月丹认为，对个人防护来说，戴口罩有一定的作用，因为口罩对SARS有防护作用，这次病毒与SARS有类似途径，戴口罩会有用。此外，公众应当注意环境消毒，手部清洁。可以使用一些空气消毒的装置，比如在空气中喷洒消毒药水。注意保暖、休息、进食高热量易消化食物，提高自己免疫力。
 
 ### 3、多清洁：手、口、鼻、眼等卫生很重要
 
-![](/images/wp-content/uploads/2020/02/202002061709.jpg)
+![](/images/posts/wu-han-jia-you-zhong-guo-jia-you-guan-yu-xin-xing-fei-yan-de-zhong-zhong-shi/08.avif)
 
 国家卫健委高级别专家组成员袁国勇表示我们的眼睛、鼻子、口，也一定要注意卫生。
 
@@ -87,7 +87,7 @@ WHO曾经五次宣布全球卫生紧急事件（Public Health Emergency of Inter
 
 而在近些年来，世界各地出现的新发传染病越来越频繁，如大家比较熟悉的H7N9禽流感、埃博拉、中东呼吸综合征等等，这些新发传染病都和动物有关。研究人员做过统计，有超过70%的新发传染病来源于动物。
 
-![](/images/wp-content/uploads/2020/02/202002061712.jpg)
+![](/images/posts/wu-han-jia-you-zhong-guo-jia-you-guan-yu-xin-xing-fei-yan-de-zhong-zhong-shi/09.avif)
 
 以当年SARS为例，其的源头是蝙蝠，其病毒是从蝙蝠到果子狸再到人类吃食果子狸而传播到人类中的。
 
@@ -125,7 +125,7 @@ WHO曾经五次宣布全球卫生紧急事件（Public Health Emergency of Inter
 
 <http://itv.cctv.com/html/2020whjy/index.html>
 
-《[新型冠状病毒感染的肺炎防控知识手册](<https://www.idleleo.com/02/4163.html>)》
+《[新型冠状病毒感染的肺炎防控知识手册](https://www.idleleo.com/02/4163.html)》
 
 **希望疫情早日停止！**
 

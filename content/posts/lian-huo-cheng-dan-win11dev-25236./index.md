@@ -6,7 +6,7 @@ slug = "lian-huo-cheng-dan-win11dev-25236."
 featureimage = "https://tva4.sinaimg.cn/large/0073r2KBly1h82dqw1b73j30so0ls0uw.jpg"
 +++
 
-本文来自[@zxgu183](<https://t.me/zxgu183>)投稿！感谢[@zxgu183](<https://t.me/zxgu183>)！
+本文来自[@zxgu183](https://t.me/zxgu183)投稿！感谢[@zxgu183](https://t.me/zxgu183)！
 
 近来研究了下Win11的各个版本，发现Dev的调度相当激进，在Server2025上也有所体现，它和专工是孪生版本，于是乎整了这个镜像给老师  
 如果使用此系统发现任何问题请回帖留言，我将于放假时回应并尽力修复。

@@ -4,7 +4,7 @@ date = 2019-05-19T00:10:46+08:00
 draft = true
 description = "写给所有喜欢TBBT的朋友，也写给自己 Me in TBBT 5月16日，「生活大爆炸」（The Big Bang Theory，TBBT）最后一季最后一集播出，长达12年的情景喜剧圆满落幕。"
 slug = "sheng-huo-da-bao-zha-ai-ni-san-qian-bian"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/05/20190508130659-1024x1024.jpg"
+featureimage = "/images/posts/sheng-huo-da-bao-zha-ai-ni-san-qian-bian/cover.avif"
 +++
 
 写给所有喜欢TBBT的朋友，也写给自己  
@@ -14,7 +14,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/05/2019050813065
 
 5月16日，「生活大爆炸」（The Big Bang Theory，TBBT）最后一季最后一集播出，长达12年的情景喜剧圆满落幕。
 
-![](/images/wp-content/uploads/2019/05/20190508130659-1024x1024.jpg)
+![](/images/posts/sheng-huo-da-bao-zha-ai-ni-san-qian-bian/cover.avif)
 
 「生活大爆炸」从2007年秋季开播，我在初二暑假第一次看剧，那个时候家里还没有Wi-Fi。  
 没错，一开始是为了 学 英 语 。（笑）  
@@ -24,7 +24,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/05/2019050813065
 也许每年总是会更多回顾前一年自己的成长，而到2019年5月「生活大爆炸」完结，像是突然提醒了自己，嘿朋友，12年了呀。  
 漫长却又精确的时间。
 
-![](/images/wp-content/uploads/2019/05/20190518153105-1024x683.jpg)有着洁癖和强迫症的谢尔顿看不得潘妮不爱整理
+![](/images/posts/sheng-huo-da-bao-zha-ai-ni-san-qian-bian/01.avif)有着洁癖和强迫症的谢尔顿看不得潘妮不爱整理
 
 作为情景喜剧，「生活大爆炸」拍摄了十二季，收视长虹，这放在美剧史上也算是长寿的，同时在美国电视剧的角逐中获奖无数，获金球奖等重要奖项15次，提名64次，而“谢耳朵”吉姆·帕森斯蝉联喜剧类视帝多次。  
 「生活大爆炸」在海外也人气颇高。拿中国来说，巧妙糅合了美式幽默、科学知识和极客文化，加上给力的字幕加成，在中国的美剧潮中也颇受诸多80后90后欢迎。
@@ -39,7 +39,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/05/2019050813065
 主演角色中5个博士和1个硕士，剧组专门邀请加州大学洛杉矶分校教授大卫·萨尔兹保作为科学顾问检查剧本，不允许台词或是场景中出现低级科学错误。  
 所以可别小看了剧中背景的小白板，虽然不一定看得懂，可都是正儿八经的知识点啊。
 
-![](/images/wp-content/uploads/2019/05/20190518131447-1024x576.jpg)谢尔顿在万圣节派对上穿成一个物理现象
+![](/images/posts/sheng-huo-da-bao-zha-ai-ni-san-qian-bian/02.avif)谢尔顿在万圣节派对上穿成一个物理现象
 
 从黑洞、弦理论、暗物质等大方向的物理学研究领域，具体到多普勒效应、薛定谔的猫等经典的物理理论，「生活大爆炸」向我们展现了理工科的魅力。  
 剧中谢尔顿和莱纳德都是受了质子教授（Professor Proton）的节目的影响对科学产生兴趣。  
@@ -54,18 +54,18 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/05/2019050813065
 
 除了术业上的专攻，这些科学家们也有自己古怪可爱的一面。
 
-![](/images/wp-content/uploads/2019/05/20190518124032-1024x683.jpg)
+![](/images/posts/sheng-huo-da-bao-zha-ai-ni-san-qian-bian/03.avif)
 
 喜欢漫画、科幻电影，热衷于Cosplay，第二外语是克林贡语，与其他成年人显得格格不入。  
 有时为吸血鬼和僵尸是否是一种生物争论得不可开交，别人把「星际迷航」和「星球大战」搞混了会急眼。  
 谢尔顿还制作了自制网络视频节目「有趣的旗帜」（Fun with Flags），介绍与旗帜有关的趣事。
 
-![](/images/wp-content/uploads/2019/05/20190517194934.jpg)
+![](/images/posts/sheng-huo-da-bao-zha-ai-ni-san-qian-bian/04.avif)
 
 得益于极客文化，「生活大爆炸」还请到了相当强大的客串阵容，其中“漫威之父”斯坦·李、比尔·盖茨、詹姆斯·厄尔·琼斯等科技、影视界大咖都在剧中出现过，也让观众过了把瘾。  
 大家有兴趣可以搜一搜这个客串名单。
 
-![](/images/wp-content/uploads/2019/05/201905171949341.jpg)
+![](/images/posts/sheng-huo-da-bao-zha-ai-ni-san-qian-bian/05.avif)
 
 已逝的物理学大家史蒂芬·霍金（Stephen Hawking）生前也多次客串，在剧中霍金成了谢尔顿的好朋友，谢尔顿向艾米求婚前还征求过霍金同意呢。  
 
@@ -77,38 +77,38 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/05/2019050813065
 以及之后加入的甜美腹黑的伯纳黛特（Bernadette）和一本正经、古板的艾米（Amy）。  
 每个人都是不同口味，却调出了非常惊喜的鸡尾酒。
 
-![](/images/wp-content/uploads/2019/05/201905171949343.jpg)
+![](/images/posts/sheng-huo-da-bao-zha-ai-ni-san-qian-bian/06.avif)
 
 第五季末，拉杰什提出了一个想法，帮助即将去太空执行任务的好基友霍华德和伯纳黛特举办了一个浪漫的婚礼。  
 这场阳台上的婚礼可是被地球上空的Google卫星拍摄下来了哦。  
 不得不说拉杰什真的是被天文学事业耽误的金牌派对策划师。
 
-![](/images/wp-content/uploads/2019/05/20190518142723.jpg)
+![](/images/posts/sheng-huo-da-bao-zha-ai-ni-san-qian-bian/07.avif)
 
 理工男的情话也浪漫得无可救药。  
 潘妮和莱纳德两个人分分合合许多次，莱纳德对自己的外表自卑，潘妮觉得自己学历配不上莱纳德。  
 但多年的相处两个人成为了般配的一对佳人。  
 剧中有许多对话或独白都非常打动人。
 
-![](/images/wp-content/uploads/2019/05/20190518161955.jpg)
+![](/images/posts/sheng-huo-da-bao-zha-ai-ni-san-qian-bian/08.avif)
 
 还有有些名场面不提就觉得可惜。
 
-![](/images/wp-content/uploads/2019/05/20190518154805.jpg)
+![](/images/posts/sheng-huo-da-bao-zha-ai-ni-san-qian-bian/09.avif)
 
 印象最深的还是伯纳黛特和霍华德结婚周年纪念日，伯纳黛特因实验失误被隔离，霍华德把自己写的歌带到了医院，和朋友一起给伯纳黛特弹奏演唱。
 
 「生活大爆炸」其实不是一炮走红型的选手，但是可以说它很快找到了科学与生活色彩的比例。虽然角色是科学家，但故事核心还是轻喜剧，这也是第十季的收视率是第一季的两倍的原因吧。  
 角色在成长，但是心底的纯真与美好并没有随之丢失。
 
-![](/images/wp-content/uploads/2019/05/20190518161237-1024x683.jpg)
+![](/images/posts/sheng-huo-da-bao-zha-ai-ni-san-qian-bian/10.avif)
 
 谢尔顿在女朋友艾米和朋友们的包容、忍让下从一个不谙世事的男孩逐渐成长为一个能够共情的成年人，但依然不允许别人坐在谢尔顿的专属座位（Sheldon's spot）。  
 莱纳德开始充满自信，和女神终成眷属，但依然是个优先考虑他人的好老公好朋友。  
 霍华德遇到了伯纳黛特不再猥琐油腻，上了太空，最早当了爸爸，但依然不忘恶搞，逗大家开心。  
 拉杰什克服了选择性缄默症，成为了女性之友，也不再依赖父母的巨额零花钱，甚至有勇气在天文馆作演讲解说，但内心依然浪漫、相信爱情。
 
-![](/images/wp-content/uploads/2019/05/20190518161012.jpg)
+![](/images/posts/sheng-huo-da-bao-zha-ai-ni-san-qian-bian/11.avif)
 
 潘妮成为了优秀的独立女性，不再浑浑噩噩，有了自己的事业，但依然保持身材不失魅力。  
 伯纳黛特在工作和家庭中作出了自己的牺牲，却依然不轻易退缩，直面困难。  
@@ -124,7 +124,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/05/2019050813065
 
 也算是有始有终。
 
-![](/images/wp-content/uploads/2019/05/20190518152004.jpg)
+![](/images/posts/sheng-huo-da-bao-zha-ai-ni-san-qian-bian/12.avif)
 
 「生活大爆炸」带给我太多了，冷知识、欢乐、感动，陪伴了我太多美好的时光。  
 以至于我写了太久 ，因为我实在无从下手 ，太多梗还没来得及写。

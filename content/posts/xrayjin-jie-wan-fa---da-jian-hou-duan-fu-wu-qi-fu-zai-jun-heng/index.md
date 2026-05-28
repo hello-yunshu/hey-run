@@ -4,7 +4,7 @@ date = 2026-05-26T03:18:00+08:00
 draft = false
 description = "Xray_bash_onekey 的后端负载均衡已经不再只围绕 ws/gRPC，现在 ws、gRPC、xHTTP 都可以进入 Nginx upstream 管理。本文按当前脚本重新整理主服务器、后端服务器、协议选择、权重和注意事项。"
 slug = "xrayjin-jie-wan-fa---da-jian-hou-duan-fu-wu-qi-fu-zai-jun-heng"
-featureimage = "images/xray-load-balance-risograph-cover.png"
+featureimage = "/images/posts/xrayjin-jie-wan-fa---da-jian-hou-duan-fu-wu-qi-fu-zai-jun-heng/cover.avif"
 categories = ["网络技术"]
 tags = ["Xray", "负载均衡", "Nginx", "代理"]
 +++
@@ -22,7 +22,7 @@ tags = ["Xray", "负载均衡", "Nginx", "代理"]
   3. xHTTP → `.xhttpServers`
   4. Reality 负载均衡 → `.realityServers`
 
-![](/images/xray-backend-load-balancing-feature.png)
+![](/images/posts/xrayjin-jie-wan-fa---da-jian-hou-duan-fu-wu-qi-fu-zai-jun-heng/01.avif)
 
 这篇说的是普通后端的玩法——ws/gRPC/xHTTP 被 Nginx 转发到后端服务器那种。Reality 负载均衡是另一个话题，想看那边去：[**如何部署 Reality协议 服务端负载均衡**](https://hey.run/posts/bushu-reality-balance)。
 
@@ -82,7 +82,7 @@ idleleo --add-upstream
 
 脚本会问你要管哪个协议的负载均衡——ws、gRPC 还是 xHTTP。
 
-![](/images/xray-backend-load-balancing-inline.png)
+![](/images/shared/xray-backend-load-balancing-inline.avif)
 
 创建后端文件时填：
 

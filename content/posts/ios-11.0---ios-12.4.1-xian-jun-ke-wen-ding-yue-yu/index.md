@@ -4,10 +4,10 @@ date = 2019-08-20T11:20:12+08:00
 draft = true
 description = "现在iOS可越狱版本已经提高至iOS 12.4.1。此次越狱并非完美越狱，在重启手机后需要再次进入app激活。由于苹果越来越开放，越狱本身价值在一步步的减少。但如果你需要破解内购，安装不经过签名的app等不寻常的操作，那么越狱是你的必然选择。"
 slug = "ios-11.0---ios-12.4.1-xian-jun-ke-wen-ding-yue-yu"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/07/201907221134.jpg"
+featureimage = "/images/posts/ios-11.0---ios-12.4.1-xian-jun-ke-wen-ding-yue-yu/cover.avif"
 +++
 
-![](/images/wp-content/uploads/2019/07/201907221134.jpg)
+![](/images/posts/ios-11.0---ios-12.4.1-xian-jun-ke-wen-ding-yue-yu/cover.avif)
 
 现在iOS可越狱版本已经提高至iOS 12.4.1。此次越狱并非完美越狱，在重启手机后需要再次进入app激活。由于苹果越来越开放，越狱本身价值在一步步的减少。但如果你需要破解内购，安装不经过签名的app等不寻常的操作，那么越狱是你的必然选择。
 
@@ -17,11 +17,11 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/07/201907221134.
 
 打开Cydia Impactor，注意必须装有iTunes才可。
 
-![](/images/wp-content/uploads/2019/07/20190722234300.jpg)
+![](/images/posts/ios-11.0---ios-12.4.1-xian-jun-ke-wen-ding-yue-yu/01.avif)
 
 将下载的unc0ver app（.ipa文件）拖入红框中。软件会要求输入Apple ID以及密码。这是必须的过程，是为了申请临时证书。当然如果你有开发者证书可以跳过此步骤直接安装这个app。
 
-![](/images/wp-content/uploads/2019/07/20190722234535.jpg)
+![](/images/posts/ios-11.0---ios-12.4.1-xian-jun-ke-wen-ding-yue-yu/02.avif)
 
 如上所述。由于使用临时证书，此app只有7天的使用时间。若是想继续使用，可以通过越狱后安装插件自动刷新证书，或者直接重装使用。
 
@@ -33,15 +33,15 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/07/201907221134.
 
 ## 下载地址
 
-unc0ver GitHub：[点我前往](<https://github.com/pwn20wndstuff/Undecimus>)
+unc0ver GitHub：[点我前往](https://github.com/pwn20wndstuff/Undecimus)
 
-unc0ver官网：[点我前往](<https://unc0ver.dev>)
+unc0ver官网：[点我前往](https://unc0ver.dev)
 
-unc0ver工具下载： [点我下载](<https://github.com/pwn20wndstuff/Undecimus/releases>) V3.8.x正式版（英文原版）11.0-12.4.1
+unc0ver工具下载： [点我下载](https://github.com/pwn20wndstuff/Undecimus/releases) V3.8.x正式版（英文原版）11.0-12.4.1
 
-Cydia Impactor：[点我下载](<http://cloud.abcydia.com/jailbreak/abcydia_Impactor_0.9.52.zip>)   Win 0.9.52 (个人版安装工具)
+Cydia Impactor：[点我下载](http://cloud.abcydia.com/jailbreak/abcydia_Impactor_0.9.52.zip)   Win 0.9.52 (个人版安装工具)
 
-Cydia Impactor：[点我下载](<http://cloud.abcydia.com/jailbreak/abcydia_Impactor_0.9.52.dmg>)   Mac 0.9.52 (个人版安装工具)
+Cydia Impactor：[点我下载](http://cloud.abcydia.com/jailbreak/abcydia_Impactor_0.9.52.dmg)   Mac 0.9.52 (个人版安装工具)
 
 ## 更新日志
 

@@ -4,14 +4,14 @@ date = 2021-06-15T19:07:29+08:00
 draft = true
 description = "难得有这样的心思写一篇文章出来。 最近有小伙伴私信我说有YouTuber盗用了我的文章内容。我看了看，确实有这么回事。虽然这种事情多少有些令人不快，但这也只是4年网站运营中的一个小小的波澜而已，引不起我多大的情绪起伏。倒是现在回看一下办网站的4年时光中，感触颇多，正好借此机会唠叨唠叨哈哈。"
 slug = "zui-jin-yi-xie-wen-ti-de-hui-ying-he-xiang-fa"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2021/06/202106160037-1024x607.jpg"
+featureimage = "/images/posts/zui-jin-yi-xie-wen-ti-de-hui-ying-he-xiang-fa/cover.avif"
 +++
 
 难得有这样的心思写一篇文章出来。
 
 最近有小伙伴私信我说有YouTuber盗用了我的文章内容。我看了看，确实有这么回事。虽然这种事情多少有些令人不快，但这也只是4年网站运营中的一个小小的波澜而已，引不起我多大的情绪起伏。倒是现在回看一下办网站的4年时光中，感触颇多，正好借此机会唠叨唠叨哈哈。
 
-![](/images/wp-content/uploads/2021/06/202106160037-1024x607.jpg)
+![](/images/posts/zui-jin-yi-xie-wen-ti-de-hui-ying-he-xiang-fa/cover.avif)
 
 ## 网站的发展
 
@@ -19,11 +19,11 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2021/06/202106160037-
 
 好在这个网站是我的兴趣，我对代码尤其是这种所见即所得的代码情有独钟，可能是我性格的问题，这种努力后立刻有回报的事情让我非常着迷。因此在接近零基础的情况下，我逐渐熟悉了CSS、JS、PHP等语言。那段时间，我经常坐在电脑前，窗外微风徐徐，人声嘈嘈，想着为网站添加点新功能或者修一修漏洞。现在想想整个过程可能是我最美好的回忆之一。
 
-![](/images/wp-content/uploads/2021/06/202106160034.jpg)
+![](/images/posts/zui-jin-yi-xie-wen-ti-de-hui-ying-he-xiang-fa/01.avif)
 
 在制作网站后的一段时间，我大概摸清了网站整体运营的过程，也就慢慢萌生了再创造一个“真正意义”上的网站。于是在几个小伙伴的合作下，无主界也就诞生了。在诞生之初，如同新生儿对陌生的世界充满了疑惑和好奇一般，无主界也不知道它应该做什么内容，应该讲什么故事。当时我也想了很多，在各种方向上都想尝试，但感觉又很难把选好的方向讲好、讲出自己的特色。最后，迫于实在无奈，选择了一个并不大众的主题，也就是现在无主界大量文章的内容——翻墙。
 
-![](/images/wp-content/uploads/2021/06/202106160036.jpg)
+![](/images/posts/zui-jin-yi-xie-wen-ti-de-hui-ying-he-xiang-fa/02.avif)
 
 ## 网站的主题
 
@@ -31,11 +31,11 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2021/06/202106160037-
 
 提到这个灰色地带，应该说现在政府的管理较之之前是松多了，这也是我们国家发展的一个缩影。回到主题，由于我搭网站的经验，让我有了一定的网络基础。在而后出现的*2ray包括现在Xray等，我很快就能搞清如何利用并且实现它的功能。随着我对其的研究深入，自然也积累了一些心得，这就为我在之后制作一键脚本增加了很多的经验。
 
-说到这里，就不得不提我的第一个发布的脚本，也许无主界的老朋友还能记得，无主界最开始发布的脚本并不是[Xray_bash_onekey](<https://hey.run/posts/2023-da-jian-xray-fu-wu-qi-zui-xin-jiao-cheng>)而是~~[V2Ray_ws-tls_bash_onekey](<https://www.idleleo.com/go?url=https://github.com/paniy/V2Ray_ws-tls_bash_onekey>)~~ 。这个脚本是fork自wulabing的，当时我对这位作者脚本的一些内容有一定的自己的想法，因此在他原有脚本的基础上进行了改进。在最开始，脚本只是为我自己而写（其实到现在的[Xray_bash_onekey](<https://hey.run/posts/2023-da-jian-xray-fu-wu-qi-zui-xin-jiao-cheng>)脚本初衷也未曾改变），但由于当时网站苦于没有内容，因此把这些脚本拉上来充充门面。
+说到这里，就不得不提我的第一个发布的脚本，也许无主界的老朋友还能记得，无主界最开始发布的脚本并不是[Xray_bash_onekey](https://hey.run/posts/2023-da-jian-xray-fu-wu-qi-zui-xin-jiao-cheng)而是~~[V2Ray_ws-tls_bash_onekey](https://www.idleleo.com/go?url=https://github.com/paniy/V2Ray_ws-tls_bash_onekey)~~ 。这个脚本是fork自wulabing的，当时我对这位作者脚本的一些内容有一定的自己的想法，因此在他原有脚本的基础上进行了改进。在最开始，脚本只是为我自己而写（其实到现在的[Xray_bash_onekey](https://hey.run/posts/2023-da-jian-xray-fu-wu-qi-zui-xin-jiao-cheng)脚本初衷也未曾改变），但由于当时网站苦于没有内容，因此把这些脚本拉上来充充门面。
 
-![](/images/wp-content/uploads/2021/06/202106160038-1024x382.jpg)
+![](/images/posts/zui-jin-yi-xie-wen-ti-de-hui-ying-he-xiang-fa/03.avif)
 
-没想到，网站因为这个脚本访问量变大了不少，当时我很开心，于是我写了更多关于这个灰色地带的文章，包括[关于Trojan、CDN、V2Ray的种种问题 （原理分析）](<https://www.idleleo.com/wp-admin/post.php?post=4320&action=edit>)、[V2Ray、Trojan等主流工具安全吗？](<https://www.idleleo.com/wp-admin/post.php?post=4766&action=edit>)、[V2Ray / Trojan 传输方式哪个好？(原理对比)](<https://www.idleleo.com/wp-admin/post.php?post=4064&action=edit>)** ** 等等。现在这些文章都找不到了，也许在其他地方有一些未经我允许转载的地方还有。文章找不到的原因很简单，因为网警的要求。这也是无主界遇到的障碍之一。
+没想到，网站因为这个脚本访问量变大了不少，当时我很开心，于是我写了更多关于这个灰色地带的文章，包括[关于Trojan、CDN、V2Ray的种种问题 （原理分析）](https://www.idleleo.com/wp-admin/post.php?post=4320&action=edit)、[V2Ray、Trojan等主流工具安全吗？](https://www.idleleo.com/wp-admin/post.php?post=4766&action=edit)、[V2Ray / Trojan 传输方式哪个好？(原理对比)](https://www.idleleo.com/wp-admin/post.php?post=4064&action=edit)** ** 等等。现在这些文章都找不到了，也许在其他地方有一些未经我允许转载的地方还有。文章找不到的原因很简单，因为网警的要求。这也是无主界遇到的障碍之一。
 
 如大家所见，无主界是一个在中国备案过的网站，应当遵守中国的法律法规。实际上，我也是这么认为的。因此在被告知有违规的情况要求404时，我是第一时间配合。这直接让我的网站流量下降不少。虽然无主界**至今都未曾投放过任何广告** ，但网站流量的下降依然让我灰心不少。
 

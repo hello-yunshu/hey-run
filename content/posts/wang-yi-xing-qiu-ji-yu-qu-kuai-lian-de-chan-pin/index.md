@@ -4,12 +4,12 @@ date = 2018-02-09T17:37:42+08:00
 draft = true
 description = "星球介绍 星球基地通过区块链加密存储技术帮助您管理数字资产，让您的数据真正为自己所有，让那些希望查询或获取个体数据资产的企业或者个人，在星球基地中与您本人进行直接交易，利用黑钻进行结算。 我们每个人都在无时不刻产生有用的行为，诸如信用数据、注意力、互联网踪迹都是个人的重要数据资产，包括社交、娱乐、购"
 slug = "wang-yi-xing-qiu-ji-yu-qu-kuai-lian-de-chan-pin"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2018/02/20180209173137-1024x415.jpg"
+featureimage = "/images/posts/wang-yi-xing-qiu-ji-yu-qu-kuai-lian-de-chan-pin/cover.avif"
 +++
 
 #### 星球介绍
 
-[![](/images/wp-content/uploads/2018/02/20180209173137-1024x415.jpg)](</images/wp-content/uploads/2018/02/20180209173137.jpg>) 星球基地通过区块链加密存储技术帮助您管理数字资产，让您的数据真正为自己所有，让那些希望查询或获取个体数据资产的企业或者个人，在星球基地中与您本人进行直接交易，利用黑钻进行结算。 我们每个人都在无时不刻产生有用的行为，诸如信用数据、注意力、互联网踪迹都是个人的重要数据资产，包括社交、娱乐、购物、出行等等方面，而这些资产在过去并不曾被个体重视。而今星球基地为您构建星球居民身份，帮助您发现自身价值，使得个人信息价值得以公平公正的体现。星球基地宗旨：让价值贡献者参与价值分享。 
+[![](/images/posts/wang-yi-xing-qiu-ji-yu-qu-kuai-lian-de-chan-pin/cover.avif)](/images/posts/wang-yi-xing-qiu-ji-yu-qu-kuai-lian-de-chan-pin/cover.avif) 星球基地通过区块链加密存储技术帮助您管理数字资产，让您的数据真正为自己所有，让那些希望查询或获取个体数据资产的企业或者个人，在星球基地中与您本人进行直接交易，利用黑钻进行结算。 我们每个人都在无时不刻产生有用的行为，诸如信用数据、注意力、互联网踪迹都是个人的重要数据资产，包括社交、娱乐、购物、出行等等方面，而这些资产在过去并不曾被个体重视。而今星球基地为您构建星球居民身份，帮助您发现自身价值，使得个人信息价值得以公平公正的体现。星球基地宗旨：让价值贡献者参与价值分享。 
 
 #### 官方网址
 
@@ -29,4 +29,4 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2018/02/2018020917313
 
 #### 注册邀请码
 
-现在需要邀请码才能注册，每个注册码限制为5个人注册，欢迎大家在评论下方分享注册码，下面是站长我的： [![](/images/wp-content/uploads/2018/02/IMG_154020180209-173551-661x1024.jpg)](</images/wp-content/uploads/2018/02/IMG_154020180209-173551.jpg>)
+现在需要邀请码才能注册，每个注册码限制为5个人注册，欢迎大家在评论下方分享注册码，下面是站长我的： [![](/images/posts/wang-yi-xing-qiu-ji-yu-qu-kuai-lian-de-chan-pin/01.avif)](/images/posts/wang-yi-xing-qiu-ji-yu-qu-kuai-lian-de-chan-pin/01.avif)

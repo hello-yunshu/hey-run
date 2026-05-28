@@ -4,7 +4,7 @@ date = 2020-01-19T21:53:17+08:00
 draft = true
 description = "曾几何时，国产的电子高端产品就会被扣上“骗经费”的帽子。虽然其中或多或少有关注此行业的科技爱好者恨铁不成钢的情愫，但从侧面也显示出确实拿得出手的完全国产的高端电子产品寥寥无几。根据十九大报告中，国家根本矛盾已经转变为人民日益增长的美好生活需要和不平衡不充分的发展之间的矛盾，科技行业便充分的体现了这种"
 slug = "guo-chan-tong-yi-cao-zuo-xi-tong-uos-20-zheng-shi-ban-xia-zai"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/01/2020011508371.jpg"
+featureimage = "/images/posts/guo-chan-tong-yi-cao-zuo-xi-tong-uos-20-zheng-shi-ban-xia-zai/cover.avif"
 +++
 
 曾几何时，国产的电子高端产品就会被扣上“骗经费”的帽子。虽然其中或多或少有关注此行业的科技爱好者恨铁不成钢的情愫，但从侧面也显示出确实拿得出手的完全国产的高端电子产品寥寥无几。根据十九大报告中，国家根本矛盾已经转变为人民日益增长的美好生活需要和不平衡不充分的发展之间的矛盾，科技行业便充分的体现了这种矛盾变化。
@@ -17,7 +17,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/01/2020011508371
 
 统一桌面操作系统包含原创专属的桌面环境和近多款原创应用，及数款来自开源社区的原生应用软件，能够满足用户的日常办公和娱乐需求。统一服务器操作系统在桌面版的基础上，向用户的业务平台提供标准化服务、虚拟化、云计算支撑，并满足未来业务拓展和容灾需求的高可用和分布式支撑。
 
-![](/images/wp-content/uploads/2020/01/2020011508371.jpg)
+![](/images/posts/guo-chan-tong-yi-cao-zuo-xi-tong-uos-20-zheng-shi-ban-xia-zai/cover.avif)
 
 统一操作系统在硬件方面，能够兼容联想、华为、清华同方、长城、曙光等整机厂商发布的终端和服务器设备40余款型号；在软件方面，能够兼容流式、版式、电子签章厂商发布的办公应用，兼容数据库、中间件、虚拟化、云桌面等厂商发布的各类服务端架构和平台共200余款；在外设方面，能够兼容主流的打印机、扫描仪、Raid卡、HBA卡等。除此之外，通过预装的应用商店和互联网中的软件仓库还能够获得近千款应用软件的支持，满足你对操作系统的扩展需求。
 
@@ -27,7 +27,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/01/2020011508371
 
 面向合作伙伴与开发者为避免对系统配置、系统操作和应用安装不熟悉，和没有技术背景的用户更加安全和稳定的使用操作系统，UOS从root权限、执行sudo操作、安装和运行未在应用商店上架的非签名应用等几个维度，增强系统的安全属性。如果合作伙伴在测试和适配的过程中，需要使用上述权限，则可以通过控制中心—通用—开发者模式菜单中的“进入开发者默认”关闭此安全相关功能。
 
-![](/images/wp-content/uploads/2020/01/202001150837.jpg)
+![](/images/posts/guo-chan-tong-yi-cao-zuo-xi-tong-uos-20-zheng-shi-ban-xia-zai/01.avif)
 
 若选择在线模式，点击”下一步”，请先登录网络帐户（未登录UOS ID时先弹出登录框，登录后弹出协议窗口）。仔细查看开发者模式免责声明，了解注意事项后，勾选同意并进入开发者模式，点击确定。待系统下发证书后，按钮变为已进入开发者模式。
 
@@ -41,19 +41,19 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/01/2020011508371
 
 统信团队开发的桌面环境UOS桌面环境主要由桌面、启动器、任务栏、控制中心和窗口管理器等组成。
 
-![](/images/wp-content/uploads/2020/01/2020011508372.jpg)
+![](/images/posts/guo-chan-tong-yi-cao-zuo-xi-tong-uos-20-zheng-shi-ban-xia-zai/02.avif)
 
 ### 语音智能助手
 
 语音智能助手是统一操作系统预制的语音助手程序，支持语音和文字输入。用户可通过语音指令打开应用软件、编写邮件、搜索信息、英文翻译，查询天气、系统设置等，极大地提高了操作效率。唤醒语音智能助手，你将体验最新潮的语音交互，解放双手。
 
-![](/images/wp-content/uploads/2020/01/2020011508375.jpg)
+![](/images/posts/guo-chan-tong-yi-cao-zuo-xi-tong-uos-20-zheng-shi-ban-xia-zai/03.avif)
 
 ### 应用商店
 
 应用商店选择是一款集应用展示、安装、下载管理、评论、评分于一体的平台软件，为用户精心筛选和收录了不同类别的应用。每款应用都经严格的安装和运行测试，保障用户能够通过商店搜索热门应用，并一键安装和运行。应用商店以极简、扁平化的设计风格，获得了更为简约、精致的外观。其中应用专栏与应用专题每月定期更新，为用户呈现最新、最热的精品应用。
 
-![](/images/wp-content/uploads/2020/01/2020011508376.jpg)
+![](/images/posts/guo-chan-tong-yi-cao-zuo-xi-tong-uos-20-zheng-shi-ban-xia-zai/04.avif)
 
 在新版应用商店中，软件开发者可以通过公司的认证体系认证为“个人开发者”或“企业开发者”；应用商店将对已通过认证的开发者开放“付费下载”权限，开发者可以上传其开发并打包好的应用到应用商店后台，并设置“付费下载”模式下的投放区域。为了保护软件开发者的权益，应用商店后台会给每个应用增加电子签名，用户只能通过应用商店安装相应的应用。
 
@@ -75,14 +75,14 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/01/2020011508371
 
 支持查看操作系统运行中的各种硬件设备信息，并可进行管理。
 
-![](/images/wp-content/uploads/2020/01/2020011508377.jpg)
+![](/images/posts/guo-chan-tong-yi-cao-zuo-xi-tong-uos-20-zheng-shi-ban-xia-zai/05.avif)
 
 ## 日志收集
 
 日志收集工具是负责收集程序运行时所产生日志的小工具，如操作系统、应用程序在启动、运行等过程中的相关信息。用户可以通过它来检查错误发生的原因，或者寻找收到攻击时留下的痕迹，便于快速的解决故障问题。
 
-![](/images/wp-content/uploads/2020/01/2020011508378.jpg)
+![](/images/posts/guo-chan-tong-yi-cao-zuo-xi-tong-uos-20-zheng-shi-ban-xia-zai/06.avif)
 
 ## 系统下载
 
-**国产统一操作系统UOS 20 正式版下载：**[点此链接](<https://pan.baidu.com/s/1REs7r4qcXP1ZlDnguNUCqQ>)，网盘提取码：m4y9。
+**国产统一操作系统UOS 20 正式版下载：**[点此链接](https://pan.baidu.com/s/1REs7r4qcXP1ZlDnguNUCqQ)，网盘提取码：m4y9。

@@ -4,12 +4,12 @@ date = 2018-12-06T21:15:27+08:00
 draft = true
 description = "Adobe (CC) 2021 全套直装独立破解版已发布，详见：链接。 Adobe CC 2019大师版由vposy大神制作。其制作的Adobe系列软件因为安装简单，无需纠结繁杂的注册激活过程，一直很受设计师的喜爱。Adobe CC 2019大师版包含Adobe CC 2019系列几乎所有软件，支持"
 slug = "adobe-cc-2019-quan-tao-po-jie-ban"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2018/12/adobe-all1.jpg"
+featureimage = "/images/shared/adobe-all1.avif"
 +++
 
-**Adobe (CC) 2021 全套直装独立破解版已发布** ，详见：[链接](<https://www.idleleo.com/11/3446.html>)。
+**Adobe (CC) 2021 全套直装独立破解版已发布** ，详见：[链接](https://www.idleleo.com/11/3446.html)。
 
-Adobe CC 2019大师版由vposy大神制作。其制作的Adobe系列软件因为安装简单，无需纠结繁杂的注册激活过程，一直很受设计师的喜爱。Adobe CC 2019大师版包含Adobe CC 2019系列几乎所有软件，支持自定义安装位置，支持一键安装无需激活即可使用。**支持单个安装，或者全套一并安装！** Adobe CC 2019系列软件仅供学习，切勿用于商业用途！点击下载 [![](/images/wp-content/uploads/2018/12/adobe-all1.jpg)](</images/wp-content/uploads/2018/12/adobe-all1.jpg>)
+Adobe CC 2019大师版由vposy大神制作。其制作的Adobe系列软件因为安装简单，无需纠结繁杂的注册激活过程，一直很受设计师的喜爱。Adobe CC 2019大师版包含Adobe CC 2019系列几乎所有软件，支持自定义安装位置，支持一键安装无需激活即可使用。**支持单个安装，或者全套一并安装！** Adobe CC 2019系列软件仅供学习，切勿用于商业用途！点击下载 [![](/images/shared/adobe-all1.avif)](/images/shared/adobe-all1.avif)
 
 #### Adobe CC 2019 大师版包含的软件列表
 
@@ -49,7 +49,7 @@ Adobe XD CC 13.1.12
 
 Adobe Photoshop Camera Raw 11.0.0.78
 
-[![](/images/wp-content/uploads/2018/12/adobe-all2-300x225.jpg)](</images/wp-content/uploads/2018/12/adobe-all2.jpg>)
+[![](/images/posts/adobe-cc-2019-quan-tao-po-jie-ban/01.avif)](/images/posts/adobe-cc-2019-quan-tao-po-jie-ban/01.avif)
 
 #### 系统需求
 
@@ -69,7 +69,7 @@ Adobe Photoshop Camera Raw 11.0.0.78
 
 #### 下载
 
-Adobe CC 2019 官方版 +大师版 9.9#4 2019.06.05（WIN + MAC版，SP版）+ Adobe CC 2019 Zer0Cod3 Patcher v1.5 <https://pan.baidu.com/s/1wMig8QXzEzSVGodesxisyw#v41c> 提取码：v41c 若需要解压密码：@vposy **如需人工服务可咨询QQ** ：[85336837](<https://wpa.qq.com/msgrd?V=3&uin=895776013&Site=QQ&Menu=yes>) (有偿服务) 
+Adobe CC 2019 官方版 +大师版 9.9#4 2019.06.05（WIN + MAC版，SP版）+ Adobe CC 2019 Zer0Cod3 Patcher v1.5 <https://pan.baidu.com/s/1wMig8QXzEzSVGodesxisyw#v41c> 提取码：v41c 若需要解压密码：@vposy **如需人工服务可咨询QQ** ：[85336837](https://wpa.qq.com/msgrd?V=3&uin=895776013&Site=QQ&Menu=yes) (有偿服务) 
 
 #### 更新日志
 
