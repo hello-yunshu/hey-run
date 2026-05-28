@@ -4,16 +4,16 @@ date = 2019-08-16T23:07:10+08:00
 draft = true
 description = "要说笔者怎么会看这个系类的，那还得从这个系列中出现的雪球说起。记得当年，笔者的微信聊天中的表情图片一度被一只兔子疯狂霸屏，传神的表情加上无厘头的文字让人实在忍俊不禁，欲罢不能。是哪只兔子呢？没错，就是这只叫雪球的兔子。 在与兔子的结缘后，笔者顺理成章得看了这个系类的电影。老实说，电影本身的剧情等方面"
 slug = "dian-ying-ai-chong-da-ji-mi-2-hd-xia-zai"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/08/201908162300.gif"
+featureimage = "/images/posts/dian-ying-ai-chong-da-ji-mi-2-hd-xia-zai/cover.avif"
 +++
 
 要说笔者怎么会看这个系类的，那还得从这个系列中出现的雪球说起。记得当年，笔者的微信聊天中的表情图片一度被一只兔子疯狂霸屏，传神的表情加上无厘头的文字让人实在忍俊不禁，欲罢不能。是哪只兔子呢？没错，就是这只叫雪球的兔子。
 
-![](/images/wp-content/uploads/2019/08/201908162300.gif)
+![](/images/posts/dian-ying-ai-chong-da-ji-mi-2-hd-xia-zai/cover.avif)
 
 在与兔子的结缘后，笔者顺理成章得看了这个系类的电影。老实说，电影本身的剧情等方面较为老套，适合带着孩子一起观看。但当你看到这么可爱的兔子还想啥剧情呢。哈哈。这部电影笔者觉得较之前作是进步也是退步。退步在于，在诸如国产动画《白蛇：起源》、《哪吒之魔童降世》等吸引大量成人观看的同时，这类西方动画电影剧情却在往低龄化方向发展。进步在于，动画电影的制作技术又进步了，这部电影中有些场景若没有动画人物在，你可能会觉得这是真实拍摄场景。在技术角度，国产动画还需努力啊！
 
-![](/images/wp-content/uploads/2019/08/201908162046-1024x576.jpg)
+![](/images/posts/dian-ying-ai-chong-da-ji-mi-2-hd-xia-zai/01.avif)
 
 导演: 克里斯·雷纳德
 
@@ -23,7 +23,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/08/201908162300.
 
 类型: 喜剧 / 动画 / 冒险
 
-官方网站: [www.thesecretlifeofpets.com](<http://www.thesecretlifeofpets.com>)
+官方网站: [www.thesecretlifeofpets.com](http://www.thesecretlifeofpets.com)
 
 制片国家/地区: 美国
 
@@ -35,7 +35,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/08/201908162300.
 
 又名: Pet Pet当家2(港) / 宠物当家2(台) / 宠物的秘密生活2
 
-IMDb链接: [tt5113040](<http://www.imdb.com/title/tt5113040>)
+IMDb链接: [tt5113040](http://www.imdb.com/title/tt5113040)
 
 > 简介：《爱宠大机密2》将延续2016年夏天轰动一时的《爱宠大机密》的故事，讲述宠物在我们每天离家工作或上学后的生活。照明娱乐创始人兼首席执行官克里斯·梅勒丹德利和他长久以来的合作伙伴珍娜·海莉将共同制作这部续集。《爱宠大机密》是当时开画成绩最好的原创电影，不论是动画片还是其他类型。   
 >  《爱宠大机密2》继续由布莱恩·林奇（《小黄人大眼萌》）编剧，并再一次由克里斯·雷纳德（《神偷奶爸》系列，《老雷斯的故事》）执导。
@@ -44,11 +44,11 @@ IMDb链接: [tt5113040](<http://www.imdb.com/title/tt5113040>)
 
 ### 电影下载
 
-[magnet:?xt=urn:btih:2d53ed8a5dcfa62f60da2a810ef026f342a99f85](<magnet:?xt=urn:btih:2d53ed8a5dcfa62f60da2a810ef026f342a99f85>) - The.Secret.L…5.1.H264-FGT - 3.32GB
+[magnet:?xt=urn:btih:2d53ed8a5dcfa62f60da2a810ef026f342a99f85](magnet:?xt=urn:btih:2d53ed8a5dcfa62f60da2a810ef026f342a99f85) - The.Secret.L…5.1.H264-FGT - 3.32GB
 
-[magnet:?xt=urn:btih:42241e35a0f4cf0672698637ad9b9b7cea594d6d](<magnet:?xt=urn:btih:42241e35a0f4cf0672698637ad9b9b7cea594d6d>) - The.Secret.L…p.x264-RARBG - 1.64GB
+[magnet:?xt=urn:btih:42241e35a0f4cf0672698637ad9b9b7cea594d6d](magnet:?xt=urn:btih:42241e35a0f4cf0672698637ad9b9b7cea594d6d) - The.Secret.L…p.x264-RARBG - 1.64GB
 
-无法下载？使用这个工具吧：[Motrix – 无广告开源的全能下载器](<https://www.idleleo.com/06/2314.html>)
+无法下载？使用这个工具吧：[Motrix – 无广告开源的全能下载器](https://www.idleleo.com/06/2314.html)
 
 ### 字幕下载
 

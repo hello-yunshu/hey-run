@@ -4,16 +4,16 @@ date = 2019-08-22T21:00:01+08:00
 draft = true
 description = "如果你一直关心无主界的话，也许你觉得笔者最近“发了疯”，在疯狂的推送几乎同样的新闻。这不是没有原因的，最近关于Edge浏览器(基于Chromium)的新闻实在更新太快，导致笔者都来不及改文章内容。这不，刚刚发布了Beta版本的Edge浏览器马上就有正式版泄露出来了。 几个月前，微软收购了GitHub"
 slug = "edgeliu-lan-qi-ji-yu-chromium-zheng-shi-wen-ding-ban-xie-lu----qian-tan-liu-lan-qi"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/08/20190822205130-1024x459.jpg"
+featureimage = "/images/posts/edgeliu-lan-qi-ji-yu-chromium-zheng-shi-wen-ding-ban-xie-lu----qian-tan-liu-lan-qi/cover.avif"
 +++
 
 如果你一直关心无主界的话，也许你觉得笔者最近“发了疯”，在疯狂的推送几乎同样的新闻。这不是没有原因的，最近关于Edge浏览器(基于Chromium)的新闻实在更新太快，导致笔者都来不及改文章内容。这不，刚刚发布了Beta版本的Edge浏览器马上就有正式版泄露出来了。
 
-![](/images/wp-content/uploads/2019/08/20190822205130-1024x459.jpg)
+![](/images/posts/edgeliu-lan-qi-ji-yu-chromium-zheng-shi-wen-ding-ban-xie-lu----qian-tan-liu-lan-qi/cover.avif)
 
 几个月前，微软收购了GitHub网站。正当笔者在考虑这笔收购有何益处时，没过多久，微软就宣布将基于Chromium开发新一代Edge浏览器。
 
-![](/images/wp-content/uploads/2019/04/201904122005.jpg)
+![](/images/posts/edgeliu-lan-qi-ji-yu-chromium-zheng-shi-wen-ding-ban-xie-lu----qian-tan-liu-lan-qi/01.avif)
 
 这个消息也许对普通人来说可能不算什么，但对于网站浏览器行业来说是意味深长。毕竟对于整个浏览器市场，已经许久没有新鲜血液的注入了。至于为什么说浏览器行业许久没有大动作，这需要从浏览器的历史说起。
 
@@ -23,7 +23,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/08/2019082220513
 
 事实上，即便很多国产浏览器不会主动告知用户它们使用的是Chromium，但大多都是基于它进行开发的。比如大名鼎鼎的360极速浏览器、世界之窗极速版、傲游浏览器和UC浏览器电脑版等。搜狗高速浏览器和QQ浏览器虽然官方不承认，但经过测试也极有可能用的是Chromium。
 
-![](/images/wp-content/uploads/2019/04/201904122008.png)
+![](/images/posts/edgeliu-lan-qi-ji-yu-chromium-zheng-shi-wen-ding-ban-xie-lu----qian-tan-liu-lan-qi/02.avif)
 
 所以我们不难发现，浏览器看似多种多样，功能也各有千秋。但回到根本，它们的核心均大同小异，唯一的区别在于Chromium的版本不同罢了。其实，如果你观察仔细，你很容易就会发现这类游览器呈现的页面十分类似，原因就是它们本身就是一个“母亲”的多个“儿子”。
 
@@ -35,7 +35,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/08/2019082220513
 
 根据百度百科：浏览器最重要或者说核心的部分是“Rendering Engine”，可大概译为“渲染引擎”，不过我们一般习惯将之称为“浏览器内核”。负责对网页语法的解释（如标准通用标记语言下的一个应用HTML、JavaScript）并渲染（显示）网页。 所以，通常所谓的浏览器内核也就是浏览器所采用的渲染引擎，渲染引擎决定了浏览器如何显示网页的内容以及页面的格式信息。不同的浏览器内核对网页编写语法的解释也有不同，因此同一网页在不同的内核的浏览器里的渲染（显示）效果也可能不同，这也是网页编写者需要在不同内核的浏览器中测试网页显示效果的原因。
 
-![](/images/wp-content/uploads/2019/04/201904122009.png)
+![](/images/posts/edgeliu-lan-qi-ji-yu-chromium-zheng-shi-wen-ding-ban-xie-lu----qian-tan-liu-lan-qi/03.avif)
 
 简单说，网站只是一堆代码和些许富媒体文件。浏览器内核便是负责把这些代码、文件组合编译，最终以一种符合网站设计者要求的形态展示给访问者的工具。所以，大家明白了。为什么说一个浏览器核心很重要，就是这个原因。如果没有一个可靠、安全、快速的浏览器内核。不仅对于开发者来说是个灾难，对于普通用户来说，也是糟糕的体验。
 
@@ -67,7 +67,7 @@ Gecko内核是一个完全开源的内核，其主要使用的浏览器是大名
 
 以上对Trident内核的描述中，大家不难发现，微软似乎经历了浏览器的滑铁卢。事实确实如此，IE浏览器可谓是昨日黄花，市场份额与日俱减。作为曾经的老大哥，微软自然不能坐视不管。因此在Windows 10发布的同时，Edge浏览器进入大家的视野。
 
-![](/images/wp-content/uploads/2019/04/201904122006-1024x536.jpg)
+![](/images/posts/edgeliu-lan-qi-ji-yu-chromium-zheng-shi-wen-ding-ban-xie-lu----qian-tan-liu-lan-qi/04.avif)
 
 Edge实际是浏览器的内核，同时它也是浏览器的名字。Edge在刚推出的时候，由于它前无古人的测试分数而闻名于网站开发者中。本来站长也被Edge描绘的未来所吸引，但事实无情的打了站长的脸。
 
@@ -93,7 +93,7 @@ Edge实际是浏览器的内核，同时它也是浏览器的名字。Edge在刚
 
 由于使用了Chromium，在网页渲染等各个方面较之原版Edge提升不止一点。又因为使用的Chromium版本要高于Chrome，因此在网上冲浪的体验上，笔者是认为优于Chrome的。
 
-![](/images/wp-content/uploads/2019/04/20190412222118-1024x544.jpg)
+![](/images/posts/edgeliu-lan-qi-ji-yu-chromium-zheng-shi-wen-ding-ban-xie-lu----qian-tan-liu-lan-qi/05.avif)
 
 又，大家都明白，由于政策的原因。Chrome在国内是不完整的体验。除非使用特殊手段，否则登陆谷歌账户都是问题，更别说跨平台同步之类的了。然而Edge没有这类的烦恼。由于使用的是微软账号，对于Windows用户十分友好，又因为基于Chromium，因此可以无缝从Chrome导入收藏甚至是密码（这有些可怕）。这是Chrome所达不到的。
 
@@ -105,11 +105,11 @@ Chromium版Edge浏览器目前**已经提供了Beta版本** ，同时也有**正
 
 以下是微软官方下载地址。
 
-下载：[点击链接](<https://www.microsoftedgeinsider.com/en-us/download>) 也有可以直接下载Beta版本：[点击链接](<https://www.microsoftedgeinsider.com/zh-cn/>)
+下载：[点击链接](https://www.microsoftedgeinsider.com/en-us/download) 也有可以直接下载Beta版本：[点击链接](https://www.microsoftedgeinsider.com/zh-cn/)
 
-**这里还有泄露的正式版** ：[点此链接](<https://go.microsoft.com/fwlink/?linkid=2069324&Channel=Stable&language=cn>)
+**这里还有泄露的正式版** ：[点此链接](https://go.microsoft.com/fwlink/?linkid=2069324&Channel=Stable&language=cn)
 
-![](/images/wp-content/uploads/2019/04/20190821120537-1024x456.jpg)
+![](/images/posts/edgeliu-lan-qi-ji-yu-chromium-zheng-shi-wen-ding-ban-xie-lu----qian-tan-liu-lan-qi/06.avif)
 
 微软宣布Edge Beta版本提供以下功能：
 

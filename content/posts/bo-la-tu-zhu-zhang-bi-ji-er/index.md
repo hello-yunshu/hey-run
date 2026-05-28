@@ -4,7 +4,7 @@ date = 2020-10-20T17:21:58+08:00
 draft = true
 description = "柏拉图主张一个公正的国家是个体幸福的先决条件，在如何建立一个公正的国家问题上，将柏拉图的思想大致梳理了下： 一．诞生的孩子放在公正托儿所抚养，实行共同抚养孩子以及财产共有 1.1共同抚养孩子 早期对孩子进行体能训练和艺术教育两个方面，艺术教育中给孩子讲的故事内容只允许讲述得到城邦准许的利于塑造儿童思"
 slug = "bo-la-tu-zhu-zhang-bi-ji-er"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/10/202010201716.jpg"
+featureimage = "/images/posts/bo-la-tu-zhu-zhang-bi-ji-er/cover.avif"
 +++
 
 柏拉图主张一个公正的国家是个体幸福的先决条件，在如何建立一个公正的国家问题上，将柏拉图的思想大致梳理了下：
@@ -17,7 +17,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/10/202010201716.
 
 把孩子培养成为统治者（必须被培养成为哲学家）、辅佐者、平民百姓。
 
-![](/images/wp-content/uploads/2020/10/202010201716.jpg)
+![](/images/posts/bo-la-tu-zhu-zhang-bi-ji-er/cover.avif)
 
 两者共同构成拥有至高权力的军事精英
 
@@ -25,7 +25,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/10/202010201716.
 
 对于那些没有被选为辅佐者或统治者的公民，用故事型的思想“灵魂说”（三种人都是在什么时间以什么方式被创造出来的，有人具有金子的品性，有人具有银子的品性，有人具有青铜或铁的品性）灌输无条件接受政治秩序的思想，使他们相信这是一个公正的解决城邦治理问题的方案。
 
-![](/images/wp-content/uploads/2020/10/202010201718-1024x480.jpg)
+![](/images/posts/bo-la-tu-zhu-zhang-bi-ji-er/01.avif)
 
 1.2财产公有
 
@@ -35,7 +35,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/10/202010201716.
 
 柏拉图最想得到的是一份永久性的计划，一旦城邦的意见已，就必须保护城邦免受任何创新和变革的影响。（评价：是一份非常保守的计划，计划的主体是教育）
 
-![](/images/wp-content/uploads/2020/10/202010201719.jpg)
+![](/images/posts/bo-la-tu-zhu-zhang-bi-ji-er/02.avif)
 
 整体感觉：
 

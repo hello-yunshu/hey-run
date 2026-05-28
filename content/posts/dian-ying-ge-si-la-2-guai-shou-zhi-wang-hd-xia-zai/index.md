@@ -4,7 +4,7 @@ date = 2019-08-05T23:14:53+08:00
 draft = true
 description = "哥斯拉2片源终于来啦。 虽然还没来得及看，但是看见豆瓣上6.4分而且没看过这个系列的第一部小梁也有点不想看惹。 大概刷了一下低分评价，主要集中在对剧情和角色的抨击，听着如同看过，大概及格靠特效拉了分吧。其实我是喜欢给电影分类的，在看【打架电影】时一般是不会太注重剧情的。除非我看它不顺眼或者实在是我脑"
 slug = "dian-ying-ge-si-la-2-guai-shou-zhi-wang-hd-xia-zai"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/08/20190805222645-714x1024.jpg"
+featureimage = "/images/posts/dian-ying-ge-si-la-2-guai-shou-zhi-wang-hd-xia-zai/cover.avif"
 +++
 
 哥斯拉2片源终于来啦。
@@ -15,7 +15,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/08/2019080522264
 
 嗯，所以请大家看过之后留言吧，我就先不看啦嘻嘻。
 
-![](/images/wp-content/uploads/2019/08/20190805222645-714x1024.jpg)
+![](/images/posts/dian-ying-ge-si-la-2-guai-shou-zhi-wang-hd-xia-zai/cover.avif)
 
 导演: 迈克尔·道赫蒂
 
@@ -37,7 +37,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/08/2019080522264
 
 又名: 哥斯拉：怪兽之王/哥斯拉II:王者巨兽(港)/哥吉拉II怪兽之王(台)/哥斯拉2/哥斯拉2018/Godzilla2
 
-IMDb链接: [tt3741700](<http://www.imdb.com/title/tt3741700>)
+IMDb链接: [tt3741700](http://www.imdb.com/title/tt3741700)
 
 > 简介：随着《哥斯拉》和《金刚：骷髅岛》在全球范围内取得成功，传奇影业和华纳兄弟影业联手开启了怪兽宇宙系列电影的新篇章—一部史诗级动作冒险巨制。在这部电影中，哥斯拉将和众多大家在流行文化中所熟知的怪兽展开较量。全新故事中，研究神秘动物学的机构“帝王组织”将勇敢直面巨型怪兽，其中强大的哥斯拉也将和魔斯拉、拉顿和它的死对头——三头王者基多拉展开激烈对抗。当这些只存在于传说里的超级生物再度崛起时，它们将展开王者争霸，人类的命运岌岌可危……
 
@@ -45,6 +45,6 @@ IMDb链接: [tt3741700](<http://www.imdb.com/title/tt3741700>)
 
 百度云链接: <https://pan.baidu.com/s/1k-UfJ_DTADqdfxyY9-MyrA> 提取码: dped
 
-磁力链接：[magnet:?xt=urn:btih:6F5BE90545C1EB0CE73547C1501A57087EDE33C5](<magnet:?xt=urn:btih:6F5BE90545C1EB0CE73547C1501A57087EDE33C5>)
+磁力链接：[magnet:?xt=urn:btih:6F5BE90545C1EB0CE73547C1501A57087EDE33C5](magnet:?xt=urn:btih:6F5BE90545C1EB0CE73547C1501A57087EDE33C5)
 
-无法下载？使用这个工具吧：[Motrix – 无广告开源的全能下载器](<https://www.idleleo.com/06/2314.html>)
+无法下载？使用这个工具吧：[Motrix – 无广告开源的全能下载器](https://www.idleleo.com/06/2314.html)

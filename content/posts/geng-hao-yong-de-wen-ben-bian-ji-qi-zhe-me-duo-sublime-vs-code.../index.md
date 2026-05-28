@@ -4,18 +4,18 @@ date = 2019-11-02T21:53:00+08:00
 draft = true
 description = "公道自在人心，正义终将到来。现在好用的文本编辑器层出不穷，功能也越来越强大。对一个文本编辑工具而言，现在市面上有不少更好的替代工具，实在没有必要使用一些“跳梁小丑”的产品。 :mrgreen: :mrgreen:"
 slug = "geng-hao-yong-de-wen-ben-bian-ji-qi-zhe-me-duo-sublime-vs-code..."
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/11/201911022150.jpg"
+featureimage = "/images/posts/geng-hao-yong-de-wen-ben-bian-ji-qi-zhe-me-duo-sublime-vs-code.../cover.avif"
 +++
 
 公道自在人心，正义终将到来。现在好用的文本编辑器层出不穷，功能也越来越强大。对一个文本编辑工具而言，现在市面上有不少更好的替代工具，实在没有必要使用一些“跳梁小丑”的产品。 :mrgreen: :mrgreen: 
 
-![](/images/wp-content/uploads/2019/11/201911022150.jpg)
+![](/images/posts/geng-hao-yong-de-wen-ben-bian-ji-qi-zhe-me-duo-sublime-vs-code.../cover.avif)
 
-[Sublime Text （非开源）](<http://www.sublimetext.com/3>)
+[Sublime Text （非开源）](http://www.sublimetext.com/3)
 
 Sublime Text 是一个轻量、简洁、高效、跨平台的编辑器。
 
-![](/images/wp-content/uploads/2019/11/20191031163211.jpg)
+![](/images/posts/geng-hao-yong-de-wen-ben-bian-ji-qi-zhe-me-duo-sublime-vs-code.../01.avif)
 
 Sublime Text 的特色功能：
 
@@ -29,19 +29,19 @@ Sublime Text 的特色功能：
   * 支持宏，简单地说就是把操作录制下来或者自己编写命令，然后播放刚才录制的操作或者命令。
   * 更新非常勤快
 
-[Visual Studio Code](<https://code.visualstudio.com/>)
+[Visual Studio Code](https://code.visualstudio.com/)
 
 Visual Studio Code 是一个运行于 OS X，Windows 和 Linux 之上的，针对于编写现代 Web 和云应用的跨平台编辑器。
 
-![](/images/wp-content/uploads/2019/11/20191031163211-2.jpg)
+![](/images/posts/geng-hao-yong-de-wen-ben-bian-ji-qi-zhe-me-duo-sublime-vs-code.../02.avif)
 
-[Github Atom](<https://github.atom.io/>)
+[Github Atom](https://github.atom.io/)
 
 Atom 是 GitHub 专门为程序员推出的一个跨平台文本编辑器。具有简洁和直观的图形用户界面，并有很多有趣的特点：支持 CSS，HTML，JavaScript 等网页编程语言。它支持宏，自动完成分屏功能，集成了文件管理器。
 
-![](/images/wp-content/uploads/2019/11/20191031163212.jpg)
+![](/images/posts/geng-hao-yong-de-wen-ben-bian-ji-qi-zhe-me-duo-sublime-vs-code.../03.avif)
 
-[BowPad](<https://www.oschina.net/p/bowpad>)
+[BowPad](https://www.oschina.net/p/bowpad)
 
 BowPad 是一个带有功能区 UI 的简单而快速的文本编辑器
 
@@ -55,10 +55,10 @@ BowPad 是一个带有功能区 UI 的简单而快速的文本编辑器
 
 界面截图：
 
-![](/images/wp-content/uploads/2019/11/201910311632125.jpg)
+![](/images/posts/geng-hao-yong-de-wen-ben-bian-ji-qi-zhe-me-duo-sublime-vs-code.../04.avif)
 
-[Editra](<http://editra.org/>)
+[Editra](http://editra.org/)
 
 Editra是一个支持多平台的文本编辑器，可以支持基本语法和二十种语言。它使用方便，可以用颜色标注重点部分，支持进行内嵌式编辑，也可以进行代码编辑。
 
-![](/images/wp-content/uploads/2019/11/201910311632214.jpg)
+![](/images/posts/geng-hao-yong-de-wen-ben-bian-ji-qi-zhe-me-duo-sublime-vs-code.../05.avif)

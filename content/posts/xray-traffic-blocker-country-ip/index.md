@@ -4,7 +4,7 @@ date = 2026-05-26T02:28:00+08:00
 draft = false
 description = "Xray_bash_onekey 新增了流量阻断功能，可以通过 GeoIP 和 GeoSite 阻断指定国家/地区的 IP 与域名流量，也可以顺手拦截 BT、广告域名和私有网络访问。它不是魔法防火墙，但足够处理很多让人头疼的偷跑和滥用场景。"
 slug = "xray-traffic-blocker-country-ip"
-featureimage = "images/xray-traffic-blocker-fauvist-cover.png"
+featureimage = "/images/posts/xray-traffic-blocker-country-ip/cover.avif"
 categories = ["网络技术"]
 tags = ["Xray", "GeoIP", "GeoSite", "流量阻断", "代理"]
 +++
@@ -26,7 +26,7 @@ tags = ["Xray", "GeoIP", "GeoSite", "流量阻断", "代理"]
 
 不是什么高深操作，想法超级朴素：**我的代理，有些方向的流量，就是不想让你从这走**。尤其是后端多、跳板多、Reality 附加协议多的机器，多一道规则真的比事后对着流量账单发呆强。
 
-![](/images/xray-traffic-blocker-feature.png)
+![](/images/posts/xray-traffic-blocker-country-ip/01.avif)
 
 ## 怎么开
 
@@ -38,7 +38,7 @@ idleleo --traffic-blocker
 
 或者 `idleleo` 进主菜单，选「设置 Xray 流量阻断」。进去是长这样：
 
-![](/images/xray-traffic-blocker-menu.png)
+![](/images/posts/xray-traffic-blocker-country-ip/02.avif)
 
 几个入口清清楚楚：看规则状态、管理阻断规则、更新 GeoData、重置全部规则。第一次用的话，**先更新 GeoData**，让 `geoip.dat` 和 `geosite.dat` 是最新版。脚本自己也会检查，缺了就自动下载，不用你到处找文件——这还算贴心吧？
 
@@ -50,7 +50,7 @@ cn,jp,ru
 
 国家/地区阻断是一个独立的人口，可以添加，也可以按编号删掉：
 
-![](/images/xray-country-block-menu.png)
+![](/images/posts/xray-traffic-blocker-country-ip/03.avif)
 
 脚本会自动去重，不合法代码也会跳过。加完以后立刻应用规则并重启 Xray。看到「重启」别紧张，这是让新路由生效的正确姿势，不是脚本在翻车。
 

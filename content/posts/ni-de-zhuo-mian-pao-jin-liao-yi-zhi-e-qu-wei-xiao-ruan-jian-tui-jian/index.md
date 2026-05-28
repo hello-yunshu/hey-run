@@ -4,7 +4,7 @@ date = 2020-04-03T20:14:33+08:00
 draft = true
 description = "今天笔者给大家推荐一款电脑的趣味小插件——DesktopGoose。就如软件名称“桌面鹅”所说，这款软件是一个桌面宠物养成类的小软件。话不多说，我们一起来看看这款软件到底是怎么样的吧。 软件简介 软件分为Windows版和MacOS版，不需要安装，直接下载运行即可。这里以Windows版本为例："
 slug = "ni-de-zhuo-mian-pao-jin-liao-yi-zhi-e-qu-wei-xiao-ruan-jian-tui-jian"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/04/20200403191034-1024x510.jpg"
+featureimage = "/images/posts/ni-de-zhuo-mian-pao-jin-liao-yi-zhi-e-qu-wei-xiao-ruan-jian-tui-jian/cover.avif"
 +++
 
 今天笔者给大家推荐一款电脑的趣味小插件——DesktopGoose。就如软件名称“桌面鹅”所说，这款软件是一个桌面宠物养成类的小软件。话不多说，我们一起来看看这款软件到底是怎么样的吧。
@@ -13,17 +13,17 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/04/2020040319103
 
 软件分为Windows版和MacOS版，不需要安装，直接下载运行即可。这里以Windows版本为例：
 
-![](/images/wp-content/uploads/2020/04/20200403191034-1024x510.jpg)
+![](/images/posts/ni-de-zhuo-mian-pao-jin-liao-yi-zhi-e-qu-wei-xiao-ruan-jian-tui-jian/cover.avif)
 
 运行图中`GooseDesktop.exe`文件即可，运行后会在电脑后台自动运行此程序。注意，这个程序不会以出现窗口或者任务栏图标。需要关闭这程序只能调用任务管理器或者运行上图中的`Close Goose.bat`文件。（是不是有小伙伴想到了恶搞同伴的办法。。嘿嘿🤭）
 
-![](/images/wp-content/uploads/2020/04/20200403191705.jpg)
+![](/images/posts/ni-de-zhuo-mian-pao-jin-liao-yi-zhi-e-qu-wei-xiao-ruan-jian-tui-jian/01.avif)
 
 运行完后，桌面就会出现如图的一个鹅（鸭？）啦~ 那么重点来了，这只看上去萌萌的鹅能做什么呢？放心，这只鹅要是只能傻站在哪里，负责任的笔者怎么会推荐给大家呢。
 
-![](/images/wp-content/uploads/2020/04/20200403192322-1024x455.jpg)偶尔拖出一个文本框
+![](/images/posts/ni-de-zhuo-mian-pao-jin-liao-yi-zhi-e-qu-wei-xiao-ruan-jian-tui-jian/02.avif)偶尔拖出一个文本框
 
-![](/images/wp-content/uploads/2020/04/20200403192147-1024x454.jpg)追着鼠标跑
+![](/images/posts/ni-de-zhuo-mian-pao-jin-liao-yi-zhi-e-qu-wei-xiao-ruan-jian-tui-jian/03.avif)追着鼠标跑
 
 这头蠢萌的鹅看上去人畜无害，但却并不好惹。有时候它会拖出一些奇奇怪怪的文本框和图片，如果你把那些无故出现的窗口关掉，这头蠢鹅就会追着你的鼠标跑，你以为就只是追着鼠标跑就完事了吗？并不是，如果它追上你的鼠标，还会咬着你的鼠标平移！对，你没看错，它会让你无法控制你的鼠标。
 
@@ -51,7 +51,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/04/2020040319103
 
 **0.3更新：**
 
-- **新的官方改装API  ！**加入Discord**[discord.gg/xZFRmPT](<https://t.co/DP3C2342uT?amp=1>)** 并检查#goose-mods频道以获取更多有关此信息:-D
+- **新的官方改装API  ！**加入Discord**[discord.gg/xZFRmPT](https://t.co/DP3C2342uT?amp=1)** 并检查#goose-mods频道以获取更多有关此信息:-D
 
 - **您自己未发表的文字！** 添加任何您想要的记事本短语，鹅就会把它们拉起来！
 

@@ -4,7 +4,7 @@ date = 2019-03-17T17:24:54+08:00
 draft = true
 description = "密码学（Cryptography）是一门古老而年轻的科学，它的起源可以追溯到古罗马时代约公元110年的恺撒（Caesar）加密。然而，直到1949年Claude Elwood Shannon发表了《保密系统的通信理论》这篇划时代的论文，才标志着现代密码学的诞生。经典密码学所使用的密码设计和分析方法不"
 slug = "jie-mi-mi-ma-bei-hou-de-yuan-li"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/03/2019031717191.png"
+featureimage = "/images/posts/jie-mi-mi-ma-bei-hou-de-yuan-li/cover.png"
 +++
 
 密码学（Cryptography）是一门古老而年轻的科学，它的**起源可以追溯到古罗马时代约公元110年的恺撒（Caesar）加密** 。然而，直到1949年Claude Elwood Shannon发表了**《保密系统的通信理论》这篇划时代的论文，才标志着现代密码学的诞生** 。经典密码学所使用的密码设计和分析方法不是基于数学推理而是依赖密码学家的直觉和灵感。
@@ -37,13 +37,13 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/03/2019031717191
 
 KeyGen:输入1^n，随机选择两个n比特的素数p,q,N=pq，∅(N)=(p-1)(q-1)，选择满足gcd(e,∅(N))=1的e，计算d=e^(-1) mod∅(N)，输出公钥pk=(N,e)，私钥sk=(N,d).
 
-![](/images/wp-content/uploads/2019/03/2019031717191.png)
+![](/images/posts/jie-mi-mi-ma-bei-hou-de-yuan-li/cover.png)
 
 **“教科书式ElGamal”加密方案**
 
 KeyGen：输入1^n,执行多项式时间算法输出一个循环群G，其阶为q(其中‖q‖=n)，生成元为g。然后选择随机的x←Z_q并且计算h≔g^x。公钥是(G,q,g,h)，私钥是(G,q,g,x)。
 
-![](/images/wp-content/uploads/2019/03/2019031717192.png)
+![](/images/posts/jie-mi-mi-ma-bei-hou-de-yuan-li/01.avif)
 
 上述两个算法加解密的正确性能够简单地验证。在分析它们的安全性之前，我们必须明确攻击场景。根据敌手的能力，主要有以下几种攻击类型：
 

@@ -4,7 +4,7 @@ date = 2026-05-26T01:14:52+08:00
 draft = false
 description = "Xray_bash_onekey 支持在服务端对 Reality 协议做负载均衡。本文保留原来的轻松写法，按当前脚本菜单修正 Reality+ws/gRPC/xHTTP+Nginx、realityServers 和 Nginx 负载均衡配置流程。"
 slug = "bushu-reality-balance"
-featureimage = "images/微信图片_20250902162634_61_354.jpg"
+featureimage = "/images/posts/bushu-reality-balance/cover.avif"
 categories = ["网络技术"]
 tags = ["Xray", "Reality", "负载均衡", "代理"]
 +++
@@ -15,7 +15,7 @@ tags = ["Xray", "Reality", "负载均衡", "代理"]
 
 服务器示意图如下：
 
-![](/images/微信图片_20250902162634_61_354.jpg)
+![](/images/posts/bushu-reality-balance/cover.avif)
 
 大概访问情况如上。客户端只连主服务器，主服务器再把流量分给后面的二级服务器。看起来像一个入口，背后其实是一群小弟在干活，听上去就很让人安心。
 
@@ -42,7 +42,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/hello-yunshu/Xray_bash_oneke
 
 脚本在运行时会提问，如下图：
 
-![](/images/wechat_2025-09-02_163352_850.png)
+![](/images/posts/bushu-reality-balance/01.avif)
 
 在按照流程搭建时，必须要记下几个重要的值：
 
@@ -75,7 +75,7 @@ idleleo --show
   * 自定义端口 --> 建议用高位端口，比如 2xxxx
   * 自定义 UUID / Target / privateKey / shortIds --> 必须和主服务器一模一样！
 
-![](/images/wechat_2025-09-02_165730_864.png)
+![](/images/posts/bushu-reality-balance/02.avif)
 
 如上图，请输入之前记下的参数，保持每个都与主服务器一致。
 
@@ -104,7 +104,7 @@ idleleo --add-upstream
 
 然后会有如下提示：
 
-![wechat_2025-09-02_170104_729.png](/images/wechat_2025-09-02_170104_729.png)
+![wechat_2025-09-02_170104_729.png](/images/posts/bushu-reality-balance/03.avif)
 
 根据要求，创建一个新的 `realityServers` 文件。创建过程会提示你输入：
 
@@ -148,7 +148,7 @@ idleleo --port-traffic
 
 安装完后，脚本会有额外提示，如图：
 
-![](/images/wechat_2025-09-02_174135_399.png)
+![](/images/posts/bushu-reality-balance/04.avif)
 
 看到 `+Balance` 就意味着这是负载均衡的服务器，这样就不会搞错啦。
 

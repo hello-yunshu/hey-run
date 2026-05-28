@@ -4,12 +4,12 @@ date = 2019-11-10T14:56:59+08:00
 draft = true
 description = "最新消息！大家期待的《小丑》(又称：Joker)资源出现啦！感谢韩国的大力支持！笔者还没有仔细观看，之后会送上笔者的影评。不管啦，快来看吧！ 导演: 托德·菲利普斯"
 slug = "dian-ying-xiao-chou-joker-han-ban-hd-zai-xian-guan-kan-xia-zai"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/11/2567198874-691x1024.jpg"
+featureimage = "/images/posts/dian-ying-xiao-chou-joker-han-ban-hd-zai-xian-guan-kan-xia-zai/cover.avif"
 +++
 
 最新消息！大家期待的《小丑》(又称：Joker)资源出现啦！感谢韩国的大力支持！笔者还没有仔细观看，之后会送上笔者的影评。不管啦，快来看吧！
 
-![](/images/wp-content/uploads/2019/11/2567198874-691x1024.jpg)
+![](/images/posts/dian-ying-xiao-chou-joker-han-ban-hd-zai-xian-guan-kan-xia-zai/cover.avif)
 
 导演: 托德·菲利普斯
 
@@ -37,7 +37,7 @@ IMDb链接: tt7286456
 
 ## 资源下载
 
-百度云下载：[点击链接](<https://pan.baidu.com/wap/init?surl=3hi3w3BZMUaZqGIppXYjNA>)
+百度云下载：[点击链接](https://pan.baidu.com/wap/init?surl=3hi3w3BZMUaZqGIppXYjNA)
 
 提取码: qip7
 

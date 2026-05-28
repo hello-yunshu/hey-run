@@ -4,12 +4,12 @@ date = 2018-02-05T21:14:04+08:00
 draft = true
 description = "绪论 本文介绍一个You-Get小程序。 You-Get 乃一小小哒命令行程序，提供便利的方式来下载网络上的媒体信息。 利用[code]you-get[/code]下载这个网页<"
 slug = "xia-zai-wang-ye-wu-fa-xia-zai-de-fu-mei-ti"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2018/02/201825-300x154.jpg"
+featureimage = "/images/posts/xia-zai-wang-ye-wu-fa-xia-zai-de-fu-mei-ti/cover.avif"
 +++
 
 #### 绪论
 
-本文介绍一个[You-Get](<https://you-get.org/>)小程序。 [You-Get](<https://you-get.org/>) 乃一小小哒命令行程序，提供便利的方式来下载网络上的媒体信息。 [![](/images/wp-content/uploads/2018/02/201825-300x154.jpg)](</images/wp-content/uploads/2018/02/201825.jpg>) 利用[code]you-get[/code]下载[这个网页](<http://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-software-free-society>)的视频: 
+本文介绍一个[You-Get](https://you-get.org/)小程序。 [You-Get](https://you-get.org/) 乃一小小哒命令行程序，提供便利的方式来下载网络上的媒体信息。 [![](/images/posts/xia-zai-wang-ye-wu-fa-xia-zai-de-fu-mei-ti/cover.avif)](/images/posts/xia-zai-wang-ye-wu-fa-xia-zai-de-fu-mei-ti/cover.avif) 利用[code]you-get[/code]下载[这个网页](http://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-software-free-society)的视频: 
 [code] 
     $ you-get http://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-software-free-society
     Site:       fsf.org
@@ -29,12 +29,12 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2018/02/201825-300x15
   * 你为黑客精神与自由软件而欣喜
 
 [code]you-get[/code]之功用: 
-  * 下载流行网站之音视频，例如YouTube, Youku, Niconico,以及更多. (查看[完整支持列表](<https://github.com/soimort/you-get/wiki/%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E#supported-sites>))
+  * 下载流行网站之音视频，例如YouTube, Youku, Niconico,以及更多. (查看[完整支持列表](https://github.com/soimort/you-get/wiki/%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E#supported-sites))
   * 于您心仪的媒体播放器中观看在线视频，脱离浏览器与广告
   * 下载您喜欢的网页上的图片
   * 下载任何非HTML内容，例如二进制文件
 
-心动? [现在安装](<https://github.com/soimort/you-get/wiki/%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E#installation>) 并 [查看使用范例](<https://github.com/soimort/you-get/wiki/%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E#getting-started>). 使用Python编程？敬请查看 [源代码](<https://github.com/soimort/you-get>) 并fork! 
+心动? [现在安装](https://github.com/soimort/you-get/wiki/%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E#installation) 并 [查看使用范例](https://github.com/soimort/you-get/wiki/%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E#getting-started). 使用Python编程？敬请查看 [源代码](https://github.com/soimort/you-get) 并fork! 
 
 #### 安装
 
@@ -42,13 +42,13 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2018/02/201825-300x15
 
 以下乃必要依赖，需要单独安装，除非于Windows下使用预包装包: 
 
-  * **[Python 3](<https://www.python.org/downloads/>)**
-  * **[FFmpeg](<https://www.ffmpeg.org/>)** (强烈推荐) or [Libav](<https://libav.org/>)
-  * (可选) [RTMPDump](<https://rtmpdump.mplayerhq.hu/>)
+  * **[Python 3](https://www.python.org/downloads/)**
+  * **[FFmpeg](https://www.ffmpeg.org/)** (强烈推荐) or [Libav](https://libav.org/)
+  * (可选) [RTMPDump](https://rtmpdump.mplayerhq.hu/)
 
 ### 选项 1: 通过pip安装
 
-[code]you-get[/code]之官方版本通过[PyPI](<https://pypi.python.org/pypi/you-get>)分发, 可从PyPI镜像中通过[pip](<https://en.wikipedia.org/wiki/Pip_(package_manager)>) 包管理器安装. 须知您务必使用版本3的 [code]pip[/code]: 
+[code]you-get[/code]之官方版本通过[PyPI](https://pypi.python.org/pypi/you-get)分发, 可从PyPI镜像中通过[pip](https://en.wikipedia.org/wiki/Pip_(package_manager)) 包管理器安装. 须知您务必使用版本3的 [code]pip[/code]: 
 [code]
     [code]$ pip3 install you-get[/code]
 [/code]
@@ -59,7 +59,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2018/02/201825-300x15
 
 ### 选项 3: 于GitHub下载
 
-您可选择[稳定版](<https://github.com/soimort/you-get/archive/master.zip>) (与PyPI最新版等同) 或 [开发版](<https://github.com/soimort/you-get/archive/develop.zip>) (更多的热补丁与不稳定功能)的[code]you-get[/code]. 解压并将含有[code]you-get[/code]的目录加入[code]PATH[/code]. 或者, 运行 
+您可选择[稳定版](https://github.com/soimort/you-get/archive/master.zip) (与PyPI最新版等同) 或 [开发版](https://github.com/soimort/you-get/archive/develop.zip) (更多的热补丁与不稳定功能)的[code]you-get[/code]. 解压并将含有[code]you-get[/code]的目录加入[code]PATH[/code]. 或者, 运行 
 [code]
     [code]$ make install[/code]
 [/code]
@@ -215,8 +215,8 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2018/02/201825-300x15
 
 然而系统代理 (即系统变量[code]http_proxy[/code]) 自动使用. 使用[code]--no-proxy[/code]强行关闭. **提示:**
 
-  * 如果经常使用代理 (网络封锁了部分网站), 考虑将[code]you-get[/code]和 [proxychains](<https://github.com/rofl0r/proxychains-ng>) 一同使用，并设置[code]alias you-get="proxychains -q you-get"[/code] (于命令行).
-  * 对于某些网站(例如Youku), 如果你需要下载仅供中国大陆观看的视频, 可以使用 [code]--extractor-proxy[/code]/[code]-y[/code]单独为解析器设置代理. 可以使用 [code]-y proxy.uku.im:8888[/code] (鸣谢： [Unblock Youku](<https://github.com/zhuzhuor/Unblock-Youku>) 项目).
+  * 如果经常使用代理 (网络封锁了部分网站), 考虑将[code]you-get[/code]和 [proxychains](https://github.com/rofl0r/proxychains-ng) 一同使用，并设置[code]alias you-get="proxychains -q you-get"[/code] (于命令行).
+  * 对于某些网站(例如Youku), 如果你需要下载仅供中国大陆观看的视频, 可以使用 [code]--extractor-proxy[/code]/[code]-y[/code]单独为解析器设置代理. 可以使用 [code]-y proxy.uku.im:8888[/code] (鸣谢： [Unblock Youku](https://github.com/zhuzhuor/Unblock-Youku) 项目).
 
 ### 观看视频
 
@@ -252,6 +252,6 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2018/02/201825-300x15
 
 #### 站长实测
 
-站长我测试了国内一些视频网站，实际情况不乐观，部分网站并不能使用。 [![](/images/wp-content/uploads/2018/02/2018251-1024x534.jpg)](</images/wp-content/uploads/2018/02/2018251.jpg>) **需要注意图中红圈位置，在Windows下运行时，不可以加入$符号。**
+站长我测试了国内一些视频网站，实际情况不乐观，部分网站并不能使用。 [![](/images/posts/xia-zai-wang-ye-wu-fa-xia-zai-de-fu-mei-ti/01.avif)](/images/posts/xia-zai-wang-ye-wu-fa-xia-zai-de-fu-mei-ti/01.avif) **需要注意图中红圈位置，在Windows下运行时，不可以加入$符号。**
 
 _资源取自互联网，由idleleo.com整理_

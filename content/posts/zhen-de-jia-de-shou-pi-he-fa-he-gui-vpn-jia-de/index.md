@@ -4,7 +4,7 @@ date = 2019-11-16T19:16:00+08:00
 draft = true
 description = "早在几年前，由工信部发出的《工业和信息化部关于清理规范互联网网络接入服务市场的通知》中规定：未经电信主管部门批准，不得自行建立或租用专线（含虚拟专用网络VPN）等其他信道开展跨境经营活动。从那一刻起，私自搭建VPN便是违规行为。 虽然有了相关的规定，但是，合法合规的VPN服务却一直未见踪影。随着经济"
 slug = "zhen-de-jia-de-shou-pi-he-fa-he-gui-vpn-jia-de"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/11/201911141453.jpg"
+featureimage = "/images/posts/zhen-de-jia-de-shou-pi-he-fa-he-gui-vpn-jia-de/cover.avif"
 +++
 
 早在几年前，由工信部发出的《工业和信息化部关于清理规范互联网网络接入服务市场的通知》中规定：未经电信主管部门批准，不得自行建立或租用专线（含虚拟专用网络VPN）等其他信道开展跨境经营活动。从那一刻起，私自搭建VPN便是违规行为。
@@ -15,7 +15,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/11/201911141453.
 
 这款浏览器本身并无太大特色，但它最大的不同是，它似乎的确是一款合法合规的VPN。**现在已经被封，看来还是没有合法的VPN啊！**
 
-![](/images/wp-content/uploads/2019/11/201911141453.jpg)
+![](/images/posts/zhen-de-jia-de-shou-pi-he-fa-he-gui-vpn-jia-de/cover.avif)
 
 ### 软件介绍
 
@@ -31,7 +31,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/11/201911141453.
 
 为了验证是否确如其宣传那般合法合规，笔者根据查了查浏览器的企业信息：
 
-![](/images/wp-content/uploads/2019/11/201911141439-1024x458.jpg)
+![](/images/posts/zhen-de-jia-de-shou-pi-he-fa-he-gui-vpn-jia-de/01.avif)
 
 从上述信息看，似乎确实此软件获得相关的资质。（**才怪！** ）
 
@@ -45,12 +45,12 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/11/201911141453.
 
 ## 相关阅读
 
-V2Ray最新教程：[2020 搭建 V2Ray 服务器最新教程](<https://www.idleleo.com/10/2148.html>)
+V2Ray最新教程：[2020 搭建 V2Ray 服务器最新教程](https://www.idleleo.com/10/2148.html)
 
-选择合适的传输协议：[V2Ray / SSR 传输协议哪个好? (各种协议对比)](<https://www.idleleo.com/05/2071.html>)
+选择合适的传输协议：[V2Ray / SSR 传输协议哪个好? (各种协议对比)](https://www.idleleo.com/05/2071.html)
 
-V2Ray加密方式哪个更好：[V2Ray / SSR 加密方式哪个好? (加密方式对比)](<https://www.idleleo.com/09/3058.html>)
+V2Ray加密方式哪个更好：[V2Ray / SSR 加密方式哪个好? (加密方式对比)](https://www.idleleo.com/09/3058.html)
 
-使用BBR等加速TCP：[加速网络 一键部署BBR+BBR魔改+Lotsever(锐速)](<https://www.idleleo.com/05/2125.html>)
+使用BBR等加速TCP：[加速网络 一键部署BBR+BBR魔改+Lotsever(锐速)](https://www.idleleo.com/05/2125.html)
 
-V2Ray各平台客户端：[V2Ray 客户端下载](<https://www.idleleo.com/01/988.html>)
+V2Ray各平台客户端：[V2Ray 客户端下载](https://www.idleleo.com/01/988.html)

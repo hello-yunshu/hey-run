@@ -4,7 +4,7 @@ date = 2019-12-26T19:40:34+08:00
 draft = true
 description = "前段时间，笔者发现很多下载在线文档的“小技巧”已经失效了。据某位开发者说，是一些非技术原因导致的。看来某些互联网企业实在看不下去被人挡住财路了，哈哈。现在，笔者在互联网找到这篇教材，适用范围有限，但的确可以解决一些问题。 这里的浏览器需要有开发者工具选项，现在一般的浏览器如谷歌、火狐、360浏览器等"
 slug = "zi-gei-zi-zu-ge-zhong-zai-xian-wen-dang-xia-zai-xiao-ji-qiao"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/12/20191226002.gif"
+featureimage = "/images/posts/zi-gei-zi-zu-ge-zhong-zai-xian-wen-dang-xia-zai-xiao-ji-qiao/cover.avif"
 +++
 
 前段时间，笔者发现很多下载在线文档的“小技巧”已经失效了。据某位开发者说，是一些非技术原因导致的。看来某些互联网企业实在看不下去被人挡住财路了，哈哈。现在，笔者在互联网找到这篇教材，适用范围有限，但的确可以解决一些问题。
@@ -25,7 +25,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/12/20191226002.g
 
 第二次访问就只要两个步骤，按f12打开开发者工具栏，选项默认的，就只要敲下地址栏刷新，就是以爬虫的身份访问网页。
 
-![](/images/wp-content/uploads/2019/12/20191226002.gif)
+![](/images/posts/zi-gei-zi-zu-ge-zhong-zai-xian-wen-dang-xia-zai-xiao-ji-qiao/cover.avif)
 
 ## 方法2、以移动手机端的身份访问网页。
 
@@ -37,15 +37,15 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/12/20191226002.g
 
 敲一下地址栏重新访问，文档页面的界面一般会变化，变得简单很多，而且没多少广告。
 
-![](/images/wp-content/uploads/2019/12/20191226004.gif)
+![](/images/posts/zi-gei-zi-zu-ge-zhong-zai-xian-wen-dang-xia-zai-xiao-ji-qiao/01.gif)
 
 点击“加载更多”，将所有的文档内容展开。
 
 2、部分版本的360安全浏览器下，把“device toolbar”小按钮按回，就可以右键全选，文档内容直接可以复制，将内容粘贴到word里了。
 
-![](/images/wp-content/uploads/2019/12/20191226006.gif)
+![](/images/posts/zi-gei-zi-zu-ge-zhong-zai-xian-wen-dang-xia-zai-xiao-ji-qiao/02.gif)
 
-![](/images/wp-content/uploads/2019/12/20191226008.gif)
+![](/images/posts/zi-gei-zi-zu-ge-zhong-zai-xian-wen-dang-xia-zai-xiao-ji-qiao/03.gif)
 
 以下非必需：
 
@@ -57,7 +57,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/12/20191226002.g
 
 回车，看能不能复制。
 
-![](/images/wp-content/uploads/2019/12/20191226010.gif)
+![](/images/posts/zi-gei-zi-zu-ge-zhong-zai-xian-wen-dang-xia-zai-xiao-ji-qiao/04.avif)
 
 如果是某丁的文档，不能右键显示菜单，再输入这个代码：
 
@@ -67,14 +67,14 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/12/20191226002.g
 
 另外对于上面浮动的某些区域觉得碍眼，或者由于这个浮框导致保存到本地的页面不能展示全内容，可以点击开发者工具的箭头按钮，选到该区域，按delete键，可以把这个区域直接删除掉。
 
-![](/images/wp-content/uploads/2019/12/20191226012.gif)
+![](/images/posts/zi-gei-zi-zu-ge-zhong-zai-xian-wen-dang-xia-zai-xiao-ji-qiao/05.gif)
 
-![](/images/wp-content/uploads/2019/12/20191226014.gif)
+![](/images/posts/zi-gei-zi-zu-ge-zhong-zai-xian-wen-dang-xia-zai-xiao-ji-qiao/06.gif)
 
 ## 方法三、将网页打印以pdf预览。
 
 这个方法对于禁止复制的网页来复制一些文字效果比较好，比如360doc的文章不能复制，可以用打印预览的方式复制文字。这个方法对于文档平台在pc形式的页面上使用效果已经不好了，可以在方法二的基础上试，记得把页眉和页脚去掉。
 
-![](/images/wp-content/uploads/2019/12/20191226016.gif)
+![](/images/posts/zi-gei-zi-zu-ge-zhong-zai-xian-wen-dang-xia-zai-xiao-ji-qiao/07.avif)
 
 希望能帮助到大家。不过建议不要大规模分享，不然容易失效。

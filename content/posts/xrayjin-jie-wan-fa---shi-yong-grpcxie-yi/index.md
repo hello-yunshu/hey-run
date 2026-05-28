@@ -4,7 +4,7 @@ date = 2026-05-26T03:10:00+08:00
 draft = false
 description = "gRPC 早就不是 Xray_bash_onekey 里的新鲜玩意了，现在它已经和 ws、xHTTP 一起进入同一套安装、分享链接、用户管理和负载均衡流程。本文按当前脚本重新说明 gRPC 的使用方式、serviceName 注意点、CDN 设置以及和 xHTTP 的取舍。"
 slug = "xrayjin-jie-wan-fa---shi-yong-grpcxie-yi"
-featureimage = "images/xray-grpc-feature.png"
+featureimage = "/images/posts/xrayjin-jie-wan-fa---shi-yong-grpcxie-yi/cover.avif"
 categories = ["网络技术"]
 tags = ["Xray", "gRPC", "代理", "CDN"]
 +++
@@ -13,7 +13,7 @@ gRPC 刚进 Xray 那会儿确实像个「新玩具」，人人都想上去摸两
 
 所以这篇不搞 2021 年那种「快来尝鲜」的口吻了。现在该问的是：在当前脚本里，gRPC 怎么选，跟 ws/xHTTP 到底啥区别，以及——哪些地方最容易手滑填错。
 
-![](/images/xray-grpc-feature.png)
+![](/images/posts/xrayjin-jie-wan-fa---shi-yong-grpcxie-yi/cover.avif)
 
 ## gRPC 是什么
 
@@ -46,7 +46,7 @@ gRPC 最容易翻车的地方：`serviceName`。
 
 ws 和 xHTTP 像正常 URL 路径，要带 `/`。但 gRPC 的 `serviceName` **不要 `/`**！脚本输出是 `grpcdemo`，客户端就填 `grpcdemo`。你自作主张加个 `/grpcdemo`？恭喜，连不上。
 
-![](/images/xray-grpc-servicename.png)
+![](/images/posts/xrayjin-jie-wan-fa---shi-yong-grpcxie-yi/01.avif)
 
 这个小细节，错了就真的不通。每次有人说「我配置完全一样就是不通」，我心里都先默念：你是不是多打了一个 `/`？
 
@@ -60,13 +60,13 @@ idleleo --add-upstream
 
 然后选 gRPC。它对应的后端文件是 `.grpcServers`，后端服务器需要相同 UUID、相同 serviceName、开放对应的 gRPC 端口。详细看：[**XRay进阶玩法 - 搭建后端服务器负载均衡**](https://hey.run/posts/xrayjin-jie-wan-fa---da-jian-hou-duan-fu-wu-qi-fu-zai-jun-heng)。
 
-![](/images/xray-backend-load-balancing-inline.png)
+![](/images/shared/xray-backend-load-balancing-inline.avif)
 
 ## CDN 别忘开开关
 
 gRPC 能套 Cloudflare——但你去 CF 控制面板把 gRPC 打开了吗？没开的话，服务端怎么配都是白搭，CDN 那边一句「不认识」就给你拦了。
 
-![](/images/xray-grpc-cdn-latency.png)
+![](/images/posts/xrayjin-jie-wan-fa---shi-yong-grpcxie-yi/02.avif)
 
 另外，CDN 不是万能加速器。想藏源站就开，想极限速度就直连。性能、安全、稳定，三样全都要？醒醒，不存在那种好事。
 

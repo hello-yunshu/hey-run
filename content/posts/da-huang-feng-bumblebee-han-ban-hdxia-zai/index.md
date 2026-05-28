@@ -4,7 +4,7 @@ date = 2019-02-04T00:35:00+08:00
 draft = true
 description = "这部片子其实笔者早就看完了，资源也很早就有了。那为什么笔者现在才分享呢？因为这部片子笔者觉得实在是太太烂了。看完这部电影，笔者觉得这就是一部打着动作科幻片的肥皂剧。剧情普通且冗长，很多地方根本不值得推敲。若是只是为了消磨时间，恭喜，这就是您的最佳选择。若是想看出什么名堂，笔者觉得您还不如去看一些小成"
 slug = "da-huang-feng-bumblebee-han-ban-hdxia-zai"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/02/2019241226.jpg"
+featureimage = "/images/posts/da-huang-feng-bumblebee-han-ban-hdxia-zai/cover.avif"
 +++
 
 这部片子其实笔者早就看完了，资源也很早就有了。那为什么笔者现在才分享呢？因为这部片子笔者觉得实在是太太烂了。看完这部电影，笔者觉得这就是一部打着动作科幻片的肥皂剧。剧情普通且冗长，很多地方根本不值得推敲。若是只是为了消磨时间，恭喜，这就是您的最佳选择。若是想看出什么名堂，笔者觉得您还不如去看一些小成本文艺片。
@@ -29,11 +29,11 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/02/2019241226.jp
 
 又名: 大黄蜂大电影 / 大黄蜂独立电影 / 变形金刚外传：大黄蜂 / 变形金刚外传大黄蜂 / Brighton Falls
 
-IMDb链接: [tt4701182](<http://www.imdb.com/title/tt4701182>)
+IMDb链接: [tt4701182](http://www.imdb.com/title/tt4701182)
 
 * * *
 
-![](/images/wp-content/uploads/2019/02/2019241226.jpg)
+![](/images/posts/da-huang-feng-bumblebee-han-ban-hdxia-zai/cover.avif)
 
 > 简介：本片故事设定在1987年，正值青春期的18岁少女查理Charlie（海莉·斯坦菲尔德 饰）在加州海边小镇的废弃场里发现了伤痕累累的大黄蜂，他们之间会发生怎样的故事呢？让我们拭目以待！   
 > 
@@ -42,8 +42,8 @@ IMDb链接: [tt4701182](<http://www.imdb.com/title/tt4701182>)
 
 ### 下载地址
 
-[大黄蜂.Bumblebee.2018.中文字幕(含韩语硬字幕).HDrip.AAC.1080p-远鉴字幕组.mp4](<magnet:?xt=urn:btih:8B0F756A01BB495313E6D146D4F8093610EE6A34>)（3.64G）
+[大黄蜂.Bumblebee.2018.中文字幕(含韩语硬字幕).HDrip.AAC.1080p-远鉴字幕组.mp4](magnet:?xt=urn:btih:8B0F756A01BB495313E6D146D4F8093610EE6A34)（3.64G）
 
-[大黄蜂.韩版.Bumblebee.2018.HD720P.X264.AAC.English.CHS.Mp4Ba.mp4](<magnet:?xt=urn:btih:3E4QGXJN2DPNUR54YYDFOHLC33YNUFLD>)（2.34G）
+[大黄蜂.韩版.Bumblebee.2018.HD720P.X264.AAC.English.CHS.Mp4Ba.mp4](magnet:?xt=urn:btih:3E4QGXJN2DPNUR54YYDFOHLC33YNUFLD)（2.34G）
 
-[大黄蜂.韩版.Bumblebee.2018.HD1080P.X264.AAC.English.CHS.Mp4Ba.mp4](<magnet:?xt=urn:btih:Q67L4KTN7IS4RWAHLCJ4JRXALB4MZS2K>)（4.75G）
+[大黄蜂.韩版.Bumblebee.2018.HD1080P.X264.AAC.English.CHS.Mp4Ba.mp4](magnet:?xt=urn:btih:Q67L4KTN7IS4RWAHLCJ4JRXALB4MZS2K)（4.75G）

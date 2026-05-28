@@ -4,7 +4,7 @@ date = 2019-06-15T20:53:20+08:00
 draft = true
 description = "由于版权意识的加强，现在听歌变得越来越麻烦。从产业角度看，版权意识的加强是利大于弊的。而对于我们个人来说，却是越来越麻烦。 网易云音乐是非常多的网友的选择，虽然音乐收入丰富，但是有些歌曲涉及到了版权的问题依然无法播放。这多少让人觉得麻烦。 下面介绍一个开源项目，来解决这个问题。笔者亲测可以使用。 项"
 slug = "jie-chu-xian-zhi-qing-song-jie-suo-wang-yi-yun-yin-le-bian-hui-ge-qu-~"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/06/2019061520391.png"
+featureimage = "/images/posts/jie-chu-xian-zhi-qing-song-jie-suo-wang-yi-yun-yin-le-bian-hui-ge-qu-~/cover.png"
 +++
 
 由于版权意识的加强，现在听歌变得越来越麻烦。从产业角度看，版权意识的加强是利大于弊的。而对于我们个人来说，却是越来越麻烦。
@@ -61,9 +61,9 @@ Win + R  然后输入 `cmd` 点击【确定】
 
 然后输入 node -v 会显示nodejs版本号，有显示就说明nodejs安装成功了。
 
-![](/images/wp-content/uploads/2019/06/2019061520391.png)
+![](/images/posts/jie-chu-xian-zhi-qing-song-jie-suo-wang-yi-yun-yin-le-bian-hui-ge-qu-~/cover.png)
 
-![](/images/wp-content/uploads/2019/06/20190615203912.png)
+![](/images/posts/jie-chu-xian-zhi-qing-song-jie-suo-wang-yi-yun-yin-le-bian-hui-ge-qu-~/01.png)
 
 3）下载项目源码到本地。
 
@@ -75,7 +75,7 @@ Win + R  然后输入 `cmd` 点击【确定】
 
 4）再次启动cmd,  注意这次一定要用管理员模式启动，因为还安装依赖包。
 
-![](/images/wp-content/uploads/2019/06/20190615203913.png)
+![](/images/posts/jie-chu-xian-zhi-qing-song-jie-suo-wang-yi-yun-yin-le-bian-hui-ge-qu-~/02.avif)
 
 5）启动后，依次输入下面的命令来安装依赖包并启动服务。
 
@@ -97,10 +97,10 @@ Win + R  然后输入 `cmd` 点击【确定】
 
 分别输入 服务器 和 端口 点击怕【确定】即可，会提示要重启客户端，重启即可。
 
-![](/images/wp-content/uploads/2019/06/20190615203914.png)
+![](/images/posts/jie-chu-xian-zhi-qing-song-jie-suo-wang-yi-yun-yin-le-bian-hui-ge-qu-~/03.avif)
 
 3）使用前后结果对比。
 
-![](/images/wp-content/uploads/2019/06/20190615203915.png)
+![](/images/posts/jie-chu-xian-zhi-qing-song-jie-suo-wang-yi-yun-yin-le-bian-hui-ge-qu-~/04.avif)
 
-![](/images/wp-content/uploads/2019/06/20190615203916.png)
+![](/images/posts/jie-chu-xian-zhi-qing-song-jie-suo-wang-yi-yun-yin-le-bian-hui-ge-qu-~/05.avif)

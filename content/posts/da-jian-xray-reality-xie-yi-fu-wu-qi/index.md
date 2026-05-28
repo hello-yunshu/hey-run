@@ -4,7 +4,7 @@ date = 2026-05-26T01:14:52+08:00
 draft = false
 description = "Xray_bash_onekey 从 2.0 开始正式支持 Reality，现在脚本的 Reality 模式也已经变成 Reality+ws/gRPC/xHTTP+Nginx。本文保留原来的教程语气，按当前脚本重新修正菜单和链接。"
 slug = "da-jian-xray-reality-xie-yi-fu-wu-qi"
-featureimage = "images/image-dgib.png"
+featureimage = "/images/posts/da-jian-xray-reality-xie-yi-fu-wu-qi/cover.avif"
 categories = ["网络技术"]
 tags = ["Xray", "Reality", "服务器搭建", "代理"]
 +++
@@ -41,7 +41,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/hello-yunshu/Xray_bash_oneke
 3. 安装 Xray (Reality+ws/gRPC/xHTTP+Nginx)
 ```
 
-![](/images/image-dgib.png)
+![](/images/posts/da-jian-xray-reality-xie-yi-fu-wu-qi/cover.avif)
 
 接下来一步一步走就行，该填的填，不想改的直接回车。真的很简单～
 

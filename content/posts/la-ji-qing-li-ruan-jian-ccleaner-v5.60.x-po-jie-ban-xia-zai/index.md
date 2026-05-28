@@ -4,12 +4,12 @@ date = 2019-07-27T16:01:55+08:00
 draft = true
 description = "在Windows 10之前由于微软为自家杀毒软件的不重视，Windows系统诞生了很多诸如360等杀毒软件，随着时间的发展，这些软件也变了一个个“全家桶”，除了简单杀毒以外还能清理垃圾、修补漏洞等功能。但是在现在，Windows 10已经自带了Windows 安全中心。这样一定程度的减弱了某些国产全"
 slug = "la-ji-qing-li-ruan-jian-ccleaner-v5.60.x-po-jie-ban-xia-zai"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/07/20190727155740-1024x456.jpg"
+featureimage = "/images/posts/la-ji-qing-li-ruan-jian-ccleaner-v5.60.x-po-jie-ban-xia-zai/cover.avif"
 +++
 
 在Windows 10之前由于微软为自家杀毒软件的不重视，Windows系统诞生了很多诸如360等杀毒软件，随着时间的发展，这些软件也变了一个个“全家桶”，除了简单杀毒以外还能清理垃圾、修补漏洞等功能。但是在现在，Windows 10已经自带了Windows 安全中心。这样一定程度的减弱了某些国产全家桶的需求。
 
-![](/images/wp-content/uploads/2019/07/20190727155740-1024x456.jpg)
+![](/images/posts/la-ji-qing-li-ruan-jian-ccleaner-v5.60.x-po-jie-ban-xia-zai/cover.avif)
 
 如果你放弃使用国产3某0等全家桶软件。电脑垃圾清理、注册表清理的软件哪个更加好用呢？这里笔者就推荐大家使用笔者一直使用的：CCleaner Business Edition。CCleaner是一个选择性收费软件，价格并不昂贵。若是有钱的小伙伴，可以考虑支持一下。
 
@@ -17,7 +17,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/07/2019072715574
 
 应用程序标签页中显示的栏目，取决于您已经安装的应用程序。
 
-![](/images/wp-content/uploads/2019/07/20190727160044-1024x690.jpg)
+![](/images/posts/la-ji-qing-li-ruan-jian-ccleaner-v5.60.x-po-jie-ban-xia-zai/01.avif)
 
 浏览器
 

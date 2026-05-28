@@ -39,10 +39,10 @@ SHA-256: A2C97D5AB1F1D6BC31FD38B5C2C4A6B6B1C2E5886AAEC651DE6ACCC9FA72E20
 
 ### 软件下载：
 
-[login] Windows 客户端：[点击下载](<https://d.idleleo.com/ssr-win.7z>) Android 客户端：[点击下载](<https://d.idleleo.com/ssr-android.apk>) [/login] 
+[login] Windows 客户端：[点击下载](https://d.idleleo.com/ssr-win.7z) Android 客户端：[点击下载](https://d.idleleo.com/ssr-android.apk) [/login] 
 
 ### 软件官网：
 
-已经完全停止开发，不信您可以尝试查看： [ShadowsocksR](<https://github.com/shadowsocksr/>)
+已经完全停止开发，不信您可以尝试查看： [ShadowsocksR](https://github.com/shadowsocksr/)
 
 _资源取自互联网，由idleleo.com整理_

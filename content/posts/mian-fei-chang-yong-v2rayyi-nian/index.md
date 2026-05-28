@@ -3,14 +3,14 @@ title = "免费畅用V2Ray一年？谷歌云$300试用金"
 date = 2019-09-30T19:44:23+08:00
 draft = true
 slug = "mian-fei-chang-yong-v2rayyi-nian"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/09/20190930191035-1024x239.jpg"
+featureimage = "/images/posts/mian-fei-chang-yong-v2rayyi-nian/cover.avif"
 +++
 
 刚刚收到噩耗，Arukas即将停止运行，就在今天2019年9月30日起不再接受注册，并且在2020年1月31日彻底停止服务。
 
-![](/images/wp-content/uploads/2019/09/20190930191035-1024x239.jpg)
+![](/images/posts/mian-fei-chang-yong-v2rayyi-nian/cover.avif)
 
-就在前几天，笔者刚刚发布了相关的文章《[永久免费的V2Ray? 利用Arukas简单搭建](<https://www.idleleo.com/09/3005.html>)》，但还没一个月，Arukas便已经撑不下去了。笔者为此也是哑口无言。
+就在前几天，笔者刚刚发布了相关的文章《[永久免费的V2Ray? 利用Arukas简单搭建](https://www.idleleo.com/09/3005.html)》，但还没一个月，Arukas便已经撑不下去了。笔者为此也是哑口无言。
 
 但是，作为负责人的站长，笔者觉得不能让阅读之前文章的小伙伴失望而归。于是笔者决定说一下另外一个关于云服务器的福利，就是这篇文章，谷歌云的$300试用金。
 
@@ -20,32 +20,32 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/09/2019093019103
 
 首先打开官网：<https://cloud.google.com/free/>（需要梯子） ，点击中间的按钮登陆或新注谷歌账号。之后你便会来到这个页面：
 
-![](/images/wp-content/uploads/2019/09/201909301500-1024x586.jpg)
+![](/images/posts/mian-fei-chang-yong-v2rayyi-nian/01.avif)
 
 很简单的选择你的信息并填写即可，国家可以直接填写中国。
 
-![](/images/wp-content/uploads/2019/09/201909301502-1024x665.jpg)
+![](/images/posts/mian-fei-chang-yong-v2rayyi-nian/02.avif)
 
 之后还是填写个人信息，注意付款方式是必须填写的，填写的付款方式只能是**MasterCard或VISA** 的信用卡。这非常重要，若你没有信用卡是没办法领到试用金的。什么？你没有这种信用卡？解决方法很简单，随便找个银行客服说你需要办一张MasterCard或VISA的信用卡，我相信以后你会开心的被他们多次“问候  
 ”的。
 
 填完之后便领到啦！
 
-![](/images/wp-content/uploads/2019/09/201909301501-1024x579.jpg)
+![](/images/posts/mian-fei-chang-yong-v2rayyi-nian/03.avif)
 
 ## 注意事项
 
   1. 谷歌云更像是国内阿里云之类云服务平台，谷歌云本身也是VM实例，这与VPS有很大差别，比如谷歌云是有专有网络的，而VPS几乎是不会给你的。所以谷歌云可以直接给VM实例设置**防火墙** 。这非常重要，若防火墙未开放相关端口，是没有办法执行任何操作的。
-  2. 谷歌云本身操作系统和VPS类似，因此[2020 搭建 V2Ray 服务器最新教程](<https://www.idleleo.com/09/2148.html>)文中提及的搭建方式均适用。
+  2. 谷歌云本身操作系统和VPS类似，因此[2020 搭建 V2Ray 服务器最新教程](https://www.idleleo.com/09/2148.html)文中提及的搭建方式均适用。
   3. 注意选择合适的VM实例，实例实时在扣除$300试用金中的钱，若配置过高，可能很快就会耗尽。
   4. 若有童鞋需要详细教程，笔者可以考虑再发一篇教程。需要的可以在评论区留言。
 
 ## 推荐阅读
 
-部署V2Ray服务器教程：[2020 搭建 V2Ray 服务器最新教程](<https://www.idleleo.com/10/2148.html>)
+部署V2Ray服务器教程：[2020 搭建 V2Ray 服务器最新教程](https://www.idleleo.com/10/2148.html)
 
-选择合适的传输协议：[V2Ray / SSR 传输协议哪个好? (各种协议对比)](<https://www.idleleo.com/05/2071.html>)
+选择合适的传输协议：[V2Ray / SSR 传输协议哪个好? (各种协议对比)](https://www.idleleo.com/05/2071.html)
 
-V2Ray加密方式哪个更好：[V2Ray / SSR 加密方式哪个好? (加密方式对比)](<https://www.idleleo.com/09/3058.html>)
+V2Ray加密方式哪个更好：[V2Ray / SSR 加密方式哪个好? (加密方式对比)](https://www.idleleo.com/09/3058.html)
 
-使用BBR等加速TCP：[加速网络 一键部署BBR+BBR魔改+Lotsever(锐速)](<https://www.idleleo.com/05/2125.html>)
+使用BBR等加速TCP：[加速网络 一键部署BBR+BBR魔改+Lotsever(锐速)](https://www.idleleo.com/05/2125.html)

@@ -4,7 +4,7 @@ date = 2026-05-26T02:20:00+08:00
 draft = false
 description = "Xray_bash_onekey 现在已经支持 xHTTP 协议了。和 ws、gRPC 一样，xHTTP 可以在 TLS 模式、Reality 附加协议以及 ONLY 后端模式中使用，也可以和 ws、gRPC 一起启用。它不是万能钥匙，但在客户端支持到位的情况下，确实又多了一条可以尝试的路。"
 slug = "xray-xhttp-mode"
-featureimage = "images/xray-xhttp-impressionist-cover.png"
+featureimage = "/images/posts/xray-xhttp-mode/cover.avif"
 categories = ["网络技术"]
 tags = ["Xray", "xHTTP", "代理", "VLESS"]
 +++
@@ -19,7 +19,7 @@ Xray_bash_onekey 最近加入了 xHTTP 协议。是的，继 ws、gRPC 之后，
 
 在脚本里，xHTTP 已经被妥妥收进了原来的 ws/gRPC 选择流程。装 TLS 可以选、装 Reality 附加协议可以选、甚至单独装个 xHTTP ONLY 当后端也可以。
 
-![](/images/xray-xhttp-feature.png)
+![](/images/posts/xray-xhttp-mode/01.avif)
 
 更懒的话，直接选 `ws+gRPC+xHTTP` 同时启用。脚本会分别生成对应端口、路径、分享链接和二维码。好处是一个服务器上多放几条路，客户端支持哪个用哪个；坏处嘛——配置看起来会很热闹，别把自己看晕就行。
 
@@ -29,7 +29,7 @@ Xray_bash_onekey 最近加入了 xHTTP 协议。是的，继 ws、gRPC 之后，
 
 主菜单里 xHTTP 已经是正经选项了，不是什么藏在角落里的实验品：
 
-![](/images/xray-script-main-menu-xhttp.png)
+![](/images/posts/xray-xhttp-mode/02.avif)
 
 全新安装，选传输协议时能看到：
 
@@ -42,7 +42,7 @@ Xray_bash_onekey 最近加入了 xHTTP 协议。是的，继 ws、gRPC 之后，
 
 实际界面大概长这样：
 
-![](/images/xray-xhttp-transport-menu.png)
+![](/images/posts/xray-xhttp-mode/03.avif)
 
 试试水就选 `3`，想多留几条路就选 `4`。脚本会接着问你 xHTTP 的端口和伪装路径——不知道怎么填就回车，默认值通常比你的临场发挥靠谱。
 

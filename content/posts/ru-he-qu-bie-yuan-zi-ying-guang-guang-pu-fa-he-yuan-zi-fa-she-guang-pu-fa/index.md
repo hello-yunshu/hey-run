@@ -4,14 +4,14 @@ date = 2019-08-07T01:35:57+08:00
 draft = true
 description = "笔者看前编辑小梁发傻的时候，突发奇想出了这个问题。这个确实是一个奇怪的问题，本身原子荧光光谱法是在原子受到光子激发后，原子内被激发的电子回到基态时发射出的特定谱线来进行分析的。对于原子发射光谱法来说，激发方式不限于光子，还有其他激发手段，如电火花、等离子等。原子荧光和原子发射两者之间虽然激发的方式并"
 slug = "ru-he-qu-bie-yuan-zi-ying-guang-guang-pu-fa-he-yuan-zi-fa-she-guang-pu-fa"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/08/201908070126.jpg"
+featureimage = "/images/posts/ru-he-qu-bie-yuan-zi-ying-guang-guang-pu-fa-he-yuan-zi-fa-she-guang-pu-fa/cover.avif"
 +++
 
 笔者看前编辑小梁发傻的时候，突发奇想出了这个问题。这个确实是一个奇怪的问题，本身原子荧光光谱法是在原子受到光子激发后，原子内被激发的电子回到基态时发射出的特定谱线来进行分析的。对于原子发射光谱法来说，激发方式不限于光子，还有其他激发手段，如电火花、等离子等。原子荧光和原子发射两者之间虽然激发的方式并不完全类似，但是其原理大同小异，均是检测被激发的原子回到基态时放出的特征谱线。所以，是不是大家也和笔者一样迷糊了，到底区别在哪里，怎么看都觉得原子荧光只是原子发射的一部分啊。那要区分的话先看下两者定义吧！
 
 ## 原子荧光光谱法
 
-![](/images/wp-content/uploads/2019/08/201908070126.jpg)
+![](/images/posts/ru-he-qu-bie-yuan-zi-ying-guang-guang-pu-fa-he-yuan-zi-fa-she-guang-pu-fa/cover.avif)
 
 英文名称：Atomic Fluorescence Spectrometry;AFS
 
@@ -19,7 +19,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/08/201908070126.
 
 ## 原子发射光谱法
 
-![](/images/wp-content/uploads/2019/08/201908070122.jpg)
+![](/images/posts/ru-he-qu-bie-yuan-zi-ying-guang-guang-pu-fa-he-yuan-zi-fa-she-guang-pu-fa/01.avif)
 
 原子发射光谱法，是指利用被激发原子发出的辐射线形成的光谱与标准光谱比较，识别物质中含有何种物质的分析方法。用电弧、火花等为激发源，使气态原子或离子受激发后发射出紫外和可见区域的辐射。某种元素原子只能产生某些波长的谱线，根据光谱图中是否出现某些特征谱线，可判断是否存在某种元素。根据特征谱线的强度，可测定某种元素的含量。一次检验可把被检物质中的元素全部在图谱上显现出来，再与标准图谱比较。可测量元素种类有七十多种。灵敏度髙，选择性好，分析速度快。在司法鉴定中，主要用于泥土、油漆、粉尘类物质及其他物质中微量金属元素成份的定性分析。定量分析较复杂且不准确。
 

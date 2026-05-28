@@ -4,16 +4,16 @@ date = 2019-09-20T20:12:13+08:00
 draft = true
 description = "欸，笔者又又又开始云“评测”了。这次评测的是电影《蜘蛛侠: 英雄远征》。这部电影已经上映了好多时间了，但是对于蜘蛛侠的讨论却没有停过，主要的原因大家也知道：“蜘蛛侠”系列已经不再是漫威宇宙中的一部分了，这让一些既喜欢漫威又喜欢蜘蛛侠的伤了心。那么这部电影怎么样呢？笔者想说，亲你没看到笔者最开始说的这"
 slug = "dian-ying-zhi-zhu-xia-ying-xiong-yuan-zheng-hd-xia-zai"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/09/201909202003.jpg"
+featureimage = "/images/posts/dian-ying-zhi-zhu-xia-ying-xiong-yuan-zheng-hd-xia-zai/cover.avif"
 +++
 
 欸，笔者又又又开始云“评测”了。这次评测的是电影《蜘蛛侠: 英雄远征》。这部电影已经上映了好多时间了，但是对于蜘蛛侠的讨论却没有停过，主要的原因大家也知道：“蜘蛛侠”系列已经不再是漫威宇宙中的一部分了，这让一些既喜欢漫威又喜欢蜘蛛侠的伤了心。那么这部电影怎么样呢？笔者想说，亲你没看到笔者最开始说的这是“云测评”吗？不过据看过电影的人说，这部电影不错的，近期的超级英雄片也就这一部评分高了点。笔者也会下下来看一看，若是给笔者特别的感受的话，笔者会再回来写感受的。
 
-![](/images/wp-content/uploads/2019/09/201909202003.jpg)
+![](/images/posts/dian-ying-zhi-zhu-xia-ying-xiong-yuan-zheng-hd-xia-zai/cover.avif)
 
 OK，笔者看完了电影了。笔者想说，这是一部青春言情科幻片。主要讲的是人类一边自相残杀一边谈恋爱的故事。从这点看，确实和之前的很多科幻片不一样。这也导致了最后正义战胜邪恶的老套路也有了新的花样。当然，笔者其实最想说的，是剧中的可怜的亚洲小帅哥用的手机居然和笔者一模一样，可惜就在前几天笔者的这部手机坏了。😭
 
-![](/images/wp-content/uploads/2019/09/20190921001023.jpg)
+![](/images/posts/dian-ying-zhi-zhu-xia-ying-xiong-yuan-zheng-hd-xia-zai/01.avif)
 
 导演: 乔·沃茨
 
@@ -23,7 +23,7 @@ OK，笔者看完了电影了。笔者想说，这是一部青春言情科幻片
 
 类型: 动作 / 科幻 / 冒险
 
-官方网站: [www.spidermanfarfromhome.movie/](<http://www.spidermanfarfromhome.movie/>)
+官方网站: [www.spidermanfarfromhome.movie/](http://www.spidermanfarfromhome.movie/)
 
 制片国家/地区: 美国
 
@@ -33,12 +33,12 @@ OK，笔者看完了电影了。笔者想说，这是一部青春言情科幻片
 
 又名: 蜘蛛侠：决战千里(港) / 蜘蛛侠：离家日(台) / 蜘蛛侠2 / 蜘蛛侠：归来2 / 蜘蛛侠：英雄归来2 / 蜘蛛侠2：英雄离乡 / 蜘蛛侠2：远离家乡 / 蜘蛛侠：远离故乡 / 新蜘蛛侠2 / 蜘蛛侠2：离家出走(豆友译名)
 
-IMDb链接: [tt6320628](<http://www.imdb.com/title/tt6320628>)
+IMDb链接: [tt6320628](http://www.imdb.com/title/tt6320628)
 
 > 简介：在复仇者联盟众英雄的努力下，于灭霸无限手套事件中化作为灰烬的人们，重新回到了人世间，曾经消失的蜘蛛侠 彼得帕克 也回归到了普通的生活之中，数月后，蜘蛛侠彼得帕克所在的学校举行了欧洲旅游，帕克也在其中， 在欧州威尼斯旅行时，一个巨大无比的水怪袭击了威尼斯，不敌敌人的蜘蛛侠幸得一位自称神秘客的男子搭救才击退敌人，之后 神盾局局长找上正在旅游的彼得帕克并要求其加入神盾局，并安排神秘客协助帕克，神秘客自称来自其他宇宙，并告知一群名为元素众的邪恶势力已经入侵这个宇宙了，为了守护来之不易的和平，蜘蛛侠决定与神秘客联手，然而在神秘客那头罩之中，似乎隐藏着什么不为人知的真相……
 
 ## 资源下载
 
-磁力链接：[蜘蛛侠：英雄远征.720p+1080p.国英双语.BD中英双字.mp4](<magnet:?xt=urn:btih:MIQSGKVDZDFVKMIOUDUTFNOD6BPNM2Q3&dn=%e8%9c%98%e8%9b%9b%e4%be%a0%ef%bc%9a%e8%8b%b1%e9%9b%84%e8%bf%9c%e5%be%81%2e720p%2b1080p%2e%e5%9b%bd%e8%8b%b1%e5%8f%8c%e8%af%ad%2eBD%e4%b8%ad%e8%8b%b1%e5%8f%8c%e5%ad%97&tr=udp%3a%2f%2f9%2erarbg%2eto%3a2710%2fannounce&tr=udp%3a%2f%2f9%2erarbg%2eme%3a2710%2fannounce&tr=http%3a%2f%2ftr%2ecili001%2ecom%3a8070%2fannounce&tr=http%3a%2f%2ftracker%2etrackerfix%2ecom%3a80%2fannounce&tr=udp%3a%2f%2fopen%2edemonii%2ecom%3a1337&tr=udp%3a%2f%2ftracker%2eopentrackr%2eorg%3a1337%2fannounce&tr=udp%3a%2f%2fp4p%2earenabg%2ecom%3a1337>)
+磁力链接：[蜘蛛侠：英雄远征.720p+1080p.国英双语.BD中英双字.mp4](magnet:?xt=urn:btih:MIQSGKVDZDFVKMIOUDUTFNOD6BPNM2Q3&dn=%e8%9c%98%e8%9b%9b%e4%be%a0%ef%bc%9a%e8%8b%b1%e9%9b%84%e8%bf%9c%e5%be%81%2e720p%2b1080p%2e%e5%9b%bd%e8%8b%b1%e5%8f%8c%e8%af%ad%2eBD%e4%b8%ad%e8%8b%b1%e5%8f%8c%e5%ad%97&tr=udp%3a%2f%2f9%2erarbg%2eto%3a2710%2fannounce&tr=udp%3a%2f%2f9%2erarbg%2eme%3a2710%2fannounce&tr=http%3a%2f%2ftr%2ecili001%2ecom%3a8070%2fannounce&tr=http%3a%2f%2ftracker%2etrackerfix%2ecom%3a80%2fannounce&tr=udp%3a%2f%2fopen%2edemonii%2ecom%3a1337&tr=udp%3a%2f%2ftracker%2eopentrackr%2eorg%3a1337%2fannounce&tr=udp%3a%2f%2fp4p%2earenabg%2ecom%3a1337)
 
-无法下载？使用这个工具吧：[Motrix – 无广告开源的全能下载器](<https://www.idleleo.com/06/2314.html>)
+无法下载？使用这个工具吧：[Motrix – 无广告开源的全能下载器](https://www.idleleo.com/06/2314.html)

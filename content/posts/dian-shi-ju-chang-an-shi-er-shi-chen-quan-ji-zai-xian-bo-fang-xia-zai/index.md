@@ -4,12 +4,12 @@ date = 2019-08-13T21:13:01+08:00
 draft = true
 description = "最近这部电视剧很火，因此笔者也并没有看，但是看到了资源有了，决定还是发一发。虽然笔者依然不会去看，但相信火有火的道理，定是有些许超人之处。笔者前段时间看过些新的国产电视剧，诚然制作水平、剧情、演员等各方面都有进步。笔者还是强烈安利大家去看的，毕竟追剧长胖变傻的不是笔者🤪🤪。 <"
 slug = "dian-shi-ju-chang-an-shi-er-shi-chen-quan-ji-zai-xian-bo-fang-xia-zai"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/08/201908132103.jpg"
+featureimage = "/images/posts/dian-shi-ju-chang-an-shi-er-shi-chen-quan-ji-zai-xian-bo-fang-xia-zai/cover.avif"
 +++
 
 最近这部电视剧很火，因此笔者也**并没有** 看，但是看到了资源有了，决定还是发一发。虽然笔者依然不会去看，但相信火有火的道理，定是有些许超人之处。笔者前段时间看过些新的国产电视剧，诚然制作水平、剧情、演员等各方面都有进步。笔者还是强烈安利大家去看的，毕竟追剧长胖变傻的不是笔者🤪🤪。
 
-![](/images/wp-content/uploads/2019/08/201908132103.jpg)
+![](/images/posts/dian-shi-ju-chang-an-shi-er-shi-chen-quan-ji-zai-xian-bo-fang-xia-zai/cover.avif)
 
 导演: 曹盾
 
@@ -31,7 +31,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/08/201908132103.
 
 又名: The Longest Day In Chang'an
 
-IMDb链接: [tt10551640](<http://www.imdb.com/title/tt10551640>)
+IMDb链接: [tt10551640](http://www.imdb.com/title/tt10551640)
 
 > 简介：上元节前夕，长安城混入可疑人员，身陷囹圄的张小敬临危受命，与少年天才李必携手在十二时辰内破除隐患。全篇运用了创新的探案剧集结构与人物关系设定，把故事嵌套在当时的世界文化中心城市长安这样一个完美的切入点。在展现跌宕紧凑的故事架构、反脸谱化的英雄人物、脑洞大开的细节设计同时，也带给观众丰富的文化价值。
 
@@ -43,7 +43,7 @@ IMDb链接: [tt10551640](<http://www.imdb.com/title/tt10551640>)
 
 提取码: hthy  
 
-全集磁力链接：[magnet:?xt=urn:btih:528F93CFEE0B7DDCF92595E7B885F1A398BDF6BE](<magnet:?xt=urn:btih:528F93CFEE0B7DDCF92595E7B885F1A398BDF6BE>)
+全集磁力链接：[magnet:?xt=urn:btih:528F93CFEE0B7DDCF92595E7B885F1A398BDF6BE](magnet:?xt=urn:btih:528F93CFEE0B7DDCF92595E7B885F1A398BDF6BE)
 
 ### 分集
 

@@ -4,10 +4,10 @@ date = 2019-07-20T23:03:54+08:00
 draft = true
 description = "如果经常使用安卓手机并且喜欢各种“作死”的用户，我相信这个大家肯定都清楚。在Magisk大行其道之前相信大家也都接触过类似Xposed之类的框架。为什么笔者要推荐大家使用Magisk，因为笔者系统是安卓9，不用也不行啊！要说Magisk除去支持了最新的系统以外，生态来看还是与Xposed有差距的。这"
 slug = "zui-xin-magiskqia-shua-bao-manager-v7.x-magisk-v19.x"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/07/20190720307.jpg"
+featureimage = "/images/posts/zui-xin-magiskqia-shua-bao-manager-v7.x-magisk-v19.x/cover.avif"
 +++
 
-![](/images/wp-content/uploads/2019/07/20190720307.jpg)
+![](/images/posts/zui-xin-magiskqia-shua-bao-manager-v7.x-magisk-v19.x/cover.avif)
 
 如果经常使用安卓手机并且喜欢各种“作死”的用户，我相信这个大家肯定都清楚。在Magisk大行其道之前相信大家也都接触过类似Xposed之类的框架。为什么笔者要推荐大家使用Magisk，因为笔者系统是安卓9，不用也不行啊！要说Magisk除去支持了最新的系统以外，生态来看还是与Xposed有差距的。这篇文章，笔者主要提供大家最新的Magisk卡刷包。
 
@@ -15,7 +15,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/07/20190720307.j
 
 Magisk可以ROOT您的设备，以及标准的常见修补程序。它包含一个超强大的通用无系统接口，允许无限的潜力。你也可以通过各种模块来实现对你的手机各种定义。Magisk具备很强大的模块扩展，可以不修改system区的文件，达到修改system文件一样的效果，例如换字体等等。
 
-![](/images/wp-content/uploads/2019/07/20190720225029-1024x991.jpg)
+![](/images/posts/zui-xin-magiskqia-shua-bao-manager-v7.x-magisk-v19.x/01.avif)
 
   * 开源：  
 100％开源，易于在所有Google支持的平台上构建。

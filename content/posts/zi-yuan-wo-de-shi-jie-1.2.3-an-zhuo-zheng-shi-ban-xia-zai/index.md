@@ -4,14 +4,14 @@ date = 2017-11-15T18:19:33+08:00
 draft = true
 description = "游戏简介 探索随机生成的世界，建造不可思议的事物，从最简单的住宅，到最宏伟的城堡。您可以在创意模式中享用无限资源，也可以到生存模式中挖掘整个世界，合成武器和护甲，抵御各种危险生物。 您可以独自或与好友一起，在移动设备或 Windows 10 上，尽情合成、制作和探索。"
 slug = "zi-yuan-wo-de-shi-jie-1.2.3-an-zhuo-zheng-shi-ban-xia-zai"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2017/11/20171115182329-1024x669.jpg"
+featureimage = "/images/posts/zi-yuan-wo-de-shi-jie-1.2.3-an-zhuo-zheng-shi-ban-xia-zai/cover.avif"
 +++
 
 **游戏简介**
 
 * * *
 
-探索随机生成的世界，建造不可思议的事物，从最简单的住宅，到最宏伟的城堡。您可以在创意模式中享用无限资源，也可以到生存模式中挖掘整个世界，合成武器和护甲，抵御各种危险生物。 您可以独自或与好友一起，在移动设备或 Windows 10 上，尽情合成、制作和探索。 ![](/images/wp-content/uploads/2017/11/20171115182329-1024x669.jpg)
+探索随机生成的世界，建造不可思议的事物，从最简单的住宅，到最宏伟的城堡。您可以在创意模式中享用无限资源，也可以到生存模式中挖掘整个世界，合成武器和护甲，抵御各种危险生物。 您可以独自或与好友一起，在移动设备或 Windows 10 上，尽情合成、制作和探索。 ![](/images/posts/zi-yuan-wo-de-shi-jie-1.2.3-an-zhuo-zheng-shi-ban-xia-zai/cover.avif)
 
   **游戏部分攻略**
 

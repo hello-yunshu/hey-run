@@ -4,15 +4,15 @@ date = 2019-06-13T21:16:07+08:00
 draft = true
 description = "前段时间，由于女友觉得皮卡丘特别可爱，于是笔者被抓过去陪她看了首映。确实皮卡丘在电影里面蛮可爱的，就是配音把我劝退了。电影院中，笔者成功的战胜了瞌睡虫，和女友深刻的讨论了究竟是可达鸭可爱还是皮卡丘可爱。至于那些没有战胜瞌睡虫的男士们，或者那些还没看过和想再看一遍的女士们，现在资源就来啦~"
 slug = "dian-ying-da-zhen-tan-pi-qia-qiu-xia-zai"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/06/20190613205827-1-691x1024.jpg"
+featureimage = "/images/posts/dian-ying-da-zhen-tan-pi-qia-qiu-xia-zai/cover.avif"
 +++
 
 前段时间，由于女友觉得皮卡丘特别可爱，于是笔者被抓过去陪她看了首映。确实皮卡丘在电影里面蛮可爱的，就是配音把我劝退了。电影院中，笔者成功的战胜了瞌睡虫，和女友深刻的讨论了究竟是可达鸭可爱还是皮卡丘可爱。至于那些没有战胜瞌睡虫的男士们，或者那些还没看过和想再看一遍的女士们，现在资源就来啦~
 
-  * ![](/images/wp-content/uploads/2019/06/20190613205827-1-691x1024.jpg)
-  * ![](/images/wp-content/uploads/2019/06/20190613205837-1-691x1024.jpg)
-  * ![](/images/wp-content/uploads/2019/06/20190613205842-691x1024.jpg)
-  * ![](/images/wp-content/uploads/2019/06/20190613205846-691x1024.jpg)
+  * ![](/images/posts/dian-ying-da-zhen-tan-pi-qia-qiu-xia-zai/cover.avif)
+  * ![](/images/posts/dian-ying-da-zhen-tan-pi-qia-qiu-xia-zai/01.avif)
+  * ![](/images/posts/dian-ying-da-zhen-tan-pi-qia-qiu-xia-zai/02.avif)
+  * ![](/images/posts/dian-ying-da-zhen-tan-pi-qia-qiu-xia-zai/03.avif)
 
 译名：大侦探皮卡丘 / Detective Pikachu / POKéMON 名侦探皮卡丘(台) / Pokemon / 名侦探皮卡丘 / 宠物小精灵 / 宠物小精灵之名侦探皮卡丘 / 宠物小精灵真人版 / 精灵宝可梦 / 精灵宝可梦之名侦探皮卡丘 / 精灵宝可梦：大侦探皮卡丘
 
@@ -48,10 +48,10 @@ IMDb链接：http://www.imdb.com/title/tt5884052
 
 HDRip：
 
-[Pokemon.Detective.Pikachu.2019.1080p.HDRip.x264.AAC2.0-STUTTERSHIT](<magnet:?xt=urn:btih:13bcfe725c0f663f439478d160ad59891a0475de&dn=Pokemon.Detective.Pikachu.2019.1080p.HDRip.x264.AAC2.0-STUTTERSHIT&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2770&tr=udp%3A%2F%2F9.rarbg.to%3A2740>)
+[Pokemon.Detective.Pikachu.2019.1080p.HDRip.x264.AAC2.0-STUTTERSHIT](magnet:?xt=urn:btih:13bcfe725c0f663f439478d160ad59891a0475de&dn=Pokemon.Detective.Pikachu.2019.1080p.HDRip.x264.AAC2.0-STUTTERSHIT&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2770&tr=udp%3A%2F%2F9.rarbg.to%3A2740)
 
 百度网盘链接：<https://pan.baidu.com/s/19BfMgfn0A8gL3shb84kghQ>
 
 提取码：2Y4R
 
-无法下载？使用这个工具吧：[Motrix – 无广告开源的全能下载器](<https://www.idleleo.com/06/2314.html>)
+无法下载？使用这个工具吧：[Motrix – 无广告开源的全能下载器](https://www.idleleo.com/06/2314.html)

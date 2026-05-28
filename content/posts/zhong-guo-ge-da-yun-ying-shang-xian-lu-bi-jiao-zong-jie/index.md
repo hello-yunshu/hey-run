@@ -4,7 +4,7 @@ date = 2020-03-24T15:03:39+08:00
 draft = true
 description = "最近笔者在网上看到了一篇文章写的是关于中国运营商各个线路的比较。笔者觉得写的很好，征得作者同意，笔者转载了下。下面就是全文啦~（有些删改） 各家出口带宽的总量比较如下： 中国电信 ＞ 中国联通 ＞ 中国移动 各家人均用户出口带宽量比较如下： 中国联通 ＞ 中国电信 ＞ 中国移动 如果有经常访问外网的"
 slug = "zhong-guo-ge-da-yun-ying-shang-xian-lu-bi-jiao-zong-jie"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/03/202003241454.jpg"
+featureimage = "/images/posts/zhong-guo-ge-da-yun-ying-shang-xian-lu-bi-jiao-zong-jie/cover.avif"
 +++
 
 最近笔者在网上看到了一篇文章写的是关于中国运营商各个线路的比较。笔者觉得写的很好，征得作者同意，笔者转载了下。下面就是全文啦~（有些删改）
@@ -107,6 +107,6 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/03/202003241454.
 
 ## 牢记品质三原色
 
-![](/images/wp-content/uploads/2020/03/202003241454.jpg)
+![](/images/posts/zhong-guo-ge-da-yun-ying-shang-xian-lu-bi-jiao-zong-jie/cover.avif)
 
 又要便宜，又要稳定，又要速度快？去做梦吧，梦里啥都有~~

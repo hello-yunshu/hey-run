@@ -35,7 +35,7 @@ featureimage = "img/traffic.svg"
 
 安装app可以一定程度提高无主界浏览体验，基于PWA技术
 
-  * 点击安装：[iOS安装](<https://d.idleleo.com/idleleo.mobileconfig>)
+  * 点击安装：[iOS安装](https://d.idleleo.com/idleleo.mobileconfig)
   * 浏览器直接添加至桌面即可（兼容所有平台）
 
 ## Telegram 群组

@@ -25,21 +25,21 @@ FakeApp 程式原意是用来做二次创作或恶搞影片，但是随着更多
 
 **内存：** 8G或以上
 
-**显卡：**(CUDA)NVIDIA整合技术[官方文档](<https://yangmaopubu.com/go/aHR0cHM6Ly9kZXZlbG9wZXIubnZpZGlhLmNvbS9jdWRhLWdwdXM=>)
+**显卡：**(CUDA)NVIDIA整合技术[官方文档](https://yangmaopubu.com/go/aHR0cHM6Ly9kZXZlbG9wZXIubnZpZGlhLmNvbS9jdWRhLWdwdXM=)
 
-[CUDA Toolkit 8.0](<https://yangmaopubu.com/go/aHR0cHM6Ly9kZXZlbG9wZXIubnZpZGlhLmNvbS9jdWRhLTgwLWdhMi1kb3dubG9hZC1hcmNoaXZl>)或[CUDA Toolkit 9.1](<https://yangmaopubu.com/go/aHR0cHM6Ly9kZXZlbG9wZXIubnZpZGlhLmNvbS9jdWRhLWRvd25sb2Fkcw==>)
+[CUDA Toolkit 8.0](https://yangmaopubu.com/go/aHR0cHM6Ly9kZXZlbG9wZXIubnZpZGlhLmNvbS9jdWRhLTgwLWdhMi1kb3dubG9hZC1hcmNoaXZl)或[CUDA Toolkit 9.1](https://yangmaopubu.com/go/aHR0cHM6Ly9kZXZlbG9wZXIubnZpZGlhLmNvbS9jdWRhLWRvd25sb2Fkcw==)
 
 #### **辅助** 软件
 
-**JAVA程序**  [下载GO!…](<https://yangmaopubu.com/go/aHR0cHM6Ly9qYXZhLmNvbS8=>)
+**JAVA程序**  [下载GO!…](https://yangmaopubu.com/go/aHR0cHM6Ly9qYXZhLmNvbS8=)
 
-**Redistributable for Visual Studio 2015  **[下载位置](<https://yangmaopubu.com/go/aHR0cHM6Ly93d3cubWljcm9zb2Z0LmNvbS9lbi1pbi9kb3dubG9hZC9kZXRhaWxzLmFzcHg/aWQ9NDgxNDU=>)
+**Redistributable for Visual Studio 2015  **[下载位置](https://yangmaopubu.com/go/aHR0cHM6Ly93d3cubWljcm9zb2Z0LmNvbS9lbi1pbi9kb3dubG9hZC9kZXRhaWxzLmFzcHg/aWQ9NDgxNDU=)
 
-**FFmpeg  **[下载GO!…](<https://yangmaopubu.com/go/aHR0cHM6Ly9mZm1wZWcuemVyYW5vZS5jb20vYnVpbGRz>)
+**FFmpeg  **[下载GO!…](https://yangmaopubu.com/go/aHR0cHM6Ly9mZm1wZWcuemVyYW5vZS5jb20vYnVpbGRz)
 
-**Light Image Resizer  **[下载网站](<https://yangmaopubu.com/go/aHR0cDovL3d3dy5vYnZpb3VzaWRlYS5jb20vd2luZG93cy1zb2Z0d2FyZS9saWdodC1pbWFnZS1yZXNpemVy>)
+**Light Image Resizer  **[下载网站](https://yangmaopubu.com/go/aHR0cDovL3d3dy5vYnZpb3VzaWRlYS5jb20vd2luZG93cy1zb2Z0d2FyZS9saWdodC1pbWFnZS1yZXNpemVy)
 
-**Avidemux  **[下载地址](<https://yangmaopubu.com/go/aHR0cDovL2ZpeG91bmV0LmZyZWUuZnIvYXZpZGVtdXgvZG93bmxvYWQuaHRtbA==>)
+**Avidemux  **[下载地址](https://yangmaopubu.com/go/aHR0cDovL2ZpeG91bmV0LmZyZWUuZnIvYXZpZGVtdXgvZG93bmxvYWQuaHRtbA==)
 
 [login]
 

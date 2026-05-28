@@ -18,6 +18,6 @@ featureimage = "img/ripples.svg"
 
 ## 推荐阅读
 
-[新型冠状病毒感染的肺炎防控知识手册](<https://www.idleleo.com/02/4163.html>)
+[新型冠状病毒感染的肺炎防控知识手册](https://www.idleleo.com/02/4163.html)
 
-[武汉加油！中国加油！关于新型肺炎的种种事](<https://www.idleleo.com/02/4120.html>)
+[武汉加油！中国加油！关于新型肺炎的种种事](https://www.idleleo.com/02/4120.html)

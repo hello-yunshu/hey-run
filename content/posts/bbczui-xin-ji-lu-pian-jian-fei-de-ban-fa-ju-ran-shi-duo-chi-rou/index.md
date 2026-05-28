@@ -121,7 +121,7 @@ featureimage = "https://i.loli.net/2021/01/19/u8mVjiq7NZt64UO.gif"
 
 此外，纤维吃得多，可能会促进人体排气，可是比起减掉的肉肉，这实在只是小事。
 
-![](/images/wp-content/uploads/2019/05/190530110914.jpg)
+![](/images/posts/bbczui-xin-ji-lu-pian-jian-fei-de-ban-fa-ju-ran-shi-duo-chi-rou/01.avif)
 
 靠着吃麦片，贝琪在两周内减了11.7斤，跟遭受了非人待遇的姐妹希娜差不多。
 

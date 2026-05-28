@@ -4,12 +4,12 @@ date = 2019-07-24T22:05:32+08:00
 draft = true
 description = "前段时间，笔者向大家介绍了如何启用IPv6：国内网络启用 IPv6 方法及注意事项。在文章中，笔者说明了如何开始IPv6隧道，其中便涉及到了IPv6 DNS的相关问题。现今，虽IPv6应用已然普遍，但IPv6的DNS发展却非常缓慢"
 slug = "ipv6-guo-nei-wai-you-xiu-dnstui-jian"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2019/07/201907151015.jpg"
+featureimage = "/images/shared/201907151015.avif"
 +++
 
-![](/images/wp-content/uploads/2019/07/201907151015.jpg)
+![](/images/shared/201907151015.avif)
 
-前段时间，笔者向大家介绍了如何启用IPv6：[国内网络启用 IPv6 方法及注意事项](<https://www.idleleo.com/07/2596.html>)。在文章中，笔者说明了如何开始IPv6隧道，其中便涉及到了IPv6 DNS的相关问题。现今，虽IPv6应用已然普遍，但IPv6的DNS发展却非常缓慢。因此，笔者便给大家罗列几个国内外优秀的DNS地址。
+前段时间，笔者向大家介绍了如何启用IPv6：[国内网络启用 IPv6 方法及注意事项](https://www.idleleo.com/07/2596.html)。在文章中，笔者说明了如何开始IPv6隧道，其中便涉及到了IPv6 DNS的相关问题。现今，虽IPv6应用已然普遍，但IPv6的DNS发展却非常缓慢。因此，笔者便给大家罗列几个国内外优秀的DNS地址。
 
 ## IPv6 DNS列表
 
@@ -136,4 +136,4 @@ Google Public IPv6 DNS
 
 2001:4860:4860::8888 220±ms
 
-国外测试环境数据不再展示，实际测试情况为：大多国内DNS服务延迟非常高，而国际DNS相对较低。因此，若是国内网络环境，推荐使用国内DNS；而国际环境的话，则使用国际DNS即可。**若使用tunnelbroker建议使用国际DNS** ，详见：[国内网络启用 IPv6 方法及注意事项](<https://www.idleleo.com/07/2596.html>)。
+国外测试环境数据不再展示，实际测试情况为：大多国内DNS服务延迟非常高，而国际DNS相对较低。因此，若是国内网络环境，推荐使用国内DNS；而国际环境的话，则使用国际DNS即可。**若使用tunnelbroker建议使用国际DNS** ，详见：[国内网络启用 IPv6 方法及注意事项](https://www.idleleo.com/07/2596.html)。

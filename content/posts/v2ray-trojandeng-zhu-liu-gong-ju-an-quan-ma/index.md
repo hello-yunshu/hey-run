@@ -4,7 +4,7 @@ date = 2020-10-24T23:33:35+08:00
 draft = true
 description = "这个问题，是大家一直关心的东西，笔者也一直想讨论。好多朋友都私下问过笔者，现在终于有时间可以稍微谈一谈啦。 首先先分享一下笔者几年前在网上看到的一篇文章，这篇文章虽然已经过去许久，但依然有一定的参考价值（以下内容摘自网络）： 我们来假设一个案例，在一个月黑风高的晚上，小明在某论坛大肆批评政府，第二天"
 slug = "v2ray-trojandeng-zhu-liu-gong-ju-an-quan-ma"
-featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/10/202010242251.jpg"
+featureimage = "/images/posts/v2ray-trojandeng-zhu-liu-gong-ju-an-quan-ma/cover.avif"
 +++
 
 这个问题，是大家一直关心的东西，笔者也一直想讨论。好多朋友都私下问过笔者，现在终于有时间可以稍微谈一谈啦。
@@ -13,7 +13,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/10/202010242251.
 
 我们来假设一个案例，在一个月黑风高的晚上，小明在某论坛大肆批评政府，第二天小明刚一睡醒就听见咚咚咚，开门查水表，于是乎小明神秘消失了。
 
-![](/images/wp-content/uploads/2020/10/202010242251.jpg)
+![](/images/posts/v2ray-trojandeng-zhu-liu-gong-ju-an-quan-ma/cover.avif)
 
 好了，再以网监的角度来看看：
 
@@ -35,7 +35,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/10/202010242251.
 
 又是蹲了15天拘留。
 
-![](/images/wp-content/uploads/2020/10/202010242253.jpg)
+![](/images/posts/v2ray-trojandeng-zhu-liu-gong-ju-an-quan-ma/01.avif)
 
 小明肯定心里很不爽啊，于是苦修黑阔技术。同时中国电信也拒绝继续向小明提供服务，他换成了广电网络（二级ISP，出口IP都一样，几千人共用一个IP）之后又学会了一招，双层VP*变换出口IP的VP*(就比如链接用175.45.176.11，但是访问网站的时候出口IP就变成了175.45.179.244，这样就没法靠路由日志查了)，于是乎小明又继续批评ZF。
 
@@ -43,7 +43,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/10/202010242251.
 
 小红火速赶到了小明的家，又把小明抓走了。这是小明的三进宫了，小红也表示很无奈，渐渐的，单身的小红和小明互相就有了好感（>.<尼玛）
 
-![](/images/wp-content/uploads/2020/10/202010242252.jpg)
+![](/images/posts/v2ray-trojandeng-zhu-liu-gong-ju-an-quan-ma/02.avif)
 
 小明想：老子都用二级ISP了，也用双重VP*了，怎么又尼玛被抓了，wr！！
 
@@ -64,15 +64,15 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/10/202010242251.
 
 以上虽然是个段子，没有讲到最新的技术如V2Ray、Trojan，但是大抵把一些内容说清楚了。对于一般的网络行为，想要在网上不留下痕迹让人无法追踪几乎是不可能的。
 
-我们也不难发现，在上述小明与小红斗智斗勇的过程中利用VP*的破解并没有提到直接截获数据。其实现在不管是V2Ray、Trojan等工具，它们功能也只是保证数据传输过程是安全的。我们知道，V2Ray、Trojan是利用了最新的安全传输层协议（TLS）技术，基于TLS1.2、TLS1.3这类安全协议，能很好的保证了在传输过程中数据不会被恶意查看、修改。（看不懂的童鞋可以看这篇：[在浏览器地址栏输入一个URL回车后，究竟会发生什么？](<https://www.idleleo.com/05/2017.html>)）但是，TLS协议只是保证了传输过程的安全，在客户端以及服务端的行为是不可预测的。
+我们也不难发现，在上述小明与小红斗智斗勇的过程中利用VP*的破解并没有提到直接截获数据。其实现在不管是V2Ray、Trojan等工具，它们功能也只是保证数据传输过程是安全的。我们知道，V2Ray、Trojan是利用了最新的安全传输层协议（TLS）技术，基于TLS1.2、TLS1.3这类安全协议，能很好的保证了在传输过程中数据不会被恶意查看、修改。（看不懂的童鞋可以看这篇：[在浏览器地址栏输入一个URL回车后，究竟会发生什么？](https://www.idleleo.com/05/2017.html)）但是，TLS协议只是保证了传输过程的安全，在客户端以及服务端的行为是不可预测的。
 
-![](/images/wp-content/uploads/2019/05/201905181848.jpeg)
+![](/images/shared/201905181848.avif)
 
 笔者在之前的文章就说过，V2Ray、Trojan只是在传输过程是密文，而在本地是明文，只要有任何的监控本地流量的软件如浏览器、通讯工具，那么你的那些传输内容就是公开透明的。举个例子，这就好比在运输大金砖的时候没什么问题，但奈何家里出了“内鬼”。因此，本地软件亦或者是远程服务器上的软件的行为是否安全，关乎到了整个的安全性，这也是打击非法VP*的关键。
 
 那么大家可能有疑问，V2Ray、Trojan的传输协议能保证传输的安全吗？从现在看，也许是可以的。原因在这里，TLS协议涉及到了生活的方方面面，每次你在网页或app输入密码、每次你的联网交易，都利用了这样的技术，如果出现问题后果不堪设想。记得在几年前，提供TLS技术openssl出现了“心脏出血”漏洞，一时间，所有网络安全通信都面临威胁，每个人的密码、加密信息都可能被恶意探测，当时在社会上引起了巨大的恐慌。这件事充分说明了TLS协议本身安全的重要性。
 
-![](/images/wp-content/uploads/2020/10/202010242254.jpg)
+![](/images/posts/v2ray-trojandeng-zhu-liu-gong-ju-an-quan-ma/03.avif)
 
 但是，凡是都有但是哈哈。TLS协议真的安全吗？非也非也。想要破解是可以的。我们知道在TLS中有证书的说法，这是HTTPS必备的条件，大家可以看看无主界的网站证书（ECC）。这类证书是由CA签发，在验证时需要联系CA，需要用到CA的证书，既然需要CA的证书，CA就需要用自己密钥验证。那么如果我能得到CA的密钥呢？
 
@@ -82,7 +82,7 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/10/202010242251.
 
 至于TLS的一些如AES、ChaCha20-Poly1305这类加密算法技术会不会有漏洞也实在不好说，至少咱们的政府是不完全信任来自美国的技术的（美国的棱镜门事件也实在不值得信任）。咱们是有自己的加密算法的，如SM3、SM4等，也就是大名鼎鼎的国密算法。
 
-![](/images/wp-content/uploads/2020/10/202010242255.jpg)
+![](/images/posts/v2ray-trojandeng-zhu-liu-gong-ju-an-quan-ma/04.avif)
 
 说了这么多，笔者只想说：不做亏心事，不怕鬼敲门。妄想在网络完全匿名几乎是不存在的，对于V2Ray、Trojan等主流工具是否安全不是一个是与不是的概念，而是一个**成本的概念** ，问题的重点在究竟是否有必要找到你。
 
@@ -90,10 +90,10 @@ featureimage = "https://cdn.idleleo.com/wp-content/uploads/2020/10/202010242251.
 
 ## 相关阅读推荐
 
-如何部署V2ray：[2020 搭建 V2Ray 最新教程](<https://www.idleleo.com/05/2148.html>)
+如何部署V2ray：[2020 搭建 V2Ray 最新教程](https://www.idleleo.com/05/2148.html)
 
-选择合适的传输协议：[V2Ray / SSR 传输协议哪个好? (各种协议对比)](<https://www.idleleo.com/05/2071.html>)
+选择合适的传输协议：[V2Ray / SSR 传输协议哪个好? (各种协议对比)](https://www.idleleo.com/05/2071.html)
 
-V2Ray加密方式哪个更好：[V2Ray / SSR 加密方式哪个好? (加密方式对比)](<https://www.idleleo.com/09/3058.html>)
+V2Ray加密方式哪个更好：[V2Ray / SSR 加密方式哪个好? (加密方式对比)](https://www.idleleo.com/09/3058.html)
 
-更好的了解TLS：[揭秘密码背后的原理](<https://www.idleleo.com/03/1703.html>)、[在浏览器地址栏输入一个URL回车后，究竟会发生什么？](<https://www.idleleo.com/05/2017.html>)
+更好的了解TLS：[揭秘密码背后的原理](https://www.idleleo.com/03/1703.html)、[在浏览器地址栏输入一个URL回车后，究竟会发生什么？](https://www.idleleo.com/05/2017.html)
