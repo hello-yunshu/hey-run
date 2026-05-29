@@ -4,7 +4,7 @@ date = 2020-04-02T21:08:55+08:00
 draft = true
 description = "最近笔者找到了一个非常不错的国产纪录片《蔚蓝之境》。笔者是在其他网站看到了安利文决定看一看的，万万没想到，仅仅是一集便深深的吸引到了笔者我。 《蔚蓝之境》主要是以中国海岸线为拍摄对象拍摄的纪录片。仅从题材看，就让人觉得眼前一亮。 中国海岸线延绵不断1.8万千米，从渤海到南海，生态环境截然不同，生活其"
 slug = "guo-chan-gao-fen-ji-lu-pian-tui-jian---wei-lan-zhi-jing-hd-xia-zai-guan-kan"
-featureimage = "https://i.loli.net/2021/01/19/HLtAIpfoubZxGNR.gif"
+featureimage = "/images/posts/guo-chan-gao-fen-ji-lu-pian-tui-jian---wei-lan-zhi-jing-hd-xia-zai-guan-kan/cover.avif"
 +++
 
 最近笔者找到了一个非常不错的国产纪录片《蔚蓝之境》。笔者是在其他网站看到了安利文决定看一看的，万万没想到，仅仅是一集便深深的吸引到了笔者我。

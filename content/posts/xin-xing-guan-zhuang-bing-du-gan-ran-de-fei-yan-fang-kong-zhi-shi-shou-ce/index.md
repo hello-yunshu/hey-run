@@ -4,7 +4,7 @@ date = 2020-02-09T13:39:38+08:00
 draft = true
 description = "一、工作区域防护知识 1．上班途中如何做 正确佩戴一次性医用口罩。尽量不乘坐公共交通工具，建议步行、骑行或乘坐私家车、班车上班。如必须乘坐公共交通工具时，务必全程佩戴口罩。途中尽量避免用手触摸车上物品。 2．入楼工作如何做 进入办公楼前自觉接受体温检测，体温正常可入楼工作，并到卫生间洗手。若体温超过"
 slug = "xin-xing-guan-zhuang-bing-du-gan-ran-de-fei-yan-fang-kong-zhi-shi-shou-ce"
-featureimage = "img/rain.svg"
+featureimage = "/images/posts/xin-xing-guan-zhuang-bing-du-gan-ran-de-fei-yan-fang-kong-zhi-shi-shou-ce/cover.avif"
 +++
 
 #### 一、工作区域防护知识 
