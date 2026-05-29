@@ -4,7 +4,7 @@ date = 2021-01-22T21:48:01+08:00
 draft = true
 description = "经过笔者也就是站长3个小时的努力，一个崭新的插件诞生啦！在此再次感谢WP中国本土化社区与jsdelivr.com，虽然没有主动为笔者提供帮助，但笔者“强行”获得了帮助哈哈。 插件项目 WP-Admin-Boost {{CO"
 slug = "cha-jian-wp-admin-boost-zheng-shi-fa-bu"
-featureimage = "https://img.shields.io/github/issues/paniy/WP-Admin-Boost"
+featureimage = "/images/posts/cha-jian-wp-admin-boost-zheng-shi-fa-bu/cover.avif"
 +++
 
 经过笔者也就是站长3个小时的努力，一个崭新的插件诞生啦！在此再次感谢[WP中国本土化社区](https://wp-china.org/)与[jsdelivr.com](https://www.idleleo.com/go?url=http://jsdelivr.com)，虽然没有主动为笔者提供帮助，但笔者“强行”获得了帮助哈哈。

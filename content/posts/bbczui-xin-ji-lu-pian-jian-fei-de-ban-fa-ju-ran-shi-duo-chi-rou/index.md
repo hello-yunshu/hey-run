@@ -4,7 +4,7 @@ date = 2019-05-31T10:32:06+08:00
 draft = false
 description = "五月不减肥，六月徒伤悲。 夏天来了，衣着越来越清凉，再不减肥，肉肉就藏不住了。 可身为懒猪，明知道需要减肥，就是懒得运动。"
 slug = "bbczui-xin-ji-lu-pian-jian-fei-de-ban-fa-ju-ran-shi-duo-chi-rou"
-featureimage = "https://i.loli.net/2021/01/19/u8mVjiq7NZt64UO.gif"
+featureimage = "/images/posts/bbczui-xin-ji-lu-pian-jian-fei-de-ban-fa-ju-ran-shi-duo-chi-rou/cover.avif"
 categories = ["生活"]
 tags = ["减肥", "纪录片", "健康"]
 +++

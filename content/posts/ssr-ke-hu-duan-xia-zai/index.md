@@ -4,7 +4,7 @@ date = 2018-01-01T18:34:00+08:00
 draft = true
 description = "Windows 客户端： ShadowsocksR-4.7.0-win.7z 下载 4.7.0为SSR 最后版本 1. 增加协议 auth_chain_b 2. 修正部分内存泄露 3. 修正系统代理设置错误 Android 客户端： ssr-3.4.0.5.apk 下载 1. 同步 ssr-libe"
 slug = "ssr-ke-hu-duan-xia-zai"
-featureimage = "img/rain.svg"
+featureimage = "/images/posts/ssr-ke-hu-duan-xia-zai/cover.avif"
 +++
 
 ### Windows 客户端：

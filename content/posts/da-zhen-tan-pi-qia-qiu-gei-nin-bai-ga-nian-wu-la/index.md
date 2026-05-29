@@ -4,7 +4,7 @@ date = 2019-05-08T21:04:42+08:00
 draft = true
 description = "5月10日「 大侦探皮卡丘 」即将上映！ 在此之前，一组萌萌哒的皮卡丘表情包已经弥散到了大家的微信聊天窗口。 真的是萌翻啦！（啊啊啊啊啊啊）"
 slug = "da-zhen-tan-pi-qia-qiu-gei-nin-bai-ga-nian-wu-la"
-featureimage = "https://i.loli.net/2021/01/19/BMcjmP76T49gtHS.gif"
+featureimage = "/images/posts/da-zhen-tan-pi-qia-qiu-gei-nin-bai-ga-nian-wu-la/cover.avif"
 +++
 
 5月10日「 大侦探皮卡丘 」即将上映！
