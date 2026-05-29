@@ -1,11 +1,14 @@
 +++
 title = "教程：Windows To Go 系统升级"
 date = 2019-09-22T01:31:10+08:00
-draft = true
+draft = false
 description = "Windows To Go是一个非常便携的移动系统，它能让你在其他人电脑上运行你自己的系统。对于有一定特殊软件需求的人士，是非常方便的选择。 但是相信大家也发现了一个问题，Windows To Go(以下简称WTG)系统升级非常麻烦。跨版本升级几乎成了不可能，然而Windows 10旧版本支持周期很"
 slug = "jiao-cheng-windows-to-go-xi-tong-sheng-ji"
 featureimage = "/images/posts/jiao-cheng-windows-to-go-xi-tong-sheng-ji/cover.avif"
+categories = ["教程"]
+tags = ["Windows To Go", "Windows", "系统升级"]
 +++
+> 旧文归档：本文记录的是 Windows To Go 时代的升级折腾。微软后来已经停止面向普通用户维护 Windows To Go，文中的注册表和虚拟硬盘方案仅适合旧系统参考，正式数据请先完整备份。
 
 Windows To Go是一个非常便携的移动系统，它能让你在其他人电脑上运行你自己的系统。对于有一定特殊软件需求的人士，是非常方便的选择。
 

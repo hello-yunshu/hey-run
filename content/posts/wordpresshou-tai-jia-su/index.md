@@ -1,11 +1,14 @@
 +++
 title = "WordPress后台加速 - 使用CDN替代本地小文件"
 date = 2021-01-21T00:06:47+08:00
-draft = true
+draft = false
 description = "搭过网站的小伙伴应该知道CDN的作用，不仅可以有效的提高网站的访问速度，还能降低对网站服务器的性能影响。而对于CDN提供商，小网站的CDN请求解决了浪费剩余资源的问题，也成为了盈利的一种方式，可谓是双赢之举。为了方便还未了解CDN的小伙伴，这里说一下CDN的基础知识： CDN是什么 CDN的全称是C"
 slug = "wordpresshou-tai-jia-su"
 featureimage = "/images/posts/wordpresshou-tai-jia-su/cover.avif"
+categories = ["教程"]
+tags = ["WordPress", "CDN", "性能优化"]
 +++
+> 旧文归档：本文保留当时用公共 CDN 加速 WordPress 后台静态文件的思路。jsDelivr、GitHub、WordPress 插件结构和浏览器安全策略都可能变化，实际使用前请先在测试站验证资源路径、缓存和后台功能。
 
 搭过网站的小伙伴应该知道CDN的作用，不仅可以有效的提高网站的访问速度，还能降低对网站服务器的性能影响。而对于CDN提供商，小网站的CDN请求解决了浪费剩余资源的问题，也成为了盈利的一种方式，可谓是双赢之举。为了方便还未了解CDN的小伙伴，这里说一下CDN的基础知识：
 
@@ -150,4 +153,4 @@ add_action('init', function () {
 
 详情可见这篇文章：[《插件 WP Admin Boost 正式发布！》](https://www.idleleo.com/01/5040.html)
 
-现在笔者把已知所有的好办法都给大家啦~快来试试吧~
+以上是当时整理出的可行思路。今天如果要使用，建议先在测试环境验证插件兼容性，再决定是否放到正式站点。

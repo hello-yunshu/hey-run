@@ -1,11 +1,14 @@
 +++
 title = "简单易懂：什么是华为「鸿蒙 OS」"
 date = 2019-08-09T23:03:01+08:00
-draft = true
+draft = false
 description = "2019年8月9日是笔者和傻梁在一起一周年的日子。 笔者和傻梁一起开开心心的出去玩，回家一看，错过了一个重要的事情。"
 slug = "jian-dan-yi-dong-shi-me-shi-hua-wei-hong-meng-os"
 featureimage = "/images/posts/jian-dan-yi-dong-shi-me-shi-hua-wei-hong-meng-os/cover.avif"
+categories = ["科普"]
+tags = ["鸿蒙 OS", "操作系统", "科普"]
 +++
+> 旧文归档：本文保留当时的事件背景和表达，相关情况可能已经发生变化。
 
 2019年8月9日是笔者和傻梁**在一起一周年** 的日子。
 

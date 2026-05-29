@@ -1,10 +1,12 @@
 +++
 title = "如何制作好看的PPT（进阶版）"
 date = 2019-03-18T00:00:16+08:00
-draft = true
+draft = false
 description = "PPT是办公族以及学生再熟悉不过的软件了。在熟悉了PPT的基本操作之后，许多人开始走捷径，套用现成的PPT模板，这的确不失为一种快捷高效的方法，尤其是你丧/忙的时候。 可是当你需要一个展示自我的舞台或是遇到金主甲方时，美观的PPT还是一个不错的加分项。那么这时候，模板生硬会给观众一种不好的视觉感受。"
 slug = "ru-he-zhi-zuo-hao-kan-de-ppt-jin-jie-ban"
 featureimage = "/images/posts/ru-he-zhi-zuo-hao-kan-de-ppt-jin-jie-ban/cover.avif"
+categories = ["教程"]
+tags = ["PPT", "设计", "演示文稿"]
 +++
 
 PPT是办公族以及学生再熟悉不过的软件了。在熟悉了PPT的基本操作之后，许多人开始走捷径，套用现成的PPT模板，这的确不失为一种快捷高效的方法，尤其是你丧/忙的时候。

@@ -1,11 +1,14 @@
 +++
 title = "PHP 8.0 部分错误的解决办法"
 date = 2021-01-12T04:04:22+08:00
-draft = true
+draft = false
 description = "前段时间，一直关注的PHP 8终于放出了正式版本，于是迫不及待的编译并测试了下，发现bug极多，尤其是新特性JIT更是在特定情况下直接无法使用。 好在大多bug已经在PHP的官网得到了提出，要做的就是等待修复了。不过在"
 slug = "php-8.0-bu-fen-cuo-wu-de-jie-jue-ban-fa"
 featureimage = "/images/posts/php-8.0-bu-fen-cuo-wu-de-jie-jue-ban-fa/cover.avif"
+categories = ["教程"]
+tags = ["PHP", "PHP 8", "故障排查"]
 +++
+> 旧文归档：本文针对 PHP 8.0 刚发布时遇到的部分错误。PHP 版本、扩展兼容性和框架适配已经继续演进，排查问题时请先看当前 PHP 版本的错误日志与官方迁移说明。
 
 前段时间，一直关注的PHP 8终于放出了正式版本，于是迫不及待的编译并测试了下，发现bug极多，尤其是新特性JIT更是在特定情况下直接无法使用。
 

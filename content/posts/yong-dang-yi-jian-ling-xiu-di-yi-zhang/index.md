@@ -1,10 +1,12 @@
 +++
 title = "勇当意见领袖第一章"
 date = 2017-12-08T15:23:32+08:00
-draft = true
+draft = false
 description = "我经常刷的Facebook，在西方媒体中，那些受国家政府控制的诸如：。英国广播公司，美国广播公司，他们针对中国的中文网你大可去看看非常强烈的意识形态，对中国指手画脚印象中，前段时间BBC就文革纪念日，竟然报道了半个多月。更别说一些小媒体。就连台湾的一个小娱乐媒体，最近也报道“没有中国游客，台湾会更好"
 slug = "yong-dang-yi-jian-ling-xiu-di-yi-zhang"
 featureimage = "/images/posts/yong-dang-yi-jian-ling-xiu-di-yi-zhang/cover.avif"
+categories = ["随笔"]
+tags = ["观点", "写作", "思想"]
 +++
 
 我经常刷的Facebook，在西方媒体中，那些受国家政府控制的诸如：。英国广播公司，美国广播公司，他们针对中国的中文网你大可去看看非常强烈的意识形态，对中国指手画脚印象中，前段时间BBC就文革纪念日，竟然报道了半个多月。更别说一些小媒体。就连台湾的一个小娱乐媒体，最近也报道“没有中国游客，台湾会更好”的文章。

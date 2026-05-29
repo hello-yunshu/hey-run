@@ -1,10 +1,12 @@
 +++
 title = "赛博朋克——写在废土上的诗"
 date = 2019-04-14T02:53:04+08:00
-draft = true
+draft = false
 description = "公元2019年，人类站在人工智能与人类智慧的平衡点上面临抉择。 三月份上映的「爱，死亡，和机器人」（Love，Death，and Robot），18集动画小短片。 凭借诗选剧的形式，夺人眼球的画面和反转的结尾，不出意料受到了全网吹捧，也再一次将赛博朋克文化推向大众面前。"
 slug = "sai-bo-peng-ke----xie-zai-fei-tu-shang-de-shi"
 featureimage = "/images/posts/sai-bo-peng-ke----xie-zai-fei-tu-shang-de-shi/cover.avif"
+categories = ["随笔"]
+tags = ["赛博朋克", "诗", "写作"]
 +++
 
 公元2019年，人类站在人工智能与人类智慧的平衡点上面临抉择。

@@ -1,10 +1,12 @@
 +++
 title = "2020年美国侵犯人权报告"
 date = 2021-03-24T18:47:29+08:00
-draft = true
+draft = false
 description = "2020年美国侵犯人权报告 中华人民共和国 国务院新闻办公室 2021"
 slug = "2020nian-mei-guo-qin-fan-ren-quan-bao-gao"
 featureimage = "img/waves.svg"
+categories = ["文档"]
+tags = ["人权报告", "美国", "历史资料"]
 +++
 
 **2020****年美国侵犯人权报告**

@@ -1,10 +1,12 @@
 +++
 title = "最近一些问题的回应和想法"
 date = 2021-06-15T19:07:29+08:00
-draft = true
+draft = false
 description = "难得有这样的心思写一篇文章出来。 最近有小伙伴私信我说有YouTuber盗用了我的文章内容。我看了看，确实有这么回事。虽然这种事情多少有些令人不快，但这也只是4年网站运营中的一个小小的波澜而已，引不起我多大的情绪起伏。倒是现在回看一下办网站的4年时光中，感触颇多，正好借此机会唠叨唠叨哈哈。"
 slug = "zui-jin-yi-xie-wen-ti-de-hui-ying-he-xiang-fa"
 featureimage = "/images/posts/zui-jin-yi-xie-wen-ti-de-hui-ying-he-xiang-fa/cover.avif"
+categories = ["随笔"]
+tags = ["网站运营", "无主界", "随笔"]
 +++
 
 难得有这样的心思写一篇文章出来。

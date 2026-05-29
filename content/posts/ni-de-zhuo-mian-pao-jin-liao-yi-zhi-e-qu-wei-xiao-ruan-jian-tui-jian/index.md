@@ -1,11 +1,14 @@
 +++
 title = "你的桌面跑进了一只鹅！趣味小软件推荐"
 date = 2020-04-03T20:14:33+08:00
-draft = true
+draft = false
 description = "今天笔者给大家推荐一款电脑的趣味小插件——DesktopGoose。就如软件名称“桌面鹅”所说，这款软件是一个桌面宠物养成类的小软件。话不多说，我们一起来看看这款软件到底是怎么样的吧。 软件简介 软件分为Windows版和MacOS版，不需要安装，直接下载运行即可。这里以Windows版本为例："
 slug = "ni-de-zhuo-mian-pao-jin-liao-yi-zhi-e-qu-wei-xiao-ruan-jian-tui-jian"
 featureimage = "/images/posts/ni-de-zhuo-mian-pao-jin-liao-yi-zhi-e-qu-wei-xiao-ruan-jian-tui-jian/cover.avif"
+categories = ["工具"]
+tags = ["桌面工具", "趣味软件", "Windows"]
 +++
+> 旧文归档：本文保留当时的操作思路，涉及的软件版本、系统界面、命令和下载链接可能已经变化；实际使用请以官方当前说明为准。
 
 今天笔者给大家推荐一款电脑的趣味小插件——DesktopGoose。就如软件名称“桌面鹅”所说，这款软件是一个桌面宠物养成类的小软件。话不多说，我们一起来看看这款软件到底是怎么样的吧。
 

@@ -1,10 +1,12 @@
 +++
 title = "一车面包人 之 秋季限定"
 date = 2018-11-25T23:15:46+08:00
-draft = true
+draft = false
 description = "/// 银"
 slug = "yi-che-mian-bao-ren-zhi-qiu-ji-xian-ding"
 featureimage = "/images/posts/yi-che-mian-bao-ren-zhi-qiu-ji-xian-ding/cover.avif"
+categories = ["随笔"]
+tags = ["诗", "写作", "生活"]
 +++
 
 [![](/images/posts/yi-che-mian-bao-ren-zhi-qiu-ji-xian-ding/cover.avif)](/images/posts/yi-che-mian-bao-ren-zhi-qiu-ji-xian-ding/03.avif)

@@ -1,11 +1,14 @@
 +++
 title = "在校师生福利合集：Apple、微软、AutoDesk等教育优惠指南"
 date = 2017-11-09T20:08:21+08:00
-draft = true
+draft = false
 description = "其实很多时候，我们有身边有很多资源可以利用，但大多是都是被我们忽视，或者完全不知情。 所谓教育优惠，就是一项针对于在校大学生和教职员工推出的特殊优惠活动。一些公司会将旗下产品或服务以一定的折扣，甚至免费提供给高校师生。 申请教育优惠一般有一个前提，那就是要有一个学校提供的「校园邮箱」。在国内，也就是"
 slug = "zai-xiao-shi-sheng-fu-li-he-ji-apple-wei-ruan-autodeskdeng-jiao-yu-you-hui-zhi-nan"
 featureimage = "/images/posts/zai-xiao-shi-sheng-fu-li-he-ji-apple-wei-ruan-autodeskdeng-jiao-yu-you-hui-zhi-nan/cover.avif"
+categories = ["生活"]
+tags = ["教育优惠", "学生", "软件"]
 +++
+> 旧文归档：本文整理的是当时的教育优惠入口和验证方式。Apple、微软、JetBrains、GitHub、AWS 以及云厂商的资格规则和活动额度经常变化，申请前请以各平台官网当前页面为准。
 
 其实很多时候，我们有身边有很多资源可以利用，但大多是都是被我们忽视，或者完全不知情。
 

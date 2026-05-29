@@ -1,11 +1,14 @@
 +++
 title = "Edge浏览器(基于Chromium)正式稳定版泄露——浅谈浏览器"
 date = 2019-08-22T21:00:01+08:00
-draft = true
+draft = false
 description = "如果你一直关心无主界的话，也许你觉得笔者最近“发了疯”，在疯狂的推送几乎同样的新闻。这不是没有原因的，最近关于Edge浏览器(基于Chromium)的新闻实在更新太快，导致笔者都来不及改文章内容。这不，刚刚发布了Beta版本的Edge浏览器马上就有正式版泄露出来了。 几个月前，微软收购了GitHub"
 slug = "edgeliu-lan-qi-ji-yu-chromium-zheng-shi-wen-ding-ban-xie-lu----qian-tan-liu-lan-qi"
 featureimage = "/images/posts/edgeliu-lan-qi-ji-yu-chromium-zheng-shi-wen-ding-ban-xie-lu----qian-tan-liu-lan-qi/cover.avif"
+categories = ["网络技术"]
+tags = ["Edge", "Chromium", "浏览器"]
 +++
+> 旧文归档：本文保留当时的事件背景和表达，相关情况可能已经发生变化。
 
 如果你一直关心无主界的话，也许你觉得笔者最近“发了疯”，在疯狂的推送几乎同样的新闻。这不是没有原因的，最近关于Edge浏览器(基于Chromium)的新闻实在更新太快，导致笔者都来不及改文章内容。这不，刚刚发布了Beta版本的Edge浏览器马上就有正式版泄露出来了。
 

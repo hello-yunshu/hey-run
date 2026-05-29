@@ -1,11 +1,14 @@
 +++
-title = "教程：phpStudy Apache升级至最新版"
+title = "旧版 phpStudy Apache 升级记录"
 date = 2018-01-01T23:48:28+08:00
-draft = true
-description = "前言 用过phpStudy的同学应该知道，phpStudy的apache版本是2.4.23 (Win32)的，这个版本还是2016年的，很明显，已经很低了，而且还是32位的版本。 当paniy我看到这个的时候，我是很不爽的，强迫症的我决定升级！ 我在网上找了很多关于phpStudy升级apache的"
+draft = false
+description = "这是一篇旧版 phpStudy 手动替换 Apache 的折腾记录。文中环境、版本号和模块依赖都有明显时代背景，今天更适合作为旧方案参考。"
 slug = "jiao-cheng-phpstudy-apachesheng-ji-zhi-zui-xin-ban"
 featureimage = "/images/posts/jiao-cheng-phpstudy-apachesheng-ji-zhi-zui-xin-ban/cover.avif"
+categories = ["教程"]
+tags = ["phpStudy", "Apache", "Windows"]
 +++
+> 旧文归档：本文记录的是旧版 phpStudy 手动替换 Apache 的过程。phpStudy、Apache Windows 构建和模块依赖已经变化，今天不建议按文中版本号照搬；请先备份原目录，并以当前 Apache 官方文档为准。
 
 #### 前言
 
@@ -13,11 +16,11 @@ featureimage = "/images/posts/jiao-cheng-phpstudy-apachesheng-ji-zhi-zui-xin-ban
 
 #### 准备工作
 
-首先上[apache官网](http://httpd.apache.org/docs/current/platform/windows.html#down)，随便找一个下载地址，比如第一个，下载最新的apache版本，现在最新的是2.4.29。 [![](/images/posts/jiao-cheng-phpstudy-apachesheng-ji-zhi-zui-xin-ban/01.avif)](/images/posts/jiao-cheng-phpstudy-apachesheng-ji-zhi-zui-xin-ban/01.avif) 下载完成后，停止本地的apache运行，在phpStudyPHPTutorial目录中，重命名Apache文件夹名字，比如Apache1，记住不要删掉。 将下载的最新apache版本解压到phpStudyPHPTutorial目录，重命名为Apache，到这里，你就基本完成了准备工作的最初阶段。 
+首先上[apache官网](http://httpd.apache.org/docs/current/platform/windows.html#down)，找一个 Windows 构建下载地址。本文当时使用的是 Apache 2.4.29；今天请以当前稳定版本为准。 [![](/images/posts/jiao-cheng-phpstudy-apachesheng-ji-zhi-zui-xin-ban/01.avif)](/images/posts/jiao-cheng-phpstudy-apachesheng-ji-zhi-zui-xin-ban/01.avif) 下载完成后，停止本地的apache运行，在phpStudyPHPTutorial目录中，重命名Apache文件夹名字，比如Apache1，记住不要删掉。 将下载的新 apache 版本解压到phpStudyPHPTutorial目录，重命名为Apache，到这里，你就基本完成了准备工作的最初阶段。
 
 #### 进阶准备
 
-这个阶段，你需要进行文件修改了。 很明显，最最重要的文件就是Apacheconf目录下的httpd.conf[![](/images/posts/jiao-cheng-phpstudy-apachesheng-ji-zhi-zui-xin-ban/02.avif)](/images/posts/jiao-cheng-phpstudy-apachesheng-ji-zhi-zui-xin-ban/02.avif) 首先你需要做的，就是比较httpd.conf最新版和phpStudy原版中的差异。将所有你添加的条目、删除的条目或者原版自带的条目加至新版httpd.conf文件中。这个工作至关重要，几乎一切的apache无法启动都来自httpd.conf文件配置问题。 为了方便大家我这边做好了基础版的httpd.conf修改文件，注：paniy我自己没有加减任何一条，只是迁移了phpStudy原版的内容。 在完成httpd.conf文件的修改后，别忘记把之前文件夹中的vhosts.conf复制到新版本相同目录下，还有一个非常重要的文件夹，你需要把Apacheconfextra目录下的所有新版本不包含的文件都复制到新版的apache同目录下。 [![](/images/posts/jiao-cheng-phpstudy-apachesheng-ji-zhi-zui-xin-ban/03.avif)](/images/posts/jiao-cheng-phpstudy-apachesheng-ji-zhi-zui-xin-ban/03.avif) 至于这个文件夹有什么用，你打开就可以发现，这个文件是用来调用php等等，这是必须的文件夹。到了这步，整个准备工作就基本完成了。 
+这个阶段，你需要进行文件修改了。 很明显，最最重要的文件就是Apacheconf目录下的httpd.conf[![](/images/posts/jiao-cheng-phpstudy-apachesheng-ji-zhi-zui-xin-ban/02.avif)](/images/posts/jiao-cheng-phpstudy-apachesheng-ji-zhi-zui-xin-ban/02.avif) 首先你需要做的，就是比较新版本 httpd.conf 和 phpStudy 原版中的差异。将所有你添加的条目、删除的条目或者原版自带的条目加至新版本 httpd.conf 文件中。这个工作至关重要，几乎一切的apache无法启动都来自httpd.conf文件配置问题。 为了方便大家我这边做好了基础版的httpd.conf修改文件，注：paniy我自己没有加减任何一条，只是迁移了phpStudy原版的内容。 在完成httpd.conf文件的修改后，别忘记把之前文件夹中的vhosts.conf复制到新版本相同目录下，还有一个非常重要的文件夹，你需要把Apacheconfextra目录下的所有新版本不包含的文件都复制到新版本 apache 同目录下。 [![](/images/posts/jiao-cheng-phpstudy-apachesheng-ji-zhi-zui-xin-ban/03.avif)](/images/posts/jiao-cheng-phpstudy-apachesheng-ji-zhi-zui-xin-ban/03.avif) 至于这个文件夹有什么用，你打开就可以发现，这个文件是用来调用php等等，这是必须的文件夹。到了这步，整个准备工作就基本完成了。
 
 #### Apache的升级
 

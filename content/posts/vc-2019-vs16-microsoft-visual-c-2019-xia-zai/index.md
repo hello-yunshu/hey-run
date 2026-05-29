@@ -1,11 +1,14 @@
 +++
 title = "VC 2019 / VS16（Microsoft Visual C++ 2019）下载"
 date = 2019-05-25T21:22:58+08:00
-draft = true
+draft = false
 description = "前段时间，微软发布了最新的Visual Studio 2019 (以下简称VS)，笔者并不怎么使用VS平台，上次使用是为了开发Microsoft Store应用而用了一段时间。当时用的还是VS 2017，没想到现在这么快就到了VS 2019（VS16）。"
 slug = "vc-2019-vs16-microsoft-visual-c-2019-xia-zai"
 featureimage = "/images/posts/vc-2019-vs16-microsoft-visual-c-2019-xia-zai/cover.avif"
+categories = ["工具"]
+tags = ["Visual C++", "运行库", "Windows"]
 +++
+> 旧文归档：本文保留当时的操作思路，涉及的软件版本、系统界面、命令和下载链接可能已经变化；实际使用请以官方当前说明为准。
 
 前段时间，微软发布了最新的Visual Studio 2019 (以下简称VS)，笔者并不怎么使用VS平台，上次使用是为了开发Microsoft Store应用而用了一段时间。当时用的还是VS 2017，没想到现在这么快就到了VS 2019（VS16）。
 

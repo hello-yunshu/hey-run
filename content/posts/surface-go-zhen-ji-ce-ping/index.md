@@ -1,11 +1,14 @@
 +++
 title = "Surface Go 真机测评"
 date = 2018-11-12T10:57:56+08:00
-draft = true
+draft = false
 description = "看到女朋友写了一篇Surface Laptop 2的测评后。觉得作为男（生）人不能落下，遂决定用这个Surface Go来写一篇测评吧。"
 slug = "surface-go-zhen-ji-ce-ping"
 featureimage = "/images/posts/surface-go-zhen-ji-ce-ping/cover.avif"
+categories = ["数码"]
+tags = ["Surface Go", "评测", "微软"]
 +++
+> 旧文归档：本文是 Surface Go 初代时期的体验记录，不代表当前购买建议、价格或产品线现状。
 
 看到女朋友写了一篇Surface Laptop 2的测评后。觉得作为男（生）人不能落下，遂决定用这个Surface Go来写一篇测评吧。 
 

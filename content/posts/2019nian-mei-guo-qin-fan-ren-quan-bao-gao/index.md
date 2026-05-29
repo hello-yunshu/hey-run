@@ -1,10 +1,12 @@
 +++
 title = "2019年美国侵犯人权报告"
 date = 2020-03-22T00:33:30+08:00
-draft = true
+draft = false
 description = "2019年美国侵犯人权报告 中华人民共和国 国务院新闻办公室 2020年3月 目录"
 slug = "2019nian-mei-guo-qin-fan-ren-quan-bao-gao"
 featureimage = "img/fireflies.svg"
+categories = ["文档"]
+tags = ["人权报告", "美国", "历史资料"]
 +++
 
 **2019年美国侵犯人权报告**

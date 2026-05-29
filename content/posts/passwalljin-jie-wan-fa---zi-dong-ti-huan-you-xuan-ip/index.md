@@ -1,11 +1,14 @@
 +++
 title = "PassWall进阶玩法 - 自动替换优选IP"
 date = 2021-04-27T15:49:25+08:00
-draft = true
+draft = false
 description = "如果你是使用 Xray_bash_onekey 搭建 Nginx+ws/gRPC/xHTTP+TLS，并且套用了 Cloudflare，那么优选 IP 依然是一个绕不过去的小麻烦。本文按现在的脚本语境重新整理 PassWall 自动替换优选 IP 的思路。"
 slug = "passwalljin-jie-wan-fa---zi-dong-ti-huan-you-xuan-ip"
 featureimage = "/images/posts/passwalljin-jie-wan-fa---zi-dong-ti-huan-you-xuan-ip/cover.avif"
+categories = ["网络技术"]
+tags = ["PassWall", "Cloudflare", "优选 IP", "代理"]
 +++
+> 旧文归档：本文保留 PassWall 自动替换 Cloudflare 优选 IP 的思路。PassWall 界面、UCI 节点字段、CloudflareSpeedTest 输出和 Xray 客户端支持会变化，照做前请先核对自己设备上的实际配置字段。
 
 如果你用 [Xray_bash_onekey](https://github.com/hello-yunshu/Xray_bash_onekey) 搭了 Nginx+ws/gRPC/xHTTP+TLS，还套了 Cloudflare，那你大概已经发现了：Cloudflare（以下简称 CF）的 IP 多得像天上的星星，但哪个最快？靠眼睛是看不出来的。
 

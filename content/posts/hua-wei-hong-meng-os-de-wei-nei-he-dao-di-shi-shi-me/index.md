@@ -1,11 +1,14 @@
 +++
 title = "华为「鸿蒙 OS」的微内核到底是什么"
 date = 2019-08-10T20:19:30+08:00
-draft = true
+draft = false
 description = "有消息宣称，华为的鸿蒙系统搭载的内核和安卓的完全不一样，安卓使用的是宏内核，而华为使用的则是另外一款全新的构架微内核，这款内核将会让系统的应用程序都单独运行不会互相打扰影响，而且其优点还不仅于此。而且谷歌也拥有微内核新星Google Fuchisa。那么，微内核究竟是什么呢？这里让我们一起来认识下微"
 slug = "hua-wei-hong-meng-os-de-wei-nei-he-dao-di-shi-shi-me"
 featureimage = "/images/posts/hua-wei-hong-meng-os-de-wei-nei-he-dao-di-shi-shi-me/cover.avif"
+categories = ["科普"]
+tags = ["鸿蒙 OS", "微内核", "操作系统"]
 +++
+> 旧文归档：本文保留当时的事件背景和表达，相关情况可能已经发生变化。
 
 有消息宣称，华为的鸿蒙系统搭载的内核和安卓的完全不一样，安卓使用的是宏内核，而华为使用的则是另外一款全新的构架微内核，这款内核将会让系统的应用程序都单独运行不会互相打扰影响，而且其优点还不仅于此。而且谷歌也拥有微内核新星Google Fuchisa。那么，微内核究竟是什么呢？这里让我们一起来认识下微内核吧。
 

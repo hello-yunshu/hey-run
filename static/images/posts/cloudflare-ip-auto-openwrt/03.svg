@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="760" viewBox="0 0 1320 760" role="img" aria-label="Cloudflare IP automation flow">
+  <rect width="1320" height="760" rx="28" fill="#0f172a"/>
+  <text x="66" y="80" fill="#e5e7eb" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="34" font-weight="800">一次运行发生了什么</text>
+  <text x="66" y="122" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="21">不是玄学加速，是把重复劳动交给脚本。乖，别再手动复制粘贴了。</text>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="22" font-weight="700">
+    <rect x="72" y="184" width="230" height="120" rx="18" fill="#1e293b" stroke="#38bdf8"/>
+    <text x="112" y="238" fill="#e0f2fe">下载 / 复用 cfst</text>
+    <text x="112" y="272" fill="#93c5fd" font-size="17" font-weight="500">GitHub 失败可用本地包</text>
+
+    <rect x="382" y="184" width="230" height="120" rx="18" fill="#1e293b" stroke="#34d399"/>
+    <text x="428" y="238" fill="#dcfce7">测速选 IP</text>
+    <text x="428" y="272" fill="#86efac" font-size="17" font-weight="500">IPv4 / IPv6 / both</text>
+
+    <rect x="692" y="184" width="230" height="120" rx="18" fill="#1e293b" stroke="#f59e0b"/>
+    <text x="734" y="238" fill="#ffedd5">域名连通验证</text>
+    <text x="734" y="272" fill="#fed7aa" font-size="17" font-weight="500">curl --resolve 检查</text>
+
+    <rect x="1002" y="184" width="230" height="120" rx="18" fill="#1e293b" stroke="#f472b6"/>
+    <text x="1042" y="238" fill="#fce7f3">写回配置</text>
+    <text x="1042" y="272" fill="#fbcfe8" font-size="17" font-weight="500">PassWall / OpenClash</text>
+  </g>
+
+  <path d="M302 244 H382" stroke="#64748b" stroke-width="5" stroke-linecap="round"/>
+  <path d="M612 244 H692" stroke="#64748b" stroke-width="5" stroke-linecap="round"/>
+  <path d="M922 244 H1002" stroke="#64748b" stroke-width="5" stroke-linecap="round"/>
+
+  <rect x="96" y="398" width="520" height="244" rx="18" fill="#111827" stroke="#334155"/>
+  <text x="128" y="442" fill="#38bdf8" font-family="Menlo, Consolas, monospace" font-size="20">OpenClash</text>
+  <text x="128" y="486" fill="#d1d5db" font-family="Menlo, Consolas, monospace" font-size="20">proxy [CF-1] server: 104.17.93.75</text>
+  <text x="128" y="524" fill="#d1d5db" font-family="Menlo, Consolas, monospace" font-size="20">proxy [CF-2] server: 172.64.88.12</text>
+  <text x="128" y="562" fill="#22c55e" font-family="Menlo, Consolas, monospace" font-size="20">servername: cdn.example.com</text>
+  <text x="128" y="600" fill="#22c55e" font-family="Menlo, Consolas, monospace" font-size="20">Host: cdn.example.com</text>
+
+  <rect x="704" y="398" width="520" height="244" rx="18" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="738" y="446" fill="#0f172a" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="28" font-weight="800">关键点就一句</text>
+  <text x="738" y="502" fill="#334155" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="23">连接地址换成优选 IP，</text>
+  <text x="738" y="544" fill="#334155" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="23">域名信息继续留在 SNI / Host。</text>
+  <text x="738" y="600" fill="#0f766e" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="21">这样才不会把 CDN 回源玩成盲盒。</text>
+</svg>

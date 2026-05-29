@@ -1,10 +1,12 @@
 +++
 title = "揭秘密码背后的原理"
 date = 2019-03-17T17:24:54+08:00
-draft = true
+draft = false
 description = "密码学（Cryptography）是一门古老而年轻的科学，它的起源可以追溯到古罗马时代约公元110年的恺撒（Caesar）加密。然而，直到1949年Claude Elwood Shannon发表了《保密系统的通信理论》这篇划时代的论文，才标志着现代密码学的诞生。经典密码学所使用的密码设计和分析方法不"
 slug = "jie-mi-mi-ma-bei-hou-de-yuan-li"
 featureimage = "/images/posts/jie-mi-mi-ma-bei-hou-de-yuan-li/cover.png"
+categories = ["科普"]
+tags = ["密码学", "安全", "科普"]
 +++
 
 密码学（Cryptography）是一门古老而年轻的科学，它的**起源可以追溯到古罗马时代约公元110年的恺撒（Caesar）加密** 。然而，直到1949年Claude Elwood Shannon发表了**《保密系统的通信理论》这篇划时代的论文，才标志着现代密码学的诞生** 。经典密码学所使用的密码设计和分析方法不是基于数学推理而是依赖密码学家的直觉和灵感。

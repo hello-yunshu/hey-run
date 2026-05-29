@@ -1,10 +1,12 @@
 +++
 title = "难得一见的稀有照片"
 date = 2019-03-14T21:06:28+08:00
-draft = true
+draft = false
 description = "国外网站 Brightside 整理了23( 24 )张人类一生几乎无法亲眼看到的稀有照片，笔者觉得令人称奇，便收集了过来，快来看看吧。 1、某个化学反应产生的沉积物，看起来像诡异的森林。"
 slug = "nan-de-yi-jian-de-xi-you-zhao-pian"
 featureimage = "/images/posts/nan-de-yi-jian-de-xi-you-zhao-pian/cover.avif"
+categories = ["随笔"]
+tags = ["照片", "历史", "影像"]
 +++
 
 国外网站 Brightside 整理了23(~~24~~)张人类一生几乎无法亲眼看到的稀有照片，笔者觉得令人称奇，便收集了过来，快来看看吧。

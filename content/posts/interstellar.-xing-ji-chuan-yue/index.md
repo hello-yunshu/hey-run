@@ -1,10 +1,12 @@
 +++
 title = "Interstellar. 星际穿越"
 date = 2019-02-16T23:24:47+08:00
-draft = true
+draft = false
 description = "从贺岁档 「流浪地球」 说起 刚刚过去的2019贺岁档，「流浪地球」不负众望。 比起「红海行动」、「战狼2」（我没有看过），这部电影可能才真是给中国人长脸。 「流浪地球」展现出了一种中国态度，这绝不是单独强调中国元素可以做到的。影片最后拉着世界人民的小手一起拯救地球以及吴京为了全人类的牺牲，许多瞬间"
 slug = "interstellar.-xing-ji-chuan-yue"
 featureimage = "/images/posts/interstellar.-xing-ji-chuan-yue/cover.avif"
+categories = ["影评"]
+tags = ["星际穿越", "电影", "科幻"]
 +++
 
 ### 从贺岁档 「流浪地球」 说起

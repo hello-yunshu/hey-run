@@ -1,11 +1,14 @@
 +++
 title = "用 Excel 玩《文明1》- 附下载链接"
 date = 2019-09-11T19:21:28+08:00
-draft = true
+draft = false
 description = "前段时间，有位国外高玩在Microsoft Excel中重新制作了《文明1》，据制作者所说，要流畅运行此游戏需要四核的i5-3570K满载才能运行。现在开发者s0lly提供了这款“游戏”下载的链接，感兴趣的小伙伴可以试一下你的CPU能不能顶得住。 下载链接：点此访问"
 slug = "yong-excel-wan-wen-ming-1---fu-xia-zai-lian-jie"
 featureimage = "/images/posts/yong-excel-wan-wen-ming-1---fu-xia-zai-lian-jie/cover.avif"
+categories = ["工具"]
+tags = ["Excel", "游戏", "文明"]
 +++
+> 旧文归档：本文保留当时的操作思路，涉及的软件版本、系统界面、命令和下载链接可能已经变化；实际使用请以官方当前说明为准。
 
 前段时间，有位国外高玩在Microsoft Excel中重新制作了《文明1》，据制作者所说，要流畅运行此游戏需要四核的i5-3570K满载才能运行。现在开发者s0lly提供了这款“游戏”下载的链接，感兴趣的小伙伴可以试一下你的CPU能不能顶得住。
 

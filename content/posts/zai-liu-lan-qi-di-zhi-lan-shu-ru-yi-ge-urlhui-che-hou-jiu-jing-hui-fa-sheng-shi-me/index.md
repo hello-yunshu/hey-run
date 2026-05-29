@@ -1,10 +1,12 @@
 +++
 title = "在浏览器地址栏输入一个URL回车后，究竟会发生什么？"
 date = 2019-05-06T21:23:18+08:00
-draft = true
+draft = false
 description = "小明打开浏览器，输入idleleo.com敲回车键。 在小明眼里，浏览器是自己的小奴才，让你干啥就干啥。 浏览器才不这么看，鄙人也是有自己独立的人格的，老板的命令如果是对的，那自然照做。那如果是错误的，那就不能听命不是？"
 slug = "zai-liu-lan-qi-di-zhi-lan-shu-ru-yi-ge-urlhui-che-hou-jiu-jing-hui-fa-sheng-shi-me"
 featureimage = "/images/posts/zai-liu-lan-qi-di-zhi-lan-shu-ru-yi-ge-urlhui-che-hou-jiu-jing-hui-fa-sheng-shi-me/cover.avif"
+categories = ["科普"]
+tags = ["浏览器", "HTTP", "网络"]
 +++
 
 小明打开浏览器，输入idleleo.com敲回车键。
