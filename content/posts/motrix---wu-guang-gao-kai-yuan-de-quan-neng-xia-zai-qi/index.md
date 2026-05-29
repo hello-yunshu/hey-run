@@ -1,11 +1,14 @@
 +++
 title = "Motrix - 无广告开源的全能下载器"
 date = 2019-06-10T00:43:26+08:00
-draft = true
+draft = false
 description = "之前笔者介绍了一款老牌下载神器： Internet Download Manager (IDM) 破解版下载。现在笔者来介绍另一款适用于HTTP、FTP、BT、磁力链接以及下载百度网盘等资源的下载工具——Motrix。"
 slug = "motrix---wu-guang-gao-kai-yuan-de-quan-neng-xia-zai-qi"
 featureimage = "/images/posts/motrix---wu-guang-gao-kai-yuan-de-quan-neng-xia-zai-qi/cover.avif"
+categories = ["工具"]
+tags = ["Motrix", "下载器", "开源软件"]
 +++
+> 旧文归档：本文保留当时的操作思路，涉及的软件版本、系统界面、命令和下载链接可能已经变化；实际使用请以官方当前说明为准。
 
 ![](/images/posts/motrix---wu-guang-gao-kai-yuan-de-quan-neng-xia-zai-qi/cover.avif)
 

@@ -1,11 +1,14 @@
 +++
 title = "V2Ray / SSR 传输协议哪个好? (各种协议对比)"
 date = 2019-05-18T19:11:27+08:00
-draft = true
+draft = false
 description = "这篇文章主要阐述的是以V2Ray为主，SSR在传输协议方面与V2Ray大同小异，这篇文章不再赘述。如果你用的是SSR，笔者建议立刻使用V2Ray，SSR已经非常不安全了；如果你不知道V2Ray是什么，用来做什么，相对应的客户端在哪里。可以先访问之前笔者写的文章：V2Ray 客户端下载。 话不多说，我"
 slug = "v2ray-ssr-chuan-shu-xie-yi-na-ge-hao-ge-zhong-xie-yi-dui-bi"
 featureimage = "/images/posts/v2ray-ssr-chuan-shu-xie-yi-na-ge-hao-ge-zhong-xie-yi-dui-bi/cover.avif"
+categories = ["网络技术"]
+tags = ["V2Ray", "SSR", "传输协议", "代理"]
 +++
+> 旧文归档：本文保留当时对协议和工具生态的理解，项目状态、主流实践和安全边界可能已经变化；阅读时请结合当前资料判断。
 
 这篇文章主要阐述的是以V2Ray为主，SSR在传输协议方面与V2Ray大同小异，这篇文章不再赘述。**如果你用的是SSR，笔者建议立刻使用V2Ray** ，SSR已经非常不安全了；如果你不知道V2Ray是什么，用来做什么，相对应的客户端在哪里。可以先访问之前笔者写的文章：[V2Ray 客户端下载](https://www.idleleo.com/02/988.html)。
 

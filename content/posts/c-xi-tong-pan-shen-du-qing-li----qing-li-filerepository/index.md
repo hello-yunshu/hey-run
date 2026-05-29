@@ -1,11 +1,14 @@
 +++
 title = "C(系统)盘深度清理——清理FileRepository"
 date = 2017-12-17T23:26:38+08:00
-draft = true
+draft = false
 description = "引言 许多朋友都会发现，Windows系统(以下简称Win系统)刚安装的时候，所占的体积不大；然而使用了一段时间后，系统盘的剩余空间就越来越小了，各种清理工具也未必能够把空间清出来。为什么Win系统所占体积会越来越大？其实除了大家熟知的缓存文件外，还有很多老旧的驱动文件，而这些驱动文件，系统自带的清"
 slug = "c-xi-tong-pan-shen-du-qing-li----qing-li-filerepository"
 featureimage = "/images/posts/c-xi-tong-pan-shen-du-qing-li----qing-li-filerepository/cover.avif"
+categories = ["教程"]
+tags = ["Windows", "系统清理", "驱动"]
 +++
+> 旧文归档：本文记录的是清理 Windows DriverStore 的旧方法。删除驱动包有风险，今天操作前请优先使用 Windows 自带清理工具，并确认 DriverStore Explorer 当前版本与系统兼容。
 
 #### 引言
 
@@ -41,6 +44,6 @@ _本文摘自互联网，部分内容paniy进行了修改完善。_
 
 #### 相关下载
 
-DriverStoreExplorer最新版下载：
+DriverStoreExplorer 下载入口以项目当前发布页为准：
 
 <https://github.com/lostindark/DriverStoreExplorer/releases>

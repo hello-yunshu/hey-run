@@ -1,10 +1,13 @@
 +++
 title = "关于Trojan、CDN、V2Ray的种种问题 （原理分析）"
 date = 2020-03-11T23:48:57+08:00
-draft = true
+draft = false
 slug = "%e5%85%b3%e4%ba%8etrojan%e3%80%81cdn%e3%80%81v2ray%e7%9a%84%e7%a7%8d%e7%a7%8d%e9%97%ae%e9%a2%98-%ef%bc%88%e5%8e%9f%e7%90%86%e5%88%86%e6%9e%90%ef%bc%89"
 featureimage = "/images/posts/%e5%85%b3%e4%ba%8etrojan%e3%80%81cdn%e3%80%81v2ray%e7%9a%84%e7%a7%8d%e7%a7%8d%e9%97%ae%e9%a2%98-%ef%bc%88%e5%8e%9f%e7%90%86%e5%88%86%e6%9e%90%ef%bc%89/cover.avif"
+categories = ["网络技术"]
+tags = ["Trojan", "V2Ray", "CDN", "代理", "原理"]
 +++
+> 旧文归档：本文保留当时对协议和工具生态的理解，项目状态、主流实践和安全边界可能已经变化；阅读时请结合当前资料判断。
 
 最近笔者鼓捣了一段时间Trojan，对Trojan有了些新的认知。在笔者的《[V2Ray / Trojan 传输方式哪个好？(原理对比)](https://www.idleleo.com/02/4064.html)》的文章中，已经一定程度的对Trojan有了初步的认知。现在我们用提问的方式来一起更加“深入”的了解Trojan的本质吧~
 

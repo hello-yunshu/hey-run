@@ -1,11 +1,14 @@
 +++
 title = "V2Ray / Trojan 传输方式哪个好？(原理对比)"
 date = 2020-02-03T15:59:06+08:00
-draft = true
+draft = false
 description = "前段时间， 有些社群爆出有论文研究V2Ray识别的方法。这让大家开始寻找一些V2Ray可能的替代品。这不，最近Trojan就十分火爆，笔者发现很多油管UP🐷开始着手测试Trojan的性能。笔者前段时间也发表了如何搭建的文章，《替代V2Ray？- Trojan搭建教程》（由于某些原因不得不使用密码，"
 slug = "v2ray-trojan-chuan-shu-fang-shi-na-ge-hao-yuan-li-dui-bi"
 featureimage = "/images/posts/v2ray-trojan-chuan-shu-fang-shi-na-ge-hao-yuan-li-dui-bi/cover.avif"
+categories = ["网络技术"]
+tags = ["V2Ray", "Trojan", "传输协议", "代理"]
 +++
+> 旧文归档：本文保留当时对协议和工具生态的理解，项目状态、主流实践和安全边界可能已经变化；阅读时请结合当前资料判断。
 
 前段时间， 有些社群爆出有论文研究V2Ray识别的方法。这让大家开始寻找一些V2Ray可能的替代品。这不，最近Trojan就十分火爆，笔者发现很多油管UP🐷开始着手测试Trojan的性能。笔者前段时间也发表了如何搭建的文章，《[替代V2Ray？- Trojan搭建教程](https://www.idleleo.com/02/3899.html)》（由于某些原因不得不使用密码，默认密码在输入密码的下面）。那么，我们从原理的角度来简单分析一下，V2Ray与Trojan究竟那个更好，更多详细的分析可见《[关于Trojan、CDN、V2Ray的种种问题 （原理分析）](https://www.idleleo.com/03/4320.html)》一文。
 

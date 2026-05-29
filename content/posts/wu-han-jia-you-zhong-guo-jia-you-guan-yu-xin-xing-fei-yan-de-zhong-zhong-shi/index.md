@@ -1,11 +1,14 @@
 +++
 title = "武汉加油！中国加油！关于新型肺炎的种种事"
 date = 2020-02-06T18:44:39+08:00
-draft = true
+draft = false
 description = "现在疫情越来越严重，各类媒体都在教大家如何面对新型肺炎，笔者本不想再掺和其中，毕竟笔者不是专业人士。但是，看到医护人员的勇气，想到笔者在家里毫无建树的浪费资源，感觉还是应该借助无主界这个小小的平台传播一些有用的知识。 疫情的严重程度 疫情是否严重应该是大家最关心的，最近各类疫情数据一直在上扬，各种防"
 slug = "wu-han-jia-you-zhong-guo-jia-you-guan-yu-xin-xing-fei-yan-de-zhong-zhong-shi"
 featureimage = "/images/posts/wu-han-jia-you-zhong-guo-jia-you-guan-yu-xin-xing-fei-yan-de-zhong-zhong-shi/cover.avif"
+categories = ["记录"]
+tags = ["疫情", "武汉", "随笔"]
 +++
+> 旧文归档：本文保留当时的事件背景和表达，相关情况可能已经发生变化。
 
 现在疫情越来越严重，各类媒体都在教大家如何面对新型肺炎，笔者本不想再掺和其中，毕竟笔者不是专业人士。但是，看到医护人员的勇气，想到笔者在家里毫无建树的浪费资源，感觉还是应该借助无主界这个小小的平台传播一些有用的知识。
 

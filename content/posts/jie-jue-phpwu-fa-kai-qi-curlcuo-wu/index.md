@@ -1,11 +1,14 @@
 +++
 title = "解决PHP无法开启cURL错误"
 date = 2019-10-22T21:12:15+08:00
-draft = true
+draft = false
 description = "最近笔者收到一条朋友发来的错误消息。原来，这位朋友发现PHP的cURL功能没有开启。在这之前，笔者并未有注意过cURL异常。笔者让这位朋友使用phpinfo()函数查看后，发现只有cURL Sterling Hughes这一条相关的配置。 <"
 slug = "jie-jue-phpwu-fa-kai-qi-curlcuo-wu"
 featureimage = "/images/posts/jie-jue-phpwu-fa-kai-qi-curlcuo-wu/cover.avif"
+categories = ["教程"]
+tags = ["PHP", "cURL", "故障排查"]
 +++
+> 旧文归档：本文记录的是旧 Windows/PHP 环境下 cURL 扩展无法开启的处理。PHP 7.4 以后 OpenSSL 相关 DLL 命名和加载方式已有变化，排查时请先看当前 PHP 版本的 `phpinfo()`、错误日志和扩展目录。
 
 最近笔者收到一条朋友发来的错误消息。原来，这位朋友发现PHP的cURL功能没有开启。在这之前，笔者并未有注意过cURL异常。笔者让这位朋友使用`phpinfo()`函数查看后，发现只有`cURL Sterling Hughes`这一条相关的配置。
 
@@ -34,6 +37,6 @@ featureimage = "/images/posts/jie-jue-phpwu-fa-kai-qi-curlcuo-wu/cover.avif"
 
 ![](/images/posts/jie-jue-phpwu-fa-kai-qi-curlcuo-wu/02.avif)
 
-重启Apache后，可以看到朋友的问题已经完美解决啦~
+在当时环境中，重启 Apache 后问题已经解决。今天遇到类似问题时，请结合当前 PHP 版本继续核对依赖库名称和加载路径。
 
 更多新奇网络功能、资源，可以持续关注 [无主界](https://www.idleleo.com) 喔~

@@ -1,10 +1,12 @@
 +++
 title = "宅家特辑 | 没有烤箱的做饭小天才（本篇有点黄）"
 date = 2020-03-16T17:26:30+08:00
-draft = true
+draft = false
 description = "——“放心吧，疫情来了你抢不到口罩，疫情结束那天火锅奶茶店你也排不上号。” 甜 点"
 slug = "zhai-jia-te-ji-mei-you-kao-xiang-de-zuo-fan-xiao-tian-cai-ben-pian-you-dian-huang"
 featureimage = "/images/posts/zhai-jia-te-ji-mei-you-kao-xiang-de-zuo-fan-xiao-tian-cai-ben-pian-you-dian-huang/cover.avif"
+categories = ["生活"]
+tags = ["做饭", "甜点", "宅家"]
 +++
 
 ——“放心吧，疫情来了你抢不到口罩，疫情结束那天火锅奶茶店你也排不上号。”

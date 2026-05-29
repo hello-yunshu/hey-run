@@ -1,17 +1,20 @@
 +++
 title = "Apache环境部署Let's Encrypt ssl证书"
 date = 2017-11-23T22:32:27+08:00
-draft = true
+draft = false
 description = "在关于：启用Include conf/extra/httpd-ssl.conf出错的文章中，我提到了关于Let's Encrypt证书的部署问题。Let's Encrypt是不错的证书，把它用于http升级为https是不错的选择。 经过我的研究发现，Let's Encrypt的证书更加适合Linu"
 slug = "apachehuan-jing-bu-shu-let-s-encrypt-sslzheng-shu"
 featureimage = "/images/posts/apachehuan-jing-bu-shu-let-s-encrypt-sslzheng-shu/cover.avif"
+categories = ["网络技术"]
+tags = ["Apache", "SSL", "Let's Encrypt", "Windows"]
 +++
+> 旧文归档：本文写于早期 Windows/Apache 环境下折腾 Let's Encrypt 的阶段。现在 ACME 客户端、DNS 验证和证书生态已经成熟很多，下面的吐槽和步骤更适合作为旧记录，不宜当成当前部署建议。
 
 在关于：启用Include conf/extra/httpd-ssl.conf出错的文章中，我提到了关于Let's Encrypt证书的部署问题。Let's Encrypt是不错的证书，把它用于http升级为https是不错的选择。
 
 经过我的研究发现，Let's Encrypt的证书更加适合Linux而不是Windows。不过毕竟Windows可视化且方便，而这次就是在Windows下的apache部署Let's Encrypt的问题。
 
-实话说，Let's Encrypt是个坑，我折腾了好多次，还是不成功，主要的原因在于签发的CA十分拉跨，很容易直接宕机没法签发，再加上如果是服务器验证又必须开放80端口不得占用，比较繁琐。而且Let's Encrypt自动的DNS验证对于国内的域名解析网站并不友好。因此，使用Windows的小伙伴可以直接无视Let's Encrypt证书。免费的证书一大把，百度一下有一堆，一年签一次，并不困难。
+实话说，当时我折腾 Let's Encrypt 很不顺手，主要卡在 ACME 客户端、80 端口验证和国内 DNS 自动验证支持上。这个判断带有很强的时间背景：现在 Let's Encrypt 和各类 ACME 客户端已经成熟很多，Windows 用户也不必因为本文的旧经验直接放弃它。
 
 如果你坚持要用，那么，首先，很明显你需要一个Let's Encrypt的证书，关于证书的如何得到，可以看我的另一篇文章：~~如何获得Let's Encrypt的证书~~ 。
 

@@ -1,11 +1,14 @@
 +++
 title = "更好用的文本编辑器这么多：Sublime、VS Code..."
 date = 2019-11-02T21:53:00+08:00
-draft = true
+draft = false
 description = "公道自在人心，正义终将到来。现在好用的文本编辑器层出不穷，功能也越来越强大。对一个文本编辑工具而言，现在市面上有不少更好的替代工具，实在没有必要使用一些“跳梁小丑”的产品。 :mrgreen: :mrgreen:"
 slug = "geng-hao-yong-de-wen-ben-bian-ji-qi-zhe-me-duo-sublime-vs-code..."
 featureimage = "/images/posts/geng-hao-yong-de-wen-ben-bian-ji-qi-zhe-me-duo-sublime-vs-code.../cover.avif"
+categories = ["工具"]
+tags = ["编辑器", "Sublime Text", "VS Code"]
 +++
+> 旧文归档：本文保留当时的操作思路，涉及的软件版本、系统界面、命令和下载链接可能已经变化；实际使用请以官方当前说明为准。
 
 公道自在人心，正义终将到来。现在好用的文本编辑器层出不穷，功能也越来越强大。对一个文本编辑工具而言，现在市面上有不少更好的替代工具，实在没有必要使用一些“跳梁小丑”的产品。 :mrgreen: :mrgreen: 
 

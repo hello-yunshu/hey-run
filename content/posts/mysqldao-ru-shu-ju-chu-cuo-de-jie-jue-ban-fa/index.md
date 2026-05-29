@@ -1,11 +1,14 @@
 +++
 title = "MySQL导入数据出错的解决办法"
 date = 2020-04-13T15:37:07+08:00
-draft = true
+draft = false
 description = "最近笔者在折腾MySQL的时候出现些问题，在备份结构与数据时，导出简单轻松没什么问题，但将导出的数据再导入时，会出现如下表无法创建的情况。 问题复现"
 slug = "mysqldao-ru-shu-ju-chu-cuo-de-jie-jue-ban-fa"
 featureimage = "/images/posts/mysqldao-ru-shu-ju-chu-cuo-de-jie-jue-ban-fa/cover.avif"
+categories = ["教程"]
+tags = ["MySQL", "数据库", "故障排查"]
 +++
+> 旧文归档：本文记录的是一次 MySQL 导入失败的具体排查。不同 MySQL/MariaDB 版本的 SQL mode、字符集和默认约束可能不同，实际处理前请先备份数据，并根据当前报错逐项确认。
 
 最近笔者在折腾MySQL的时候出现些问题，在备份结构与数据时，导出简单轻松没什么问题，但将导出的数据再导入时，会出现如下表无法创建的情况。
 

@@ -1,11 +1,14 @@
 +++
 title = "什么是VPS，VPS可以干什么？"
 date = 2019-11-03T23:22:51+08:00
-draft = true
+draft = false
 description = "为什么写这篇文章呢？因为笔者也就是站长在前几天收到的一封读者的来信。 笔者很感谢这位童鞋的关心 :oops: :oops: ，这位童鞋有个需求，想要知道VPS有什么用。说实话，这位童鞋已经差不多说完了V"
 slug = "shi-me-shi-vps-vpske-yi-gan-shi-me"
 featureimage = "/images/posts/shi-me-shi-vps-vpske-yi-gan-shi-me/cover.avif"
+categories = ["网络技术"]
+tags = ["VPS", "服务器", "科普"]
 +++
+> 旧文归档：本文保留当时的操作思路，涉及的软件版本、系统界面、命令和下载链接可能已经变化；实际使用请以官方当前说明为准。
 
 为什么写这篇文章呢？因为笔者也就是站长在前几天收到的一封读者的来信。
 

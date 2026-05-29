@@ -1,10 +1,12 @@
 +++
 title = "《长江三角洲区域一体化发展规划纲要》"
 date = 2019-12-03T13:28:00+08:00
-draft = true
+draft = false
 description = "前言 2018年11月5日，习近平总书记在首届中国国际进口博览会上宣布，支持长江三角洲区域一体化发展并上升为国家战略，着力落实新发展理念，构建现代化经济体系，推进更高起点的深化改革和更高层次的对外开放，同“一带一路”建设、京津冀协同发展、长江经济带发展、粤港澳大湾区建设相互配合，完善中国改革开放空间"
 slug = "chang-jiang-san-jiao-zhou-qu-yu-yi-ti-hua-fa-zhan-gui-hua-gang-yao"
 featureimage = "img/lavalamp.svg"
+categories = ["文档"]
+tags = ["长三角", "规划纲要", "历史资料"]
 +++
 
 #### 前言

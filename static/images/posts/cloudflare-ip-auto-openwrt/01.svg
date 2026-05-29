@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="760" viewBox="0 0 1320 760" role="img" aria-label="OpenWrt terminal running cf-openwrt-auto.sh">
+  <rect width="1320" height="760" rx="28" fill="#111827"/>
+  <rect x="0" y="0" width="1320" height="64" rx="28" fill="#1f2937"/>
+  <circle cx="38" cy="32" r="9" fill="#ff5f56"/>
+  <circle cx="68" cy="32" r="9" fill="#ffbd2e"/>
+  <circle cx="98" cy="32" r="9" fill="#27c93f"/>
+  <text x="128" y="39" fill="#cbd5e1" font-family="Menlo, Consolas, monospace" font-size="18">OpenWrt / use-cloudflare-ip / first run</text>
+
+  <rect x="34" y="98" width="610" height="560" rx="16" fill="#0b1220" stroke="#334155"/>
+  <text x="64" y="142" fill="#38bdf8" font-family="Menlo, Consolas, monospace" font-size="22"># 安装依赖</text>
+  <text x="64" y="188" fill="#d1d5db" font-family="Menlo, Consolas, monospace" font-size="21">opkg update</text>
+  <text x="64" y="224" fill="#d1d5db" font-family="Menlo, Consolas, monospace" font-size="21">opkg install bash curl tar jq ca-bundle</text>
+  <text x="64" y="288" fill="#38bdf8" font-family="Menlo, Consolas, monospace" font-size="22"># 初始化配置</text>
+  <text x="64" y="334" fill="#d1d5db" font-family="Menlo, Consolas, monospace" font-size="21">cp cf-openwrt-auto.conf.example \</text>
+  <text x="92" y="370" fill="#d1d5db" font-family="Menlo, Consolas, monospace" font-size="21">cf-openwrt-auto.conf</text>
+  <text x="64" y="406" fill="#d1d5db" font-family="Menlo, Consolas, monospace" font-size="21">chmod +x cf-openwrt-auto.sh</text>
+  <text x="64" y="470" fill="#38bdf8" font-family="Menlo, Consolas, monospace" font-size="22"># 手动试跑，先别急着扔 cron</text>
+  <text x="64" y="516" fill="#d1d5db" font-family="Menlo, Consolas, monospace" font-size="21">./cf-openwrt-auto.sh --verbose</text>
+  <text x="64" y="574" fill="#22c55e" font-family="Menlo, Consolas, monospace" font-size="20">[cloudflare-ip] selected IPs:</text>
+  <text x="92" y="610" fill="#22c55e" font-family="Menlo, Consolas, monospace" font-size="20">104.17.93.75  172.64.88.12</text>
+  <text x="64" y="646" fill="#22c55e" font-family="Menlo, Consolas, monospace" font-size="20">[cloudflare-ip] restarting service: passwall</text>
+
+  <rect x="684" y="98" width="600" height="560" rx="16" fill="#f8fafc"/>
+  <text x="724" y="154" fill="#0f172a" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="30" font-weight="700">新版不再靠手抄 IP 续命</text>
+  <text x="724" y="208" fill="#334155" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="22">先测速，再验证，最后写回节点。</text>
+  <text x="724" y="248" fill="#334155" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="22">成功时静默，失败才吱声，适合定时任务。</text>
+  <rect x="724" y="310" width="500" height="64" rx="12" fill="#e0f2fe"/>
+  <text x="752" y="350" fill="#075985" font-family="Menlo, Consolas, monospace" font-size="21">--verbose 只在排错时打开</text>
+  <rect x="724" y="404" width="500" height="64" rx="12" fill="#dcfce7"/>
+  <text x="752" y="444" fill="#166534" font-family="Menlo, Consolas, monospace" font-size="21">cron 成功运行不刷屏</text>
+  <rect x="724" y="498" width="500" height="64" rx="12" fill="#ffedd5"/>
+  <text x="752" y="538" fill="#9a3412" font-family="Menlo, Consolas, monospace" font-size="21">GitHub 不稳也有本地包兜底</text>
+</svg>

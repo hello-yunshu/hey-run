@@ -1,11 +1,14 @@
 +++
 title = "关于：启用Include conf/extra/httpd-ssl.conf出错"
 date = 2017-10-16T14:19:08+08:00
-draft = true
+draft = false
 description = "前几天在我把网址从http升级到https时，遇到了个棘手的问题。 首先是我的服务器，我的服务器是windows系统下的利用phpStudy搭建的。然后是ssl证书，我其实比较建议大家申请Let's Encrypt的ssl证书，大家也都知道沃通等颁发的证书多少让人不放心，而Let's Encrypt"
 slug = "guan-yu-qi-yong-include-conf-extra-httpd-ssl.confchu-cuo"
 featureimage = "/images/posts/guan-yu-qi-yong-include-conf-extra-httpd-ssl.confchu-cuo/cover.avif"
+categories = ["教程"]
+tags = ["Apache", "SSL", "phpStudy"]
 +++
+> 旧文归档：本文保留当时的操作思路，涉及的软件版本、系统界面、命令和下载链接可能已经变化；实际使用请以官方当前说明为准。
 
 前几天在我把网址从http升级到https时，遇到了个棘手的问题。
 

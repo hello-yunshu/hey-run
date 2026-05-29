@@ -1,11 +1,14 @@
 +++
 title = "熬夜变丑算个啥，你的近千个基因改变怕不怕？"
 date = 2019-04-21T01:37:11+08:00
-draft = true
+draft = false
 description = "据世界卫生组织调查数据显示，中国有5亿人正在被睡眠障碍困扰。睡个好觉成为现代人生活中最奢侈的一件事。 熬夜的危害众所周知，严重到危及人们生命的新闻也层出不穷。此前《王者荣耀》游戏主播狐王因长期熬夜、过度劳累而猝死，年仅20岁。正所谓熬最久的夜，进最贵的医院，很多人是被动熬夜"
 slug = "ao-ye-bian-chou-suan-ge-sha-ni-de-jin-qian-ge-ji-yin-gai-bian-pa-bu-pa"
 featureimage = "/images/posts/ao-ye-bian-chou-suan-ge-sha-ni-de-jin-qian-ge-ji-yin-gai-bian-pa-bu-pa/cover.avif"
+categories = ["科普"]
+tags = ["睡眠", "健康", "科普"]
 +++
+> 旧文归档：本文是当时的科普和阅读记录，不构成医疗、营养或健康建议。
 
 据世界卫生组织调查数据显示，中国有5亿人正在被睡眠障碍困扰。睡个好觉成为现代人生活中最奢侈的一件事。
 

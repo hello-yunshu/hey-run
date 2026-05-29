@@ -1,11 +1,14 @@
 +++
 title = "启用Include conf/extra/httpd-ssl.conf出错的简单解决方法"
 date = 2017-10-16T14:56:17+08:00
-draft = true
+draft = false
 description = "之前一篇文章提及了关于启用Include conf/extra/httpd-ssl.conf出错的问题，相信大家有一个感性的认识，其实问题很简答，很多时候，服务器不运行了，显然是你搞砸了。 好了，闲话话少说，我们就来说一下启用Include conf/extra/httpd-ssl.conf出错的简"
 slug = "qi-yong-include-conf-extra-httpd-ssl.confchu-cuo-de-jian-dan-jie-jue-fang-fa"
 featureimage = "/images/posts/qi-yong-include-conf-extra-httpd-ssl.confchu-cuo-de-jian-dan-jie-jue-fang-fa/cover.avif"
+categories = ["教程"]
+tags = ["Apache", "SSL", "phpStudy"]
 +++
+> 旧文归档：本文保留当时的操作思路，涉及的软件版本、系统界面、命令和下载链接可能已经变化；实际使用请以官方当前说明为准。
 
 之前一篇文章提及了关于启用Include conf/extra/httpd-ssl.conf出错的问题，相信大家有一个感性的认识，其实问题很简答，很多时候，服务器不运行了，显然是你搞砸了。
 

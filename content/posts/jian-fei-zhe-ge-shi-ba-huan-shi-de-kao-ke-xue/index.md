@@ -1,11 +1,14 @@
 +++
 title = "减肥这个事吧，还是得靠科学"
 date = 2019-03-15T23:04:23+08:00
-draft = true
+draft = false
 description = "谈到减肥，大家的第一反应可能是降低体重，稍微专业点的朋友可能知道真正的减肥是消耗脂肪，但你当真知道脂肪是啥？它打哪儿来，到哪儿去吗？ 如果不从根本上认识脂肪，大概你也没办法明明白白地把它送走。此文旨在让好奇的读者们了解脂肪代谢背后的科学，希望有所帮助。"
 slug = "jian-fei-zhe-ge-shi-ba-huan-shi-de-kao-ke-xue"
 featureimage = "/images/posts/jian-fei-zhe-ge-shi-ba-huan-shi-de-kao-ke-xue/cover.avif"
+categories = ["生活"]
+tags = ["减肥", "健康", "科普"]
 +++
+> 旧文归档：本文是当时的科普和阅读记录，不构成医疗、营养或健康建议。
 
 谈到减肥，大家的第一反应可能是降低体重，稍微专业点的朋友可能知道真正的减肥是消耗脂肪，但你当真知道脂肪是啥？它打哪儿来，到哪儿去吗？
 

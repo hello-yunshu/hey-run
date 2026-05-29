@@ -1,11 +1,14 @@
 +++
 title = "IPv4地址又双叒叕耗尽，对我们有什么影响？"
 date = 2019-11-26T16:09:38+08:00
-draft = true
+draft = false
 description = "今天早上，咱们的小编@Liang同学，发了一篇报道给笔者。说的是IPv4正式耗尽了。 笔者看到这则消息，感觉完全不意外。因为早在几年前就有不少说"
 slug = "ipv4di-zhi-you-shuang-ruo-zhuo-hao-jin-dui-wo-men-you-shi-me-ying-xiang"
 featureimage = "/images/posts/ipv4di-zhi-you-shuang-ruo-zhuo-hao-jin-dui-wo-men-you-shi-me-ying-xiang/cover.avif"
+categories = ["网络技术"]
+tags = ["IPv4", "IPv6", "互联网"]
 +++
+> 旧文归档：本文保留当时的操作思路，涉及的软件版本、系统界面、命令和下载链接可能已经变化；实际使用请以官方当前说明为准。
 
 今天早上，咱们的小编@Liang同学，发了一篇报道给笔者。说的是IPv4正式耗尽了。
 

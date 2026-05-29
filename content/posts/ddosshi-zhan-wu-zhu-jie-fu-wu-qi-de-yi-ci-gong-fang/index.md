@@ -1,11 +1,14 @@
 +++
 title = "DDoS实战，无主界服务器的一次攻防"
 date = 2019-06-23T01:14:22+08:00
-draft = true
+draft = false
 description = "这一天最终还是来了😂😂 如文章标题所说，近期，无主界网站服务器受到一次网络攻击。攻击规模不大，攻击本身危害程度也不是很高，但确确实实是一次网络攻击。"
 slug = "ddosshi-zhan-wu-zhu-jie-fu-wu-qi-de-yi-ci-gong-fang"
 featureimage = "/images/posts/ddosshi-zhan-wu-zhu-jie-fu-wu-qi-de-yi-ci-gong-fang/cover.avif"
+categories = ["网络技术"]
+tags = ["DDoS", "服务器", "安全", "复盘"]
 +++
+> 旧文归档：本文保留当时的操作思路，涉及的软件版本、系统界面、命令和下载链接可能已经变化；实际使用请以官方当前说明为准。
 
 这一天最终还是来了😂😂
 

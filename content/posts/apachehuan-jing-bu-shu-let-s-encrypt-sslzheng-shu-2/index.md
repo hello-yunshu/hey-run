@@ -1,11 +1,14 @@
 +++
 title = "Apache环境部署Let’s Encrypt SSL证书 2"
 date = 2019-03-10T22:16:04+08:00
-draft = true
+draft = false
 description = "在站长（笔者）建站之初，Let’s Encrypt证书的使用率并不高。当时笔者在寻找合适的SSL证书时，发现了这个免费的证书。可惜由于Let’s Encrypt证书的部署环境并不能很好的兼容Apache，再加上笔者当时对SSL证书理解不够透彻。因而没有选择使用Let’s Encrypt证书。 具体可"
 slug = "apachehuan-jing-bu-shu-let-s-encrypt-sslzheng-shu-2"
 featureimage = "/images/posts/apachehuan-jing-bu-shu-let-s-encrypt-sslzheng-shu-2/cover.avif"
+categories = ["网络技术"]
+tags = ["Apache", "SSL", "Let's Encrypt", "证书"]
 +++
+> 旧文归档：本文记录的是当时用 win-acme 申请 Let's Encrypt 证书的流程。win-acme 版本、菜单、验证方式和证书导出选项可能已经变化，实际部署请以 win-acme 当前文档为准。
 
 在站长（笔者）建站之初，Let’s Encrypt证书的使用率并不高。当时笔者在寻找合适的SSL证书时，发现了这个免费的证书。可惜由于Let’s Encrypt证书的部署环境并不能很好的兼容Apache，再加上笔者当时对SSL证书理解不够透彻。因而没有选择使用Let’s Encrypt证书。
 
@@ -38,7 +41,7 @@ GitHub地址：**[win-acme](https://github.com/PKISharp/win-acme)**
 
 此教程主要针对大部分国内服务器，如果你使用的是Azure或者dreamhost主机，可是直接使用相应的一键解析功能，在此不再赘述。
 
-从GitHub上下载最新版（笔者以win-acme.v2.0.3.210为例）。注：最新版可能有bug，请多阅读社区信息。
+从GitHub上下载当时的最新版（笔者以win-acme.v2.0.3.210为例）。注：当前版本请以项目发布页为准，升级前请多阅读社区信息。
 
 运行wacs.exe
 
@@ -84,7 +87,7 @@ GitHub地址：**[win-acme](https://github.com/PKISharp/win-acme)**
 
 大功告成！
 
-注意：若需要启用双证书，个别网上教程有误，可以关注无主界的最新教程。
+注意：若需要启用双证书，个别网上教程有误。本文不再维护当前最新步骤，实际操作请查看 win-acme 和 Web 服务器的当前文档。
 
 ## win-acme 下载
 

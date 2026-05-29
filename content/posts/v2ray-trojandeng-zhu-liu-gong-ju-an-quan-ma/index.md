@@ -1,11 +1,14 @@
 +++
 title = "V2Ray、Trojan等主流工具安全吗？"
 date = 2020-10-24T23:33:35+08:00
-draft = true
+draft = false
 description = "这个问题，是大家一直关心的东西，笔者也一直想讨论。好多朋友都私下问过笔者，现在终于有时间可以稍微谈一谈啦。 首先先分享一下笔者几年前在网上看到的一篇文章，这篇文章虽然已经过去许久，但依然有一定的参考价值（以下内容摘自网络）： 我们来假设一个案例，在一个月黑风高的晚上，小明在某论坛大肆批评政府，第二天"
 slug = "v2ray-trojandeng-zhu-liu-gong-ju-an-quan-ma"
 featureimage = "/images/posts/v2ray-trojandeng-zhu-liu-gong-ju-an-quan-ma/cover.avif"
+categories = ["网络技术"]
+tags = ["V2Ray", "Trojan", "安全", "代理"]
 +++
+> 旧文归档：本文保留当时对协议和工具生态的理解，项目状态、主流实践和安全边界可能已经变化；阅读时请结合当前资料判断。
 
 这个问题，是大家一直关心的东西，笔者也一直想讨论。好多朋友都私下问过笔者，现在终于有时间可以稍微谈一谈啦。
 

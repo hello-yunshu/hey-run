@@ -1,10 +1,12 @@
 +++
 title = "改写教科书？真空中可以进行热传导、传播声音"
 date = 2020-01-29T17:17:35+08:00
-draft = true
+draft = false
 description = "在笔者之前的文章《“热”究竟是什么？》中，对于“热”本身进行了一些探讨。笔者在文中指出，对于热在真空中的传播只能通过热辐射的方式进行。然而，知识更新的速度很快。前段时间，由华人团队在natural杂志刊登的一篇论文，文中描述的实验验证：“热传导”是可以在真空中传递，甚至声音也能在真空中传播。 真空也"
 slug = "gai-xie-jiao-ke-shu-zhen-kong-zhong-ke-yi-jin-xing-re-chuan-dao-chuan-bo-sheng-yin"
 featureimage = "/images/posts/gai-xie-jiao-ke-shu-zhen-kong-zhong-ke-yi-jin-xing-re-chuan-dao-chuan-bo-sheng-yin/cover.avif"
+categories = ["科普"]
+tags = ["物理", "热传导", "科学"]
 +++
 
 在笔者之前的文章《[“热”究竟是什么？](https://www.idleleo.com/10/3194.html)》中，对于“热”本身进行了一些探讨。笔者在文中指出，对于热在真空中的传播只能通过热辐射的方式进行。然而，知识更新的速度很快。前段时间，由华人团队在natural杂志刊登的一篇论文，文中描述的实验验证：“热传导”是可以在真空中传递，甚至声音也能在真空中传播。

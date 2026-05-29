@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="760" viewBox="0 0 1320 760" role="img" aria-label="cf-openwrt-auto.conf example settings">
+  <rect width="1320" height="760" rx="28" fill="#f3f4f6"/>
+  <rect x="50" y="46" width="1220" height="668" rx="22" fill="#ffffff" stroke="#d1d5db"/>
+  <rect x="50" y="46" width="1220" height="58" rx="22" fill="#e5e7eb"/>
+  <text x="86" y="83" fill="#374151" font-family="Menlo, Consolas, monospace" font-size="18">cf-openwrt-auto.conf</text>
+  <rect x="78" y="132" width="760" height="520" rx="14" fill="#111827"/>
+  <text x="112" y="178" fill="#94a3b8" font-family="Menlo, Consolas, monospace" font-size="19"># mode: passwall or openclash</text>
+  <text x="112" y="214" fill="#f8fafc" font-family="Menlo, Consolas, monospace" font-size="21">MODE="openclash"</text>
+  <text x="112" y="268" fill="#94a3b8" font-family="Menlo, Consolas, monospace" font-size="19"># choose enough fast IPs, not too greedy</text>
+  <text x="112" y="304" fill="#f8fafc" font-family="Menlo, Consolas, monospace" font-size="21">IP_COUNT="4"</text>
+  <text x="112" y="340" fill="#f8fafc" font-family="Menlo, Consolas, monospace" font-size="21">IP_TYPE="both"</text>
+  <text x="112" y="376" fill="#f8fafc" font-family="Menlo, Consolas, monospace" font-size="21">SPEEDTEST_PROTOCOL="http"</text>
+  <text x="112" y="412" fill="#f8fafc" font-family="Menlo, Consolas, monospace" font-size="21">SPEEDTEST_CFCOLO="HKG,NRT,LAX"</text>
+  <text x="112" y="466" fill="#94a3b8" font-family="Menlo, Consolas, monospace" font-size="19"># domain stays in SNI / Host</text>
+  <text x="112" y="502" fill="#f8fafc" font-family="Menlo, Consolas, monospace" font-size="21">OPENCLASH_TARGET_DOMAIN="cdn.example.com"</text>
+  <text x="112" y="538" fill="#f8fafc" font-family="Menlo, Consolas, monospace" font-size="21">OPENCLASH_TRANSPORT_FILTER="ws,xhttp"</text>
+  <text x="112" y="592" fill="#22c55e" font-family="Menlo, Consolas, monospace" font-size="21">STARTUP_DELAY="random"</text>
+
+  <text x="890" y="178" fill="#0f172a" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="28" font-weight="700">真正要改的就这些</text>
+  <text x="890" y="232" fill="#475569" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="22">域名、模式、IP 数量、测速方式。</text>
+  <text x="890" y="274" fill="#475569" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="22">别上来就一顿猛改，路由器会沉默。</text>
+  <line x1="890" y1="326" x2="1190" y2="326" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="890" y="382" fill="#0f766e" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="23" font-weight="700">地址可以换成 IP</text>
+  <text x="890" y="424" fill="#475569" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="21">但 TLS SNI 和 Host 要继续用域名。</text>
+  <text x="890" y="500" fill="#b45309" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="23" font-weight="700">测速别太频繁</text>
+  <text x="890" y="542" fill="#475569" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="21">每 6 小时通常够用，别把 CPU 当沙包。</text>
+</svg>

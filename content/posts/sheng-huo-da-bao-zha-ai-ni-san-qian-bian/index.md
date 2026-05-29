@@ -1,10 +1,12 @@
 +++
 title = "「生活大爆炸」 爱你三千遍！"
 date = 2019-05-19T00:10:46+08:00
-draft = true
+draft = false
 description = "写给所有喜欢TBBT的朋友，也写给自己 Me in TBBT 5月16日，「生活大爆炸」（The Big Bang Theory，TBBT）最后一季最后一集播出，长达12年的情景喜剧圆满落幕。"
 slug = "sheng-huo-da-bao-zha-ai-ni-san-qian-bian"
 featureimage = "/images/posts/sheng-huo-da-bao-zha-ai-ni-san-qian-bian/cover.avif"
+categories = ["随笔"]
+tags = ["生活大爆炸", "美剧", "随笔"]
 +++
 
 写给所有喜欢TBBT的朋友，也写给自己  
