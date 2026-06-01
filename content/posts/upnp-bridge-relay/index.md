@@ -55,16 +55,14 @@ tags = ["OpenWrt", "UPnP", "NAT", "端口映射", "OpenClash"]
 
 项目地址：[**UPnP Bridge Relay**](https://github.com/hello-yunshu/upnp-bridge-relay)
 
-一个包搞定：`luci-app-upnp-bridge-relay` 包含核心服务和 LuCI 网页管理界面，不用分开装。中文翻译包 `luci-i18n-upnp-bridge-relay-zh-cn` 按需安装。在 OpenWrt 上装就行：
+一个包搞定：`luci-app-upnp-bridge-relay` 包含核心服务、LuCI 网页管理界面和中文翻译，不用分开装。在 OpenWrt 上装就行：
 
 ```sh
 # OpenWrt 24.10 / 23.05 (opkg)
 opkg install luci-app-upnp-bridge-relay_*.ipk
-opkg install luci-i18n-upnp-bridge-relay-zh-cn_*.ipk
 
 # OpenWrt 25.12+ (apk)
 apk add --allow-untrusted ./luci-app-upnp-bridge-relay*.apk
-apk add --allow-untrusted ./luci-i18n-upnp-bridge-relay-zh-cn*.apk
 ```
 
 装完之后刷新一下 LuCI 页面，就能在「服务」菜单下面看到 UPnP Bridge Relay 了。依赖会自动拉上：`miniupnpc`、`nftables`、`uci`、`ubus`、`rpcd`、`luci-base`——都是 OpenWrt 上本来就该有的东西，不会给你塞一堆莫名其妙的新依赖。这点我很满意，有的工具装一个带八个，跟搬家似的，烦死了。
