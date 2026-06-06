@@ -2,18 +2,18 @@
 title = "优选 CF IP：让 OpenWrt 代理快起来"
 date = 2026-05-29T10:30:00+08:00
 draft = false
-description = "use-cloudflare-ip 新版脚本可以在 OpenWrt 上调用 CloudflareSpeedTest 自动优选 Cloudflare IP，并写回 PassWall 或 OpenClash 配置。本文按新版配置方式整理：同目录配置、PassWall/OpenClash 双模式、多域名、IPv4/IPv6、HTTPing、GitHub 下载兜底、静默定时运行和排错方式。"
+description = "luci-app-cloudflare-ip 是 OpenWrt 上的 LuCI 插件，可在 Web 界面一键管理 Cloudflare IP 优选，自动写回 PassWall 或 OpenClash 配置。本文介绍安装、各页面配置和常见问题。"
 slug = "cloudflare-ip-auto-openwrt"
 featureimage = "/images/posts/cloudflare-ip-auto-openwrt/cover.avif"
 categories = ["网络技术"]
-tags = ["Cloudflare", "OpenWrt", "PassWall", "OpenClash", "优选 IP"]
+tags = ["Cloudflare", "OpenWrt", "PassWall", "OpenClash", "优选 IP", "LuCI"]
 +++
 
 套了 Cloudflare 以后，很多人都会遇到一个很微妙的问题：域名是同一个域名，节点是同一个节点，可今天丝滑得飞起，明天就开始卡成电子相册。你问它为什么，它不说；你测一下 IP，哦～原来走的边缘节点又开始表演了。
 
 所以优选 CF IP 这件事，听起来像玄学，其实朴素得很：**在你当前这条宽带上，挑几个更顺手的 Cloudflare Anycast IP，让客户端先连它们，再靠 SNI / Host 回到你的真实域名。** 地址换成 IP，域名信息别丢。就这么点事，偏偏手动做起来又烦又容易翻车，讨厌死了。
 
-新版 [**use-cloudflare-ip**](https://github.com/hello-yunshu/use-cloudflare-ip) 就是把这套流程塞进 OpenWrt：自动下载 CloudflareSpeedTest、测速、挑 IP、验证连通性，然后写回 PassWall 或 OpenClash。你负责把配置填对，它负责半夜悄悄干活。很懒，但懒得有章法，我喜欢～😏
+现在好了——新版 [**luci-app-cloudflare-ip**](https://github.com/hello-yunshu/use-cloudflare-ip) 做了一个 LuCI 界面，把整个流程塞进 OpenWrt 后台。你安装一个 `.ipk`（或 `.apk`），在 LuCI 菜单里点点鼠标，剩下的事情——下载 CFST、测速、挑 IP、验证连通性、写回 PassWall 或 OpenClash——全部自动完成。**你负责在网页上填配置，它负责半夜悄悄干活。** 很懒，但懒得有章法，我喜欢～😏
 
 ![](/images/posts/cloudflare-ip-auto-openwrt/cover.avif)
 
@@ -21,109 +21,103 @@ tags = ["Cloudflare", "OpenWrt", "PassWall", "OpenClash", "优选 IP"]
 
 旧玩法大家应该都见过：跑 CloudflareSpeedTest，复制第一个 IP，打开 PassWall 或 OpenClash，找到节点，把地址改掉，保存，重启。然后过几天线路一抽风，再来一遍。再来一遍！再来一遍！！人类发明自动化，就是为了不做这种重复小苦力活嘛，不然要机器干嘛，供起来拜吗？
 
-新版脚本现在走的是配置文件方式：`cf-openwrt-auto.sh` 和 `cf-openwrt-auto.conf` 放在同一个目录，脚本运行时自动读配置。成功时默认一声不吭，适合丢进 cron 装死；真出错才把错误打到 stderr。也就是说，它平时安静得像不存在，出事才会跳出来告状——这种性格我还挺喜欢的，不像某些工具，成功也要刷你一屏幕。
+新版的 LuCI 插件完全不一样了。打开 **服务 → Cloudflare IP 优选**，一个概览页面就告诉你：CFST 装好了没、上次运行结果、当前最优 IP 列表。想改配置？左边切到设置页，填完保存就行。想手动跑一次？点一下按钮。想看日志排查问题？也在页面上。**全程不用 SSH，不用背命令，不用改配置文件**——这才像 2026 年的工具嘛。
 
-![](/images/posts/cloudflare-ip-auto-openwrt/01.svg)
+> 如果你之前用过旧版脚本（`cf-openwrt-auto.sh` + `cf-openwrt-auto.conf`），那套东西现在已经被 LuCI 界面取代了。脚本还在，但推荐直接用插件，更省心。
 
-它就是一个正经小工具。时代在进步，咱的工具也得跟上，对吧～
+![Cloudflare IP 优选概览页](/images/posts/cloudflare-ip-auto-openwrt/01.avif)
 
-## 先装依赖呀
+## 先装插件呀
 
-OpenWrt 25.12 之后用 `apk`：
+### 下载安装
 
-```sh
-apk update
-apk add bash curl tar jq ca-bundle ca-certificates
+去 [Releases](https://github.com/hello-yunshu/use-cloudflare-ip/releases) 页面下载对应格式的包：
+
+| 格式 | 适用版本 | 安装命令 |
+|------|---------|---------|
+| `.ipk` | OpenWrt 24.10.x | `opkg install luci-app-cloudflare-ip_*.ipk` |
+| `.apk` | OpenWrt 25.12+ | `apk add luci-app-cloudflare-ip*.apk` |
+
+依赖会自动处理，核心就这几个：
+
+```
+bash curl tar jq ca-bundle ca-certificates luci-base rpcd
 ```
 
-OpenWrt 24.10 及更早版本用 `opkg`：
+### 安装完做什么
 
-```sh
-opkg update
-opkg install bash curl tar jq ca-bundle ca-certificates
-```
+装好以后刷新浏览器缓存（或者直接硬刷新 `Ctrl+F5`），LuCI 菜单里就会出现 **服务 → Cloudflare IP 优选**。点进去，概览页面会告诉你当前状态。
 
-然后把项目放到路由器上，初始化配置：
+第一次用的话，CFST 还没下载，概览页会显示一个「下载 CFST」按钮。点一下，插件会自动拉对应架构的 CloudflareSpeedTest，具体耗时看路由器访问 GitHub 的速度。如果是从旧版脚本迁移过来的，CFST 已经在了，它会自动识别，直接显示「更新 CFST」。
 
-```sh
-cp cf-openwrt-auto.conf.example cf-openwrt-auto.conf
-chmod +x cf-openwrt-auto.sh
-```
+## 概览页：一眼看全
 
-接下来编辑 `cf-openwrt-auto.conf`。先别急着扔进计划任务哦，第一次建议手动跑：
+打开概览页，你会看到三块信息：
 
-```sh
-./cf-openwrt-auto.sh --verbose
-```
+**运行状态**：当前服务是否运行、上次运行结果、运行模式（PassWall 还是 OpenClash）。如果刚装好还没跑过，上次结果会是空的；先点「启动」或配置好自动运行，它就开始干活。
 
-`--verbose` 会把自升级检查、CloudflareSpeedTest 下载、测速、连通性验证、配置写入、服务重启这些步骤都打印出来。等确认没问题了，再让它定时偷偷跑。先看日志再装死，这点小谨慎很有必要哦——毕竟谁也不想半夜发现路由器把节点改成了一坨不可名状的东西。
+**环境检查**：CFST 装没装、PassWall/OpenClash 检测到没。如果 CFST 没装，按钮是「下载 CFST」；装了就是「更新 CFST」。PassWall 和 OpenClash 会显示当前检测状态，如果你只装了其中一个，对应另一个的选项卡会自动隐藏，不会出来碍眼。
 
-## 配置怎么填呢
+**优选 IP 列表**：最新一次测速得到的最优 IP。如果还没跑过，这里是空的；服务运行后可以在概览页手动触发一次测速，也可以等它按计划自动跑。
 
-最核心的就是 `MODE`。用 PassWall 就填：
+概览页还放了几个日常最常用的按钮：启动、停止、重启服务，手动运行测速，以及下载 / 更新 CFST。也就是说，平时想确认状态或临时跑一次，基本不用离开概览页。
 
-```sh
-MODE="passwall"
-PASSWALL_TARGET_DOMAIN="cdn.example.com"
-```
+![Cloudflare IP 优选基本设置页](/images/posts/cloudflare-ip-auto-openwrt/02.avif)
 
-用 OpenClash 就填：
+## 基本设置：填好就不用管了
 
-```sh
-MODE="openclash"
-OPENCLASH_CONFIG="/etc/openclash/config/config.yaml"
-OPENCLASH_TARGET_DOMAIN="cdn.example.com"
-```
+基本设置页就是几个关键选项，填一次就行：
 
-多个域名可以用逗号分隔，比如：
+| 选项 | 说明 | 默认 |
+|------|------|-----|
+| 启用 | 开启定时自动优选 | 关 |
+| 模式 | PassWall / OpenClash（自动检测已安装的服务） | PassWall |
+| IP 数量 | 保留几个优选 IP | 4 |
+| IP 类型 | ipv4 / ipv6 / both | ipv4 |
+| 测速协议 | tcp / http | tcp |
+| 运行计划 | 自动运行频率，可选 `6h`、`1h`、`30m` 或 cron 表达式 | 每 6 小时 |
+| 下载测速数量 | 参与下载测速的 IP 数量 | 10 |
+| 平均延迟下限 | 过滤异常低延迟 IP | 40ms |
+| 平均延迟上限 | 过滤高延迟 IP，留空不限制 | — |
+| 测速前停止代理 | 避免代理干扰测速结果 | 开 |
+| 保留 CFST | 系统升级时保留 CFST 二进制 | 开 |
 
-```sh
-OPENCLASH_TARGET_DOMAIN="cdn1.example.com,cdn2.example.com"
-```
+**启用**开关打开以后，procd 守护进程会按你设的运行计划自动跑。默认是每 6 小时一次，也可以选每天 3 点、每 30 分钟，或者填自定义计划。刚开始不确定效果的话，先不开自动也行，去概览页手动跑一次看看。
 
-IP 数量用 `IP_COUNT` 控制，默认 4 个。测速类型用 `IP_TYPE` 控制，支持 `ipv4`、`ipv6`、`both`。如果你想更贴近真实访问体验，可以把测速协议改成 HTTPing：
+**测速协议**选 `http` 的话，可以额外按数据中心筛选，比如填 `HKG,NRT,LAX`，只测这几个地区的节点。适合你明确知道自己想靠近哪些数据中心的时候用。不知道就留空，别为了显得专业乱填，网络不会因为你填了三个缩写就突然爱上你，真的不会。
 
-```sh
-SPEEDTEST_PROTOCOL="http"
-SPEEDTEST_CFCOLO="HKG,NRT,LAX"
-```
+## PassWall 设置
 
-`SPEEDTEST_CFCOLO` 是按 Cloudflare 数据中心筛选，适合你明确知道自己想靠近哪些节点的时候用。不知道就留空，别为了显得专业乱填，网络不会因为你填了三个缩写就突然爱上你，真的不会。
+如果你选的是 PassWall 模式，切到 PassWall 设置页：
 
-![](/images/posts/cloudflare-ip-auto-openwrt/02.svg)
+| 选项 | 说明 | 默认 |
+|------|------|-----|
+| 目标域名 | 要优选的节点域名，逗号分隔 | — |
+| 名称后缀 | 节点名称后缀，支持 `{n}` 序号和 `{ip}` 占位符 | ` [CF-{n}]` |
 
-## PassWall 怎么更新
-
-PassWall 模式会读取：
-
-```sh
-uci show passwall
-```
-
-然后找 `address` 等于 `PASSWALL_TARGET_DOMAIN` 的节点，把 `address` 改成优选 IP，再 `uci commit passwall`，最后重启 PassWall。就这三板斧，朴实无华。
+它的工作方式很直接：读 `uci show passwall`，找 `address` 等于目标域名的节点，把 `address` 改成优选 IP，然后 `uci commit passwall`，最后重启 PassWall。就这三板斧，朴实无华。
 
 这里有一个重点，敲黑板：**你的 SNI、Host 或传输层域名，还是应该填自己的域名。** 优选 IP 只是连接地址，不是你的证书名字，也不是你的 CDN 回源域名。把它们混成一坨，能连上才奇怪，真的。这就好比快递地址写了隔壁小区门牌号，收件人写的却是你自己——快递小哥不懵谁懵？
 
-另外，PassWall 模式的匹配条件很直接：它看的是节点 `address`。所以首次配置时，节点地址要先填目标域名，让脚本找得到。手动排查时如果看到：
+## OpenClash 设置
 
-```text
-[cloudflare-ip] ERROR: no PassWall nodes matched address: cdn.example.com
-```
+OpenClash 模式稍复杂一点，因为它要改 YAML 配置文件：
 
-那大概率就是节点当前地址已经不是这个域名了，或者你配置里的域名写错了。这个错误信息很朴素，朴素到有点不给面子，但它说的是实话。说实话的人不讨喜，但有用，对吧～
+| 选项 | 说明 | 默认 |
+|------|------|-----|
+| 配置文件 | OpenClash YAML 配置文件路径 | `/etc/openclash/config/config.yaml` |
+| 目标域名 | 要优选的节点域名，逗号分隔 | — |
+| 名称后缀 | 节点名称后缀，支持 `{n}` 和 `{ip}` | ` [CF-{n}]` |
+| 传输过滤 | 按传输协议过滤节点（如 `ws,grpc`） | — |
+| 备份数量 | 配置备份保留数量 | 3 |
 
-## OpenClash 更适合多 IP 变体呀
-
-OpenClash 模式会修改 YAML 配置文件。首次运行时，它会找 `server` 等于目标域名的代理节点当模板，然后按 `IP_COUNT` 生成类似 `[CF-1]`、`[CF-2]` 的代理节点。后续运行会优先刷新这些标记节点，缺了还会自动补齐——像个小管家，操心但不烦人。
+首次运行时，它会找 `server` 等于目标域名的代理节点当模板，然后按 IP 数量生成 `[CF-1]`、`[CF-2]` 等新节点。后续运行会优先刷新这些标记节点，缺了还会自动补齐——像个小管家，操心但不烦人。
 
 它会把：
-
 ```yaml
 server: cdn.example.com
 ```
-
-改成测速得到的 IP，但会保留：
-
+改成测速得到的 IP，但保留：
 ```yaml
 servername: cdn.example.com
 ws-opts:
@@ -131,78 +125,56 @@ ws-opts:
     Host: cdn.example.com
 ```
 
-xHTTP 也是一样，`xhttp-opts.headers.Host` 会继续保留域名。说人话就是：**连接可以冲着 IP 去，身份识别还得拿域名说话。** 不然 TLS 和 CDN 都会一脸「你谁啊」，然后把你晾在门外，门都不给你开，超冷淡的。
+xHTTP 也一样，`xhttp-opts.headers.Host` 继续保留域名。说人话就是：**连接可以冲着 IP 去，身份识别还得拿域名说话。** 不然 TLS 和 CDN 都会一脸「你谁啊」，然后把你晾在门外，门都不给你开，超冷淡的。
 
-![](/images/posts/cloudflare-ip-auto-openwrt/03.svg)
+支持 `vless`、`vmess`、`trojan`，要求 `tls: true` 或 `network` 为 `ws`、`xhttp`、`grpc`、`h2`、`http`。不会到处乱动不相关的节点，比某些什么都想管的工具有边界感多了。
 
-如果你的 OpenClash 配置里有一堆代理节点，可以用 `OPENCLASH_TRANSPORT_FILTER` 限制只改某些传输：
+## 高级设置
 
-```sh
-OPENCLASH_TRANSPORT_FILTER="ws,xhttp"
-```
+切到高级设置页，有几个贴心的选项：
 
-支持 `ws`、`grpc`、`xhttp`、`h2`、`http`。留空就是所有支持的节点都看一遍。脚本只处理常见的 `vless`、`vmess`、`trojan`，并且会跳过明显不适合保留 SNI / Host 的节点，避免把无关代理也拿去「优选」。谢谢它，没有到处乱动，算是有点边界感——比某些什么都想管的工具懂事多了。
+| 选项 | 说明 | 默认 |
+|------|------|-----|
+| 自更新 | 启用脚本自更新 | 开 |
+| 自更新地址 | 脚本更新下载地址 | 项目默认地址 |
+| GitHub 镜像 | 加速 GitHub 下载的镜像地址 | — |
+| 下载重试 | GitHub 下载重试次数 | 3 |
+| 重试延迟 | 重试间隔（秒） | 5 |
+| 启动延迟 | 随机延迟秒数，留空或 `random` = 0~300s | — |
+| 详细日志 | 输出详细运行日志 | 关 |
+| 工作目录 | 存放 CFST、IP 列表和结果文件 | 脚本目录 |
+
+**启动延迟**留空或设成 `random` 的话，会随机等 0 到 300 秒，适合多台设备同一时间跑任务，避免大家一起冲出去测速。网络已经够忙了，别再集体排队踩油门——又不是抢演唱会门票，急什么嘛！
+
+**自更新**打开后，脚本启动时会检查 GitHub 有没有新版本，有就自己更新。当然啦，更新前会备份，翻车了也能滚回去——这点良心还是有的。
+
+## 日志与维护
+
+诊断页就专心做两件事：
+
+- 查看运行日志
+- 查看 IP 历史记录
+
+出了问题时，先看日志。日志里会告诉你哪一步挂了——是 CFST 下载失败，还是测速超时，还是写回配置出错。想手动测速、重启服务或更新 CFST，就回概览页；想手动更新脚本，就去高级设置页。分工还挺清楚的，对吧～
+
+![Cloudflare IP 优选日志与维护页](/images/posts/cloudflare-ip-auto-openwrt/03.avif)
 
 ## GitHub 抽风怎么办呀
 
-路由器访问 GitHub，有时候就像薯片袋里的空气，存在感很强，实际东西不多。新版脚本做了几个兜底：
+路由器访问 GitHub，有时候就像薯片袋里的空气，存在感很强，实际东西不多。插件做了几个兜底：
 
-```sh
-DOWNLOAD_RETRIES="3"
-DOWNLOAD_RETRY_DELAY="5"
-GITHUB_MIRROR=""
-```
+- 下载失败会按你设的重试次数和间隔重试
+- 可以配 GitHub 镜像加速下载
+- 如果已经有可执行的 `cfst`，会继续用现有二进制
 
-下载失败会重试。如果 GitHub 实在不通，可以手动下载对应架构的 CloudflareSpeedTest 压缩包，比如：
-
-```text
-cfst_linux_amd64.tar.gz
-```
-
-把它放到工作目录里。脚本下载失败时会优先用本地包；如果已经有可执行的 `cfst`，也会继续用现有二进制。比起一报错就倒地不起，这种「能跑就先跑」的态度还是比较可爱的。我写代码最烦那种一遇到问题就摆烂的工具——喂，你倒是挣扎一下啊！
-
-## 定时怎么设呢
-
-推荐从每 6 小时一次开始：
-
-```cron
-0 */6 * * * /path/to/cf-openwrt-auto.sh
-```
-
-网络稳定的话每天一次也行，波动明显可以每 3 小时一次。别低于每小时一次哦，测速会吃路由器 CPU 和网络资源。你是想优化网络，不是想把路由器训练成健身器材，对吧～
-
-如果你不想收到 cron 邮件，可以重定向：
-
-```cron
-0 */6 * * * /path/to/cf-openwrt-auto.sh >/dev/null 2>&1
-```
-
-还有一个挺贴心的小设置：
-
-```sh
-STARTUP_DELAY="random"
-```
-
-这样脚本启动后会随机等 0 到 300 秒，适合多台设备同一时间跑任务，避免大家一起冲出去测速。网络已经够忙了，别再集体排队踩油门——又不是抢演唱会门票，急什么嘛！
-
-## 新版和老版有什么不一样
-
-如果你是从旧版教程过来的，可能会发现几个变化：
-
-**配置文件独立了。** 旧版是把配置写在脚本里面，改一次配置就得打开脚本对着那堆变量发呆。新版 `cf-openwrt-auto.conf` 单独出来，干干净净，改配置不用碰脚本逻辑。这才对嘛，配置和代码本来就不该挤在一起，又不是合租。
-
-**自升级有了。** 脚本启动时会检查 GitHub 有没有新版本，有就自己更新，不用你手动下载替换。当然啦，更新前会备份，翻车了也能滚回去——这点良心还是有的。
-
-**下载渠道多了。** GitHub 不通的时候能走本地包，本地也没有才会彻底放弃。三层兜底，比我出门带伞还周全。
-
-**IPv6 支持。** `IP_TYPE="ipv6"` 或者 `IP_TYPE="both"`，IPv6 用户不用再手动改一堆东西了。之前没有这个的时候，IPv6 用户每次都得自己折腾半天，想想就心疼。
+还可以手动下载对应架构的 CloudflareSpeedTest 压缩包（比如 `cfst_linux_amd64.tar.gz`），放到工作目录里。脚本下载失败时会优先用本地包。比起一报错就倒地不起，这种「能跑就先跑」的态度还是比较可爱的。
 
 ## 一点小提醒
 
 优选 IP 提升的是「你到 Cloudflare 边缘节点」这一段。后面的回源、服务器带宽、客户端内核、运营商晚高峰，该拉的还是会拉。它不是魔法棒，是一个自动挑路的小工具。别指望它把 1M 小水管变成千兆光纤——做不到的啦，物理定律又不是我写的。
 
-所以我的建议是：先用 `--verbose` 手动跑一遍，看它到底改了哪些节点；再打开客户端实际连一下；最后再丢进 cron。工具再自动，也别闭眼开车。知道了没！
+所以我的建议是：装上插件后，先在概览页启动服务并手动跑一次，再去诊断页看日志，确认它到底改了哪些节点；然后打开客户端实际连一下；最后再打开「启用」开关。工具再自动，也别闭眼开车。知道了没！
 
-如果你还在用旧教程手动复制 IP，那现在真的可以收手啦。新版脚本已经把最烦的那部分接过去了：测速、筛选、验证、写回、重启。你只要把域名和模式填对，然后让它安安静静工作。网络工具能做到「不打扰但有用」，已经很难得了，哼～
+如果你还在用旧教程手动复制 IP，那现在真的可以收手啦。LuCI 插件已经把最烦的那部分接过去了：测速、筛选、验证、写回、重启。你只要把域名和模式填对，然后让它安安静静工作。网络工具能做到「不打扰但有用」，已经很难得了，哼～
 
 好啦，去试试吧，路由器在等你宠幸它呢～
