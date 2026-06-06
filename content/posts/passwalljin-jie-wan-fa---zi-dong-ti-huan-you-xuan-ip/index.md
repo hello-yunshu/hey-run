@@ -8,7 +8,7 @@ featureimage = "/images/posts/passwalljin-jie-wan-fa---zi-dong-ti-huan-you-xuan-
 categories = ["网络技术"]
 tags = ["PassWall", "Cloudflare", "优选 IP", "代理"]
 +++
-> 旧文归档：本文保留 PassWall 自动替换 Cloudflare 优选 IP 的思路。PassWall 界面、UCI 节点字段、CloudflareSpeedTest 输出和 Xray 客户端支持会变化，照做前请先核对自己设备上的实际配置字段。
+> 旧文归档：本文保留 PassWall 自动替换 Cloudflare 优选 IP 的思路。**现在已有 LuCI 界面插件 [luci-app-cloudflare-ip](https://github.com/hello-yunshu/use-cloudflare-ip)，安装后直接在 OpenWrt 后台 Web 界面操作，无需手动改脚本，强烈推荐使用新版。** 如果你仍想了解旧版脚本方式，可继续阅读下文。PassWall 界面、UCI 节点字段、CloudflareSpeedTest 输出和 Xray 客户端支持会变化，照做前请先核对自己设备上的实际配置字段。
 
 如果你用 [Xray_bash_onekey](https://github.com/hello-yunshu/Xray_bash_onekey) 搭了 Nginx+ws/gRPC/xHTTP+TLS，还套了 Cloudflare，那你大概已经发现了：Cloudflare（以下简称 CF）的 IP 多得像天上的星星，但哪个最快？靠眼睛是看不出来的。
 
@@ -82,10 +82,8 @@ bash cf-openwrt-auto.sh
 
 单台后端服务器，100M 带宽，优选 IP 带来的改善肉眼可见。但也别吹得太玄乎，它主要优化的是"你到 CF 边缘节点"这段。后面的回源线路、服务器带宽、客户端实现，该拉胯还是拉胯。优选 IP 是好东西，但它不是那种「一开就加倍」的魔法，更像是一个帮你挑好路的导航。
 
-## 脚本下载
+## 新版项目地址
 
-GitHub 项目：[paniy/use-cloudflare-ip](https://github.com/paniy/use-cloudflare-ip)
-
-点击下载：[cf-openwrt-auto.sh](https://github.com/paniy/use-cloudflare-ip/raw/main/cf-openwrt-auto.sh)
+GitHub 项目：[hello-yunshu/use-cloudflare-ip](https://github.com/hello-yunshu/use-cloudflare-ip)
 
 每天自动换 IP，又因为都是优选过的，速度和安全性都能往上提一提，双赢。教程确实麻烦了点，要改的地方不少，但我还是觉得值——毕竟写都写了，对吧～ 快试试！
