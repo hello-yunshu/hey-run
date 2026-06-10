@@ -41,7 +41,7 @@ OpenWrt 上尤其惨。没有面板、没有提示、没有后悔药。你只能
 
 1. **上传证书**：把 fullchain 和 privkey 贴进去，它自动存到正确的位置、设置正确的权限。你再也不用对着 `chmod 600` 纠结了。
 2. **生成自签名**：一键生成，填个域名就行。内网测试专用，省得敲那串 openssl 咒语。
-3. **ACME 自动签发**：还在规划中——但方向是对的，Let's Encrypt 谁不爱呢。
+3. **ACME 自动签发**：现已完整支持！HTTP-01 Webroot、HTTP-01 Standalone 和 DNS-01（支持通配符证书），底层接 OpenWrt 的 `acme` 包，配好 DNS API key 就能自动申请续签。Let's Encrypt 零成本 HTTPS，谁不爱呢。
 
 证书快过期了也会自动提醒，30 天内标红。不用你记着「我上次续证书是啥时候来着」——工具帮你记，你只负责点。
 
@@ -93,6 +93,8 @@ Nginx 的访问日志和错误日志是排查问题的第一手资料，但 `tai
 `client_max_body_size`、`keepalive_timeout`、`gzip`、`server_tokens`、`ssl_protocols`……这些参数你肯定见过，但每次要改的时候都得去翻 `nginx.conf`，找到对应的行，看清楚默认值，想好改多少，然后小心翼翼地改——生怕顺手删了别的什么东西。
 
 现在不用了。核心配置页面把这些常用参数全部可视化，下拉菜单、开关、输入框——想改什么直接改，不用在几百行的配置文件里大海捞针。而且改完之后同样走「测试 → 通过 → reload」的流程，安全得很。
+
+后续又补了 HTTP/2、HTTP/3 (QUIC)、OCSP Stapling、SSL 缓冲区大小这些进阶选项。站点编辑里也加了 gRPC 透传、站点级 HSTS、一键复制站点这些实用功能。工具嘛，就是要越用越顺手。
 
 ![核心配置页面示意图](/images/posts/luci-app-nginx-manager/06-core-config.avif)
 
