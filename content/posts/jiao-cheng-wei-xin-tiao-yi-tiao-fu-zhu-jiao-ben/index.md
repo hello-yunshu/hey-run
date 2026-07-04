@@ -4,12 +4,12 @@ date = 2018-01-02T21:26:37+08:00
 draft = true
 description = "游戏模式 2017 年 12 月 28 日下午，微信发布了 6.6.1 版本，加入了「小游戏」功能，并提供了官方 DEMO「跳一跳」。这是一个 2.5D 插画风格的益智游戏，玩家可以通过按压屏幕时间的长短来控制这个「小人」跳跃的距离。分数越高，那么在好友排行榜更加靠前。通过 Python 脚本自动运"
 slug = "jiao-cheng-wei-xin-tiao-yi-tiao-fu-zhu-jiao-ben"
-featureimage = "/images/posts/jiao-cheng-wei-xin-tiao-yi-tiao-fu-zhu-jiao-ben/cover.avif"
+featureimage = "cover.avif"
 +++
 
 ## 游戏模式
 
-2017 年 12 月 28 日下午，微信发布了 6.6.1 版本，加入了「小游戏」功能，并提供了官方 DEMO「跳一跳」。这是一个 2.5D 插画风格的益智游戏，玩家可以通过按压屏幕时间的长短来控制这个「小人」跳跃的距离。分数越高，那么在好友排行榜更加靠前。通过 Python 脚本自动运行，让你轻松霸榜。 [![](/images/posts/jiao-cheng-wei-xin-tiao-yi-tiao-fu-zhu-jiao-ben/cover.avif)](/images/posts/jiao-cheng-wei-xin-tiao-yi-tiao-fu-zhu-jiao-ben/cover.avif)   可能刚开始上手的时候，因为时间距离之间的关系把握不恰当，只能跳出几个就掉到了台子下面。**如果能利用图像识别精确测量出起始和目标点之间测距离，就可以估计按压的时间来精确跳跃。**
+2017 年 12 月 28 日下午，微信发布了 6.6.1 版本，加入了「小游戏」功能，并提供了官方 DEMO「跳一跳」。这是一个 2.5D 插画风格的益智游戏，玩家可以通过按压屏幕时间的长短来控制这个「小人」跳跃的距离。分数越高，那么在好友排行榜更加靠前。通过 Python 脚本自动运行，让你轻松霸榜。 [![](cover.avif)](cover.avif)   可能刚开始上手的时候，因为时间距离之间的关系把握不恰当，只能跳出几个就掉到了台子下面。**如果能利用图像识别精确测量出起始和目标点之间测距离，就可以估计按压的时间来精确跳跃。**
 
 ## 原理说明
 
@@ -89,6 +89,6 @@ featureimage = "/images/posts/jiao-cheng-wei-xin-tiao-yi-tiao-fu-zhu-jiao-ben/co
 
 ### 运行效果
 
-[![](/images/posts/jiao-cheng-wei-xin-tiao-yi-tiao-fu-zhu-jiao-ben/01.avif)](/images/posts/jiao-cheng-wei-xin-tiao-yi-tiao-fu-zhu-jiao-ben/01.avif)
+[![](01.avif)](01.avif)
 
 _感谢wangshub的贡献，更多可见[wechat_jump_game](https://github.com/wangshub/wechat_jump_game)项目，idleleo.com整理_

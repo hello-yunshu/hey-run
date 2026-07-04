@@ -4,7 +4,7 @@ date = 2019-03-21T22:46:48+08:00
 draft = true
 description = "之前笔者给大家带来过最新的iOS 12的阻止更新描述文件。描述文件如果你使用iPhone时间久的话或多或少会注意到。诸如iOS的开发者预览版、网络模式切换、控制参数调整等多个特殊功能。 现在笔者给大家带来的是另外两个功能性的iOS描述文件。 开启iOS IPv6 描述文件 IPv6是英文“Inter"
 slug = "yi-xie-gong-neng-xing-ios-miao-shu-wen-jian"
-featureimage = "/images/posts/yi-xie-gong-neng-xing-ios-miao-shu-wen-jian/cover.avif"
+featureimage = "cover.avif"
 +++
 
 之前笔者给大家带来过[最新的iOS 12的阻止更新描述文件](https://www.idleleo.com/02/1260.html)。描述文件如果你使用iPhone时间久的话或多或少会注意到。诸如iOS的开发者预览版、网络模式切换、控制参数调整等多个特殊功能。
@@ -19,7 +19,7 @@ featureimage = "/images/posts/yi-xie-gong-neng-xing-ios-miao-shu-wen-jian/cover.
 
 IPv6是未来的网络标准，但毕竟没有普及。那为什么iOS需要IPv6呢？因为大家知道中国的特殊国情。而某些高校为了保证网络安全，针对网络的封锁大家心知肚明。再者某些宽带公司因为利益的原因，并不会封配IPv4的地址给用户。这使得用户访问网络资源的能力大为减弱。
 
-![](/images/posts/yi-xie-gong-neng-xing-ios-miao-shu-wen-jian/cover.avif)
+![](cover.avif)
 
 而IPv6由于地址之多，完全没有IPv4的烦恼。因此，开启IPv6能有更好的上网体验，就现在情况来说。这几个描述文件便是强制开启运营商的IPv6地址的工具。
 
@@ -35,11 +35,11 @@ IPv6是未来的网络标准，但毕竟没有普及。那为什么iOS需要IPv6
 
 对于https协议，需要经过几次往返才能成功的连接。也就是说，在访问带有https字样的地址时（有个小锁），会因为加密的原因而减少访问速度。之前的协议主要是TLS 1.2，对于使用TLS 1.2，需要两次往返才能完成TLS handshake。使用1.3时，它只需要一次往返， 从而将加密延迟减少一半。这有助于这些加密连接感觉比以前更快一点。
 
-![](/images/posts/yi-xie-gong-neng-xing-ios-miao-shu-wen-jian/01.avif)
+![](01.avif)
 
 所以如果网站支持TLS 1.3、浏览器也支持TLS 1.3，访问网站的速度会大大的加快。现今TLS 1.3的正式协议已经在去年正式的发布。部分网站也成功的开启了新的协议。现在无主界也在之前第一时间支持到了TLS 1.3。
 
-![](/images/posts/yi-xie-gong-neng-xing-ios-miao-shu-wen-jian/02.avif)
+![](02.avif)
 
 对于浏览器，使用Chrome 63，可以为传出连接启用TLS 1.3。Chrome 56中添加了对TLS 1.3的支持，Chrome for Android也支持。
 

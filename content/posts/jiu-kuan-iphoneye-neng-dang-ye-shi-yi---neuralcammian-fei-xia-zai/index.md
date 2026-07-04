@@ -4,12 +4,12 @@ date = 2019-11-08T15:35:25+08:00
 draft = true
 description = "华为在手机拍摄发力后，iPhone的拍摄便一直落后于其他友商。最近iPhone 11系列终于在拍摄上发力。但是对于老机型而言，就享受不到新手机的“特权”了。好在笔者最近在网上找到了个有趣的夜拍iPhone应用，提高了老iPhone的拍摄能力。笔者试了试，效果不错。 应用介绍"
 slug = "jiu-kuan-iphoneye-neng-dang-ye-shi-yi---neuralcammian-fei-xia-zai"
-featureimage = "/images/posts/jiu-kuan-iphoneye-neng-dang-ye-shi-yi---neuralcammian-fei-xia-zai/cover.avif"
+featureimage = "cover.avif"
 +++
 
 华为在手机拍摄发力后，iPhone的拍摄便一直落后于其他友商。最近iPhone 11系列终于在拍摄上发力。但是对于老机型而言，就享受不到新手机的“特权”了。好在笔者最近在网上找到了个有趣的夜拍iPhone应用，提高了老iPhone的拍摄能力。笔者试了试，效果不错。
 
-![](/images/posts/jiu-kuan-iphoneye-neng-dang-ye-shi-yi---neuralcammian-fei-xia-zai/cover.avif)
+![](cover.avif)
 
 #### 应用介绍
 
@@ -41,11 +41,11 @@ NeuralCam -夜间照片混合计算照片和机器学习，以显示出您的大
 
 笔者正常拍摄效果：
 
-![](/images/posts/jiu-kuan-iphoneye-neng-dang-ye-shi-yi---neuralcammian-fei-xia-zai/01.avif)
+![](01.avif)
 
 使用NeuralCam拍摄后：
 
-![](/images/posts/jiu-kuan-iphoneye-neng-dang-ye-shi-yi---neuralcammian-fei-xia-zai/02.avif)
+![](02.avif)
 
 由上可见，效果不错！
 

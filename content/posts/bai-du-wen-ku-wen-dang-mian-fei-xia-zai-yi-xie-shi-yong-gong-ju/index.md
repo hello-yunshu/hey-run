@@ -4,12 +4,12 @@ date = 2019-05-26T21:48:43+08:00
 draft = true
 description = "油猴脚本(Tampermonkey)的鼎鼎大名相信大家多少都有听说，现在有个类似于其的简单网页工具，在此感谢开发者。只要通过对网址的稍作修改，就可以免费下载百度文库文档、商品比价、强制显示知乎答案等，十分方便。"
 slug = "bai-du-wen-ku-wen-dang-mian-fei-xia-zai-yi-xie-shi-yong-gong-ju"
-featureimage = "/images/posts/bai-du-wen-ku-wen-dang-mian-fei-xia-zai-yi-xie-shi-yong-gong-ju/cover.avif"
+featureimage = "cover.avif"
 +++
 
 油猴脚本(Tampermonkey)的鼎鼎大名相信大家多少都有听说，现在有个类似于其的简单网页工具，在此感谢开发者。只要通过对网址的稍作修改，就可以免费下载百度文库文档、商品比价、强制显示知乎答案等，十分方便。
 
-![](/images/posts/bai-du-wen-ku-wen-dang-mian-fei-xia-zai-yi-xie-shi-yong-gong-ju/cover.avif)
+![](cover.avif)
 
 网址如下：[wenku.baiduvvv.com](http://wenku.baiduvvv.com/)。导出的文档为word或pdf形式，非源文件，但文字可编辑，包含图片，尽量保持原文档的格式。支持原文档为WORD，PDF、PPT(导出为pdf时文字也可编辑，导出为word时为图片)、TXT。可以下载需要下载券的文档，付费文档只能下载到试读部分(部分付费文档也能试读到所有内容)。 
 

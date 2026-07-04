@@ -4,16 +4,16 @@ date = 2019-09-20T20:12:13+08:00
 draft = true
 description = "欸，笔者又又又开始云“评测”了。这次评测的是电影《蜘蛛侠: 英雄远征》。这部电影已经上映了好多时间了，但是对于蜘蛛侠的讨论却没有停过，主要的原因大家也知道：“蜘蛛侠”系列已经不再是漫威宇宙中的一部分了，这让一些既喜欢漫威又喜欢蜘蛛侠的伤了心。那么这部电影怎么样呢？笔者想说，亲你没看到笔者最开始说的这"
 slug = "dian-ying-zhi-zhu-xia-ying-xiong-yuan-zheng-hd-xia-zai"
-featureimage = "/images/posts/dian-ying-zhi-zhu-xia-ying-xiong-yuan-zheng-hd-xia-zai/cover.avif"
+featureimage = "cover.avif"
 +++
 
 欸，笔者又又又开始云“评测”了。这次评测的是电影《蜘蛛侠: 英雄远征》。这部电影已经上映了好多时间了，但是对于蜘蛛侠的讨论却没有停过，主要的原因大家也知道：“蜘蛛侠”系列已经不再是漫威宇宙中的一部分了，这让一些既喜欢漫威又喜欢蜘蛛侠的伤了心。那么这部电影怎么样呢？笔者想说，亲你没看到笔者最开始说的这是“云测评”吗？不过据看过电影的人说，这部电影不错的，近期的超级英雄片也就这一部评分高了点。笔者也会下下来看一看，若是给笔者特别的感受的话，笔者会再回来写感受的。
 
-![](/images/posts/dian-ying-zhi-zhu-xia-ying-xiong-yuan-zheng-hd-xia-zai/cover.avif)
+![](cover.avif)
 
 OK，笔者看完了电影了。笔者想说，这是一部青春言情科幻片。主要讲的是人类一边自相残杀一边谈恋爱的故事。从这点看，确实和之前的很多科幻片不一样。这也导致了最后正义战胜邪恶的老套路也有了新的花样。当然，笔者其实最想说的，是剧中的可怜的亚洲小帅哥用的手机居然和笔者一模一样，可惜就在前几天笔者的这部手机坏了。😭
 
-![](/images/posts/dian-ying-zhi-zhu-xia-ying-xiong-yuan-zheng-hd-xia-zai/01.avif)
+![](01.avif)
 
 导演: 乔·沃茨
 

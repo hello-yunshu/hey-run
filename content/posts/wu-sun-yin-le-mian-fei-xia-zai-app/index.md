@@ -4,13 +4,13 @@ date = 2019-01-18T01:50:30+08:00
 draft = true
 description = "今天给大家带来一款叫做音乐侠的安卓软件。此软件可以免费下载到多种格式无损音乐。曲库十分丰富，格式也很齐全，最关键的是完全免费！"
 slug = "wu-sun-yin-le-mian-fei-xia-zai-app"
-featureimage = "/images/posts/wu-sun-yin-le-mian-fei-xia-zai-app/cover.avif"
+featureimage = "cover.avif"
 +++
 
 今天给大家带来一款叫做音乐侠的安卓软件。此软件可以免费下载到多种格式无损音乐。曲库十分丰富，格式也很齐全，最关键的是完全免费！  
 
-  * [![](/images/posts/wu-sun-yin-le-mian-fei-xia-zai-app/cover.avif)](/images/posts/wu-sun-yin-le-mian-fei-xia-zai-app/cover.avif)
-  * [![](/images/posts/wu-sun-yin-le-mian-fei-xia-zai-app/01.avif)](/images/posts/wu-sun-yin-le-mian-fei-xia-zai-app/01.avif)
+  * [![](cover.avif)](cover.avif)
+  * [![](01.avif)](01.avif)
 
 ## 软件功能特色
 

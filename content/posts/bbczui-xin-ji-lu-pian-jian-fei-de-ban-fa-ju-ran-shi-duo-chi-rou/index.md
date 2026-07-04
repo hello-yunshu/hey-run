@@ -4,7 +4,7 @@ date = 2019-05-31T10:32:06+08:00
 draft = false
 description = "五月不减肥，六月徒伤悲。 夏天来了，衣着越来越清凉，再不减肥，肉肉就藏不住了。 可身为懒猪，明知道需要减肥，就是懒得运动。"
 slug = "bbczui-xin-ji-lu-pian-jian-fei-de-ban-fa-ju-ran-shi-duo-chi-rou"
-featureimage = "/images/posts/bbczui-xin-ji-lu-pian-jian-fei-de-ban-fa-ju-ran-shi-duo-chi-rou/cover.avif"
+featureimage = "cover.avif"
 categories = ["生活"]
 tags = ["减肥", "纪录片", "健康"]
 +++
@@ -124,7 +124,7 @@ tags = ["减肥", "纪录片", "健康"]
 
 此外，纤维吃得多，可能会促进人体排气，可是比起减掉的肉肉，这实在只是小事。
 
-![](/images/posts/bbczui-xin-ji-lu-pian-jian-fei-de-ban-fa-ju-ran-shi-duo-chi-rou/01.avif)
+![](01.avif)
 
 靠着吃麦片，贝琪在两周内减了11.7斤，跟遭受了非人待遇的姐妹希娜差不多。
 

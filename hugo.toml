@@ -12,16 +12,6 @@ hasCJKLanguage = true
   pagerSize = 100
 
 [module]
-  [[module.mounts]]
-    source = "assets"
-    target = "assets"
-  [[module.mounts]]
-    source = "static/images"
-    target = "assets/images"
-  [[module.mounts]]
-    source = "static"
-    target = "static"
-    files = ["! images/**"]
 
 [imaging]
   anchor = 'Center'

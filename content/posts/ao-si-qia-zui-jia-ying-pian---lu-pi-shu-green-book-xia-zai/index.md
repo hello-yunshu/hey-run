@@ -4,7 +4,7 @@ date = 2019-02-27T15:17:58+08:00
 draft = true
 description = "说实话，这部电影笔者（站长）是在奥斯卡金像奖颁奖后才知道的。笔者对奥斯卡金像奖获奖的电影并不太感冒。因为笔者觉得，奥斯卡金像奖（以下简称奥斯卡）的评委越来越倾心于，一些带有强烈冲突色彩的社会现象的电影。而奥斯卡面对这些社会冲突并不处在中立面，它是有一定的偏向，这种偏向使得奥斯卡或多或少带上了意识形态"
 slug = "ao-si-qia-zui-jia-ying-pian---lu-pi-shu-green-book-xia-zai"
-featureimage = "/images/posts/ao-si-qia-zui-jia-ying-pian---lu-pi-shu-green-book-xia-zai/cover.avif"
+featureimage = "cover.avif"
 +++
 
 说实话，这部电影笔者（站长）是在奥斯卡金像奖颁奖后才知道的。笔者对奥斯卡金像奖获奖的电影并不太感冒。因为笔者觉得，奥斯卡金像奖（以下简称奥斯卡）的评委越来越倾心于，一些带有强烈冲突色彩的社会现象的电影。而奥斯卡面对这些社会冲突并不处在中立面，它是有一定的偏向，这种偏向使得奥斯卡或多或少带上了意识形态的色彩。
@@ -49,7 +49,7 @@ featureimage = "/images/posts/ao-si-qia-zui-jia-ying-pian---lu-pi-shu-green-book
 
 IMDb链接: [tt6966692](http://www.imdb.com/title/tt6966692)
 
-![](/images/posts/ao-si-qia-zui-jia-ying-pian---lu-pi-shu-green-book-xia-zai/cover.avif)《绿皮书》电影海报
+![](cover.avif)《绿皮书》电影海报
 
 > 简介：真实故事改编，聚焦意裔美国人Tony Lip(Vallelonga本人的父亲)，他是一个受过七年级教育的保镖，1962年被聘用为世界上最好的爵士钢琴家Dr. Don Shirley开车，后者从纽约开始举办巡回演奏，深入前民权运动时期的南方腹地。由于Shirley是非裔美国人，他们由“黑人驾驶员绿皮书”引导前往一些酒店、餐馆、加油站。这段旅程打开了两人的眼界，也扩展了他们生活的世界。 琳达·卡德里尼、伊克博·塞巴、Ninja N. Devoe、David An、Dimiter D. Marinov、David Kallaway等参演，Jim Burke、Charles Wessler和三位编剧一同制片，Participant Media负责投资并制作。 
 

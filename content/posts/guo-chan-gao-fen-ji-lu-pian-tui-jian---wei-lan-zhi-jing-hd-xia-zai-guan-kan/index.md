@@ -4,7 +4,7 @@ date = 2020-04-02T21:08:55+08:00
 draft = true
 description = "最近笔者找到了一个非常不错的国产纪录片《蔚蓝之境》。笔者是在其他网站看到了安利文决定看一看的，万万没想到，仅仅是一集便深深的吸引到了笔者我。 《蔚蓝之境》主要是以中国海岸线为拍摄对象拍摄的纪录片。仅从题材看，就让人觉得眼前一亮。 中国海岸线延绵不断1.8万千米，从渤海到南海，生态环境截然不同，生活其"
 slug = "guo-chan-gao-fen-ji-lu-pian-tui-jian---wei-lan-zhi-jing-hd-xia-zai-guan-kan"
-featureimage = "/images/posts/guo-chan-gao-fen-ji-lu-pian-tui-jian---wei-lan-zhi-jing-hd-xia-zai-guan-kan/cover.avif"
+featureimage = "cover.avif"
 +++
 
 最近笔者找到了一个非常不错的国产纪录片《蔚蓝之境》。笔者是在其他网站看到了安利文决定看一看的，万万没想到，仅仅是一集便深深的吸引到了笔者我。
@@ -27,7 +27,7 @@ featureimage = "/images/posts/guo-chan-gao-fen-ji-lu-pian-tui-jian---wei-lan-zhi
 
 由于笔者从小接触的都是国外的纪录片，因此被国外大海的壮阔美丽深深打动。但是！这一次，由于《蔚蓝之境》纪录片的横空出世，让笔者第一次感受到祖国大海的魅力。是的，那些你我魂牵梦绕的美景就发生在身边，就发生在我们脚下的这片土地上。
 
-![](/images/posts/guo-chan-gao-fen-ji-lu-pian-tui-jian---wei-lan-zhi-jing-hd-xia-zai-guan-kan/01.avif)
+![](01.avif)
 
 导演: 李勇 / 唐欣荣 / 姜蕾 / 谢宇斌 / 刘佳 / 陈红 / 张晗
 

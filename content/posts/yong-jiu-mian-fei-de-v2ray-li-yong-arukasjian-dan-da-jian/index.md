@@ -4,7 +4,7 @@ date = 2019-09-17T15:23:39+08:00
 draft = true
 description = "刚刚传来噩耗，Arukas将于2020年1月31日停止运行，2019年9月30日起停止注册！若想要免费搭建V2Ray可以见：免费畅用V2Ray一年？谷歌云$300试用金 若有后续反转笔者会第一时间更新文章，敬请大家关注无主界。 免费畅用V2Ray一年？谷歌云$300试用金"
 slug = "yong-jiu-mian-fei-de-v2ray-li-yong-arukasjian-dan-da-jian"
-featureimage = "/images/posts/yong-jiu-mian-fei-de-v2ray-li-yong-arukasjian-dan-da-jian/cover.avif"
+featureimage = "cover.avif"
 +++
 
 **刚刚传来噩耗，Arukas将于2020年1月31日停止运行，2019年9月30日起停止注册！若想要免费搭建V2Ray可以见：**[**免费畅用V2Ray一年？谷歌云$300试用金**](https://www.idleleo.com/09/3127.html)
@@ -25,7 +25,7 @@ Arukas是一家日本的Docker提供商（现在已经凉凉）Arukas为所有�
 
 在Create App界面中创建新的Docker，注意需要填写的部分。
 
-![](/images/posts/yong-jiu-mian-fei-de-v2ray-li-yong-arukasjian-dan-da-jian/cover.avif)
+![](cover.avif)
 
 其中Image栏填写`shynome/sakura-v2ray:0.0.3`这是来自[sakura-v2ray](https://gitlab.com/shynome/sakura-v2ray)的镜像。若不填写将直接无法运行。
 
@@ -47,7 +47,7 @@ PROXY_PATH = `/ray`（默认值）
 
 VMESS_ID为vmess id，PROXY_PATH为ws proxy path。建议安全起见进行更改两者值，但前提在于你需要了解相关配置。
 
-![](/images/posts/yong-jiu-mian-fei-de-v2ray-li-yong-arukasjian-dan-da-jian/01.avif)
+![](01.avif)
 
 在配置下方的ENV中，选择Use ENV，并在下方输入你需要的环境变量即可。
 
@@ -78,7 +78,7 @@ VMESS_ID为vmess id，PROXY_PATH为ws proxy path。建议安全起见进行更�
 
 上图中，在配置过程中有一个Custom Domain项，这可以理解为配置一个CNAME的自定义域名。类似无主界使用的CDN：i.idleleo.com。官网也说明了这个自定义域名的作用。
 
-![](/images/posts/yong-jiu-mian-fei-de-v2ray-li-yong-arukasjian-dan-da-jian/02.avif)
+![](02.avif)
 
 So，如果你有自己的域名，并且你知道如何配置Cloudflare的中转，你可以套用CF了。注意， 在解析时需要把A解析改成CNAME解析，解析后的域名一定要开启SSL，否则会出现连接错误。 这里有简单的套用Cloudflare教程：[2020 搭建 V2Ray 服务器最新教程](https://www.idleleo.com/10/2148.html)。
 

@@ -4,7 +4,7 @@ date = 2019-05-06T21:23:18+08:00
 draft = false
 description = "小明打开浏览器，输入idleleo.com敲回车键。 在小明眼里，浏览器是自己的小奴才，让你干啥就干啥。 浏览器才不这么看，鄙人也是有自己独立的人格的，老板的命令如果是对的，那自然照做。那如果是错误的，那就不能听命不是？"
 slug = "zai-liu-lan-qi-di-zhi-lan-shu-ru-yi-ge-urlhui-che-hou-jiu-jing-hui-fa-sheng-shi-me"
-featureimage = "/images/posts/zai-liu-lan-qi-di-zhi-lan-shu-ru-yi-ge-urlhui-che-hou-jiu-jing-hui-fa-sheng-shi-me/cover.avif"
+featureimage = "cover.avif"
 categories = ["科普"]
 tags = ["浏览器", "HTTP", "网络"]
 +++
@@ -15,7 +15,7 @@ tags = ["浏览器", "HTTP", "网络"]
 
 浏览器才不这么看，鄙人也是有自己独立的人格的，老板的命令如果是对的，那自然照做。那如果是错误的，那就不能听命不是？
 
-![](/images/posts/zai-liu-lan-qi-di-zhi-lan-shu-ru-yi-ge-urlhui-che-hou-jiu-jing-hui-fa-sheng-shi-me/cover.avif)
+![](cover.avif)
 
 如果小明输入的是 “idle leo.com” 或 “idle@leo.com1”, 这些网址都是非法无效的，浏览器就要拒绝小明的无理要求，提示小明出错了。
 
@@ -97,7 +97,7 @@ DNS大叔锲而不舍地去联系孙子的爸爸，毫无疑问，爸爸肯定�
 
 将结果告诉了DNS大叔，大叔如获至宝，立马将结果告诉了远在千里之外等待的DNS老实孩子，结果应该是这个样子的：
 
-![](/images/posts/zai-liu-lan-qi-di-zhi-lan-shu-ru-yi-ge-urlhui-che-hou-jiu-jing-hui-fa-sheng-shi-me/01.avif)
+![](01.avif)
 
 累死了，鼓捣了半天才算拿到服务器的IP地址，DNS把结果返回给浏览器。
 
@@ -155,7 +155,7 @@ TLS大叔发现对方发过来两个证书：
 
 **Let's Encrypt Authority X3** 作为一个权威CA，已经被浏览器预先安装在可信任根证书列表，那么我们信任该CA的一切，当然包括其公钥，在该证书里包含了明文的公钥，如下图所示：
 
-![](/images/posts/zai-liu-lan-qi-di-zhi-lan-shu-ru-yi-ge-urlhui-che-hou-jiu-jing-hui-fa-sheng-shi-me/02.avif)
+![](02.avif)
 
 解开了，证明是该CA私钥加密的，由于CA私钥只有CA知道，证书有效，并信任   
 **Let's Encrypt Authority X3** 公钥**。**

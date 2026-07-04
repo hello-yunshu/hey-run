@@ -4,7 +4,7 @@ date = 2018-09-01T23:34:14+08:00
 draft = true
 description = "原子是什么形状 四维是什么状态 我们是星际尘埃 或是宇宙之王 背叛"
 slug = "ni-hao-wu-zhu-jie"
-featureimage = "/images/posts/ni-hao-wu-zhu-jie/cover.avif"
+featureimage = "cover.avif"
 +++
 
 **原子是什么形状** **四维是什么状态** **我们是 星际尘埃** **或是 宇宙之王**
@@ -15,7 +15,7 @@ featureimage = "/images/posts/ni-hao-wu-zhu-jie/cover.avif"
 
  
 
-[![](/images/posts/ni-hao-wu-zhu-jie/cover.avif)](/images/posts/ni-hao-wu-zhu-jie/cover.avif)
+[![](cover.avif)](cover.avif)
 
 **「无 主界」**
 
@@ -33,4 +33,4 @@ featureimage = "/images/posts/ni-hao-wu-zhu-jie/cover.avif"
 
  
 
-[![](/images/posts/ni-hao-wu-zhu-jie/01.avif)](/images/posts/ni-hao-wu-zhu-jie/01.avif)
+[![](01.avif)](01.avif)

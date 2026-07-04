@@ -4,14 +4,14 @@ date = 2018-12-15T12:55:07+08:00
 draft = true
 description = "Lucky Patcher 是来自大神ChelpuS的作品（即钛备份和SPB的Mod作者），Lucky Patcher更像是做的一款合集或者通用破解，所以各位遇到应用没办法用时，可以尝试用这款 App 试试，不过不保证一定会PJ，所以叫做“幸运破解器”。"
 slug = "xing-yun-po-jie-qi-lucky-patcher-for-android"
-featureimage = "/images/posts/xing-yun-po-jie-qi-lucky-patcher-for-android/cover.avif"
+featureimage = "cover.avif"
 +++
 
 Lucky Patcher 是来自大神ChelpuS的作品（即钛备份和SPB的Mod作者），Lucky Patcher更像是做的一款合集或者通用破解，所以各位遇到应用没办法用时，可以尝试用这款 App 试试，不过不保证一定会PJ，所以叫做“幸运破解器”。
 
-  * [![](/images/posts/xing-yun-po-jie-qi-lucky-patcher-for-android/cover.avif)](/images/posts/xing-yun-po-jie-qi-lucky-patcher-for-android/cover.avif)
-  * [![](/images/posts/xing-yun-po-jie-qi-lucky-patcher-for-android/01.avif)](/images/posts/xing-yun-po-jie-qi-lucky-patcher-for-android/01.avif)
-  * [![](/images/posts/xing-yun-po-jie-qi-lucky-patcher-for-android/02.avif)](/images/posts/xing-yun-po-jie-qi-lucky-patcher-for-android/02.avif)
+  * [![](cover.avif)](cover.avif)
+  * [![](01.avif)](01.avif)
+  * [![](02.avif)](02.avif)
 
 **注意：幸运破解器需要ROOT权限和BusyBox支持！**
 

@@ -4,7 +4,7 @@ date = 2019-02-25T23:11:35+08:00
 draft = true
 description = "Windows 10（以下简称Win10）自从推出已经过去了接近5年。在Win10推出之初，由于主打服务而非单一销售，微软通过免费升级的办法吸引用户主动升级至Win10，并且整整提供了将近2年的免费升级服务。即便到现在，装有Windows 7（以下简称Win7）的童鞋仍旧可以通过某些方法免费升级至W"
 slug = "an-quan-mian-fei-ji-huo-windows-10---ji-huo-fang-shi-tao-lun"
-featureimage = "/images/posts/an-quan-mian-fei-ji-huo-windows-10---ji-huo-fang-shi-tao-lun/cover.avif"
+featureimage = "cover.avif"
 +++
 
 Windows 10（以下简称Win10）自从推出已经过去了接近5年。在Win10推出之初，由于主打服务而非单一销售，微软通过免费升级的办法吸引用户主动升级至Win10，并且整整提供了将近2年的免费升级服务。即便到现在，装有Windows 7（以下简称Win7）的童鞋仍旧可以通过某些方法免费升级至Win10。但是，近年才买电脑的童鞋此方法几乎行不通。因为，近年的电脑根本不再支持安装Win10以下的系统，即便通过各种方式成功安装，其体验也远远逊色于Win10。
@@ -23,11 +23,11 @@ KMS，全称Key Management Service。KMS是微软官方认可的一种系统激�
 
 以上便是KMS的激活方式的描述，此种激活方式非常普遍，几乎从网络找到的所有方式本质都是如此。当然很多企业和学校也在用KMS的激活方式激活Windows以及Office等软件。
 
-![](/images/posts/an-quan-mian-fei-ji-huo-windows-10---ji-huo-fang-shi-tao-lun/cover.avif) 某网站提供的KMS激活工具
+![](cover.avif) 某网站提供的KMS激活工具
 
 KMS方式确实流行，但是就如上文所说，激活方式并不安全。实际上是非常不安全。因为我们没有办法保证这个管理员会做什么。操纵电脑作为肉鸡还只是小事，如果涉及重要文件，后果难以预料。实际上，一旦成功激活，我们就可以在计算机系统属性中发现我们已经加入了一个工作组，这个工作组是没有办法改变的。如图：
 
-![](/images/posts/an-quan-mian-fei-ji-huo-windows-10---ji-huo-fang-shi-tao-lun/01.png)
+![](01.png)
 
 除去不安全，KMS的激活方式亦不稳定。由于KMS本身性质决定，其激活时长为180天，过了180天便需要重新再次激活。因此，在KMS激活时，会创建一个开机启动的服务或者程序，其目的就在于进行检测激活的有效性。但出于各种原因，KMS的激活程序时常被认为病毒，因此容易被各种杀毒软件拦截。这便容易造成激活失效。并且由于无法保证激活服务器的可靠性，因此其激活并不稳定。
 
@@ -37,7 +37,7 @@ KMS方式确实流行，但是就如上文所说，激活方式并不安全。�
 
 此类激活码非常之多，而且价格较之正版动辄几千来说，可谓是非常便宜。那么问题来了，便宜有好货吗？
 
-![](/images/posts/an-quan-mian-fei-ji-huo-windows-10---ji-huo-fang-shi-tao-lun/02.avif) 某购物网站售卖的win 10密钥
+![](02.avif) 某购物网站售卖的win 10密钥
 
 答案是：没有。
 
@@ -73,11 +73,11 @@ KMS方式确实流行，但是就如上文所说，激活方式并不安全。�
   4. 然后正常方法安装Win10系统，安装过程中无需输入序列号 直接跳过。
   5. 安装完成后按将上面生成的「GenuineTicket.xml」复制到 ProgramDataMicrosoftWindowsClipSVCGenuineTicket
 
-![](/images/posts/an-quan-mian-fei-ji-huo-windows-10---ji-huo-fang-shi-tao-lun/03.avif)
+![](03.avif)
 
 放入此文件夹中之后，重启系统即可完成激活！
 
-![](/images/posts/an-quan-mian-fei-ji-huo-windows-10---ji-huo-fang-shi-tao-lun/04.avif)
+![](04.avif)
 
 ### 注意事项
 
@@ -221,7 +221,7 @@ HWIDGen v62.01 汉化版
 
 操作方式如图：
 
-![](/images/posts/an-quan-mian-fei-ji-huo-windows-10---ji-huo-fang-shi-tao-lun/05.gif)
+![](05.gif)
 
 ### 支持的系统
 
@@ -275,7 +275,7 @@ HWIDGen v62.01 汉化版
   5. 查看激活状态。
   6. 查看支持列表。
 
-![](/images/posts/an-quan-mian-fei-ji-huo-windows-10---ji-huo-fang-shi-tao-lun/06.avif) 这“死亡水印”...
+![](06.avif) 这“死亡水印”...
 
 ### 下载地址
 

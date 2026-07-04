@@ -4,12 +4,12 @@ date = 2018-11-25T23:15:46+08:00
 draft = false
 description = "/// 银"
 slug = "yi-che-mian-bao-ren-zhi-qiu-ji-xian-ding"
-featureimage = "/images/posts/yi-che-mian-bao-ren-zhi-qiu-ji-xian-ding/cover.avif"
+featureimage = "cover.avif"
 categories = ["随笔"]
 tags = ["诗", "写作", "生活"]
 +++
 
-[![](/images/posts/yi-che-mian-bao-ren-zhi-qiu-ji-xian-ding/cover.avif)](/images/posts/yi-che-mian-bao-ren-zhi-qiu-ji-xian-ding/03.avif)
+[![](cover.avif)](03.avif)
 
 ///
 
@@ -59,7 +59,7 @@ tags = ["诗", "写作", "生活"]
 
 * * *
 
-  [![](/images/posts/yi-che-mian-bao-ren-zhi-qiu-ji-xian-ding/01.avif)](/images/posts/yi-che-mian-bao-ren-zhi-qiu-ji-xian-ding/01.avif)  
+  [![](01.avif)](01.avif)  
 
 > 生如夏花之绚烂，死若秋叶之静美。
 > 
@@ -85,4 +85,4 @@ tags = ["诗", "写作", "生活"]
 
 「为赋新词强说愁」，也算是幸福了。
 
-    来自 公众号：Renart俱乐部   [![](/images/posts/yi-che-mian-bao-ren-zhi-qiu-ji-xian-ding/02.avif)](/images/posts/yi-che-mian-bao-ren-zhi-qiu-ji-xian-ding/02.avif)
+    来自 公众号：Renart俱乐部   [![](02.avif)](02.avif)

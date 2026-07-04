@@ -167,13 +167,7 @@ jobs:
         if: steps.check-running.outputs.result == 'run' && steps.build.outcome == 'success' && steps.changes.outputs.theme_changed == 'true'
         id: drift
         run: |
-          OVERRIDE_FILES=(
-            "layouts/partials/article-link/card-related.html"
-            "layouts/partials/article-link/card.html"
-            "layouts/partials/article-link/simple.html"
-            "layouts/partials/article-link/_shortcode.html"
-            "layouts/_default/_markup/render-image.html"
-          )
+          OVERRIDE_FILES=()
           DRIFT_FILES=""
           for f in "${OVERRIDE_FILES[@]}"; do
             THEME_FILE="themes/blowfish/$f"

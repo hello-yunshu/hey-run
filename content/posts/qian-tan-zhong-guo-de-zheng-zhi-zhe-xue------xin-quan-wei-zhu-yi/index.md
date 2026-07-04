@@ -4,7 +4,7 @@ date = 2019-06-05T21:35:08+08:00
 draft = false
 description = "中国对于笔者而言是一个以马克思主义作为政治理念基础的共产主义国家。笔者不曾怀疑中国政府对于马克思主义的理解和应用。根据笔者自身对马克思主义的理解，马克思主义更多从哲学观点出发，关注的是不以时间为尺度的宇宙观。因此在实际应用马克思主义时，必然需要对马克思主义本身在固定时间段内进行二次“创作”，从而使不"
 slug = "qian-tan-zhong-guo-de-zheng-zhi-zhe-xue------xin-quan-wei-zhu-yi"
-featureimage = "/images/posts/qian-tan-zhong-guo-de-zheng-zhi-zhe-xue------xin-quan-wei-zhu-yi/cover.avif"
+featureimage = "cover.avif"
 categories = ["随笔"]
 tags = ["政治哲学", "新权威主义", "思想"]
 +++
@@ -13,7 +13,7 @@ tags = ["政治哲学", "新权威主义", "思想"]
 
 ——题记
 
-![](/images/posts/qian-tan-zhong-guo-de-zheng-zhi-zhe-xue------xin-quan-wei-zhu-yi/cover.avif)
+![](cover.avif)
 
 #### 新权威主义
 

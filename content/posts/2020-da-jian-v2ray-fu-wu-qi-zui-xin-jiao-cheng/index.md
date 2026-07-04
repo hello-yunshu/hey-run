@@ -4,12 +4,12 @@ date = 2019-10-05T01:05:00+08:00
 draft = true
 description = "来自233boy的简单V2Ray搭建脚本近期很不稳定。笔者测试了他的安装命令是否还能继续使用，事实是脚本依然能够正常安装使用。但是笔者并不再推荐使用此脚本安装。根据笔者之前的测试，此脚本存在一定的bug，由于无法确定是否有人还在继续维护，因此若有了bug可能也很难再被修复。笔者推荐大家换用其他脚本。"
 slug = "2020-da-jian-v2ray-fu-wu-qi-zui-xin-jiao-cheng"
-featureimage = "/images/posts/2020-da-jian-v2ray-fu-wu-qi-zui-xin-jiao-cheng/cover.avif"
+featureimage = "cover.avif"
 +++
 
 来自233boy的简单V2Ray搭建脚本近期很不稳定。笔者测试了他的安装命令是否还能继续使用，事实是脚本依然能够正常安装使用。但是笔者并不再推荐使用此脚本安装。根据笔者之前的测试，此脚本存在一定的bug，由于无法确定是否有人还在继续维护，因此若有了bug可能也很难再被修复。笔者推荐大家换用其他脚本。
 
-![](/images/posts/2020-da-jian-v2ray-fu-wu-qi-zui-xin-jiao-cheng/cover.avif)
+![](cover.avif)
 
 如果大家仍然有需要使用此脚本可以运行如下命令：
 [code] 
@@ -25,7 +25,7 @@ GitHub地址：[链接](https://github.com/Jrohy/multi-v2ray)
 
 现在有新的脚本进行替代，经过笔者的测试，安装简单方便。不过也经过笔者的测试，在部署SSL证书时同样有一定的问题。这应该是使用Let's Encrypt部署脚本其自带的bug，虽然有一定的bug，但好在还有人维护此插件（现已修复BUG），因此推荐大家使用。也推荐大家持续关注GitHub的BUG反馈。
 
-![](/images/posts/2020-da-jian-v2ray-fu-wu-qi-zui-xin-jiao-cheng/01.avif)
+![](01.avif)
 
 直接安装命令：
 [code] 
@@ -134,7 +134,7 @@ PS：如果遇到问题，先别着急，**仔细翻翻评论** ，说不定有�
 
 由于此一键脚本做了Nginx反向代理，因此只需将域名交由Cloudflare解析，并在解析页面点击黄色云朵，即可方便的开启CDN，进而隐藏真实ip。笔者是推荐大家这么做的。**值得注意的是需要将SSL/TLS设置为FULL及以上，及必须保证Cloudflare为HTTPS连接。**
 
-![](/images/posts/2020-da-jian-v2ray-fu-wu-qi-zui-xin-jiao-cheng/02.avif)
+![](02.avif)
 
 ### 相关注意
 
@@ -159,7 +159,7 @@ PS：如果遇到问题，先别着急，**仔细翻翻评论** ，说不定有�
 
 现在已经出现了非常傻瓜的一键安装工具，甚至不需要连接服务器。 :mrgreen: 哈哈。对于广大刚刚决定尝试的小伙伴是个非常友好的开始。
 
-![](/images/posts/2020-da-jian-v2ray-fu-wu-qi-zui-xin-jiao-cheng/03.avif)
+![](03.avif)
 
 笔者并未直接尝试过，因为笔者需要一些额外的定制，这是这类工具做不到的。不过就如上述所说，此工具极大的降低了V2Ray之类的门槛，可谓是有人人皆可的趋势。已经如此简单的搭建是值得警惕的，不知道未来会何去何从，是否会真正引起某些部门的关注，笔者表示担心。
 

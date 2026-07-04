@@ -3,7 +3,7 @@ title = "庆祝中华人民共和国成立70周年！"
 date = 2019-09-30T20:00:28+08:00
 draft = true
 slug = "qing-zhu-zhong-hua-ren-min-gong-he-guo-cheng-li-70zhou-nian"
-featureimage = "/images/posts/qing-zhu-zhong-hua-ren-min-gong-he-guo-cheng-li-70zhou-nian/cover.gif"
+featureimage = "cover.gif"
 +++
 
 从飞檐反宇的古建
@@ -44,4 +44,4 @@ featureimage = "/images/posts/qing-zhu-zhong-hua-ren-min-gong-he-guo-cheng-li-70
 
 庆祝新中国成立70周年！
 
-![](/images/posts/qing-zhu-zhong-hua-ren-min-gong-he-guo-cheng-li-70zhou-nian/cover.gif)
+![](cover.gif)

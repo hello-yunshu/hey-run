@@ -4,12 +4,12 @@ date = 2019-11-10T14:56:59+08:00
 draft = true
 description = "最新消息！大家期待的《小丑》(又称：Joker)资源出现啦！感谢韩国的大力支持！笔者还没有仔细观看，之后会送上笔者的影评。不管啦，快来看吧！ 导演: 托德·菲利普斯"
 slug = "dian-ying-xiao-chou-joker-han-ban-hd-zai-xian-guan-kan-xia-zai"
-featureimage = "/images/posts/dian-ying-xiao-chou-joker-han-ban-hd-zai-xian-guan-kan-xia-zai/cover.avif"
+featureimage = "cover.avif"
 +++
 
 最新消息！大家期待的《小丑》(又称：Joker)资源出现啦！感谢韩国的大力支持！笔者还没有仔细观看，之后会送上笔者的影评。不管啦，快来看吧！
 
-![](/images/posts/dian-ying-xiao-chou-joker-han-ban-hd-zai-xian-guan-kan-xia-zai/cover.avif)
+![](cover.avif)
 
 导演: 托德·菲利普斯
 

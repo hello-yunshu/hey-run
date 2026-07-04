@@ -4,7 +4,7 @@ date = 2019-06-23T01:14:22+08:00
 draft = false
 description = "这一天最终还是来了😂😂 如文章标题所说，近期，无主界网站服务器受到一次网络攻击。攻击规模不大，攻击本身危害程度也不是很高，但确确实实是一次网络攻击。"
 slug = "ddosshi-zhan-wu-zhu-jie-fu-wu-qi-de-yi-ci-gong-fang"
-featureimage = "/images/posts/ddosshi-zhan-wu-zhu-jie-fu-wu-qi-de-yi-ci-gong-fang/cover.avif"
+featureimage = "cover.avif"
 categories = ["网络技术"]
 tags = ["DDoS", "服务器", "安全", "复盘"]
 +++
@@ -14,7 +14,7 @@ tags = ["DDoS", "服务器", "安全", "复盘"]
 
 如文章标题所说，近期，无主界网站服务器受到一次网络攻击。攻击规模不大，攻击本身危害程度也不是很高，但确确实实是一次网络攻击。
 
-![](/images/posts/ddosshi-zhan-wu-zhu-jie-fu-wu-qi-de-yi-ci-gong-fang/cover.avif)
+![](cover.avif)
 
 其实这次网络攻击在无主界网站前身《paniy的个人网站》制作时已经被我预知到了。网站服务器本身攻击手段多种多样。一开始笔者也就是站长没什么经验，突然有一天笔者想到了安全问题，才发现有很多需要注意的点，也就预知了此次攻击。
 
@@ -24,7 +24,7 @@ tags = ["DDoS", "服务器", "安全", "复盘"]
 
 根据百度百科：分布式拒绝服务(DDoS:Distributed Denial of Service)攻击指借助于客户/服务器技术，将多个计算机联合起来作为攻击平台，对一个或多个目标发动DDoS攻击，从而成倍地提高拒绝服务攻击的威力。通常，攻击者使用一个偷窃帐号将DDoS主控程序安装在一个计算机上，在一个设定的时间主控程序将与大量代理程序通讯，代理程序已经被安装在网络上的许多计算机上。代理程序收到指令时就发动攻击。利用客户/服务器技术，主控程序能在几秒钟内激活成百上千次代理程序的运行。
 
-![](/images/posts/ddosshi-zhan-wu-zhu-jie-fu-wu-qi-de-yi-ci-gong-fang/01.avif)
+![](01.avif)
 
 其实说白了就是一些并不是真实的人访问占据了服务器的带宽资源。说的再直白点，就好比你是急救车司机，要赶紧把病人送到医院。但偏偏路上堵车了，而且堵得死死的。你很焦虑，下车一看，发现在堵的那些车里面，除了你这辆车以外其他都是没有司机或者司机是假人的“幽灵车”。他们不仅不会动，而且还在不断增加。这些车就充当了一次DDoS，你是一次正常的访问，而医院就是服务器。
 
@@ -32,7 +32,7 @@ tags = ["DDoS", "服务器", "安全", "复盘"]
 
 此次无主界受到的攻击规模并不大，据笔者推测，主要原因是在于攻击危害性较低。此次攻击手段是利用虚拟客户端的不断链接来妄图塞满整个带宽。虽然确实建立了大量的链接，但是由于很容易判断客户端非真人，因此很快便被服务器自身防火墙防御住。此次虽然连续攻击大约6个小时，但是危害却几乎没有，对服务器资源以及带宽也影响较少。
 
-![](/images/posts/ddosshi-zhan-wu-zhu-jie-fu-wu-qi-de-yi-ci-gong-fang/02.avif)
+![](02.avif)
 
 不过这着实给笔者提了个醒，若真的遇到掌握大量僵尸网络的黑客进行DDoS，无主界怕是难以应对。不过也不是没有办法可以尝试应对一下的。
 
@@ -42,7 +42,7 @@ SYN Flood是DDoS攻击的最为常见的一种手段，其实就是这次攻击�
 
 首先运行`regedit.exe`进入注册表，在`HKEY_LOCAL_MACHINESYSTEMCurrentControlSetServicesTcpipParameters`做以下更改**（所涉及的值全为十六进制）** 。
 
-![](/images/posts/ddosshi-zhan-wu-zhu-jie-fu-wu-qi-de-yi-ci-gong-fang/03.avif)
+![](03.avif)
 
 应该能发现`SynAttackProtect`的数值，数值类型为REG_DWORD。将值设置为：`2`。该参数可使TCP调整SYN-ACKS的重新传输，当`SynAttackProtect`默认值为`0`(即不采取任何保护措施), 设置为`2`时，可更有效地抵御SYN攻击此时，如果系统检测到存在SYN攻击，连接响应的超时时间将更短。 
 

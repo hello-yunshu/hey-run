@@ -4,12 +4,12 @@ date = 2019-12-28T18:26:26+08:00
 draft = true
 description = "最近《庆余年》这部剧因为“中国人不配有精神生活”，所以全集下载地址都被泄露了呢！对于需要超前点播的小伙伴们，可以不用充值VVIP了呢！以下全部资源来自互联网。 导演:"
 slug = "dian-shi-ju-qing-yu-nian-di-yi-ji-quan-ji-xia-zai"
-featureimage = "/images/posts/dian-shi-ju-qing-yu-nian-di-yi-ji-quan-ji-xia-zai/cover.avif"
+featureimage = "cover.avif"
 +++
 
 最近《庆余年》这部剧因为“中国人不配有精神生活”，所以全集下载地址都被泄露了呢！对于需要超前点播的小伙伴们，可以不用充值VVIP了呢！以下全部资源来自互联网。
 
-![](/images/posts/dian-shi-ju-qing-yu-nian-di-yi-ji-quan-ji-xia-zai/cover.avif)
+![](cover.avif)
 
 导演: 孙皓
 

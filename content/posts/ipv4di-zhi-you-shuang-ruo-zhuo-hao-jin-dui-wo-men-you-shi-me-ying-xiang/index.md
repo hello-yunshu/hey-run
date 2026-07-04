@@ -4,7 +4,7 @@ date = 2019-11-26T16:09:38+08:00
 draft = false
 description = "今天早上，咱们的小编@Liang同学，发了一篇报道给笔者。说的是IPv4正式耗尽了。 笔者看到这则消息，感觉完全不意外。因为早在几年前就有不少说"
 slug = "ipv4di-zhi-you-shuang-ruo-zhuo-hao-jin-dui-wo-men-you-shi-me-ying-xiang"
-featureimage = "/images/posts/ipv4di-zhi-you-shuang-ruo-zhuo-hao-jin-dui-wo-men-you-shi-me-ying-xiang/cover.avif"
+featureimage = "cover.avif"
 categories = ["网络技术"]
 tags = ["IPv4", "IPv6", "互联网"]
 +++
@@ -12,11 +12,11 @@ tags = ["IPv4", "IPv6", "互联网"]
 
 今天早上，咱们的小编@Liang同学，发了一篇报道给笔者。说的是IPv4正式耗尽了。
 
-![](/images/posts/ipv4di-zhi-you-shuang-ruo-zhuo-hao-jin-dui-wo-men-you-shi-me-ying-xiang/cover.avif)
+![](cover.avif)
 
 笔者看到这则消息，感觉完全不意外。因为早在几年前就有不少说要耗尽的新闻，当时就引发了热议。毕竟大家大概清楚IPv4是什么，又比较担心如果上不了网怎么办。
 
-![](/images/posts/ipv4di-zhi-you-shuang-ruo-zhuo-hao-jin-dui-wo-men-you-shi-me-ying-xiang/01.avif)
+![](01.avif)
 
 那么，早几年前就已经令人忧心忡忡的IPv4地址耗尽的事情，是不是真的会影响到我们开心的玩手机呢？结果当然不是咯，或者说影响没那么大。笔者将会用以下的内容向大家解释为什么。
 
@@ -24,7 +24,7 @@ tags = ["IPv4", "IPv6", "互联网"]
 
 我们知道，有些物品用完及失去了价值。比如火箭在几年前是无法回收的，这造成了每次发射成本高昂。但近几年，SpaceX公司成功制造了可回收火箭，这直接拉低了发射火箭的价格。
 
-![](/images/posts/ipv4di-zhi-you-shuang-ruo-zhuo-hao-jin-dui-wo-men-you-shi-me-ying-xiang/02.avif)
+![](02.avif)
 
 IPv4亦是如此。IPv4并不是用完及毁灭的事物。IPv4本身只是一个“门牌号”。这个门牌号可以给任何人，只要这个门牌号被大家公认是指向某个地址的，那么这个IPv4就是有效的（也就是DNS的意义），否则即是无效。对于已经无效的IPv4，我们大可以重新再利用，分配给有需要的人。
 
@@ -38,7 +38,7 @@ IPv4亦是如此。IPv4并不是用完及毁灭的事物。IPv4本身只是一�
 
 囤货！对没错，就是囤货！和所有一切有限资源一样，IPv4地址耗尽的根本原因就是被囤货了。在现今私有财产神圣不可侵犯的年代，遇到囤货的事实，大家也无能为力。
 
-![](/images/posts/ipv4di-zhi-you-shuang-ruo-zhuo-hao-jin-dui-wo-men-you-shi-me-ying-xiang/03.avif)
+![](03.avif)
 
 从国家层面，由于美国等西方国家是第三次工业革命的发源地，因此享有一定的霸权。从2018的统计数据看，美国这一个国家就占据了将近36%的地址，而人均更是接近5个。
 
@@ -48,7 +48,7 @@ IPv4亦是如此。IPv4并不是用完及毁灭的事物。IPv4本身只是一�
 
 除去国家层面的囤积IPv4地址，云服务商也在做类似的事情。
 
-![](/images/posts/ipv4di-zhi-you-shuang-ruo-zhuo-hao-jin-dui-wo-men-you-shi-me-ying-xiang/04.avif)
+![](04.avif)
 
 从2017年主流的云服务商看，实际利用的IPv4地址与所拥有的IPv4地址比例很小。实际利用的IPv4地址远远没有达到云服务商囤积的IPv4地址。仅仅从数据看，即使不发展IPv6，IPv4最终真正耗尽的时间起码也要过20年左右吧。
 
@@ -56,7 +56,7 @@ IPv4亦是如此。IPv4并不是用完及毁灭的事物。IPv4本身只是一�
 
 就如上述所说，IPv4对于中国来说差不多是5个人分一个。也就是一个家庭一个。那么，家庭内部的个体怎么上网呢？这时候就需要NAT技术了。
 
-![](/images/posts/ipv4di-zhi-you-shuang-ruo-zhuo-hao-jin-dui-wo-men-you-shi-me-ying-xiang/05.avif)
+![](05.avif)
 
 NAT（Network Address Translation，网络地址转换）是当在专用网内部的一些主机本来已经分配到了本地IP地址（即仅在本专用网内使用的专用地址），但现在又想和因特网上的主机通信（并不需要加密）时，可使用NAT方法。
 

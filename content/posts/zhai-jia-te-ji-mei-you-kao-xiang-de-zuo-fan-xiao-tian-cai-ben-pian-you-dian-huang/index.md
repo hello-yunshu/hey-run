@@ -4,7 +4,7 @@ date = 2020-03-16T17:26:30+08:00
 draft = false
 description = "——“放心吧，疫情来了你抢不到口罩，疫情结束那天火锅奶茶店你也排不上号。” 甜 点"
 slug = "zhai-jia-te-ji-mei-you-kao-xiang-de-zuo-fan-xiao-tian-cai-ben-pian-you-dian-huang"
-featureimage = "/images/posts/zhai-jia-te-ji-mei-you-kao-xiang-de-zuo-fan-xiao-tian-cai-ben-pian-you-dian-huang/cover.avif"
+featureimage = "cover.avif"
 categories = ["生活"]
 tags = ["做饭", "甜点", "宅家"]
 +++
@@ -17,7 +17,7 @@ tags = ["做饭", "甜点", "宅家"]
 
 难易程度：★★☆☆☆
 
-![](/images/posts/zhai-jia-te-ji-mei-you-kao-xiang-de-zuo-fan-xiao-tian-cai-ben-pian-you-dian-huang/cover.avif)
+![](cover.avif)
 
 Step1：倒入两盒纯牛奶，加入两勺白糖（喜欢甜的小伙伴可适量多加哈），六勺玉米淀粉，搅拌均匀 
 
@@ -39,11 +39,11 @@ Step4：按顺序裹上玉米淀粉、鸡蛋液、面包糠，然后就可以开
 
 铛铛！
 
-![](/images/posts/zhai-jia-te-ji-mei-you-kao-xiang-de-zuo-fan-xiao-tian-cai-ben-pian-you-dian-huang/01.avif)
+![](01.avif)
 
 让我们来看一看，下锅之前的样子。
 
-![](/images/posts/zhai-jia-te-ji-mei-you-kao-xiang-de-zuo-fan-xiao-tian-cai-ben-pian-you-dian-huang/02.avif)
+![](02.avif)
 
 可以和旁边油的颜色做对比。就知道这颗鸡蛋多么的黄了~
 
@@ -57,7 +57,7 @@ Step4：炸好的鸡胸肉出锅之后，另外起锅加入番茄酱、糖还有
 
 文章的结尾，希望大家在疫情结束之后，谁都不要嘲笑谁的肚子。
 
-![](/images/posts/zhai-jia-te-ji-mei-you-kao-xiang-de-zuo-fan-xiao-tian-cai-ben-pian-you-dian-huang/03.avif)
+![](03.avif)
 
 * * *
 
@@ -65,6 +65,6 @@ End
 
 下 期 预 告
 
-![](/images/posts/zhai-jia-te-ji-mei-you-kao-xiang-de-zuo-fan-xiao-tian-cai-ben-pian-you-dian-huang/04.avif)
+![](04.avif)
 
-![](/images/posts/zhai-jia-te-ji-mei-you-kao-xiang-de-zuo-fan-xiao-tian-cai-ben-pian-you-dian-huang/05.avif)
+![](05.avif)

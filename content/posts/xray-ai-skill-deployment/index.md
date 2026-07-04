@@ -4,7 +4,7 @@ date = 2026-05-26T02:36:00+08:00
 draft = false
 description = "Xray_bash_onekey 现在提供了 AI Skill 部署方式。传统方式需要 SSH 到服务器、运行脚本、一步步回答问题；Skill 方式则把这些交互整理成自动化部署流程，最后直接返回连接信息。它不是替你理解网络原理，但确实能少敲很多命令。"
 slug = "xray-ai-skill-deployment"
-featureimage = "/images/posts/xray-ai-skill-deployment/cover.avif"
+featureimage = "cover.avif"
 categories = ["网络技术"]
 tags = ["Xray", "AI", "自动部署", "代理"]
 +++
@@ -23,7 +23,7 @@ Reality 要目标域名，TLS 要解析好的域名，ws/gRPC/xHTTP 各有端口
 
 AI Skill 又砍了一刀：你要在终端当场回答的那些问题，提前用对话搞定。它就像一个盯着你问清楚才肯动手的小助手，不是让你对着脚本猜谜语。
 
-![](/images/posts/xray-ai-skill-deployment/01.avif)
+![](01.avif)
 
 ## 怎么用
 
@@ -37,7 +37,7 @@ AI Skill 又砍了一刀：你要在终端当场回答的那些问题，提前�
 
 Skill 底层还是 `idleleo` 那套命令体系，常见安装模式和维护入口都在：
 
-![](/images/posts/xray-ai-skill-deployment/02.avif)
+![](02.avif)
 
 目前覆盖的模式是 Reality、TLS、ws ONLY、XTLS ONLY——先把最常见最容易标准化的搞定。那种特别骚的操作和特别个性的玩法，还是建议你自己看一眼配置。**AI 可以帮你走流程，但不能替你背锅。**
 

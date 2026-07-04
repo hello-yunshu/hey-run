@@ -4,7 +4,7 @@ date = 2019-03-07T23:49:38+08:00
 draft = true
 description = "百度网盘相信大家用的又爱又恨，其资源丰富，但是下载若不开启vip限速严重。百度vip价格并不便宜。为了互联网的开放精神，今天笔者（其实就是站长TAT）给大家带来几个简单的不限速下载工具。 在使用前，笔者不得不提醒一句，由于下载工具是对百度网盘的破解；又因为百度网盘自身限制部分文件下载需要登陆。故存在"
 slug = "bai-du-wang-pan-bu-xian-su-xia-zai-gong-ju-duo"
-featureimage = "/images/posts/bai-du-wang-pan-bu-xian-su-xia-zai-gong-ju-duo/cover.avif"
+featureimage = "cover.avif"
 +++
 
 百度网盘相信大家用的又爱又恨，其资源丰富，但是下载若不开启vip限速严重。百度vip价格并不便宜。为了互联网的开放精神，今天笔者（其实就是站长TAT）给大家带来几个简单的不限速下载工具。
@@ -15,7 +15,7 @@ featureimage = "/images/posts/bai-du-wang-pan-bu-xian-su-xia-zai-gong-ju-duo/cov
 
 Proxyee Down 是一款开源的免费 HTTP 高速下载器，底层使用`netty`开发，支持自定义 HTTP 请求下载且支持扩展功能，可以通过安装扩展实现特殊的下载需求。 
 
-![](/images/posts/bai-du-wang-pan-bu-xian-su-xia-zai-gong-ju-duo/cover.avif)
+![](cover.avif)
 
 ### 项目地址：
 
@@ -34,12 +34,12 @@ _注：windows 下分 x86 和 x64 版本，x86 对应 32 位操作系统而 x64 
   * Windows:  
 下载 Windows 版本的压缩包以后，将压缩包解压至任意目录，执行文件夹里的`Proxyee Down.exe`文件即可。 _注：360 可能会报毒，请将报毒文件加入白名单，或者直接卸载 360_
 
-![](/images/posts/bai-du-wang-pan-bu-xian-su-xia-zai-gong-ju-duo/01.png)
+![](01.png)
 
   * macOS:  
 下载 `macOS` 版本的压缩包之后，解压至任意目录，将目录内的 `Proxyee Down` 应用复制到 `Application`（或者 `应用程序`，取决于系统版本以及语言设定）文件夹，双击运行即可。 _注：如果启动闪退，把 APP 复制到其他目录即可正常运行；因为  `macOS` 切换代理以及安装证书需要管理员权限，所以每次应用启动时都会提示输入用户密码_
 
-![](/images/posts/bai-du-wang-pan-bu-xian-su-xia-zai-gong-ju-duo/02.avif)
+![](02.avif)
 
   * Linux:  
 Linux 系统目前没有打原生包，要[下载 jar](https://github.com/proxyee-down-org/proxyee-down/releases) 包运行，需安装 `JRE` 或 `JDK`(要求版本不低于 `1.8`)，下载完成后在命令行中运行：`java -jar proxyee-down-main.jar `_注：如果使用  _`_openjdk_` _  的话需要安装 _`_openjfx﻿_`
@@ -103,7 +103,7 @@ _An droid / iOS 移动设备操作比较麻烦, 不建议在移动设备上使�
 
 速盘是一款基于aria2技术，辅助用户下载百度网盘资源的网盘下载工具。除了具有百度网盘官方客户端相同的功能外，还拥有不限速下载等几个特色功能。 
 
-![](/images/posts/bai-du-wang-pan-bu-xian-su-xia-zai-gong-ju-duo/03.avif)
+![](03.avif)
 
 ### 特色功能
 
@@ -125,7 +125,7 @@ _An droid / iOS 移动设备操作比较麻烦, 不建议在移动设备上使�
 
 如果你下载的是便携版（绿色免安装版），将下载的压缩文件释放都指定的文件夹就可以了。
 
-![](/images/posts/bai-du-wang-pan-bu-xian-su-xia-zai-gong-ju-duo/04.avif)
+![](04.avif)
 
 #### PanDownload
 

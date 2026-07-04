@@ -4,12 +4,12 @@ date = 2020-01-14T22:48:01+08:00
 draft = true
 description = "相信一些深度iOS用户或多或少的有这样的体验：在Safari浏览器安装一个app，需要在描述文件信任证书。但这个证书往往并不稳定，有时候在使用一段时间后便莫名其貌的弹出：未受信任的企业级开发者云云。那么，出现这种情况是为什么呢，有没有什么办法可以解决呢？"
 slug = "iosqi-ye-zheng-shu-diao-qian-zhong-me-ban-diao-qian-yuan-yin-ji-jie-jue-ban-fa"
-featureimage = "/images/posts/iosqi-ye-zheng-shu-diao-qian-zhong-me-ban-diao-qian-yuan-yin-ji-jie-jue-ban-fa/cover.avif"
+featureimage = "cover.avif"
 +++
 
 相信一些深度iOS用户或多或少的有这样的体验：在Safari浏览器安装一个app，需要在描述文件信任证书。但这个证书往往并不稳定，有时候在使用一段时间后便莫名其貌的弹出：未受信任的企业级开发者云云。那么，出现这种情况是为什么呢，有没有什么办法可以解决呢？
 
-![](/images/posts/iosqi-ye-zheng-shu-diao-qian-zhong-me-ban-diao-qian-yuan-yin-ji-jie-jue-ban-fa/cover.avif)
+![](cover.avif)
 
 ## 掉签原因
 
@@ -37,7 +37,7 @@ p12证书的安装数量最多不要超过三台电脑，如果超过三台电�
 
 打开「设置」—「通用」—「描述文件与设备管理」，点开被封证书「删除 App」即可快速删掉所有掉证书的 App。
 
-![](/images/posts/iosqi-ye-zheng-shu-diao-qian-zhong-me-ban-diao-qian-yuan-yin-ji-jie-jue-ban-fa/01.avif)
+![](01.avif)
 
 第二步，打开「设置」—「无线局域网」，点击已连接 Wi-Fi 后面的(ｉ)，查看当前网络的详细信息。
 

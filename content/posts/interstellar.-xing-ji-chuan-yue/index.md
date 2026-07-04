@@ -4,7 +4,7 @@ date = 2019-02-16T23:24:47+08:00
 draft = false
 description = "从贺岁档 「流浪地球」 说起 刚刚过去的2019贺岁档，「流浪地球」不负众望。 比起「红海行动」、「战狼2」（我没有看过），这部电影可能才真是给中国人长脸。 「流浪地球」展现出了一种中国态度，这绝不是单独强调中国元素可以做到的。影片最后拉着世界人民的小手一起拯救地球以及吴京为了全人类的牺牲，许多瞬间"
 slug = "interstellar.-xing-ji-chuan-yue"
-featureimage = "/images/posts/interstellar.-xing-ji-chuan-yue/cover.avif"
+featureimage = "cover.avif"
 categories = ["影评"]
 tags = ["星际穿越", "电影", "科幻"]
 +++
@@ -34,7 +34,7 @@ tags = ["星际穿越", "电影", "科幻"]
 
  
 
-![](/images/posts/interstellar.-xing-ji-chuan-yue/cover.avif)「Cornfield Chase」
+![](cover.avif)「Cornfield Chase」
 
 背景音乐出自好莱坞配乐大师Hans Zimmer。  
   
@@ -46,7 +46,7 @@ Cooper第一次登陆的米勒行星非常靠近黑洞，时间流逝变慢，�
 人类定义的时间维度，放大了这次牺牲的悲哀。  
   
 
-![](/images/posts/interstellar.-xing-ji-chuan-yue/01.avif)黑洞“卡冈图雅”和米勒行星
+![](01.avif)黑洞“卡冈图雅”和米勒行星
 
 一度桀骜的人类发现自己无法征服宇宙，便容易陷入虚无主义的泥沼。
 
@@ -55,7 +55,7 @@ Cooper第一次登陆的米勒行星非常靠近黑洞，时间流逝变慢，�
 电影中科学家为拯救人类提供了2个Plan，Plan B是抛弃地球，通过太空舱携带的受精卵在新家园进行新人类繁衍。老Brand教授为了这个计划欺骗了所有人。可是这个计划真的有意义吗？  
   
 
-![](/images/posts/interstellar.-xing-ji-chuan-yue/02.avif)诺兰电影的常客了，老爷子散发着贵族气质
+![](02.avif)诺兰电影的常客了，老爷子散发着贵族气质
 
 人类的繁衍是为了什么。  
 我们常以唯一吃到上帝苹果的动物而沾沾自喜。我们习惯于将最基础的「本能」，或是「天性」包装成更为伟大、更为高级的社会化活动。繁衍，便仅是动物的天性。  
@@ -70,13 +70,13 @@ Cooper第一次登陆的米勒行星非常靠近黑洞，时间流逝变慢，�
 也许很多人会忽略哥哥Tom对父亲的情感。Tom没有Murph聪明，既不愿也很难去理解Cooper和Murph的一切，可是他依然爱Cooper。他一直坚信父亲会活着回来，也一直坚守着玉米地。  
   
 
-![](/images/posts/interstellar.-xing-ji-chuan-yue/03.avif)Tom坚持去NASA录像，告诉Cooper近况
+![](03.avif)Tom坚持去NASA录像，告诉Cooper近况
 
 最感人肺腑的当然还是Cooper和Murph深厚的父女情感贯穿始终，也是最后人类被拯救的关键。  
 当Cooper在飞船上对着地球传输的Murph的影像痛哭流涕，跟着心都碎了。  
   
 
-![](/images/posts/interstellar.-xing-ji-chuan-yue/04.avif)Murph对自己的误解太深，而自己却无法辩解
+![](04.avif)Murph对自己的误解太深，而自己却无法辩解
 
 美好的情感似水面上的冰山，而人自私的一面也千方百计浮现。  
 最显眼的是第二颗星球上的宇航员Mann按下按钮想要牺牲后人回家；还有老Brand教授的欺骗；甚至教授女儿和Cooper也都曾将自己的个人情感置于了亿万人的未来之前。  
@@ -88,7 +88,7 @@ Cooper第一次登陆的米勒行星非常靠近黑洞，时间流逝变慢，�
 我们都知道黑洞的引力极大，连光都无法逃逸。  
   
 
-![](/images/posts/interstellar.-xing-ji-chuan-yue/05.avif)受限于人想象力的五维空间画面
+![](05.avif)受限于人想象力的五维空间画面
 
 诺兰巧妙地选择了用亲情去化解技术上的难题，更重要的是，代表人类向浩瀚宇宙低头。  
 即便是奇迹存在，也绝不会是偶然或是「神」的旨意。  
@@ -113,4 +113,4 @@ Cooper第一次登陆的米勒行星非常靠近黑洞，时间流逝变慢，�
 
  
 
-![](/images/posts/interstellar.-xing-ji-chuan-yue/06.avif)关注公众号阅读更多内容哦
+![](06.avif)关注公众号阅读更多内容哦

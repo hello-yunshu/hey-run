@@ -3,7 +3,7 @@ title = "关于Trojan、CDN、V2Ray的种种问题 （原理分析）"
 date = 2020-03-11T23:48:57+08:00
 draft = false
 slug = "guan-yu-trojan-cdn-v2ray-de-zhong-zhong-wen-ti-yuan-li-fen-xi"
-featureimage = "/images/posts/guan-yu-trojan-cdn-v2ray-de-zhong-zhong-wen-ti-yuan-li-fen-xi/cover.avif"
+featureimage = "cover.avif"
 categories = ["网络技术"]
 tags = ["Trojan", "V2Ray", "CDN", "代理", "原理"]
 +++
@@ -17,7 +17,7 @@ tags = ["Trojan", "V2Ray", "CDN", "代理", "原理"]
 
 很不幸，Trojan开发者非常明确的说明了不支持反向代理连接到Trojan。由于这种特性，导致Trojan无法直接隐藏在反向代理之后，同时亦不能使用反向代理达到多个不同协议的同时使用。因此对于CDN而言，由于使用了反向代理的技术，Trojan自然亦不支持套用CDN。这点笔者觉得甚是可惜。
 
-![](/images/posts/guan-yu-trojan-cdn-v2ray-de-zhong-zhong-wen-ti-yuan-li-fen-xi/cover.avif)
+![](cover.avif)
 
 笔者知道大家在想什么，如果不支持反向代理，那么是否会使得Trojan容易被识别呢？答：不至于。因为Trojan不支持反向代理只是局限于对自身的协议而言。对于普通协议，Trojan是支持反向代理的。也就是说，对于访问网站这类流量，即便使用了CDN，依然可以正常访问。
 
@@ -29,7 +29,7 @@ tags = ["Trojan", "V2Ray", "CDN", "代理", "原理"]
 
 刚刚笔者说明了Trojan是无法作为反向代理后端的。但是，Trojan本身一定程度起到了“反向代理”的功能。因此可以通过Trojan使其他流量发送至另外的`HTTP`服务器或者V2Ray，也就是下图中的`remote_addr`、`remote_port`两处配置。
 
-![](/images/posts/guan-yu-trojan-cdn-v2ray-de-zhong-zhong-wen-ti-yuan-li-fen-xi/01.avif)
+![](01.avif)
 
 通过这种方式，可以利用Trojan将流量转发至nginx再经由nginx转发至V2Ray，实现Trojan、网站、V2Ray三者共存的情况。但就如笔者《[V2Ray / Trojan 传输方式哪个好？(原理对比)](https://www.idleleo.com/02/4064.html)》一文中的描述，Trojan由于多一个判断和转发过程，使得被转发的V2Ray和网站性能低下。根据实际测试，V2Ray表现明显下降。因此，虽然这种方式在理论上完全行得通，但是实际体验并不友好，笔者不推荐。
 
@@ -41,15 +41,15 @@ tags = ["Trojan", "V2Ray", "CDN", "代理", "原理"]
 
 首先为Trojan：
 
-![](/images/posts/guan-yu-trojan-cdn-v2ray-de-zhong-zhong-wen-ti-yuan-li-fen-xi/02.avif)Trojan
+![](02.avif)Trojan
 
 其次为V2Ray：
 
-![](/images/posts/guan-yu-trojan-cdn-v2ray-de-zhong-zhong-wen-ti-yuan-li-fen-xi/03.avif)V2Ray
+![](03.avif)V2Ray
 
 最后为正常网站：
 
-![](/images/posts/guan-yu-trojan-cdn-v2ray-de-zhong-zhong-wen-ti-yuan-li-fen-xi/04.avif)正常网站
+![](04.avif)正常网站
 
 不难看出，三者在握手、连接、传输的过程中几乎找不出差别。由于笔者懒得进行中间人攻击哈哈，因此没有对`TLS`解包，所以传输内部封装情况还是暂时未知。不过根据已知的协议设计可知，Trojan与V2Ray的协议设计差别是很大的。Trojan内部封装的协议类似于`SOCKS5`，这也就解释了为什么Trojan客户端需要使用`SOCKS5`的原因。
 
@@ -57,7 +57,7 @@ tags = ["Trojan", "V2Ray", "CDN", "代理", "原理"]
 
 答：笔者觉得，Trojan在作为服务器的部分更像是一个只处理`TLS`协议的nginx web服务器。在服务器上，对所设定端口（一般为443）的`TLS`协议进行握手、连接、转发。除去本身特殊作用外，与普通的web服务器的行为几乎无差别，这和其团队宣传的内容一致，笔者觉得是值得肯定的。但Trojan对普通流量的处理和反向代理的支持做的并不完善。从服务器安全角度看，未来可能会针对这两点进行识别。
 
-![](/images/posts/guan-yu-trojan-cdn-v2ray-de-zhong-zhong-wen-ti-yuan-li-fen-xi/05.svg)Trojan工作原理
+![](05.svg)Trojan工作原理
 
 Trojan在作为协议部分则更像是`SOCKS5`，这是本身设计使然。因此，若`TLS`加密失效（无论是量子计算机未来的量子霸权或是中间人攻击），都会对Trojan协议带来致命的打击。当然若是本地客户端就有对协议的监控则更为简便。**从协议安全角度看，未来从客户端内部对Trojan进行拦截可能是最简单最可靠的方案。**
 

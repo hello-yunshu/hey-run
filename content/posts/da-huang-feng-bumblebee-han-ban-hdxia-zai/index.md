@@ -4,7 +4,7 @@ date = 2019-02-04T00:35:00+08:00
 draft = true
 description = "这部片子其实笔者早就看完了，资源也很早就有了。那为什么笔者现在才分享呢？因为这部片子笔者觉得实在是太太烂了。看完这部电影，笔者觉得这就是一部打着动作科幻片的肥皂剧。剧情普通且冗长，很多地方根本不值得推敲。若是只是为了消磨时间，恭喜，这就是您的最佳选择。若是想看出什么名堂，笔者觉得您还不如去看一些小成"
 slug = "da-huang-feng-bumblebee-han-ban-hdxia-zai"
-featureimage = "/images/posts/da-huang-feng-bumblebee-han-ban-hdxia-zai/cover.avif"
+featureimage = "cover.avif"
 +++
 
 这部片子其实笔者早就看完了，资源也很早就有了。那为什么笔者现在才分享呢？因为这部片子笔者觉得实在是太太烂了。看完这部电影，笔者觉得这就是一部打着动作科幻片的肥皂剧。剧情普通且冗长，很多地方根本不值得推敲。若是只是为了消磨时间，恭喜，这就是您的最佳选择。若是想看出什么名堂，笔者觉得您还不如去看一些小成本文艺片。
@@ -33,7 +33,7 @@ IMDb链接: [tt4701182](http://www.imdb.com/title/tt4701182)
 
 * * *
 
-![](/images/posts/da-huang-feng-bumblebee-han-ban-hdxia-zai/cover.avif)
+![](cover.avif)
 
 > 简介：本片故事设定在1987年，正值青春期的18岁少女查理Charlie（海莉·斯坦菲尔德 饰）在加州海边小镇的废弃场里发现了伤痕累累的大黄蜂，他们之间会发生怎样的故事呢？让我们拭目以待！   
 > 

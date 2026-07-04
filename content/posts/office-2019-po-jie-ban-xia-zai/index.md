@@ -4,12 +4,12 @@ date = 2020-02-29T17:16:44+08:00
 draft = true
 description = "最近正好帮朋友安装了Office 2019，找到了些破解的办法。破解的方法是常见的kms激活，现在分享给大家，有条件的童鞋最好还是购买正版。 Of"
 slug = "office-2019-po-jie-ban-xia-zai"
-featureimage = "/images/posts/office-2019-po-jie-ban-xia-zai/cover.avif"
+featureimage = "cover.avif"
 +++
 
 最近正好帮朋友安装了Office 2019，找到了些破解的办法。破解的方法是常见的kms激活，现在分享给大家，有条件的童鞋最好还是购买正版。
 
-![](/images/posts/office-2019-po-jie-ban-xia-zai/cover.avif)
+![](cover.avif)
 
 ## Office 2019功能
 
@@ -45,19 +45,19 @@ Office 应用经过优化可实现触控，通过触控进行阅读、编辑、�
 
 1、下载Office 2019压缩包，解压后打开ProPlus2019Retail.img文件。
 
-![](/images/posts/office-2019-po-jie-ban-xia-zai/01.avif)
+![](01.avif)
 
 2、在打开文件中运行Setup.exe，或者点开Office文件夹，选择32位或者64位软件安装。
 
-![](/images/posts/office-2019-po-jie-ban-xia-zai/02.avif)
+![](02.avif)
 
 3、安装完毕后，随便打开一个Office软件，提示要激活后退出以方便激活。
 
-![](/images/posts/office-2019-po-jie-ban-xia-zai/03.avif)
+![](03.avif)
 
 4、打开MicroKMS 神龙版.exe文件，若报毒请添加信任。在程序中运行激活Office即可，或者使用另一个激活工具KMS-VL-ALL_cn.cmd。
 
-![](/images/posts/office-2019-po-jie-ban-xia-zai/04.avif)
+![](04.avif)
 
 OK，这样就完成啦，享受最新的办公软件吧！
 

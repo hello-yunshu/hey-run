@@ -4,12 +4,12 @@ date = 2019-05-04T18:22:39+08:00
 draft = true
 description = "笔者当时买电脑的时候，突发奇想，买了个16G内存的电脑。两年过去了，这16G内存除了在运行AE的时候勉强全部用完，平常根本用不到50%以上。这么大的内存对于在研究虚拟化系统的笔者来说，实在是浪费。于是，笔者又双叒叕突发奇想：既然Windows自带ReadyBoost这类功能加速HDD，那么为何不能利"
 slug = "li-yong-nei-cun-jia-su-xi-tong---primocache-po-jie-ban"
-featureimage = "/images/posts/li-yong-nei-cun-jia-su-xi-tong---primocache-po-jie-ban/cover.avif"
+featureimage = "cover.avif"
 +++
 
 笔者当时买电脑的时候，突发奇想，买了个16G内存的电脑。两年过去了，这16G内存除了在运行AE的时候勉强全部用完，平常根本用不到50%以上。这么大的内存对于在研究虚拟化系统的笔者来说，实在是浪费。于是，笔者又双叒叕突发奇想：既然Windows自带ReadyBoost这类功能加速HDD，那么为何不能利用大内存加速HDD甚至SSD呢？
 
-![](/images/posts/li-yong-nei-cun-jia-su-xi-tong---primocache-po-jie-ban/cover.avif)
+![](cover.avif)
 
 事实当然是可以的。众所周知，内存的速度远远快于硬盘的速度。但是内存数据断电即消失，因此不适合作为硬盘。其实内存也可以做硬盘，本文中的Primo Ramdisk便是将内存作为硬盘，只需在关机时重新将内存数据写入磁盘便可。当然数据安全性难以保证。
 
@@ -31,11 +31,11 @@ PrimoCache也支持缓写功能，即可以将系统请求写入的数据先存�
 
 经过笔者实际测试，笔者电脑为SSD盘做系统，外加HDD储存文件。在以SSD为主系统，使用4G的内存作为加速，效果明显。打开Chrome、PS等软件的速度提升明显。系统整体相应也得到了提高。
 
-![](/images/posts/li-yong-nei-cun-jia-su-xi-tong---primocache-po-jie-ban/01.avif)
+![](01.avif)
 
 利用CrystalDiskMark进行磁盘基准测试，其结果令人咋舌。
 
-![](/images/posts/li-yong-nei-cun-jia-su-xi-tong---primocache-po-jie-ban/02.avif)
+![](02.avif)
 
 笔者并没有配置二级缓存，据网友测试，开启二级缓存可以使命中率提高至99%，推荐大家试一试。
 

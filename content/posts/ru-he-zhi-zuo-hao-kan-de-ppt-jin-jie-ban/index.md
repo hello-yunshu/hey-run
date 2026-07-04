@@ -4,7 +4,7 @@ date = 2019-03-18T00:00:16+08:00
 draft = false
 description = "PPT是办公族以及学生再熟悉不过的软件了。在熟悉了PPT的基本操作之后，许多人开始走捷径，套用现成的PPT模板，这的确不失为一种快捷高效的方法，尤其是你丧/忙的时候。 可是当你需要一个展示自我的舞台或是遇到金主甲方时，美观的PPT还是一个不错的加分项。那么这时候，模板生硬会给观众一种不好的视觉感受。"
 slug = "ru-he-zhi-zuo-hao-kan-de-ppt-jin-jie-ban"
-featureimage = "/images/posts/ru-he-zhi-zuo-hao-kan-de-ppt-jin-jie-ban/cover.avif"
+featureimage = "cover.avif"
 categories = ["教程"]
 tags = ["PPT", "设计", "演示文稿"]
 +++
@@ -17,10 +17,10 @@ PPT是办公族以及学生再熟悉不过的软件了。在熟悉了PPT的基�
 
 作为PPT的第一要义，就是主题。而不是第一时间关注模板好不好看有几朵花。如果是商业营销PPT，可以选用营销产品或品牌的主题色以及广告图片；如果是学生，根据汇报内容决定风格。展示性强就花哨活泼，内容专业就简洁明了。但是考虑到设备问题，建议大家不要颜色的饱和度要够，不能太淡，以及与字体颜色对比度高。我个人不喜欢PPT很花哨，当然也是我个人的审美观点啦。当然配色也是重点，如果没有敏锐的色彩洞察力，不妨看看大神的配色方案。前一阵比较流行的莫兰迪色就很适合做成PPT的配色。偶尔在Behance上看见一组配色，也可以给大家一点灵感。
 
-  * ![](/images/posts/ru-he-zhi-zuo-hao-kan-de-ppt-jin-jie-ban/cover.avif)
-  * ![](/images/posts/ru-he-zhi-zuo-hao-kan-de-ppt-jin-jie-ban/01.avif)
-  * ![](/images/posts/ru-he-zhi-zuo-hao-kan-de-ppt-jin-jie-ban/02.avif)
-  * ![](/images/posts/ru-he-zhi-zuo-hao-kan-de-ppt-jin-jie-ban/03.avif)
+  * ![](cover.avif)
+  * ![](01.avif)
+  * ![](02.avif)
+  * ![](03.avif)
 
 ## 2.符号学
 
@@ -30,7 +30,7 @@ PPT是办公族以及学生再熟悉不过的软件了。在熟悉了PPT的基�
 
 这个网站是不用翻墙也可以打开的哟~非常实用。
 
-![](/images/posts/ru-he-zhi-zuo-hao-kan-de-ppt-jin-jie-ban/04.avif)
+![](04.avif)
 
 ## 3.文字字体
 

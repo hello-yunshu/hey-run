@@ -3,12 +3,12 @@ title = "免费畅用V2Ray一年？谷歌云$300试用金"
 date = 2019-09-30T19:44:23+08:00
 draft = true
 slug = "mian-fei-chang-yong-v2rayyi-nian"
-featureimage = "/images/posts/mian-fei-chang-yong-v2rayyi-nian/cover.avif"
+featureimage = "cover.avif"
 +++
 
 刚刚收到噩耗，Arukas即将停止运行，就在今天2019年9月30日起不再接受注册，并且在2020年1月31日彻底停止服务。
 
-![](/images/posts/mian-fei-chang-yong-v2rayyi-nian/cover.avif)
+![](cover.avif)
 
 就在前几天，笔者刚刚发布了相关的文章《[永久免费的V2Ray? 利用Arukas简单搭建](https://www.idleleo.com/09/3005.html)》，但还没一个月，Arukas便已经撑不下去了。笔者为此也是哑口无言。
 
@@ -20,18 +20,18 @@ featureimage = "/images/posts/mian-fei-chang-yong-v2rayyi-nian/cover.avif"
 
 首先打开官网：<https://cloud.google.com/free/>（需要梯子） ，点击中间的按钮登陆或新注谷歌账号。之后你便会来到这个页面：
 
-![](/images/posts/mian-fei-chang-yong-v2rayyi-nian/01.avif)
+![](01.avif)
 
 很简单的选择你的信息并填写即可，国家可以直接填写中国。
 
-![](/images/posts/mian-fei-chang-yong-v2rayyi-nian/02.avif)
+![](02.avif)
 
 之后还是填写个人信息，注意付款方式是必须填写的，填写的付款方式只能是**MasterCard或VISA** 的信用卡。这非常重要，若你没有信用卡是没办法领到试用金的。什么？你没有这种信用卡？解决方法很简单，随便找个银行客服说你需要办一张MasterCard或VISA的信用卡，我相信以后你会开心的被他们多次“问候  
 ”的。
 
 填完之后便领到啦！
 
-![](/images/posts/mian-fei-chang-yong-v2rayyi-nian/03.avif)
+![](03.avif)
 
 ## 注意事项
 

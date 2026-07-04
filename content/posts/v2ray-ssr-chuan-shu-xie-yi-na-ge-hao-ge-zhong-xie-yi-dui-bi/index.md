@@ -4,7 +4,7 @@ date = 2019-05-18T19:11:27+08:00
 draft = false
 description = "这篇文章主要阐述的是以V2Ray为主，SSR在传输协议方面与V2Ray大同小异，这篇文章不再赘述。如果你用的是SSR，笔者建议立刻使用V2Ray，SSR已经非常不安全了；如果你不知道V2Ray是什么，用来做什么，相对应的客户端在哪里。可以先访问之前笔者写的文章：V2Ray 客户端下载。 话不多说，我"
 slug = "v2ray-ssr-chuan-shu-xie-yi-na-ge-hao-ge-zhong-xie-yi-dui-bi"
-featureimage = "/images/posts/v2ray-ssr-chuan-shu-xie-yi-na-ge-hao-ge-zhong-xie-yi-dui-bi/cover.avif"
+featureimage = "cover.avif"
 categories = ["网络技术"]
 tags = ["V2Ray", "SSR", "传输协议", "代理"]
 +++
@@ -28,7 +28,7 @@ V2Ray的传输协议非常之多，由于V2Ray本质就是一种网络传输数�
 
 WebSocket是一种在单个TCP连接上进行全双工通信的协议。WebSocket通信协议于2011年被IETF定为标准RFC 6455，并由RFC7936补充规范。WebSocket API也被W3C定为标准。
 
-![](/images/posts/v2ray-ssr-chuan-shu-xie-yi-na-ge-hao-ge-zhong-xie-yi-dui-bi/cover.avif)
+![](cover.avif)
 
 WebSocket使得客户端和服务器之间的数据交换变得更加简单，允许服务端主动向客户端推送数据。在WebSocket API中，浏览器和服务器只需要完成一次握手，两者之间就直接可以创建持久性的连接，并进行双向数据传输。
 
@@ -44,7 +44,7 @@ WebSocket使得客户端和服务器之间的数据交换变得更加简单，�
 
 传输层安全性协议（英语：Transport Layer Security，缩写作TLS），及其前身安全套接层（Secure Sockets Layer，缩写作SSL）是一种安全协议，目的是为互联网通信提供安全及数据完整性保障。网景公司（Netscape）在1994年推出首版网页浏览器，网景导航者时，推出HTTPS协议，以SSL进行加密，这是SSL的起源。IETF将SSL进行标准化，1999年公布第一版TLS标准文件。随后又公布RFC 5246 （2008年8月）与RFC 6176（2011年3月）。在浏览器、邮箱、即时通信、VoIP、网络传真等应用程序中，广泛支持这个协议。主要的网站，如Google、Facebook等也以这个协议来创建安全连线，发送数据。目前已成为互联网上保密通信的工业标准。
 
-![](/images/shared/201905181848.avif)
+![](201905181848.avif)
 
 SSL包含记录层（Record Layer）和传输层，记录层协议确定传输层数据的封装格式。传输层安全协议使用X.509认证，之后利用非对称加密演算来对通信方做身份认证，之后交换对称密钥作为会谈密钥（Session key）。这个会谈密钥是用来将通信两方交换的数据做加密，保证两个应用间通信的保密性和可靠性，使客户与服务器应用之间的通信不被攻击者窃听。
 
@@ -60,7 +60,7 @@ SSL包含记录层（Record Layer）和传输层，记录层协议确定传输�
 
 这一类协议细分有多种，由于KCP拥有控制头，因此可以通过修饰头部进行数据伪装。这类伪装常见的有SRTP、UTP、DTLS、wechat-video等。这类伪装并不能决定这类协议本质，因此便不再详细阐述。对于mKCP伪装最为重要的影响是KCP协议本身。
 
-![](/images/posts/v2ray-ssr-chuan-shu-xie-yi-na-ge-hao-ge-zhong-xie-yi-dui-bi/01.avif)
+![](01.avif)
 
 KCP协议是传输层的一个具有可靠性的传输层ARQ协议。它的设计是为了解决在网络拥堵情况下TCP协议的网络速度慢的问题。KCP力求在保证可靠性的情况下提高传输速度。KCP协议的关注点主要在控制数据的可靠性和提高传输速度上面，因此KCP没有规定下层传输协议，一般用UDP作为下层传输协议，KCP层协议的数据包在UDP数据报文的基础上增加控制头。当用户数据很大，大于一个UDP包能承担的范围时（大于MSS），KCP会将用户数据分片存储在多个KCP包中。
 
@@ -76,7 +76,7 @@ KCP协议与上述的WebSocket协议便大大的不同了。由于本身的下�
 
 TCP（Transmission Control Protocol 传输控制协议）是一种面向连接的、可靠的、基于字节流的传输层通信协议，由IETF的RFC 793定义。在简化的计算机网络OSI模型中，它完成第四层传输层所指定的功能，用户数据报协议（UDP）是同一层内另一个重要的传输协议。在因特网协议族（Internet protocol suite）中，TCP层是位于IP层之上，应用层之下的中间层。不同主机的应用层之间经常需要可靠的、像管道一样的连接，但是IP层不提供这样的流机制，而是提供不可靠的包交换。
 
-![](/images/posts/v2ray-ssr-chuan-shu-xie-yi-na-ge-hao-ge-zhong-xie-yi-dui-bi/02.avif)
+![](02.avif)
 
 这类协议本身较之其他的V2Ray协议更加底层和原始。这对于V2Ray的安全性带来了问题。由于本身就是TCP协议，因此，看到这里大家应该知道了它的缺点在哪里。
 
@@ -92,7 +92,7 @@ h2便是HTTP/2 （原名HTTP/2.0）即超文本传输协议 2.0，是下一代HT
 
 QUIC（Quick UDP Internet Connection）是谷歌制定的一种基于UDP的低时延的互联网传输层协议。我们知道，TCP/IP协议族是互联网的基础。其中传输层协议包括TCP和UDP协议。与TCP协议相比，UDP更为轻量，但是错误校验也要少得多。这意味着UDP往往效率更高（不经常跟服务器端通信查看数据包是否送达或者按序），但是可靠性比不上TCP。通常游戏、流媒体以及VoIP等应用均采用UDP，而网页、邮件、远程登录等大部分的应用均采用TCP。
 
-![](/images/posts/v2ray-ssr-chuan-shu-xie-yi-na-ge-hao-ge-zhong-xie-yi-dui-bi/03.avif)
+![](03.avif)
 
 QUIC很好地解决了当今传输层和应用层面临的各种需求，包括处理更多的连接，安全性，和低延迟。QUIC融合了包括TCP，TLS，HTTP/2等协议的特性，但基于UDP传输。QUIC的一个主要目标就是减少连接延迟，当客户端第一次连接服务器时，QUIC只需要1RTT（Round-Trip Time）的延迟就可以建立可靠安全的连接,相对于TCP+TLS的1-3次RTT要更加快捷。之后客户端可以在本地缓存加密的认证信息，在再次与服务器建立连接时可以实现0-RTT的连接建立延迟。QUIC同时复用了HTTP/2协议的多路复用功能（Multiplexing），但由于QUIC基于UDP所以避免了HTTP/2的线头阻塞（Head-of-Line Blocking）问题。因为QUIC基于UDP，运行在用户域而不是系统内核，使得QUIC协议可以快速的更新和部署，从而很好地解决了TCP协议部署及更新的困难 。
 

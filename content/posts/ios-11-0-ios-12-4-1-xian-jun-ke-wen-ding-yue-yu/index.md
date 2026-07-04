@@ -4,10 +4,10 @@ date = 2019-08-20T11:20:12+08:00
 draft = true
 description = "现在iOS可越狱版本已经提高至iOS 12.4.1。此次越狱并非完美越狱，在重启手机后需要再次进入app激活。由于苹果越来越开放，越狱本身价值在一步步的减少。但如果你需要破解内购，安装不经过签名的app等不寻常的操作，那么越狱是你的必然选择。"
 slug = "ios-11-0-ios-12-4-1-xian-jun-ke-wen-ding-yue-yu"
-featureimage = "/images/posts/ios-11-0-ios-12-4-1-xian-jun-ke-wen-ding-yue-yu/cover.avif"
+featureimage = "cover.avif"
 +++
 
-![](/images/posts/ios-11-0-ios-12-4-1-xian-jun-ke-wen-ding-yue-yu/cover.avif)
+![](cover.avif)
 
 现在iOS可越狱版本已经提高至iOS 12.4.1。此次越狱并非完美越狱，在重启手机后需要再次进入app激活。由于苹果越来越开放，越狱本身价值在一步步的减少。但如果你需要破解内购，安装不经过签名的app等不寻常的操作，那么越狱是你的必然选择。
 
@@ -17,11 +17,11 @@ featureimage = "/images/posts/ios-11-0-ios-12-4-1-xian-jun-ke-wen-ding-yue-yu/co
 
 打开Cydia Impactor，注意必须装有iTunes才可。
 
-![](/images/posts/ios-11-0-ios-12-4-1-xian-jun-ke-wen-ding-yue-yu/01.avif)
+![](01.avif)
 
 将下载的unc0ver app（.ipa文件）拖入红框中。软件会要求输入Apple ID以及密码。这是必须的过程，是为了申请临时证书。当然如果你有开发者证书可以跳过此步骤直接安装这个app。
 
-![](/images/posts/ios-11-0-ios-12-4-1-xian-jun-ke-wen-ding-yue-yu/02.avif)
+![](02.avif)
 
 如上所述。由于使用临时证书，此app只有7天的使用时间。若是想继续使用，可以通过越狱后安装插件自动刷新证书，或者直接重装使用。
 

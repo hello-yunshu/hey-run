@@ -4,7 +4,7 @@ date = 2017-11-21T16:57:37+08:00
 draft = true
 description = "关于MCPE的核心 MCPE的核心一般是外国作品，中国有，但是很少。因此本地化做的相当的差。比如翻译等等。 不过经过paniy，也就是服主我的努力，找到了如下的核心： 服务器软件（核心）列表 [table id=4 /] 你可以根据你的需求选择上述某个核心。 本服务器的核心 服主我用的核心是日本人开"
 slug = "zi-yuan-wo-de-shi-jie-fu-wu-qi-he-xin"
-featureimage = "/images/posts/zi-yuan-wo-de-shi-jie-fu-wu-qi-he-xin/cover.avif"
+featureimage = "cover.avif"
 +++
 
 #### 关于MCPE的核心
@@ -25,7 +25,7 @@ MCPE的核心一般是外国作品，中国有，但是很少。因此本地化�
 
 服主我用的核心是日本人开发的[BlueLight](https://github.com/BlueLightJapan/BlueLight)核心，该核心现在最新支持到MCPE1.2.8版本。
 
-![](/images/posts/zi-yuan-wo-de-shi-jie-fu-wu-qi-he-xin/cover.avif)
+![](cover.avif)
 
 以下是作者的介绍：
 

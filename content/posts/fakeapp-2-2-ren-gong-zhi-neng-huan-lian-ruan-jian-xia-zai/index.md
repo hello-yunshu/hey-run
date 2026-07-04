@@ -4,7 +4,7 @@ date = 2019-03-31T22:54:15+08:00
 draft = true
 description = "由国外大神Deepfakes 透过AI 智慧辨识技术，推出了一款人工智能换脸「FakeApp」程序，用户可根据想像空间，自行将照片与影片的角色移花接木地无缝结合，无须复杂的技术就可制作出几可乱真的伪造角色影片。 Deepfakes表示，他希望能透过这个FakeApp，使任何非科技背景，或没有撰写程式"
 slug = "fakeapp-2-2-ren-gong-zhi-neng-huan-lian-ruan-jian-xia-zai"
-featureimage = "/images/posts/fakeapp-2-2-ren-gong-zhi-neng-huan-lian-ruan-jian-xia-zai/cover.avif"
+featureimage = "cover.avif"
 +++
 
 由国外大神Deepfakes 透过AI 智慧辨识技术，推出了一款人工智能换脸「FakeApp」程序，用户可根据想像空间，自行将照片与影片的角色移花接木地无缝结合，无须复杂的技术就可制作出几可乱真的伪造角色影片。

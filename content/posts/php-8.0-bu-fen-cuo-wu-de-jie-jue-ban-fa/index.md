@@ -4,7 +4,7 @@ date = 2021-01-12T04:04:22+08:00
 draft = false
 description = "前段时间，一直关注的PHP 8终于放出了正式版本，于是迫不及待的编译并测试了下，发现bug极多，尤其是新特性JIT更是在特定情况下直接无法使用。 好在大多bug已经在PHP的官网得到了提出，要做的就是等待修复了。不过在"
 slug = "php-8.0-bu-fen-cuo-wu-de-jie-jue-ban-fa"
-featureimage = "/images/posts/php-8.0-bu-fen-cuo-wu-de-jie-jue-ban-fa/cover.avif"
+featureimage = "cover.avif"
 categories = ["教程"]
 tags = ["PHP", "PHP 8", "故障排查"]
 +++
@@ -12,7 +12,7 @@ tags = ["PHP", "PHP 8", "故障排查"]
 
 前段时间，一直关注的PHP 8终于放出了正式版本，于是迫不及待的编译并测试了下，发现bug极多，尤其是新特性JIT更是在特定情况下直接无法使用。
 
-![](/images/posts/php-8.0-bu-fen-cuo-wu-de-jie-jue-ban-fa/cover.avif)
+![](cover.avif)
 
 好在大多bug已经在PHP的官网得到了提出，要做的就是等待修复了。不过在遇到的众多bug中，有一些却并不是由于PHP本身造成的，比如接下来要说的两个较为隐蔽的错误。
 
@@ -20,7 +20,7 @@ tags = ["PHP", "PHP 8", "故障排查"]
 
 Warning: Only the first byte will be assigned to the string offset in /path/wp-includes/class.wp-scripts.php on line 492
 
-![](/images/posts/php-8.0-bu-fen-cuo-wu-de-jie-jue-ban-fa/01.avif)
+![](01.avif)
 
 其中一个错误如上所示，这个警告指向的是wp-includes/class.wp-scripts.php文件，这是WordPress的一个核心文件。一开始，我想很多小伙伴会和我一样认为是WordPress自己的错误，但是WordPress在5.6版本就已经宣布全面支持PHP 8了，所以这个问题不应该是WordPress核心文件有问题。
 
@@ -55,7 +55,7 @@ Warning: Only the first byte will be assigned to the string offset in /path/wp-i
 
 Deprecated: Required parameter $xxx follows optional parameter $yyy in…
 
-![](/images/posts/php-8.0-bu-fen-cuo-wu-de-jie-jue-ban-fa/02.avif)
+![](02.avif)
 
 这类报错在升级PHP 8后也非常常见。这类错误多是来自一些主题或者是插件。其实这类的错误早就存在多年，但是一直未受到太多重视，最终在[PHP 8的时候变成了Deprecated](https://www.php.net/manual/en/migration80.deprecated.php)报错。
 

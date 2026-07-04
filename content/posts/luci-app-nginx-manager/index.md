@@ -4,7 +4,7 @@ date = 2026-06-06T12:00:00+08:00
 draft = false
 description = "在 OpenWrt 上配置 Nginx 有多痛苦，写过 conf 的人都懂。luci-app-nginx-manager 把站点、证书、日志、备份全部塞进 LuCI 网页界面，一键操作，配置写错还能自动回滚——摔键盘之前，先试试它。"
 slug = "luci-app-nginx-manager"
-featureimage = "/images/posts/luci-app-nginx-manager/cover.avif"
+featureimage = "cover.avif"
 categories = ["网络技术"]
 tags = ["OpenWrt", "Nginx", "LuCI", "反向代理", "SSL证书"]
 +++
@@ -15,7 +15,7 @@ OpenWrt 上尤其惨。没有面板、没有提示、没有后悔药。你只能
 
 **luci-app-nginx-manager** 就是来终结这个噩梦的。它把 Nginx 的所有日常操作——建站、配证书、看日志、备份恢复——全部搬进了 LuCI 网页界面，点两下鼠标就搞定，再也不用对着黑乎乎的终端怀疑人生。
 
-![luci-app-nginx-manager 封面图](/images/posts/luci-app-nginx-manager/cover.avif)
+![luci-app-nginx-manager 封面图](cover.avif)
 
 ## 四个模式，总有一个适合你
 
@@ -31,7 +31,7 @@ OpenWrt 上尤其惨。没有面板、没有提示、没有后悔药。你只能
 
 每个站点还能独立控制：启用/禁用一键切换，多个 listen 端口随便加，SSL 证书单独绑定，HTTP 自动跳 HTTPS 开关。禁用不等于删除，配置文件还在，随时可以重新打开——这点我很喜欢，有些工具「禁用」和「删除」傻傻分不清，禁了就真想找回来的时候哭都来不及。
 
-![站点管理页面示意图](/images/posts/luci-app-nginx-manager/01-sites.avif)
+![站点管理页面示意图](01-sites.avif)
 
 ## SSL 证书，终于不用手敲 openssl 了
 
@@ -45,7 +45,7 @@ OpenWrt 上尤其惨。没有面板、没有提示、没有后悔药。你只能
 
 证书快过期了也会自动提醒，30 天内标红。不用你记着「我上次续证书是啥时候来着」——工具帮你记，你只负责点。
 
-![证书管理页面示意图](/images/posts/luci-app-nginx-manager/02-certificates.avif)
+![证书管理页面示意图](02-certificates.avif)
 
 ## 改配置不可怕，改错了才可怕
 
@@ -61,7 +61,7 @@ Nginx 配置最让人窒息的地方不是「怎么写」，而是「写错了�
 
 如果你天生叛逆、觉得「自动回滚」太保守了，可以开**危险编辑模式**。这个模式下你能直接编辑 `nginx.conf` 和模板文件，想怎么写怎么写。工具仍然会在保存后帮你测试，失败了仍然回滚——但至少给了你折腾的自由。高手嘛，拦不住的，我懂。
 
-![配置安全机制示意图](/images/posts/luci-app-nginx-manager/03-safety.avif)
+![配置安全机制示意图](03-safety.avif)
 
 ## 看日志，别再 tail -f 了
 
@@ -76,7 +76,7 @@ Nginx 的访问日志和错误日志是排查问题的第一手资料，但 `tai
 
 平时不用的时候无所谓，但出问题的时候这东西真的救命。你可以在浏览器里舒舒服服地翻日志，不用在终端里感受 `grep` 地狱。
 
-![日志查看页面示意图](/images/posts/luci-app-nginx-manager/04-logs.avif)
+![日志查看页面示意图](04-logs.avif)
 
 ## 备份恢复，后悔药管够
 
@@ -86,7 +86,7 @@ Nginx 的访问日志和错误日志是排查问题的第一手资料，但 `tai
 
 后悔药嘛，不嫌多，对吧～
 
-![备份管理页面示意图](/images/posts/luci-app-nginx-manager/05-backups.avif)
+![备份管理页面示意图](05-backups.avif)
 
 ## 核心配置，不用翻 nginx.conf 了
 
@@ -96,7 +96,7 @@ Nginx 的访问日志和错误日志是排查问题的第一手资料，但 `tai
 
 后续又补了 HTTP/2、HTTP/3 (QUIC)、OCSP Stapling、SSL 缓冲区大小这些进阶选项。站点编辑里也加了 gRPC 透传、站点级 HSTS、一键复制站点这些实用功能。工具嘛，就是要越用越顺手。
 
-![核心配置页面示意图](/images/posts/luci-app-nginx-manager/06-core-config.avif)
+![核心配置页面示意图](06-core-config.avif)
 
 ## 安装，一如既往地简单
 
@@ -116,7 +116,7 @@ apk add --allow-untrusted ./luci-app-nginx-manager_*.apk
 
 对了，安装包支持 x86_64 和 aarch64 两种架构。ARM 路由器的用户不用慌，有你的份。
 
-![安装完成后的 LuCI 菜单示意图](/images/posts/luci-app-nginx-manager/07-install.avif)
+![安装完成后的 LuCI 菜单示意图](07-install.avif)
 
 ## 一些有的没的，但很重要
 

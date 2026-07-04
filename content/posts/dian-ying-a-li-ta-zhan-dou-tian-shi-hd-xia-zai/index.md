@@ -4,12 +4,12 @@ date = 2019-06-29T22:21:26+08:00
 draft = true
 description = "这部电影上映了好一会儿了，笔者并不是卡梅隆的粉丝，因此一开始就没什么兴趣。再加上笔者觉得这女主长得有点emmmmm欣赏不过来，所以在贡献完贺岁档电影票后就选择了自闭。这部电影笔者现在还没有看，评价不高也没啥动力。现在正巧有了1080p的高清资源。笔者决定就看一看吧，顺便分享给大家。看完后如果有必要写"
 slug = "dian-ying-a-li-ta-zhan-dou-tian-shi-hd-xia-zai"
-featureimage = "/images/posts/dian-ying-a-li-ta-zhan-dou-tian-shi-hd-xia-zai/cover.avif"
+featureimage = "cover.avif"
 +++
 
 这部电影上映了好一会儿了，笔者并不是卡梅隆的粉丝，因此一开始就没什么兴趣。再加上笔者觉得这女主长得有点emmmmm欣赏不过来，所以在贡献完贺岁档电影票后就选择了自闭。这部电影笔者现在还没有看，评价不高也没啥动力。现在正巧有了1080p的高清资源。笔者决定就看一看吧，顺便分享给大家。看完后如果有必要写影评，笔者会接下去写的。
 
-![](/images/posts/dian-ying-a-li-ta-zhan-dou-tian-shi-hd-xia-zai/cover.avif)
+![](cover.avif)
 
 导演: [罗伯特·罗德里格兹](https://movie.douban.com/celebrity/1019016/)
 

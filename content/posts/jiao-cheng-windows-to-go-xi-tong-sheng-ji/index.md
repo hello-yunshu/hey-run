@@ -4,7 +4,7 @@ date = 2019-09-22T01:31:10+08:00
 draft = false
 description = "Windows To Go是一个非常便携的移动系统，它能让你在其他人电脑上运行你自己的系统。对于有一定特殊软件需求的人士，是非常方便的选择。 但是相信大家也发现了一个问题，Windows To Go(以下简称WTG)系统升级非常麻烦。跨版本升级几乎成了不可能，然而Windows 10旧版本支持周期很"
 slug = "jiao-cheng-windows-to-go-xi-tong-sheng-ji"
-featureimage = "/images/posts/jiao-cheng-windows-to-go-xi-tong-sheng-ji/cover.avif"
+featureimage = "cover.avif"
 categories = ["教程"]
 tags = ["Windows To Go", "Windows", "系统升级"]
 +++
@@ -26,7 +26,7 @@ Windows To Go是一个非常便携的移动系统，它能让你在其他人电�
 
 2、定位到`HKEY_LOCAL_MACHINESYSTEMCurrentControlSetControlPortableOperatingSystem`，将`PortableOperatingSystem`的值修改为`0`，注意记下原值。
 
-![](/images/posts/jiao-cheng-windows-to-go-xi-tong-sheng-ji/cover.avif)
+![](cover.avif)
 
 3、检查更新，若更新成功，在成功后改回原值。若不存在此值，建议新建同名值。
 
@@ -44,11 +44,11 @@ Windows To Go是一个非常便携的移动系统，它能让你在其他人电�
 
 1、打开设置中的应用于功能，点击右侧的程序和功能。
 
-![](/images/posts/jiao-cheng-windows-to-go-xi-tong-sheng-ji/01.avif)
+![](01.avif)
 
 2、点击左侧启用或关闭Windows功能，在Hyper-V前打勾，并重启电脑。
 
-![](/images/posts/jiao-cheng-windows-to-go-xi-tong-sheng-ji/02.png)
+![](02.png)
 
 这样电脑就非常简单的完成了Hyper-V虚拟机服务的部署。
 
@@ -58,7 +58,7 @@ Windows To Go是一个非常便携的移动系统，它能让你在其他人电�
 
 2、输入命令`diskpart`  
 
-![](/images/posts/jiao-cheng-windows-to-go-xi-tong-sheng-ji/03.png)
+![](03.png)
 
 3、出现`DISKPART>`后键入命令：
 
@@ -72,7 +72,7 @@ Windows To Go是一个非常便携的移动系统，它能让你在其他人电�
 
 其中M:PanyiWTG.vhd(x)为虚拟硬盘VHD(x)的文件路径。
 
-![](/images/posts/jiao-cheng-windows-to-go-xi-tong-sheng-ji/04.png)
+![](04.png)
 
 4、打开另一个命令提示符（管理员）窗口，键入命令：
 
@@ -80,13 +80,13 @@ Windows To Go是一个非常便携的移动系统，它能让你在其他人电�
 
 其中N为虚拟硬盘盘符。
 
-![](/images/posts/jiao-cheng-windows-to-go-xi-tong-sheng-ji/05.png)
+![](05.png)
 
 5、关掉bootsect窗口，回到diskpart命令行窗口输入命令：
 
 `detach vdisk`
 
-![](/images/posts/jiao-cheng-windows-to-go-xi-tong-sheng-ji/06.png)
+![](06.png)
 
 经过上述步骤，虚拟硬盘就有了一个简单的引导。如果上述步骤失败的话，也可以直接手动建立一个引导文件。
 
@@ -94,31 +94,31 @@ Windows To Go是一个非常便携的移动系统，它能让你在其他人电�
 
 1、打开Hyper-V管理器（找不到可以直接按win键+S键搜索Hyper-V管理器）
 
-![](/images/posts/jiao-cheng-windows-to-go-xi-tong-sheng-ji/07.avif)
+![](07.avif)
 
 2、点击右侧新建>虚拟机，在新建虚拟机向导中，取一个自己喜欢的虚拟机名字，并选择保存配置文件的目录，之后在指定代数界面，**选择第一代** （这很重要，不然没法引导）。
 
-![](/images/posts/jiao-cheng-windows-to-go-xi-tong-sheng-ji/08.avif)
+![](08.avif)
 
 3、点击下一步，按实际情况分配内存，在选择配置网络时请注意，由于虚拟机需要能访问外网才能升级，因此需要返回Hyper-V管理器，在右侧点击虚拟交换机管理器。
 
-![](/images/posts/jiao-cheng-windows-to-go-xi-tong-sheng-ji/09.avif)
+![](09.avif)
 
 4、点击外部，并点击创建虚拟交换机。
 
-![](/images/posts/jiao-cheng-windows-to-go-xi-tong-sheng-ji/10.avif)  
+![](10.avif)  
 
 5、填写喜欢的名字（如：有线网），选择外部网络，下拉选择你正在使用的网卡，并点击确定。这样一个虚拟交换机就创建好了。
 
-![](/images/posts/jiao-cheng-windows-to-go-xi-tong-sheng-ji/11.avif)
+![](11.avif)
 
 6、回到新建虚拟机向导，在适配网络中选择刚刚建好的虚拟交换机，点击下一步。
 
-![](/images/posts/jiao-cheng-windows-to-go-xi-tong-sheng-ji/12.avif)
+![](12.avif)
 
 7、在连接虚拟硬盘中，选择使用现有的虚拟硬盘，位置为虚拟硬盘的文件路径，确认后，点击下一步并成功建立虚拟机。
 
-![](/images/posts/jiao-cheng-windows-to-go-xi-tong-sheng-ji/13.avif)
+![](13.avif)
 
 之后便是运行这个虚拟机，进入系统，重复第一个过程修改注册表的相关值就大功告成啦！！
 
