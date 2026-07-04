@@ -4,12 +4,12 @@ date = 2018-02-05T21:14:04+08:00
 draft = true
 description = "绪论 本文介绍一个You-Get小程序。 You-Get 乃一小小哒命令行程序，提供便利的方式来下载网络上的媒体信息。 利用[code]you-get[/code]下载这个网页<"
 slug = "xia-zai-wang-ye-wu-fa-xia-zai-de-fu-mei-ti"
-featureimage = "/images/posts/xia-zai-wang-ye-wu-fa-xia-zai-de-fu-mei-ti/cover.avif"
+featureimage = "cover.avif"
 +++
 
 #### 绪论
 
-本文介绍一个[You-Get](https://you-get.org/)小程序。 [You-Get](https://you-get.org/) 乃一小小哒命令行程序，提供便利的方式来下载网络上的媒体信息。 [![](/images/posts/xia-zai-wang-ye-wu-fa-xia-zai-de-fu-mei-ti/cover.avif)](/images/posts/xia-zai-wang-ye-wu-fa-xia-zai-de-fu-mei-ti/cover.avif) 利用[code]you-get[/code]下载[这个网页](http://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-software-free-society)的视频: 
+本文介绍一个[You-Get](https://you-get.org/)小程序。 [You-Get](https://you-get.org/) 乃一小小哒命令行程序，提供便利的方式来下载网络上的媒体信息。 [![](cover.avif)](cover.avif) 利用[code]you-get[/code]下载[这个网页](http://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-software-free-society)的视频: 
 [code] 
     $ you-get http://www.fsf.org/blogs/rms/20140407-geneva-tedx-talk-free-software-free-society
     Site:       fsf.org
@@ -252,6 +252,6 @@ featureimage = "/images/posts/xia-zai-wang-ye-wu-fa-xia-zai-de-fu-mei-ti/cover.a
 
 #### 站长实测
 
-站长我测试了国内一些视频网站，实际情况不乐观，部分网站并不能使用。 [![](/images/posts/xia-zai-wang-ye-wu-fa-xia-zai-de-fu-mei-ti/01.avif)](/images/posts/xia-zai-wang-ye-wu-fa-xia-zai-de-fu-mei-ti/01.avif) **需要注意图中红圈位置，在Windows下运行时，不可以加入$符号。**
+站长我测试了国内一些视频网站，实际情况不乐观，部分网站并不能使用。 [![](01.avif)](01.avif) **需要注意图中红圈位置，在Windows下运行时，不可以加入$符号。**
 
 _资源取自互联网，由idleleo.com整理_

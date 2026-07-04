@@ -4,12 +4,12 @@ date = 2019-05-19T00:35:03+08:00
 draft = true
 description = "笔者在文章V2Ray / SSR 传输协议哪个好? (各种协议对比)中简述了关于TCP阻塞的情况，这里笔者提供了BBR/BBR PLUS/Lotsever的一键部署脚本。通过脚本可以一定程度加速服务器连接速度。 <"
 slug = "jia-su-wang-luo-yi-jian-bu-shu-bbr-bbrmo-gai-lotsever-rui-su"
-featureimage = "/images/posts/jia-su-wang-luo-yi-jian-bu-shu-bbr-bbrmo-gai-lotsever-rui-su/cover.avif"
+featureimage = "cover.avif"
 +++
 
 笔者在文章[V2Ray / SSR 传输协议哪个好? (各种协议对比)](https://www.idleleo.com/05/2071.html)中简述了关于TCP阻塞的情况，这里笔者提供了BBR/BBR PLUS/Lotsever的一键部署脚本。通过脚本可以一定程度加速服务器连接速度。
 
-![](/images/posts/jia-su-wang-luo-yi-jian-bu-shu-bbr-bbrmo-gai-lotsever-rui-su/cover.avif)
+![](cover.avif)
 
 脚本中BBR魔改版不一定有好的效果，其受到服务器网络环境的影响。最新的拥塞控制方法为BBR PLUS，Lotsever(锐速)效果类似。这里主要是以Linux系统为主，在Centos7的测试中，效果显著。
 
@@ -28,7 +28,7 @@ featureimage = "/images/posts/jia-su-wang-luo-yi-jian-bu-shu-bbr-bbrmo-gai-lotse
 
 运行后出现如下的界面：
 
-![](/images/posts/jia-su-wang-luo-yi-jian-bu-shu-bbr-bbrmo-gai-lotsever-rui-su/01.avif)
+![](01.avif)
 
 根据提示安装即可，重启后可以使用`./tcp.sh`命令接着操作。
 
@@ -52,7 +52,7 @@ ylx2016的脚本来自与上述的脚本，在经过二次加工后，有些青�
 
 运行后出现如下的界面：
 
-![](/images/posts/jia-su-wang-luo-yi-jian-bu-shu-bbr-bbrmo-gai-lotsever-rui-su/02.avif)
+![](02.avif)
 
 根据提示安装即可，重启后可以使用`./tcp.sh`命令接着操作。
 
@@ -62,6 +62,6 @@ ylx2016的脚本来自与上述的脚本，在经过二次加工后，有些青�
 
 如果在删除内核环节出现如下情况：
 
-![](/images/posts/jia-su-wang-luo-yi-jian-bu-shu-bbr-bbrmo-gai-lotsever-rui-su/03.png)
+![](03.png)
 
 需要选择`No`，否则可能导致意外情况。

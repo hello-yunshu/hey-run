@@ -4,7 +4,7 @@ date = 2019-03-24T22:17:59+08:00
 draft = true
 description = "在之前，笔者为大家带来了去年奥斯卡最佳电影《绿皮书》。现在给大家带来另一部奥斯卡赢家《波西米亚狂想曲》。 笔者本以为这部电影是一部类似于《寻梦环游记》的电影，但是是事实 《波西米亚狂想曲》 更加接近于一部个人传记。而类比于纪录片的形式，这部片子更加有商业化的味道。 笔者在看完整部片子后，对这部片子评"
 slug = "dian-ying-bo-xi-mi-ya-kuang-xiang-qu-hd-xia-zai"
-featureimage = "/images/posts/dian-ying-bo-xi-mi-ya-kuang-xiang-qu-hd-xia-zai/cover.avif"
+featureimage = "cover.avif"
 +++
 
 在之前，笔者为大家带来了去年奥斯卡最佳电影[《绿皮书》](https://www.idleleo.com/02/1488.html)。现在给大家带来另一部奥斯卡赢家《波西米亚狂想曲》。
@@ -40,7 +40,7 @@ featureimage = "/images/posts/dian-ying-bo-xi-mi-ya-kuang-xiang-qu-hd-xia-zai/co
 
 IMDb链接: [tt1727824](http://www.imdb.com/title/tt1727824)
 
-![](/images/posts/dian-ying-bo-xi-mi-ya-kuang-xiang-qu-hd-xia-zai/cover.avif)《波西米亚狂想曲》 电影海报
+![](cover.avif)《波西米亚狂想曲》 电影海报
 
 > 本片是对皇后乐队、传奇主唱弗雷迪·莫库里以及他们音乐的致敬盛宴，这是一段充满爱、痛苦、接纳和音乐的旅程。 
 > 

@@ -4,7 +4,7 @@ date = 2017-10-16T14:19:08+08:00
 draft = false
 description = "前几天在我把网址从http升级到https时，遇到了个棘手的问题。 首先是我的服务器，我的服务器是windows系统下的利用phpStudy搭建的。然后是ssl证书，我其实比较建议大家申请Let's Encrypt的ssl证书，大家也都知道沃通等颁发的证书多少让人不放心，而Let's Encrypt"
 slug = "guan-yu-qi-yong-include-conf-extra-httpd-ssl.confchu-cuo"
-featureimage = "/images/posts/guan-yu-qi-yong-include-conf-extra-httpd-ssl.confchu-cuo/cover.avif"
+featureimage = "cover.avif"
 categories = ["教程"]
 tags = ["Apache", "SSL", "phpStudy"]
 +++
@@ -55,7 +55,7 @@ tags = ["Apache", "SSL", "phpStudy"]
 
 其实不用我说你也可以发现了，它默认开启的代码明显是有很大的问题的，就比如Apache24目录，我的目录下根本不存在Apache24目录，还有www.example.com等等。。毫无疑问，若按阿里云建议修改httpd-ssl.conf：
 
-![](/images/posts/guan-yu-qi-yong-include-conf-extra-httpd-ssl.confchu-cuo/cover.avif)
+![](cover.avif)
 
 很容易产生误解。如果你直接复制黏贴进httpd-ssl.conf，Apache怎么可能不出问题。
 

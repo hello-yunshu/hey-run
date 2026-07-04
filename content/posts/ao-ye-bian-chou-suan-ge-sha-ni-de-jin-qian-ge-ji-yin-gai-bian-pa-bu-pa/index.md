@@ -4,7 +4,7 @@ date = 2019-04-21T01:37:11+08:00
 draft = false
 description = "据世界卫生组织调查数据显示，中国有5亿人正在被睡眠障碍困扰。睡个好觉成为现代人生活中最奢侈的一件事。 熬夜的危害众所周知，严重到危及人们生命的新闻也层出不穷。此前《王者荣耀》游戏主播狐王因长期熬夜、过度劳累而猝死，年仅20岁。正所谓熬最久的夜，进最贵的医院，很多人是被动熬夜"
 slug = "ao-ye-bian-chou-suan-ge-sha-ni-de-jin-qian-ge-ji-yin-gai-bian-pa-bu-pa"
-featureimage = "/images/posts/ao-ye-bian-chou-suan-ge-sha-ni-de-jin-qian-ge-ji-yin-gai-bian-pa-bu-pa/cover.avif"
+featureimage = "cover.avif"
 categories = ["科普"]
 tags = ["睡眠", "健康", "科普"]
 +++
@@ -12,7 +12,7 @@ tags = ["睡眠", "健康", "科普"]
 
 据世界卫生组织调查数据显示，中国有5亿人正在被睡眠障碍困扰。睡个好觉成为现代人生活中最奢侈的一件事。
 
-![](/images/posts/ao-ye-bian-chou-suan-ge-sha-ni-de-jin-qian-ge-ji-yin-gai-bian-pa-bu-pa/cover.avif)
+![](cover.avif)
 
 熬夜的危害众所周知，严重到危及人们生命的新闻也层出不穷。此前《王者荣耀》游戏主播狐王因长期熬夜、过度劳累而猝死，年仅20岁。正所谓熬最久的夜，进最贵的医院，很多人是被动熬夜，比如失眠。而大部分人其实还是主动熬夜。
 
@@ -22,7 +22,7 @@ tags = ["睡眠", "健康", "科普"]
 
 “追完这集我就睡！”追剧更是耗费时间，即便两倍速看剧，很多人也要一晚上看上个几十集。于是乎，追完就看到窗外的太阳升起了。
 
-![](/images/posts/ao-ye-bian-chou-suan-ge-sha-ni-de-jin-qian-ge-ji-yin-gai-bian-pa-bu-pa/01.avif)
+![](01.avif)
 
 熬夜一时爽，一直熬夜一直爽？熬夜的危害真得很大，如果你还在熬夜，也许你已经发生变异了。研究发现，睡眠不足6小时，持续一周就会导致体内700多个基因发生改变。
 
@@ -54,7 +54,7 @@ tags = ["睡眠", "健康", "科普"]
 
 最佳睡眠时间为晚上11点到次日6点，而晚上11点到次日3点为睡眠黄金时间，这4小时最好要睡着。当然也可以进行适当地调整，另外不同年龄的人群睡眠时长并不一样。这样不出6个星期，作息就可以逐渐规律起来，
 
-![](/images/posts/ao-ye-bian-chou-suan-ge-sha-ni-de-jin-qian-ge-ji-yin-gai-bian-pa-bu-pa/02.avif)
+![](02.avif)
 
 **保持良好睡眠环境**
 

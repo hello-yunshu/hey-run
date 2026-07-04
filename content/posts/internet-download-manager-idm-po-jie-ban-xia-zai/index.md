@@ -4,7 +4,7 @@ date = 2019-05-13T21:31:17+08:00
 draft = true
 description = "Internet Download Manager以下简称IDM，是国内外优秀下载工具，支持IE, Firefox, Chrome等所有浏览器，兼容所有Windows平台。最具特色功能如续传功能，支持恢复因为断线、网络问题、计算机宕机等故障导致中断的下载任务。 IDM的续传功能可以恢复因为断线、网络"
 slug = "internet-download-manager-idm-po-jie-ban-xia-zai"
-featureimage = "/images/posts/internet-download-manager-idm-po-jie-ban-xia-zai/cover.avif"
+featureimage = "cover.avif"
 +++
 
 Internet Download Manager以下简称IDM，是国内外优秀下载工具，支持IE, Firefox, Chrome等所有浏览器，兼容所有Windows平台。最具特色功能如续传功能，支持恢复因为断线、网络问题、计算机宕机等故障导致中断的下载任务。 IDM的续传功能可以恢复因为断线、网络问题、计算机当机甚至无预警的停电导致下传到一半的软件。此程序具有动态档案分割、多重下载点技术，而且它会重复使用现有的联机，而不需再重新联机登入一遍。聪明的in-speed技术会动态地将所有设定应用到某种联机类型，以充分利用下载速度。
@@ -46,7 +46,7 @@ Internet Download Manager以下简称IDM，是国内外优秀下载工具，支�
 
 安装后请勿打开，下载本文下方的破解软件并点击`Patch`运行。
 
-![](/images/posts/internet-download-manager-idm-po-jie-ban-xia-zai/cover.avif)
+![](cover.avif)
 
 随便输入几个文字作为注册者名字即可完成破解，就是这么简单！
 
@@ -56,23 +56,23 @@ Internet Download Manager以下简称IDM，是国内外优秀下载工具，支�
 
 首先进入-控制面板-系统安全-管理工具，双击打开本地安全策略，这里可以进行本地策略的调整/修改。
 
-![](/images/posts/internet-download-manager-idm-po-jie-ban-xia-zai/01.avif)
+![](01.avif)
 
 在软件安全策略-其他规则中点击鼠标右键-新建路径规则（若无软件安全策略则右击新建）
 
 点击浏览，选择您Internet Download Manager根目录的IDMGrHlp.exe，确定，将安全级别调整为不允许，点击应用-确定
 
-![](/images/posts/internet-download-manager-idm-po-jie-ban-xia-zai/02.avif)
+![](02.avif)
 
 再进入安装目录，找到IDMGrHlp.exe文件，将其删除，并且创建一个空白文档，重命名为IDMGrHlp.exe即可。 
 
-![](/images/posts/internet-download-manager-idm-po-jie-ban-xia-zai/03.avif)
+![](03.avif)
 
 #### 直接安装版
 
 还有一个直接安装的破解版本，不需要修改器，直接安装即可，非常方便。笔者已经把最新的版本放在网盘了。软件来自俄罗斯，需要手动更改语言为简体中文。修改方式如下：
 
-![](/images/posts/internet-download-manager-idm-po-jie-ban-xia-zai/04.avif)
+![](04.avif)
 
 #### 下载地址
 

@@ -4,7 +4,7 @@ date = 2026-05-29T10:30:00+08:00
 draft = false
 description = "luci-app-cloudflare-ip 是 OpenWrt 上的 LuCI 插件，可在 Web 界面一键管理 Cloudflare IP 优选，自动写回 PassWall 或 OpenClash 配置。本文介绍安装、各页面配置和常见问题。"
 slug = "cloudflare-ip-auto-openwrt"
-featureimage = "/images/posts/cloudflare-ip-auto-openwrt/cover.avif"
+featureimage = "cover.avif"
 categories = ["网络技术"]
 tags = ["Cloudflare", "OpenWrt", "PassWall", "OpenClash", "优选 IP", "LuCI"]
 +++
@@ -15,7 +15,7 @@ tags = ["Cloudflare", "OpenWrt", "PassWall", "OpenClash", "优选 IP", "LuCI"]
 
 现在好了——新版 [**luci-app-cloudflare-ip**](https://github.com/hello-yunshu/use-cloudflare-ip) 做了一个 LuCI 界面，把整个流程塞进 OpenWrt 后台。你安装一个 `.ipk`（或 `.apk`），在 LuCI 菜单里点点鼠标，剩下的事情——下载 CFST、测速、挑 IP、验证连通性、写回 PassWall 或 OpenClash——全部自动完成。**你负责在网页上填配置，它负责半夜悄悄干活。** 很懒，但懒得有章法，我喜欢～😏
 
-![](/images/posts/cloudflare-ip-auto-openwrt/cover.avif)
+![](cover.avif)
 
 ## 它到底解决什么嘛
 
@@ -25,7 +25,7 @@ tags = ["Cloudflare", "OpenWrt", "PassWall", "OpenClash", "优选 IP", "LuCI"]
 
 > 如果你之前用过旧版脚本（`cf-openwrt-auto.sh` + `cf-openwrt-auto.conf`），那套东西现在已经被 LuCI 界面取代了。脚本还在，但推荐直接用插件，更省心。
 
-![Cloudflare IP 优选概览页](/images/posts/cloudflare-ip-auto-openwrt/01.avif)
+![Cloudflare IP 优选概览页](01.avif)
 
 ## 先装插件呀
 
@@ -62,7 +62,7 @@ bash curl tar jq ca-bundle ca-certificates luci-base rpcd
 
 概览页还放了几个日常最常用的按钮：启动、停止、重启服务，手动运行测速，以及下载 / 更新 CFST。也就是说，平时想确认状态或临时跑一次，基本不用离开概览页。
 
-![Cloudflare IP 优选基本设置页](/images/posts/cloudflare-ip-auto-openwrt/02.avif)
+![Cloudflare IP 优选基本设置页](02.avif)
 
 ## 基本设置：填好就不用管了
 
@@ -159,7 +159,7 @@ xHTTP 也一样，`xhttp-opts.headers.Host` 继续保留域名。说人话就是
 
 出了问题时，先看日志。日志里会告诉你哪一步挂了——是 CFST 下载失败，还是测速超时，还是写回配置出错。想手动测速、重启服务或更新 CFST，就回概览页；想手动更新脚本，就去高级设置页。分工还挺清楚的，对吧～
 
-![Cloudflare IP 优选日志与维护页](/images/posts/cloudflare-ip-auto-openwrt/03.avif)
+![Cloudflare IP 优选日志与维护页](03.avif)
 
 ## GitHub 抽风怎么办呀
 

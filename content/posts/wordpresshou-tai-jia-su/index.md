@@ -4,7 +4,7 @@ date = 2021-01-21T00:06:47+08:00
 draft = false
 description = "搭过网站的小伙伴应该知道CDN的作用，不仅可以有效的提高网站的访问速度，还能降低对网站服务器的性能影响。而对于CDN提供商，小网站的CDN请求解决了浪费剩余资源的问题，也成为了盈利的一种方式，可谓是双赢之举。为了方便还未了解CDN的小伙伴，这里说一下CDN的基础知识： CDN是什么 CDN的全称是C"
 slug = "wordpresshou-tai-jia-su"
-featureimage = "/images/posts/wordpresshou-tai-jia-su/cover.avif"
+featureimage = "cover.avif"
 categories = ["教程"]
 tags = ["WordPress", "CDN", "性能优化"]
 +++
@@ -20,11 +20,11 @@ CDN的全称是Content Delivery Network，即内容分发网络。CDN是构建�
 
 对于WordPress网站而言，情况有些特殊。这主要与WordPress的设计有关系，WordPress拥有前台、后台两种界面，最常为大家熟知的是前台界面。前台往往是静态或者伪静态的页面，这样的好处是访问速度能尽量不受服务器的性能的影响。同时，这样做也能使一些js、css、字体等资源实现静态化，更好的为CDN或本地缓存，进一步降低服务器的开销，进一步加速访问速度。（这当然也是无主界的策略）
 
-![](/images/posts/wordpresshou-tai-jia-su/cover.avif)
+![](cover.avif)
 
 前端静态化，这无可厚非，但问题在于WordPress的后台。WordPress后台一般开放于权限更高的用户，当然有些WordPress网站后台也会直接对普通用户开放。WordPress后台与前台的不同在于后台是动态的。由于WordPress后台可以对整个网站进行调整，因此后台作为动态页面亦无可厚非。但问题就在于，即便使用了全站CDN，在访问WordPress后台时，为了保证动态访问，所有的js、css等小文件都是根据每次访问而请求一次的。这无疑加剧了网站服务器的开销，比如随便的一个WordPress网站后台，居然有上百个小文件请求：
 
-![](/images/posts/wordpresshou-tai-jia-su/01.avif)来自wp-china.org测试
+![](01.avif)来自wp-china.org测试
 
 那么有没有办法把一些小文件不再从源服务器请求？当然是有的，但这里要考虑一些问题：
 
@@ -82,7 +82,7 @@ add_action('init', function () {
 
 选择以上的**两段代码其中之一** 直接放入主题/插件中即可立即生效。（**注意：请勿对测试版加速！** ）后台访问速度直接翻翻！
 
-![](/images/posts/wordpresshou-tai-jia-su/02.avif)来自wp-china.org测试
+![](02.avif)来自wp-china.org测试
 
 也许又小伙伴会问为什么会有两段差不多的代码呢？不能直接用WP-China-Yes插件提供的吗？要解答，我们需要回到上面提出的两个问题。
 
@@ -97,7 +97,7 @@ add_action('init', function () {
 
 再者，对于WP-China-Yes插件来说（这里没有贬低的意思），毕竟WP-China-Yes插件是后起之秀。对于CDN来说，最基本的稳定，安全，对于一个才刚刚出现不到两年的CDN来说，的确还要时间检验。而对于jsdelivr这类老牌的CDN，相对更容易获得信任。当然，即便是jsdelivr也有被投毒的历史，可见这类安全问题更难被忽略。
 
-![](/images/posts/wordpresshou-tai-jia-su/03.avif)
+![](03.avif)
 
 最后由于jsdelivr不仅仅用于加速WordPress后台，它还能加速很多公共库。因此在访问角度看，如果你的网站已经启用了jsdelivr加速（比如无主界哈哈），那么选择jsdelivr作为后台加速显然是明智的选择。
 
@@ -149,7 +149,7 @@ add_action('init', function () {
 
 插件截图：
 
-![](/images/shared/20210122203422.avif)
+![](20210122203422.avif)
 
 详情可见这篇文章：[《插件 WP Admin Boost 正式发布！》](https://www.idleleo.com/01/5040.html)
 

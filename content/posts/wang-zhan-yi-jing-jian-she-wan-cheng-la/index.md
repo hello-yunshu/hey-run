@@ -4,10 +4,10 @@ date = 2017-10-13T04:30:57+08:00
 draft = true
 description = "主网站已经建设完成啦！"
 slug = "wang-zhan-yi-jing-jian-she-wan-cheng-la"
-featureimage = "/images/posts/wang-zhan-yi-jing-jian-she-wan-cheng-la/cover.avif"
+featureimage = "cover.avif"
 +++
 
-![](/images/posts/wang-zhan-yi-jing-jian-she-wan-cheng-la/cover.avif)
+![](cover.avif)
 
 **主网站已经建设完成啦！**
 

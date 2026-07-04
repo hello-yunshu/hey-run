@@ -4,7 +4,7 @@ date = 2017-11-23T22:32:27+08:00
 draft = false
 description = "在关于：启用Include conf/extra/httpd-ssl.conf出错的文章中，我提到了关于Let's Encrypt证书的部署问题。Let's Encrypt是不错的证书，把它用于http升级为https是不错的选择。 经过我的研究发现，Let's Encrypt的证书更加适合Linu"
 slug = "apachehuan-jing-bu-shu-let-s-encrypt-sslzheng-shu"
-featureimage = "/images/posts/apachehuan-jing-bu-shu-let-s-encrypt-sslzheng-shu/cover.avif"
+featureimage = "cover.avif"
 categories = ["网络技术"]
 tags = ["Apache", "SSL", "Let's Encrypt", "Windows"]
 +++
@@ -22,7 +22,7 @@ tags = ["Apache", "SSL", "Let's Encrypt", "Windows"]
 
 之后，如同我：关于：启用Include conf/extra/httpd-ssl.conf出错的简单解决方法 这篇文章一般，做好前期的准备工作，及创造一个vhostssl.conf文件，并且将其连接到httpd.conf 文件中。
 
-![](/images/posts/apachehuan-jing-bu-shu-let-s-encrypt-sslzheng-shu/cover.avif)
+![](cover.avif)
 
 其他操作完全类似此篇文章，只是vhostssl.conf中的代码改成如下：
 [code] 

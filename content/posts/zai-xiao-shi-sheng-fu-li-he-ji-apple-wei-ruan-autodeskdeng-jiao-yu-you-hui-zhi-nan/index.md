@@ -4,7 +4,7 @@ date = 2017-11-09T20:08:21+08:00
 draft = false
 description = "其实很多时候，我们有身边有很多资源可以利用，但大多是都是被我们忽视，或者完全不知情。 所谓教育优惠，就是一项针对于在校大学生和教职员工推出的特殊优惠活动。一些公司会将旗下产品或服务以一定的折扣，甚至免费提供给高校师生。 申请教育优惠一般有一个前提，那就是要有一个学校提供的「校园邮箱」。在国内，也就是"
 slug = "zai-xiao-shi-sheng-fu-li-he-ji-apple-wei-ruan-autodeskdeng-jiao-yu-you-hui-zhi-nan"
-featureimage = "/images/posts/zai-xiao-shi-sheng-fu-li-he-ji-apple-wei-ruan-autodeskdeng-jiao-yu-you-hui-zhi-nan/cover.avif"
+featureimage = "cover.avif"
 categories = ["生活"]
 tags = ["教育优惠", "学生", "软件"]
 +++
@@ -33,7 +33,7 @@ tags = ["教育优惠", "学生", "软件"]
 
 如果你附近没有 Apple Store 零售店，可以通过官网或者 Apple 天猫旗舰店验证学生身份购买。我自己体验过在官网购买，虽然天猫零售店显示支持教育优惠，但是我没有找到入口。所以，还是推荐大家在官网购买。通过官网教育商店购买的流程大致如下：
 
-![](/images/posts/zai-xiao-shi-sheng-fu-li-he-ji-apple-wei-ruan-autodeskdeng-jiao-yu-you-hui-zhi-nan/cover.avif)
+![](cover.avif)
 
 打开[苹果官网](https://www.apple.com/cn/)，下拉网页到底部，找到「高校师生选购」选项。
 
@@ -53,7 +53,7 @@ tags = ["教育优惠", "学生", "软件"]
 
 苹果除了硬件产品，Apple Music 和 Pro App 套装也提供了教育优惠。Apple Music 学生订阅价格为 5 元每月，相当良心。具体的操作方法：
 
-![](/images/posts/zai-xiao-shi-sheng-fu-li-he-ji-apple-wei-ruan-autodeskdeng-jiao-yu-you-hui-zhi-nan/01.avif)
+![](01.avif)
 
 Pro App 套装，是指你可以以特别价格购买 macOS 平台上的五款专业视频和音乐应用软件，包括 Final Cut Pro X、Motion、Compressor、Logic Pro X 和 MainStage。具体的购买流程和上文提到的在苹果官网购买硬件产品一样，你可以在教育商店底部找到入口，或者直接点击[此链接](https://www.apple.com/cn-k12/shop/product/BMGE2/pro-app-%E6%95%99%E8%82%B2%E5%A5%97%E8%A3%85)。
 
@@ -65,7 +65,7 @@ Pro App 套装，是指你可以以特别价格购买 macOS 平台上的五款�
 
 微软也针对其软件、硬件、游戏、配件等产品提供了相应的教育优惠。但是，验证和购买都没有苹果那么方便。具体的流程如下：
 
-![](/images/posts/zai-xiao-shi-sheng-fu-li-he-ji-apple-wei-ruan-autodeskdeng-jiao-yu-you-hui-zhi-nan/02.avif)
+![](02.avif)
 
 打开微软官方商场的[学生优惠页面](https://www.microsoftstore.com.cn/student)。
 
@@ -89,11 +89,11 @@ Office 365是微软推出的云端Office，可以让你随时随地在各种设�
 
 Office 365教育版是微软专门针对学生和教师推出版本，包括在线Word, Excel, PowerPoint, OneNote, Outlook, Access及Publisher服务，1TB的OneDrive存储空间，可以注册5台PC/Mac电脑进行使用。
 
-![](/images/posts/zai-xiao-shi-sheng-fu-li-he-ji-apple-wei-ruan-autodeskdeng-jiao-yu-you-hui-zhi-nan/03.gif)
+![](03.gif)
 
 使用你的.edu邮箱，填写申请。然后到邮箱中点击确认邮件。完成激活后，你就拥有了免费的Office 365教育版、OneDrive 1TB存储空间，如图，这是我的：
 
-![](/images/posts/zai-xiao-shi-sheng-fu-li-he-ji-apple-wei-ruan-autodeskdeng-jiao-yu-you-hui-zhi-nan/04.avif)
+![](04.avif)
 
 #### 阿里云 & 腾讯云主机
 
@@ -125,7 +125,7 @@ JetBrains 的教育优惠官方称之为「[JetBrains Toolbox 专业开发工具
 
 想要免费获得 JetBrains 全产品包，首先是打开[介绍页面](https://www.jetbrains.com/zh/student/)，然后点击「立即申请」，最后填写如下所示表单。
 
-![](/images/posts/zai-xiao-shi-sheng-fu-li-he-ji-apple-wei-ruan-autodeskdeng-jiao-yu-you-hui-zhi-nan/05.avif)
+![](05.avif)
 
 如上图所示，表单提供了三种验证方式，分别是：校园邮箱验证、ISIC 国际学生证验证，以及学生证明文件验证。首选校园邮箱验证，这种方式只需要点击邮件里的激活链接即可完成，非常高效。当然，如果你没有校园邮箱，可以拍摄学生证后选择学生证明文件验证或通过 [ISIC 国际学生证认证](https://www.isicchina.com/)。
 
@@ -139,7 +139,7 @@ JetBrains 的教育优惠官方称之为「[JetBrains Toolbox 专业开发工具
 
 GitHub 大家应该都听过吧，它是一个通过 Git 进行版本控制的软件源代码托管的在线服务。GitHub 有一项教育支撑计划，叫[ GitHub Education](https://education.github.com/)。除了在线课程和交流获得之外，GitHub Education 还提供了一项极其良心的福利，叫「[GitHub 学生开发工具包](https://education.github.com/pack)」。
 
-![](/images/posts/zai-xiao-shi-sheng-fu-li-he-ji-apple-wei-ruan-autodeskdeng-jiao-yu-you-hui-zhi-nan/06.avif)
+![](06.avif)
 
 打开此[页面](https://education.github.com/pack)，如上图所示，点击 Get your pack 进入下一步，填写申请表单。
 
@@ -147,7 +147,7 @@ GitHub 大家应该都听过吧，它是一个通过 Git 进行版本控制的�
 
 然后，在下图对应的复选框中选择对应的校园邮箱账户。如果你没有校园邮箱，可以选择第一个选项上传学生证照片。
 
-![](/images/posts/zai-xiao-shi-sheng-fu-li-he-ji-apple-wei-ruan-autodeskdeng-jiao-yu-you-hui-zhi-nan/07.avif)
+![](07.avif)
 
 通过校园邮箱验证，几乎是系统自动秒批。GitHub 学生开发工具包包含的福利很多，具体有：
 
@@ -171,7 +171,7 @@ GitHub 大家应该都听过吧，它是一个通过 Git 进行版本控制的�
 
 ##### **GitHub 高级账户**
 
-![](/images/posts/zai-xiao-shi-sheng-fu-li-he-ji-apple-wei-ruan-autodeskdeng-jiao-yu-you-hui-zhi-nan/08.avif)
+![](08.avif)
 
 GitHub 的账户分为基本账户和高级账户，两者最明显的区别就是基本账户无法新建私人仓库，也就是所有的源代码必须被公开。
 
@@ -187,11 +187,11 @@ AWS 是亚马逊云服务的简称，它也是全世界最出色的云服务之�
 
 如果你之前对 AWS 有所了解，你或许知道 AWS 针对新用户提供了 1 年期的[免费套餐](https://aws.amazon.com/cn/free/)，这里面包括一台基础版本的 Amazon EC2 云主机。但是，这台云主机有每月 15 GB 的流量限制，超出这个限制就会自动扣费。免费工具包中提供的 $75-$150 信用额度可以抵消掉这笔费用以及其他的费用。下面，就一步一步带你申请这笔信用额度。
 
-![](/images/posts/zai-xiao-shi-sheng-fu-li-he-ji-apple-wei-ruan-autodeskdeng-jiao-yu-you-hui-zhi-nan/09.avif)
+![](09.avif)
 
 首先，在 GitHub 学生开发工具包页面找到 AWS Educate 一项，点击唯一的 unique link 进入如下所示的 AWS Educate 申请页面。
 
-![](/images/posts/zai-xiao-shi-sheng-fu-li-he-ji-apple-wei-ruan-autodeskdeng-jiao-yu-you-hui-zhi-nan/10.avif)
+![](10.avif)
 
 在这个页面里，有这几项需要注意：
 
@@ -205,7 +205,7 @@ AWS 是亚马逊云服务的简称，它也是全世界最出色的云服务之�
 
 此邮件内容较多，你需要仔细阅读才能找到包含信用额度兑换码的 Credit Code 字段。
 
-![](/images/posts/zai-xiao-shi-sheng-fu-li-he-ji-apple-wei-ruan-autodeskdeng-jiao-yu-you-hui-zhi-nan/11.avif)
+![](11.avif)
 
 到目前为止，就差最后一步了。你需要登陆你提前注册好的的 AWS 账号。
 
@@ -225,7 +225,7 @@ Autodesk 是一家在三维设计、工程设计及娱乐软件方面处于世�
 
 打开 [Autodesk 教育社区页面](https://www.autodesk.com.cn/education/free-software/all)，选择你想下载的软件。进入下一个页面后，点击创建账户并注册。完成邮件地址激活后，就进入如下图所示的教育信息录入表单。
 
-![](/images/posts/zai-xiao-shi-sheng-fu-li-he-ji-apple-wei-ruan-autodeskdeng-jiao-yu-you-hui-zhi-nan/12.avif)
+![](12.avif)
 
 按照真实情况填入自己的学校等信息（图一）。如果你的学校无法选择（图二），就点击「找不到自己的学校？」，然后添加一个教育机构（图三）。经过测试，找不到的概率还是蛮大的。
 

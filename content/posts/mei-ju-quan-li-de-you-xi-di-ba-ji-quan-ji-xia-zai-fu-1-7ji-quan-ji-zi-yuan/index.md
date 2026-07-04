@@ -4,10 +4,10 @@ date = 2019-04-24T20:38:11+08:00
 draft = true
 description = "剧情简介 HBO剧集《权力的游戏》第八季将于2019年4月14日播出，本季共6集。 　　故事发展至第八季，重返临冬城的琼恩·"
 slug = "mei-ju-quan-li-de-you-xi-di-ba-ji-quan-ji-xia-zai-fu-1-7ji-quan-ji-zi-yuan"
-featureimage = "/images/posts/mei-ju-quan-li-de-you-xi-di-ba-ji-quan-ji-xia-zai-fu-1-7ji-quan-ji-zi-yuan/cover.avif"
+featureimage = "cover.avif"
 +++
 
-![](/images/posts/mei-ju-quan-li-de-you-xi-di-ba-ji-quan-ji-xia-zai-fu-1-7ji-quan-ji-zi-yuan/cover.avif)
+![](cover.avif)
 
 #### 剧情简介
 
@@ -58,4 +58,4 @@ featureimage = "/images/posts/mei-ju-quan-li-de-you-xi-di-ba-ji-quan-ji-xia-zai-
 
 #### 人物关系
 
-[![](/images/posts/mei-ju-quan-li-de-you-xi-di-ba-ji-quan-ji-xia-zai-fu-1-7ji-quan-ji-zi-yuan/01.avif)](/images/posts/mei-ju-quan-li-de-you-xi-di-ba-ji-quan-ji-xia-zai-fu-1-7ji-quan-ji-zi-yuan/01.avif)
+[![](01.avif)](01.avif)

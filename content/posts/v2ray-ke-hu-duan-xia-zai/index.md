@@ -4,7 +4,7 @@ date = 2020-02-11T21:53:00+08:00
 draft = true
 description = "V2Ray是什么？ V2Ray为Project V项目下的一个工具，经过某YouTuber的实测，为现今最安全最方便的代理工具之一。同时其自身搭建以及运行非常方便，是很好的SSR的替代品。这里笔者就给大家带来了V2Ray的客户端。 至于其搭建教程，你可以看这里：2020 搭建 V2Ray 服务器最新"
 slug = "v2ray-ke-hu-duan-xia-zai"
-featureimage = "/images/posts/v2ray-ke-hu-duan-xia-zai/cover.avif"
+featureimage = "cover.avif"
 +++
 
 ## V2Ray是什么？
@@ -40,9 +40,9 @@ V2Ray为Project V项目下的一个工具，经过某YouTuber的实测，为现�
   * 此软件需要更新V2Ray core，请在更新中及时更新。
   * 在设置中有插件选项，插件已经集成，开启可以自动设置全局代理，十分方便。操作如下：
 
-![](/images/posts/v2ray-ke-hu-duan-xia-zai/cover.avif)选项中在插件页面开启需要的插件
+![](cover.avif)选项中在插件页面开启需要的插件
 
-![](/images/posts/v2ray-ke-hu-duan-xia-zai/01.png)在任务栏小图标右击选择插件进行设置
+![](01.png)在任务栏小图标右击选择插件进行设置
 
 ### 下载：
 

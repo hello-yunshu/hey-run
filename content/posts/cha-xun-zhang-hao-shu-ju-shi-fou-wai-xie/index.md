@@ -4,7 +4,7 @@ date = 2018-11-24T20:54:34+08:00
 draft = false
 description = "互联网快速发展，与此同时我们在各大平台注册的账号越来越多。相信部分人注册的账号使用的密码都是一样的。于是一旦某一个平台的邮箱密码泄露，那么其他平台的账号也可能存在被盗的风险。 这几年数据泄露的事件层出不穷。就目前国内的情形看，由于法律法规的缺失，出现相关事件并未得到有力的监管及解决。很多知名网络平台"
 slug = "cha-xun-zhang-hao-shu-ju-shi-fou-wai-xie"
-featureimage = "/images/posts/cha-xun-zhang-hao-shu-ju-shi-fou-wai-xie/cover.avif"
+featureimage = "cover.avif"
 categories = ["网络技术"]
 tags = ["数据泄露", "账号安全", "隐私"]
 +++
@@ -16,7 +16,7 @@ tags = ["数据泄露", "账号安全", "隐私"]
 
 下图是网上流传的某网友收集了大量泄密数据。（真实性未知）
 
-[![](/images/posts/cha-xun-zhang-hao-shu-ju-shi-fou-wai-xie/cover.avif)](/images/posts/cha-xun-zhang-hao-shu-ju-shi-fou-wai-xie/cover.avif)
+[![](cover.avif)](cover.avif)
 
 那么怎么查询自己账号是否有危险呢？
 
@@ -24,7 +24,7 @@ tags = ["数据泄露", "账号安全", "隐私"]
 
 查询地址：[https://monitor.firefox.com](https://monitor.firefox.com/)
 
-[![](/images/posts/cha-xun-zhang-hao-shu-ju-shi-fou-wai-xie/01.avif)](/images/posts/cha-xun-zhang-hao-shu-ju-shi-fou-wai-xie/01.avif)
+[![](01.avif)](01.avif)
 
 此外，用户还能用自己的邮箱注册 Firefox Monitor ，之后若有涉及该地址的资料外泄事件，能即时收到通知。Mozilla 表示，用于注册的电子邮件地址将受到严格保护。
 

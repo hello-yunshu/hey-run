@@ -4,7 +4,7 @@ date = 2019-02-07T18:42:51+08:00
 draft = true
 description = "是的没错，小成本文艺片它来了！贤妻是一部讲述诺贝尔奖得主和他妻子的故事。这部片子更多的关注点在于上个世纪的女性。一定程度的反思了女权现状。可惜，即便这部片子的故事有特色，但思考深度、广度较为欠缺，对于故事的主旨把握不够明确。 可以说这部片子一定程度的反映了小成本文艺片的局限性——在制作经费不足的情况"
 slug = "dian-ying-xian-qi-hdxia-zai"
-featureimage = "/images/posts/dian-ying-xian-qi-hdxia-zai/cover.avif"
+featureimage = "cover.avif"
 +++
 
 是的没错，小成本文艺片它来了！贤妻是一部讲述诺贝尔奖得主和他妻子的故事。这部片子更多的关注点在于上个世纪的女性。一定程度的反思了女权现状。可惜，即便这部片子的故事有特色，但思考深度、广度较为欠缺，对于故事的主旨把握不够明确。
@@ -35,7 +35,7 @@ featureimage = "/images/posts/dian-ying-xian-qi-hdxia-zai/cover.avif"
 
 IMDb链接: [tt3750872](http://www.imdb.com/title/tt3750872)
 
-![](/images/posts/dian-ying-xian-qi-hdxia-zai/cover.avif)
+![](cover.avif)
 
 > 简介：根据Meg Wolitzer所著同名小说改编，女主角Joan Castleman是一位文学家的妻子，美丽忠诚、无瑕疵，牺牲了自己的梦想、才华、野心，花费了40年的时间来辅助丈夫，忽略他的不忠，永远表现得体。而随着时间的推移，他们的婚姻也来到破碎的临界点。在诺贝尔文学奖颁奖的前夜，她将面临生命中最大的牺牲，同时也发现了丈夫职业生涯的秘密。 
 

@@ -4,7 +4,7 @@ date = 2019-08-05T23:14:53+08:00
 draft = true
 description = "哥斯拉2片源终于来啦。 虽然还没来得及看，但是看见豆瓣上6.4分而且没看过这个系列的第一部小梁也有点不想看惹。 大概刷了一下低分评价，主要集中在对剧情和角色的抨击，听着如同看过，大概及格靠特效拉了分吧。其实我是喜欢给电影分类的，在看【打架电影】时一般是不会太注重剧情的。除非我看它不顺眼或者实在是我脑"
 slug = "dian-ying-ge-si-la-2-guai-shou-zhi-wang-hd-xia-zai"
-featureimage = "/images/posts/dian-ying-ge-si-la-2-guai-shou-zhi-wang-hd-xia-zai/cover.avif"
+featureimage = "cover.avif"
 +++
 
 哥斯拉2片源终于来啦。
@@ -15,7 +15,7 @@ featureimage = "/images/posts/dian-ying-ge-si-la-2-guai-shou-zhi-wang-hd-xia-zai
 
 嗯，所以请大家看过之后留言吧，我就先不看啦嘻嘻。
 
-![](/images/posts/dian-ying-ge-si-la-2-guai-shou-zhi-wang-hd-xia-zai/cover.avif)
+![](cover.avif)
 
 导演: 迈克尔·道赫蒂
 

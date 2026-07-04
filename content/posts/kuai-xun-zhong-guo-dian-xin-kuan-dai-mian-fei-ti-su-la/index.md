@@ -4,7 +4,7 @@ date = 2020-11-13T15:03:56+08:00
 draft = true
 description = "就在昨天，笔者在网上看到了电信宽带免费提速的消息，很快啊，笔者立刻起身，上来一个开电脑，再乱输一通命令，宽带速度居然真的立马就上去了。。。 如何提速 哈哈哈，不开玩笑了，确实有这么个活动。其实在之前疫情期间，电信就有免费的提速活动，后来疫情控制住了，也就没有了。没想到现在活动又出现了。这次有网友更是"
 slug = "kuai-xun-zhong-guo-dian-xin-kuan-dai-mian-fei-ti-su-la"
-featureimage = "/images/posts/kuai-xun-zhong-guo-dian-xin-kuan-dai-mian-fei-ti-su-la/cover.avif"
+featureimage = "cover.avif"
 +++
 
 就在昨天，笔者在网上看到了电信宽带免费提速的消息，很快啊，笔者立刻起身，上来一个开电脑，再乱输一通命令，宽带速度居然真的立马就上去了。。。
@@ -49,6 +49,6 @@ featureimage = "/images/posts/kuai-xun-zhong-guo-dian-xin-kuan-dai-mian-fei-ti-s
 
 虽然下行提速力度一般，但上行就厉害了，笔者之前宽带上行速度20M，提速后达到100M，快了5倍！这对需要上传大文件的小伙伴简直是福音啊！
 
-![](/images/posts/kuai-xun-zhong-guo-dian-xin-kuan-dai-mian-fei-ti-su-la/cover.avif)
+![](cover.avif)
 
 大家快试试吧~~

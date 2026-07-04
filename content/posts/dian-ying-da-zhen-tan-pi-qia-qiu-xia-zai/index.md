@@ -4,15 +4,15 @@ date = 2019-06-13T21:16:07+08:00
 draft = true
 description = "前段时间，由于女友觉得皮卡丘特别可爱，于是笔者被抓过去陪她看了首映。确实皮卡丘在电影里面蛮可爱的，就是配音把我劝退了。电影院中，笔者成功的战胜了瞌睡虫，和女友深刻的讨论了究竟是可达鸭可爱还是皮卡丘可爱。至于那些没有战胜瞌睡虫的男士们，或者那些还没看过和想再看一遍的女士们，现在资源就来啦~"
 slug = "dian-ying-da-zhen-tan-pi-qia-qiu-xia-zai"
-featureimage = "/images/posts/dian-ying-da-zhen-tan-pi-qia-qiu-xia-zai/cover.avif"
+featureimage = "cover.avif"
 +++
 
 前段时间，由于女友觉得皮卡丘特别可爱，于是笔者被抓过去陪她看了首映。确实皮卡丘在电影里面蛮可爱的，就是配音把我劝退了。电影院中，笔者成功的战胜了瞌睡虫，和女友深刻的讨论了究竟是可达鸭可爱还是皮卡丘可爱。至于那些没有战胜瞌睡虫的男士们，或者那些还没看过和想再看一遍的女士们，现在资源就来啦~
 
-  * ![](/images/posts/dian-ying-da-zhen-tan-pi-qia-qiu-xia-zai/cover.avif)
-  * ![](/images/posts/dian-ying-da-zhen-tan-pi-qia-qiu-xia-zai/01.avif)
-  * ![](/images/posts/dian-ying-da-zhen-tan-pi-qia-qiu-xia-zai/02.avif)
-  * ![](/images/posts/dian-ying-da-zhen-tan-pi-qia-qiu-xia-zai/03.avif)
+  * ![](cover.avif)
+  * ![](01.avif)
+  * ![](02.avif)
+  * ![](03.avif)
 
 译名：大侦探皮卡丘 / Detective Pikachu / POKéMON 名侦探皮卡丘(台) / Pokemon / 名侦探皮卡丘 / 宠物小精灵 / 宠物小精灵之名侦探皮卡丘 / 宠物小精灵真人版 / 精灵宝可梦 / 精灵宝可梦之名侦探皮卡丘 / 精灵宝可梦：大侦探皮卡丘
 

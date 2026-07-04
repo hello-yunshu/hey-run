@@ -4,18 +4,18 @@ date = 2019-08-06T00:20:15+08:00
 draft = true
 description = "妇联4（又称：复仇者联盟4: 终局之战）终于来了，笔者在妇联4上映时就贡献了一张电影票。其实当时笔者并不是很想贡献自己的小钱钱。但是笔者受到从众心理的影响再加上由于之前看的都是“免费版”，于是就决定去看看吧。看下来笔者完全不意外，正义战胜了邪恶，美式价值观暗流涌动，哎，实在是喜欢不起来了。 在和咱们"
 slug = "dian-ying-fu-chou-zhe-lian-meng-4-zhong-ju-zhi-zhan-hd-xia-zai"
-featureimage = "/images/posts/dian-ying-fu-chou-zhe-lian-meng-4-zhong-ju-zhi-zhan-hd-xia-zai/cover.avif"
+featureimage = "cover.avif"
 +++
 
 妇联4（又称：复仇者联盟4: 终局之战）终于来了，笔者在妇联4上映时就贡献了一张电影票。其实当时笔者并不是很想贡献自己的小钱钱。但是笔者受到从众心理的影响再加上由于之前看的都是“免费版”，于是就决定去看看吧。看下来笔者完全不意外，正义战胜了邪恶，美式价值观暗流涌动，哎，实在是喜欢不起来了。
 
 在和咱们傻不愣登的小梁编辑[@Liang](https://www.idleleo.com/handsome-panyi)讨论这个问题时，笔者意识到笔者产生了“审美疲劳”的根本原因，在于好莱坞的电影很难再给笔者耳目一新的惊喜。反而倒是一些国产片，由于起点过低，近期一些较为优秀的电影令笔者瞪大眼睛，大呼过瘾。笔者在为国产电影进步开心之余，还有的就是些期许，而对于好莱坞之流却已没了期待。
 
-![](/images/posts/dian-ying-fu-chou-zhe-lian-meng-4-zhong-ju-zhi-zhan-hd-xia-zai/cover.avif)
+![](cover.avif)
 
 OK，笔者说的有些多了。这次妇联4的提前泄出，对于没看过的童鞋们相信可以省一笔钱，对于看过的同学来说，这也正好是一次回顾的机会。电影本身继承了好莱坞一贯的优秀制作技术，特效、配乐等均是世界一流。电影剧情笔者觉得符合它自身定位，整体没有可圈可点之处，但也绝不至于面折人过。总之，你上了漫威这辆车，你还能不看这部吗？
 
-![](/images/posts/dian-ying-fu-chou-zhe-lian-meng-4-zhong-ju-zhi-zhan-hd-xia-zai/01.avif)
+![](01.avif)
 
 导演: 安东尼·罗素 / 乔·罗素
 

@@ -3,7 +3,7 @@ title = "[敛火成丹]Win11Dev-25236.1010专业工作站版-微调"
 date = 2022-11-22T15:01:00+08:00
 draft = true
 slug = "lian-huo-cheng-dan-win11dev-25236"
-featureimage = "/images/posts/lian-huo-cheng-dan-win11dev-25236/cover.avif"
+featureimage = "cover.avif"
 +++
 
 本文来自[@zxgu183](https://t.me/zxgu183)投稿！感谢[@zxgu183](https://t.me/zxgu183)！

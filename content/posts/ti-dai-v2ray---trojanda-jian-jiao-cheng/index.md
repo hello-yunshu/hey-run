@@ -4,7 +4,7 @@ date = 2020-02-01T17:40:00+08:00
 draft = true
 description = "写在前面 1、Trojan的设计类似于V2Ray+ws+tls，他更多的是解决了一个伪装问题，不要对高峰拥堵的线路抱有幻想，不提倡暴力发包，不要做”吵闹的邻居”，够用即可，近期考虑写一篇两者对比文章 2、BBR是很好的，配合Trojan一起使用，自行安装。至于Trojan效果如何，和你的线路品质有较"
 slug = "ti-dai-v2ray---trojanda-jian-jiao-cheng"
-featureimage = "/images/posts/ti-dai-v2ray---trojanda-jian-jiao-cheng/cover.png"
+featureimage = "cover.png"
 +++
 
 #### 写在前面
@@ -54,9 +54,9 @@ featureimage = "/images/posts/ti-dai-v2ray---trojanda-jian-jiao-cheng/cover.png"
 
 3、验证密码：自行设置，客户端配置文件中的密码需要
 
-如下图[](/images/posts/ti-dai-v2ray---trojanda-jian-jiao-cheng/cover.png)
+如下图[](cover.png)
 
-![](/images/posts/ti-dai-v2ray---trojanda-jian-jiao-cheng/cover.png)
+![](cover.png)
 
 输入完成，等待安装完成即可，服务端就搭建完成了。
 
@@ -70,39 +70,39 @@ featureimage = "/images/posts/ti-dai-v2ray---trojanda-jian-jiao-cheng/cover.png"
 
 直接下载客户端：[Trojan.zip](https://github.com/atrandys/trojan/releases/download/1.0.0/trojan.zip)
 
-下载后，解压得到trojan文件夹，打开文件夹，编辑config.json，修改其中的域名和验证密码（安装服务端时设置的验证密码）。[](/images/posts/ti-dai-v2ray---trojanda-jian-jiao-cheng/01.png)
+下载后，解压得到trojan文件夹，打开文件夹，编辑config.json，修改其中的域名和验证密码（安装服务端时设置的验证密码）。[](01.png)
 
-![](/images/posts/ti-dai-v2ray---trojanda-jian-jiao-cheng/01.png)
+![](01.png)
 
-用ftp连接VPS，下载/usr/src/trojan/private.crt，存放到trojan客户端的文件夹。[](/images/posts/ti-dai-v2ray---trojanda-jian-jiao-cheng/02.avif)
+用ftp连接VPS，下载/usr/src/trojan/private.crt，存放到trojan客户端的文件夹。[](02.avif)
 
-![](/images/posts/ti-dai-v2ray---trojanda-jian-jiao-cheng/02.avif)
+![](02.avif)
 
 然后，运行start.bat，开启Trojan服务，Trojan会监听本地1080端口。然后下载switchomega。
 
 下载插件：[switchyomega](https://github.com/atrandys/trojan/releases/download/1.0.0/SwitchyOmega_Chromium.crx)
 
-安装插件，打开chrome，打开扩展程序，将下载的插件拖动到扩展程序页面，添加到扩展。[](/images/posts/ti-dai-v2ray---trojanda-jian-jiao-cheng/03.avif)
+安装插件，打开chrome，打开扩展程序，将下载的插件拖动到扩展程序页面，添加到扩展。[](03.avif)
 
-![](/images/posts/ti-dai-v2ray---trojanda-jian-jiao-cheng/03.avif)
+![](03.avif)
 
-完成添加，会跳转到switchyomega页面，点跳过教程，然后点击proxy，如图填写，最后点击应用选项。[](/images/posts/ti-dai-v2ray---trojanda-jian-jiao-cheng/08.avif)
+完成添加，会跳转到switchyomega页面，点跳过教程，然后点击proxy，如图填写，最后点击应用选项。[](08.avif)
 
-![](/images/posts/ti-dai-v2ray---trojanda-jian-jiao-cheng/04.avif)
+![](04.avif)
 
-然后进入auto switch，删除最上方两条规则，然后点击添加规则列表。[](/images/posts/ti-dai-v2ray---trojanda-jian-jiao-cheng/09.avif)
+然后进入auto switch，删除最上方两条规则，然后点击添加规则列表。[](09.avif)
 
-![](/images/posts/ti-dai-v2ray---trojanda-jian-jiao-cheng/05.avif)
+![](05.avif)
 
 然后，在规则列表规则中，情景模式改为proxy，规则列表网站复制下面的网址，然后点击立即更新情景模式，保存即可。
 
-https://raw.githubusercontent.com/atrandys/proV/master/gfwlist.txt[](/images/posts/ti-dai-v2ray---trojanda-jian-jiao-cheng/06.avif)
+https://raw.githubusercontent.com/atrandys/proV/master/gfwlist.txt[](06.avif)
 
-![](/images/posts/ti-dai-v2ray---trojanda-jian-jiao-cheng/06.avif)
+![](06.avif)
 
-点击chrome右上角switchyomega图标，选择auto switch模式即可。[](/images/posts/ti-dai-v2ray---trojanda-jian-jiao-cheng/07.avif)
+点击chrome右上角switchyomega图标，选择auto switch模式即可。[](07.avif)
 
-![](/images/posts/ti-dai-v2ray---trojanda-jian-jiao-cheng/07.avif)
+![](07.avif)
 
 之后你便可以自由上网，教程到此结束。
 

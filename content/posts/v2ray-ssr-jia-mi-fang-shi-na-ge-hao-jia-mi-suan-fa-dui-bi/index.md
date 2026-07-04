@@ -4,7 +4,7 @@ date = 2019-09-24T20:58:12+08:00
 draft = false
 description = "相信有很多小伙伴在使用V2Ray或者SSR的时候都这样的疑问，究竟哪种加密方式是最好的呢？要回答这个问题，就需要先知道什么是最好。对于加密方式/算法来说，一般安全性与性能呈负相关，越是安全越是对性能要求高，这应该是大家的常识。由于现在大部分给出的加密协议的安全性均能达到标准，因此这里主要讨论的最好便"
 slug = "v2ray-ssr-jia-mi-fang-shi-na-ge-hao-jia-mi-suan-fa-dui-bi"
-featureimage = "/images/posts/v2ray-ssr-jia-mi-fang-shi-na-ge-hao-jia-mi-suan-fa-dui-bi/cover.avif"
+featureimage = "cover.avif"
 categories = ["网络技术"]
 tags = ["V2Ray", "SSR", "加密算法", "代理"]
 +++
@@ -22,7 +22,7 @@ SSR与V2Ray其实加密方式是大同小异的，原因很简单，加密方式
 
 AES（Advanced Encryption Standard）高级加密标准，这类加密标准是十分常见的对称加密算法。所谓的对称加密算法也就是加密和解密用相同的密钥，具体的加密流程如下图：
 
-![](/images/posts/v2ray-ssr-jia-mi-fang-shi-na-ge-hao-jia-mi-suan-fa-dui-bi/cover.avif)
+![](cover.avif)
 
 具体的加密细节由于篇幅加之文章目的不再展示了。这里的AES-128就是密钥的长度为128位，加密轮数为10轮。此种方式在日常生活中应用极广，你现在看到了这篇文章，你就有可能在应用这类加密，因为无主界网站的HTTPS也是基于这种加密方式的。
 
@@ -32,7 +32,7 @@ AES（Advanced Encryption Standard）高级加密标准，这类加密标准是�
 
 对于CFB模式来说，其全称为Cipher FeedBack模式（密文反馈模式）。在CFB模式中，前一个密文分组会被送回到密码算法的输入端。而所谓反馈，这里指的就是返回输入端的意思。以下是其示意图：
 
-![](/images/posts/v2ray-ssr-jia-mi-fang-shi-na-ge-hao-jia-mi-suan-fa-dui-bi/01.avif)
+![](01.avif)
 
 从上图中可以发现，对于AES-128-CFB而言其优点在于它隐藏了明文模式，同时它可以及时加密传送小于分组的数据。但它也有缺点，CFB并不利于并行计算、一个明文单元损坏影响多个单元。
 
@@ -42,7 +42,7 @@ AES（Advanced Encryption Standard）高级加密标准，这类加密标准是�
 
 其工作原理是相对较为复杂的，与CFB不同，它可以提供对消息的加密和完整性校验，另外，它还可以提供附加消息的完整性校验。以下是其粗略的示意图：
 
-![](/images/posts/v2ray-ssr-jia-mi-fang-shi-na-ge-hao-jia-mi-suan-fa-dui-bi/02.avif)
+![](02.avif)
 
 同样的笔者也不展开讨论了。这里依然说一下GCM的优缺点。对于GCM而言其最大的优势便是有利于并行计算，并且有消息的完整性校验。缺点自然是要考虑运行加密时硬件的支持程度。
 
@@ -70,7 +70,7 @@ ChaCha20-Poly1305是基于RC4流加密的一种加密方式，它与AES有本质
 
 在V2Ray的官网上的部分技术细节中有这样的描述：
 
-![](/images/posts/v2ray-ssr-jia-mi-fang-shi-na-ge-hao-jia-mi-suan-fa-dui-bi/03.avif)
+![](03.avif)
 
 从官方文档中可以发现，V2Ray尽可能的利用了加密方式的最大特点。这点很好，保证了加密方式得到合理的应用。在V2Ray文档也可以发现，所谓加密方式的选择其实是数据部分加密的选择，对于指令部分的加密（AES-128-CFB）是没法选择的。而文档的重点在于，在通讯过程中V2Ray会将数据分割为若干个小块，并逐一加密后发出。这便很好的为AES-128-CFB、AES-128-GCM该如何选择提供了依据。
 

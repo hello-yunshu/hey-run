@@ -4,7 +4,7 @@ date = 2020-08-04T19:56:36+08:00
 draft = true
 description = "在nnnnnn年前，笔者突然在b站发现了一个非常特殊的“MMD”up主——yoyo鹿鸣_Lumi。当时这位up主的关注量虽然还不及5万，但当笔者看了它的视频，简直震惊到说不出话来。"
 slug = "kuai-lai-rang-ni-de-lao-po-bian-cheng-zhuo-mian"
-featureimage = "/images/posts/kuai-lai-rang-ni-de-lao-po-bian-cheng-zhuo-mian/cover.avif"
+featureimage = "cover.avif"
 +++
 
 在nnnnnn年前，笔者突然在b站发现了一个非常特殊的“MMD”up主——**[yoyo鹿鸣_Lumi](https://space.bilibili.com/488836173)** 。当时这位up主的关注量虽然还不及5万，但当笔者看了它的视频，简直震惊到说不出话来。
@@ -13,13 +13,13 @@ featureimage = "/images/posts/kuai-lai-rang-ni-de-lao-po-bian-cheng-zhuo-mian/co
 
 基于这种背景，当笔者看到**yoyo鹿鸣_Lumi** 这位up主时，简直惊掉了下巴：精美的模型、流畅的动画、准确真实的动作、逼真的表情，仿佛这个“纸片人”如同真人一般！
 
-![](/images/posts/kuai-lai-rang-ni-de-lao-po-bian-cheng-zhuo-mian/cover.avif)
+![](cover.avif)
 
 笔者在惊叹up主技术过人的同时，觉得整件事情不简单。笔者的第一反应，是这位鹿鸣奔着虚拟偶像的定位去的，毕竟之前“初音未来”这位虚拟偶像所产生的蛋糕太大，让人垂涎欲滴。
 
 既然有定位，就会有产品。笔者在等了几个月，看到鹿鸣的粉丝蹭蹭的长，却迟迟未见实际产品，正觉得奇怪呢。这不，产品今天它来了！与此同时也证明鹿鸣的确是虚拟偶像的定位，而且背后的团队是米哈游。
 
-![](/images/posts/kuai-lai-rang-ni-de-lao-po-bian-cheng-zhuo-mian/01.avif)
+![](01.avif)
 
 这是一款动态桌面软件。简单地说，就是把桌面壁纸由原本的照片变成了视频。而这个视频的主角自然就是鹿鸣这位虚拟偶像咯。
 

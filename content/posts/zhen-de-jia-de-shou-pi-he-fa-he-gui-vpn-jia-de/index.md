@@ -4,7 +4,7 @@ date = 2019-11-16T19:16:00+08:00
 draft = false
 description = "早在几年前，由工信部发出的《工业和信息化部关于清理规范互联网网络接入服务市场的通知》中规定：未经电信主管部门批准，不得自行建立或租用专线（含虚拟专用网络VPN）等其他信道开展跨境经营活动。从那一刻起，私自搭建VPN便是违规行为。 虽然有了相关的规定，但是，合法合规的VPN服务却一直未见踪影。随着经济"
 slug = "zhen-de-jia-de-shou-pi-he-fa-he-gui-vpn-jia-de"
-featureimage = "/images/posts/zhen-de-jia-de-shou-pi-he-fa-he-gui-vpn-jia-de/cover.avif"
+featureimage = "cover.avif"
 categories = ["网络技术"]
 tags = ["VPN", "合规", "网络安全"]
 +++
@@ -18,7 +18,7 @@ tags = ["VPN", "合规", "网络安全"]
 
 这款浏览器本身并无太大特色，但它最大的不同是，它似乎的确是一款合法合规的VPN。**现在已经被封，看来还是没有合法的VPN啊！**
 
-![](/images/posts/zhen-de-jia-de-shou-pi-he-fa-he-gui-vpn-jia-de/cover.avif)
+![](cover.avif)
 
 ### 软件介绍
 
@@ -34,7 +34,7 @@ tags = ["VPN", "合规", "网络安全"]
 
 为了验证是否确如其宣传那般合法合规，笔者根据查了查浏览器的企业信息：
 
-![](/images/posts/zhen-de-jia-de-shou-pi-he-fa-he-gui-vpn-jia-de/01.avif)
+![](01.avif)
 
 从上述信息看，似乎确实此软件获得相关的资质。（**才怪！** ）
 

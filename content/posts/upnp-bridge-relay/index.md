@@ -4,7 +4,7 @@ date = 2026-05-31T12:00:00+08:00
 draft = false
 description = "家里多台路由器串在一起，PS5 NAT 类型永远是严格，BT 下载永远是黄灯——UPnP Bridge Relay 就是来解决这个的。它在 OpenWrt 上把下级路由的 UPnP 映射桥接到上级主路由，让藏在后面的设备也能被外面找到。"
 slug = "upnp-bridge-relay"
-featureimage = "/images/posts/upnp-bridge-relay/cover.avif"
+featureimage = "cover.avif"
 categories = ["网络技术"]
 tags = ["OpenWrt", "UPnP", "NAT", "端口映射", "OpenClash"]
 +++
@@ -15,7 +15,7 @@ tags = ["OpenWrt", "UPnP", "NAT", "端口映射", "OpenClash"]
 
 **UPnP Bridge Relay** 就是来收拾这个烂摊子的。它跑在 OpenWrt 上，把下级路由的 UPnP 端口映射请求自动桥接到上级主路由，让躲在二级路由后面的设备也能被外面正常访问到。简单说：下级设备喊「我要开个门」，它帮你去主路由那里把门打开。
 
-![封面图：版画风格，一座小桥连接两台路由器，左边的路由器下面画着 PS5/游戏机/NAS，右边的路由器连着互联网云朵图标，桥上有 UPnP 字样的小旗子，木刻版画的线条质感和纹理，整体色调温暖复古，适合技术博客封面](/images/posts/upnp-bridge-relay/cover.avif)
+![封面图：版画风格，一座小桥连接两台路由器，左边的路由器下面画着 PS5/游戏机/NAS，右边的路由器连着互联网云朵图标，桥上有 UPnP 字样的小旗子，木刻版画的线条质感和纹理，整体色调温暖复古，适合技术博客封面](cover.avif)
 
 ## 二级路由到底把你害得有多惨
 
@@ -37,7 +37,7 @@ tags = ["OpenWrt", "UPnP", "NAT", "端口映射", "OpenClash"]
 
 问题来了：你的 PS5 连着二级路由，它向二级路由申请 UPnP 映射，二级路由也答应了——但主路由根本不知道这事。主路由眼里，所有二级路由后面的设备都挤在一个内网 IP 后面，谁是谁都分不清，更别说给它们单独开端口了。结果就是 NAT 严格、P2P 残废、联机靠缘分。
 
-![双 NAT 问题示意图：简洁的信息图风格，左侧互联网云朵，中间主路由（标注 NAT 1），右侧二级路由（标注 NAT 2），二级路由下面连接着 PS5/NAS/PC 等设备。从 PS5 出发的箭头指向二级路由再指向主路由，但箭头在主路由处被打了个红叉，旁边标注文字「UPnP 请求无法穿透」。配色蓝白为主，线条清晰](/images/posts/upnp-bridge-relay/01-double-nat.avif)
+![双 NAT 问题示意图：简洁的信息图风格，左侧互联网云朵，中间主路由（标注 NAT 1），右侧二级路由（标注 NAT 2），二级路由下面连接着 PS5/NAS/PC 等设备。从 PS5 出发的箭头指向二级路由再指向主路由，但箭头在主路由处被打了个红叉，旁边标注文字「UPnP 请求无法穿透」。配色蓝白为主，线条清晰](01-double-nat.avif)
 
 ## UPnP Bridge Relay 干了什么
 
@@ -49,7 +49,7 @@ tags = ["OpenWrt", "UPnP", "NAT", "端口映射", "OpenClash"]
 
 就这么简单。不是什么黑科技，就是一个帮你在两台路由之间传话的小跑腿。但这个过程本来该你自己手动搞——每次 PS5 换端口都要 SSH 进主路由改 iptables，想想就窒息。
 
-![UPnP Bridge Relay 工作流程图：三栏式信息图，第一栏「读取」图标是放大镜看路由，第二栏「过滤」图标是漏斗筛选，第三栏「桥接」图标是箭头桥接。底部是完整的 OpenWrt LuCI 界面预览图风格，蓝白配色](/images/posts/upnp-bridge-relay/02-workflow.avif)
+![UPnP Bridge Relay 工作流程图：三栏式信息图，第一栏「读取」图标是放大镜看路由，第二栏「过滤」图标是漏斗筛选，第三栏「桥接」图标是箭头桥接。底部是完整的 OpenWrt LuCI 界面预览图风格，蓝白配色](02-workflow.avif)
 
 ## 安装，简单到有点无聊
 
@@ -69,7 +69,7 @@ apk add --allow-untrusted ./luci-app-upnp-bridge-relay*.apk
 
 对了，fw3 / iptables-only 的老系统不支持哦。都什么年代了，该换 fw4 + nftables 啦～
 
-![LuCI 界面主页面截图：OpenWrt LuCI 管理界面，"服务"菜单下 UPnP Bridge Relay 的入口页面，显示整体状态概览——服务运行状态指示灯（绿色）、当前映射数量、最近同步时间、上下级路由 IP 信息。界面简洁清晰](/images/posts/upnp-bridge-relay/03-overview.avif)
+![LuCI 界面主页面截图：OpenWrt LuCI 管理界面，"服务"菜单下 UPnP Bridge Relay 的入口页面，显示整体状态概览——服务运行状态指示灯（绿色）、当前映射数量、最近同步时间、上下级路由 IP 信息。界面简洁清晰](03-overview.avif)
 
 ## 新手引导：跟着向导走就行
 
@@ -84,7 +84,7 @@ apk add --allow-untrusted ./luci-app-upnp-bridge-relay*.apk
 
 最后一步检测不过关的话，向导不会让你强行开启的——这个设计就很懂事。有些工具向导做完检测失败了照样让你「确定启用」，然后你对着报错日志发呆。哼，我不干这种事。
 
-![向导界面截图：LuCI 风格的向导页面，分步骤显示——Step 1 填写下级路由IP和端口，Step 2 选择上级WAN接口（下拉菜单），Step 3 填写端口白名单范围，Step 4 显示连通性检测结果（绿色对勾表示通过），底部有"完成并启用"按钮](/images/posts/upnp-bridge-relay/04-wizard.avif)
+![向导界面截图：LuCI 风格的向导页面，分步骤显示——Step 1 填写下级路由IP和端口，Step 2 选择上级WAN接口（下拉菜单），Step 3 填写端口白名单范围，Step 4 显示连通性检测结果（绿色对勾表示通过），底部有"完成并启用"按钮](04-wizard.avif)
 
 ## 诊断工具：出问题了别慌
 
@@ -99,7 +99,7 @@ apk add --allow-untrusted ./luci-app-upnp-bridge-relay*.apk
 
 每个检查项旁边有绿色 OK 或者红色警告。看到红色的话，点一下就能展开详细信息——不用你去 `/tmp` 里翻日志，我都给你整理好了。贴心不？我觉得挺贴心的，毕竟我自己也是那个翻日志翻到崩溃的人。
 
-![诊断页面截图：LuCI 风格的诊断页面，列表式展示各项检查结果——下级路由连通性（绿色对勾）、nftables 规则状态（绿色对勾）、路由表健康度（绿色对勾）、OpenClash 规则（绿色对勾），旁边有"重新检测"和"回滚"按钮。色调以蓝白为主](/images/posts/upnp-bridge-relay/05-diagnostics.avif)
+![诊断页面截图：LuCI 风格的诊断页面，列表式展示各项检查结果——下级路由连通性（绿色对勾）、nftables 规则状态（绿色对勾）、路由表健康度（绿色对勾）、OpenClash 规则（绿色对勾），旁边有"重新检测"和"回滚"按钮。色调以蓝白为主](05-diagnostics.avif)
 
 ## OpenClash 用户看这里
 
@@ -109,7 +109,7 @@ UPnP Bridge Relay 会自动给入站流量打 RETURN 标记，让 OpenClash 放�
 
 不过说实话，自动重启 OpenClash 这件事我还是有点心虚的——毕竟重启的那几秒钟你的代理会断。所以我默认把它关了，让你自己决定要不要开。技术工具要有边界感，不能替你决定一切，对吧～
 
-![OpenClash 集成示意图：简洁的技术图示，左侧是互联网图标，中间是 OpenWrt 主路由，内部画了两个流向——上方流向标注「代理流量 → OpenClash」，下方流向标注「UPnP 入站流量 → RETURN 直通」。箭头颜色不同以示区分](/images/posts/upnp-bridge-relay/06-openclash.avif)
+![OpenClash 集成示意图：简洁的技术图示，左侧是互联网图标，中间是 OpenWrt 主路由，内部画了两个流向——上方流向标注「代理流量 → OpenClash」，下方流向标注「UPnP 入站流量 → RETURN 直通」。箭头颜色不同以示区分](06-openclash.avif)
 
 ## 一些小提醒，收好不谢
 

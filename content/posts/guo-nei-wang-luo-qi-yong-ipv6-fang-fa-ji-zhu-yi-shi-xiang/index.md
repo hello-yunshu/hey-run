@@ -4,7 +4,7 @@ date = 2019-07-15T22:26:49+08:00
 draft = false
 description = "由于我国没有IPv4根服务器，因此在IPv6大发展的今天，IPv6是我国下一代互联网技术重中之重的一部分。虽然IPv6在国内进行的如火如荼，甚至已经出现了IPv6的根服务器，但是对于我们个人而言，要使用IPv6网络依然不切实际。姑且看现在大型网络公司，除去苹果强制要求外，很少有公司主动对IPv6进行"
 slug = "guo-nei-wang-luo-qi-yong-ipv6-fang-fa-ji-zhu-yi-shi-xiang"
-featureimage = "/images/shared/201907151015.avif"
+featureimage = "cover.avif"
 categories = ["网络技术"]
 tags = ["IPv6", "网络", "DNS"]
 +++
@@ -12,7 +12,7 @@ tags = ["IPv6", "网络", "DNS"]
 
 由于我国没有IPv4根服务器，因此在IPv6大发展的今天，IPv6是我国下一代互联网技术重中之重的一部分。虽然IPv6在国内进行的如火如荼，甚至已经出现了IPv6的根服务器，但是对于我们个人而言，要使用IPv6网络依然不切实际。姑且看现在大型网络公司，除去苹果强制要求外，很少有公司主动对IPv6进行适配。一方面，IPv6的需求普遍较低，IPv4资源并没有像之前担心的一般这么快干涸；另一方面IPv6技术并不成熟，企业部署需要花费不低的成本，利益驱动的企业现阶段很难去主动适配IPv6。
 
-![](/images/shared/201907151015.avif)
+![](201907151015.avif)
 
 对于像笔者兼站长这样的个人开发者。IPv6技术就是另外一回事了。对于笔者而言，这更像是一种兴趣，就是会浪费时间甚至浪费钱的兴趣咯（真惨。。）。在之前的文章：[一些功能性 iOS 描述文件](https://www.idleleo.com/03/1726.html)中，笔者说明了iOS如何强制开启运营商的IPv6地址。经过笔者测试，中国三大运营商已经有足够的能力使用IPv6技术了，只是现在使用环境依旧不佳，因此经常被人淡忘。不过相信5G技术普及，物联网快速发展，情况会大有变化。
 
@@ -26,11 +26,11 @@ tags = ["IPv6", "网络", "DNS"]
 
 在IPv4 Endpoint (Your side)填你VPS的公网IP地址，是的，**你必须有个公网固定的IP** ，在Available Tunnel Servers选一个隧道接入服务器，选择亚洲的几个接入点都可以，这样速度会快一点，建议选择香港，点击Create Tunnel添加完成。
 
-![](/images/posts/guo-nei-wang-luo-qi-yong-ipv6-fang-fa-ji-zhu-yi-shi-xiang/01.avif)
+![](01.avif)
 
 在Example Configurateions里选择你的操作系统，这里以Windows 10为例。选择后会出现配置方法，HE给出的命令如下，整个拷贝到服务器的终端命令行，在Windows中便是CMD(需要管理员权限)。
 
-![](/images/posts/guo-nei-wang-luo-qi-yong-ipv6-fang-fa-ji-zhu-yi-shi-xiang/02.avif)
+![](02.avif)
 
 在图中红色圈中的地方便是你的IPv6地址。如果你有域名的话，在域名中加入AAAA值便可以访问IPv6地址了。根据笔者测试，由于隧道服务器不在国内的原因，访问延迟很大，甚至会出现中断的情况，因此并不推荐在生产环境使用。
 
@@ -48,7 +48,7 @@ tags = ["IPv6", "网络", "DNS"]
 
 这是咱们中国自己的服务。6Plat来头很大，是[下一代互联网工程国家中心（CFIEC）](http://www.cfiec.net/)的“产物”。也就那个部署了中国第一台IPv6的协会，他们制作了一个超前体验IPv6的手段。
 
-![](/images/posts/guo-nei-wang-luo-qi-yong-ipv6-fang-fa-ji-zhu-yi-shi-xiang/03.avif)
+![](03.avif)
 
 6Plat的46模块采用开源软件OpenVPN搭建，通过客户端与服务端建立隧道，并通过隧道为客户端分配IPv6地址，获取IPv6 DNS的方式，使客户端远程接入IPv6网络；客户端所有IPv6数据由服务端代为转发。也就是说，就是开一个VPN代理IPv6的流量。
 
@@ -62,7 +62,7 @@ tags = ["IPv6", "网络", "DNS"]
 
 对于国内几大云服务商，自然有他们IPv6的方案。比如阿里云有“IPv6 解决方案”也就是做IPv4/IPv6双栈，直接给你一个IPv6地址和专有网络。现在可以去[直接申请测试](https://www.aliyun.com/solution/ip/index)，现阶段免费，但只支持呼和浩特以及深圳两地。相信其他地区也会相继开放，不过还没有明确的时间点。
 
-![](/images/posts/guo-nei-wang-luo-qi-yong-ipv6-fang-fa-ji-zhu-yi-shi-xiang/04.avif)
+![](04.avif)
 
 当然阿里云提供IPv6转换服务，这个价格就有点感人了，如果不是企业需求的话，相信很少有人会需要这类的服务的吧。
 

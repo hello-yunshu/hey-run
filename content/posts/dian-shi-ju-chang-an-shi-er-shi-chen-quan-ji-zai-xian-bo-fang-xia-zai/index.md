@@ -4,12 +4,12 @@ date = 2019-08-13T21:13:01+08:00
 draft = true
 description = "最近这部电视剧很火，因此笔者也并没有看，但是看到了资源有了，决定还是发一发。虽然笔者依然不会去看，但相信火有火的道理，定是有些许超人之处。笔者前段时间看过些新的国产电视剧，诚然制作水平、剧情、演员等各方面都有进步。笔者还是强烈安利大家去看的，毕竟追剧长胖变傻的不是笔者🤪🤪。 <"
 slug = "dian-shi-ju-chang-an-shi-er-shi-chen-quan-ji-zai-xian-bo-fang-xia-zai"
-featureimage = "/images/posts/dian-shi-ju-chang-an-shi-er-shi-chen-quan-ji-zai-xian-bo-fang-xia-zai/cover.avif"
+featureimage = "cover.avif"
 +++
 
 最近这部电视剧很火，因此笔者也**并没有** 看，但是看到了资源有了，决定还是发一发。虽然笔者依然不会去看，但相信火有火的道理，定是有些许超人之处。笔者前段时间看过些新的国产电视剧，诚然制作水平、剧情、演员等各方面都有进步。笔者还是强烈安利大家去看的，毕竟追剧长胖变傻的不是笔者🤪🤪。
 
-![](/images/posts/dian-shi-ju-chang-an-shi-er-shi-chen-quan-ji-zai-xian-bo-fang-xia-zai/cover.avif)
+![](cover.avif)
 
 导演: 曹盾
 
