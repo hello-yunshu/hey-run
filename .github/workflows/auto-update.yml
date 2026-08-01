@@ -164,7 +164,7 @@ jobs:
           fi
 
       - name: Check override drift
-        if: steps.check-running.outputs.result == 'run' && steps.build.outcome == 'success' && steps.changes.outputs.theme_changed == 'true'
+        if: steps.check-running.outputs.result == 'run' && steps.build.outcome == 'success'
         id: drift
         run: |
           OVERRIDE_FILES=()
@@ -242,6 +242,39 @@ jobs:
               });
               core.notice(`Created issue: ${issue.html_url}`);
             }
+
+      - name: Close resolved override drift issue
+        if: steps.check-running.outputs.result == 'run' && steps.build.outcome == 'success' && steps.drift.outputs.drift_found != 'true'
+        continue-on-error: true
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = 'Override files have drifted from theme originals';
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              per_page: 100
+            });
+            const existing = issues.find(issue => issue.title === title);
+            if (!existing) {
+              core.notice('No open override drift issue to close.');
+              return;
+            }
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: existing.number,
+              body: 'The latest successful theme validation found no remaining override drift. Closing this issue automatically.'
+            });
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: existing.number,
+              state: 'closed',
+              state_reason: 'completed'
+            });
+            core.notice(`Closed resolved issue: ${existing.html_url}`);
 
       - name: Update Cloudflare Pages build command
         if: steps.check-running.outputs.result == 'run' && steps.build.outcome == 'success' && steps.cf-hugo.outputs.needs_update == 'true'
