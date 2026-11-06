@@ -26,7 +26,7 @@ jobs:
     steps:
       - name: Check for running workflows
         id: check-running
-        uses: actions/github-script@v7
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
         with:
           result-encoding: string
           script: |
@@ -46,7 +46,7 @@ jobs:
 
       - name: Checkout
         if: steps.check-running.outputs.result == 'run'
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           submodules: recursive
           fetch-depth: 0
@@ -73,7 +73,7 @@ jobs:
       - name: Get Cloudflare Pages build command
         if: steps.check-running.outputs.result == 'run'
         id: cf-hugo
-        uses: actions/github-script@v7
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
         env:
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
@@ -192,7 +192,7 @@ jobs:
       - name: Create issue on override drift
         if: steps.check-running.outputs.result == 'run' && steps.build.outcome == 'success' && steps.drift.outputs.drift_found == 'true'
         continue-on-error: true
-        uses: actions/github-script@v7
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
         env:
           DRIFT_FILES: ${{ steps.drift.outputs.DRIFT_FILES }}
           OLD_THEME: ${{ steps.current.outputs.theme }}
@@ -246,7 +246,7 @@ jobs:
       - name: Close resolved override drift issue
         if: steps.check-running.outputs.result == 'run' && steps.build.outcome == 'success' && steps.drift.outputs.drift_found != 'true'
         continue-on-error: true
-        uses: actions/github-script@v7
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
         with:
           script: |
             const title = 'Override files have drifted from theme originals';
@@ -278,7 +278,7 @@ jobs:
 
       - name: Update Cloudflare Pages build command
         if: steps.check-running.outputs.result == 'run' && steps.build.outcome == 'success' && steps.cf-hugo.outputs.needs_update == 'true'
-        uses: actions/github-script@v7
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
         env:
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
@@ -327,7 +327,7 @@ jobs:
 
       - name: Trigger Cloudflare Pages rebuild
         if: steps.check-running.outputs.result == 'run' && steps.build.outcome == 'success' && steps.cf-hugo.outputs.needs_update == 'true' && steps.changes.outputs.has_changes != 'true'
-        uses: actions/github-script@v7
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
         env:
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
@@ -365,7 +365,7 @@ jobs:
 
       - name: Create issue on build failure
         if: steps.check-running.outputs.result == 'run' && steps.build.outcome == 'failure'
-        uses: actions/github-script@v7
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
         with:
           script: |
             const title = 'Auto-update build failed after theme update';
